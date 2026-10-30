@@ -1,4 +1,6 @@
 out/_*
 out/_dec/
 .hyperframes/
+.thumbnails/
+.waveform-cache/
 out/*.mp4

@@ -1,0 +1,47 @@
+{
+  "duration_seconds": 22,
+  "fps": 30,
+  "generated_shots": 9,
+  "format": "PNG 1536x1024",
+  "check": {
+    "lint": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "runtime": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "layout": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "motion": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "contrast": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "craft": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "audio": {
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  "snapshot_count": 50,
+  "snapshot_times_match_plan": true,
+  "audio": {
+    "integrated_lufs": -15.25,
+    "true_peak_dbtp": -3.9,
+    "listened": false
+  },
+  "preview_url": "http://127.0.0.1:3002/#project/nauka-frames",
+  "desktop_app_installed": false,
+  "draft_render": "not yet rendered",
+  "delivery_render": "awaiting preview approval"
+}

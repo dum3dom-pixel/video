@@ -1,0 +1,258 @@
+{
+  "duration": 22,
+  "fps": 30,
+  "at_seconds": [
+    0.0,
+    0.638,
+    0.878,
+    1.042,
+    1.282,
+    2.497,
+    2.637,
+    2.667,
+    2.797,
+    2.967,
+    3.046,
+    3.44,
+    4.113,
+    4.777,
+    5.83,
+    5.97,
+    6,
+    6.13,
+    6.3,
+    6.783,
+    7.023,
+    7.744,
+    7.984,
+    9.163,
+    9.303,
+    9.333,
+    9.463,
+    9.633,
+    11.835,
+    12.075,
+    13.163,
+    13.303,
+    13.333,
+    13.463,
+    13.633,
+    13.981,
+    15.481,
+    15.808,
+    17.163,
+    17.303,
+    17.333,
+    17.433,
+    17.463,
+    17.633,
+    17.673,
+    19.47,
+    19.71,
+    20.402,
+    20.642,
+    21.967
+  ],
+  "events": [
+    {
+      "time": 0.0,
+      "reason": "first frame"
+    },
+    {
+      "time": 0.638,
+      "reason": "hook: вырубает"
+    },
+    {
+      "time": 0.878,
+      "reason": "hook: after hit settles"
+    },
+    {
+      "time": 1.042,
+      "reason": "hook: не"
+    },
+    {
+      "time": 1.282,
+      "reason": "hook: after hit settles"
+    },
+    {
+      "time": 2.497,
+      "reason": "size scene seam"
+    },
+    {
+      "time": 2.637,
+      "reason": "size scene seam"
+    },
+    {
+      "time": 2.667,
+      "reason": "size scene seam"
+    },
+    {
+      "time": 2.797,
+      "reason": "size scene seam"
+    },
+    {
+      "time": 2.967,
+      "reason": "size scene seam"
+    },
+    {
+      "time": 3.046,
+      "reason": "size: метра"
+    },
+    {
+      "time": 3.44,
+      "reason": "size: тяжеловес"
+    },
+    {
+      "time": 4.113,
+      "reason": "size: против"
+    },
+    {
+      "time": 4.777,
+      "reason": "size: голову"
+    },
+    {
+      "time": 5.83,
+      "reason": "punch scene seam"
+    },
+    {
+      "time": 5.97,
+      "reason": "punch scene seam"
+    },
+    {
+      "time": 6,
+      "reason": "punch scene seam"
+    },
+    {
+      "time": 6.13,
+      "reason": "punch scene seam"
+    },
+    {
+      "time": 6.3,
+      "reason": "punch scene seam"
+    },
+    {
+      "time": 6.783,
+      "reason": "punch: подбородок"
+    },
+    {
+      "time": 7.023,
+      "reason": "punch: after hit settles"
+    },
+    {
+      "time": 7.744,
+      "reason": "punch: оседает"
+    },
+    {
+      "time": 7.984,
+      "reason": "punch: after hit settles"
+    },
+    {
+      "time": 9.163,
+      "reason": "myth scene seam"
+    },
+    {
+      "time": 9.303,
+      "reason": "myth scene seam"
+    },
+    {
+      "time": 9.333,
+      "reason": "myth scene seam"
+    },
+    {
+      "time": 9.463,
+      "reason": "myth scene seam"
+    },
+    {
+      "time": 9.633,
+      "reason": "myth scene seam"
+    },
+    {
+      "time": 11.835,
+      "reason": "myth: Нет"
+    },
+    {
+      "time": 12.075,
+      "reason": "myth: after hit settles"
+    },
+    {
+      "time": 13.163,
+      "reason": "doc scene seam"
+    },
+    {
+      "time": 13.303,
+      "reason": "doc scene seam"
+    },
+    {
+      "time": 13.333,
+      "reason": "doc scene seam"
+    },
+    {
+      "time": 13.463,
+      "reason": "doc scene seam"
+    },
+    {
+      "time": 13.633,
+      "reason": "doc scene seam"
+    },
+    {
+      "time": 13.981,
+      "reason": "doc: семьдесят"
+    },
+    {
+      "time": 15.481,
+      "reason": "doc: решает"
+    },
+    {
+      "time": 15.808,
+      "reason": "doc: другое"
+    },
+    {
+      "time": 17.163,
+      "reason": "three scene seam"
+    },
+    {
+      "time": 17.303,
+      "reason": "three scene seam"
+    },
+    {
+      "time": 17.333,
+      "reason": "three scene seam"
+    },
+    {
+      "time": 17.433,
+      "reason": "three: Три"
+    },
+    {
+      "time": 17.463,
+      "reason": "three scene seam"
+    },
+    {
+      "time": 17.633,
+      "reason": "three scene seam"
+    },
+    {
+      "time": 17.673,
+      "reason": "three: after hit settles"
+    },
+    {
+      "time": 19.47,
+      "reason": "three: почему"
+    },
+    {
+      "time": 19.71,
+      "reason": "three: after hit settles"
+    },
+    {
+      "time": 20.402,
+      "reason": "three: большой"
+    },
+    {
+      "time": 20.642,
+      "reason": "three: after hit settles"
+    },
+    {
+      "time": 21.967,
+      "reason": "last frame"
+    }
+  ]
+}

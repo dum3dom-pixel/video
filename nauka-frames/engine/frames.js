@@ -129,8 +129,8 @@
     if (sc <= 0) return; put(c, strip(label, size, { bg: PAL.red, fg: PAL.cream, seed: 77 }), x, y, { sx: sc, rot: rot * DEG, depth: 2.4 });
   }
 
-  // ---- anchors on the pictures (normalised image coords); recalibrate when real Codex shots replace the stand-ins
-  const ANCH = { s2: { tetsuHead: [0.34, 0.4] }, s3a: { fist: [0.42, 0.52], jaw: [0.655, 0.24] }, s6b: { brain: [0.5, 0.45] } };
+  // ---- anchors measured on the generated 1536x1024 paper pictures
+  const ANCH = { s2: { tetsuHead: [0.347, 0.255] }, s3a: { fist: [0.662, 0.301], jaw: [0.713, 0.302] }, s6b: { brain: [0.57, 0.45] } };
 
   // torn paper card: white fibre rim + picture clipped to a slightly smaller torn outline
   const rect = (m) => [[-m, -m], [W + m, -m], [W + m, H + m], [-m, H + m]];
@@ -142,7 +142,7 @@
   SC.hook = (c, tl) => {
     const HIT = 0.638;
     if (tl < HIT) {
-      const [z, fx, fy] = kf(tl, [[0, 1.1, 0.5, 0.5], [HIT, 1.28, 0.62, 0.45]]);
+      const [z, fx, fy] = kf(tl, [[0, 1.1, 0.5, 0.55], [HIT, 1.28, 0.62, 0.45]]);
       shot(c, "s1a_hook_wide", addCam({ z, fx, fy }, wob(tl, "a")));
       speedLines(c, tl, W / 2, H / 2, 0.22 * sm((tl - 0.2) / 0.4), 520);
     } else {
@@ -151,15 +151,15 @@
       speedLines(c, tl, W * 0.6, H * 0.5, 0.9 * cl(1 - p / 0.5), 330);
       flash(c, tl, HIT, 0.2, 0.9);
     }
-    seq(c, tl, [{ t: HIT, s: "ВЫРУБАЕТ", fill: Y, slam: true }], 190, 200);
-    seq(c, tl, [{ t: 1.042, s: "НЕ СИЛА УДАРА", fill: R }], 370, 100);
+    seq(c, tl, [{ t: HIT, s: "ВЫРУБАЕТ", fill: Y, slam: true }], 105, 140);
+    seq(c, tl, [{ t: 1.042, s: "НЕ СИЛА УДАРА", fill: R }], 255, 82);
   };
   SC.size = (c, tl) => {
-    const [z, fx, fy] = kf(tl, [[0, 1.45, 0.72, 0.62], [1.0, 1.45, 0.72, 0.62], [1.45, 1.45, 0.3, 0.62], [2.0, 1.45, 0.3, 0.62], [2.6, 1.1, 0.5, 0.5], [3.4, 1.16, 0.5, 0.5]]);
+    const [z, fx, fy] = kf(tl, [[0, 1.45, 0.65, 0.3], [1.0, 1.45, 0.65, 0.3], [1.45, 1.45, 0.345, 0.3], [2.0, 1.45, 0.345, 0.3], [2.6, 1.1, 0.5, 0.38], [3.4, 1.16, 0.5, 0.38]]);
     const map = shot(c, "s2_size", addCam({ z, fx, fy }, wob(tl, "s2"), shake(tl, 0.773, 0.35, 16)));
     const [hx, hy] = map(...ANCH.s2.tetsuHead);
     arrow(c, hx + 330, hy - 170, hx + 60, hy - 30, eo3((tl - 2.0) / 0.3), { fill: INK_ });
-    seq(c, tl, [{ t: 0.1, s: "ДВА МЕТРА", fill: Y }, { t: 0.773, s: "ТЯЖЕЛОВЕС", fill: WH, slam: true }, { t: 1.446, s: "ПРОТИВ ПАРНЯ", fill: WH }, { t: 2.11, s: "НА ГОЛОВУ НИЖЕ", fill: R, slam: true }], 170, 130);
+    seq(c, tl, [{ t: 0.1, s: "ДВА МЕТРА", fill: Y }, { t: 0.773, s: "ТЯЖЕЛОВЕС", fill: WH, slam: true }, { t: 1.446, s: "ПРОТИВ ПАРНЯ", fill: WH }, { t: 2.11, s: "НА ГОЛОВУ НИЖЕ", fill: R, slam: true }], 75, 96);
   };
   SC.punch = (c, tl) => {
     const HIT = 0.783, DROP = 1.744;
@@ -176,23 +176,23 @@
       cardPath(c, 5); shot(c, "s3b_sag", addCam({ z: 1.1 + 0.05 * sm((tl - DROP) / 2), fx: 0.5, fy: 0.5 }, wob(tl, "s3b"), shake(tl, DROP + 0.45, 0.35, 22))); c.restore();
       dust(c, tl, DROP + 0.45, W / 2, H * 0.82);
     }
-    seq(c, tl, [{ t: 0.1, s: "1 БОКОВОЙ", fill: Y }, { t: 0.735, s: "В ПОДБОРОДОК", fill: WH, slam: true }, { t: DROP, s: "ОСЕДАЕТ", fill: R, slam: true }], 170, 130);
+    seq(c, tl, [{ t: 0.1, s: "1 БОКОВОЙ", fill: Y }, { t: 0.735, s: "В ПОДБОРОДОК", fill: WH, slam: true }, { t: DROP, s: "ОСЕДАЕТ", fill: R, slam: true }], 110, 110);
   };
   SC.myth = (c, tl) => {
-    const NO = 2.502, g = tl >= NO ? sm((tl - NO) / 0.25) : 0, [z, fx, fy] = kf(tl, [[0, 1.1, 0.6, 0.5], [2.4, 1.3, 0.7, 0.45], [4.4, 1.34, 0.7, 0.45]]);
+    const NO = 2.502, g = tl >= NO ? sm((tl - NO) / 0.25) : 0, [z, fx, fy] = kf(tl, [[0, 1.1, 0.6, 0.3], [2.4, 1.3, 0.7, 0.3], [4.4, 1.34, 0.7, 0.3]]);
     shot(c, "s4_myth", addCam({ z, fx, fy }, wob(tl, "s4"), shake(tl, NO, 0.45, 30)), { filter: g ? `grayscale(${g * 0.85}) contrast(${1 + 0.1 * g})` : "" });
-    seq(c, tl, [{ t: 0.1, s: "СИЛЬНЕЕ БЬЁШЬ", fill: WH }], 150, 120);
-    seq(c, tl, [{ t: 1.023, s: "БЫСТРЕЕ ВЫРУБИШЬ?", fill: Y }], 320, 120);
+    seq(c, tl, [{ t: 0.1, s: "СИЛЬНЕЕ БЬЁШЬ", fill: WH }], 80, 100);
+    seq(c, tl, [{ t: 1.023, s: "БЫСТРЕЕ ВЫРУБИШЬ?", fill: Y }], 210, 100);
     arrow(c, 250, 760, 250, 520, eo3((tl - 0.571) / 0.4), { fill: INK_, w: 46 });
     if (tl >= NO) {
       const sp = memo("strike", () => sheet(1300, 26, PAL.red, 9, { amp: 3, inset: 3 }));
-      c.save(); c.beginPath(); c.rect(0, 0, 310 + 1300 * eo3((tl - NO - 0.25) / 0.2), H); c.clip(); put(c, sp, 960, 328, { rot: -0.01, depth: 1.2 }); c.restore();
+      c.save(); c.beginPath(); c.rect(0, 0, 310 + 1300 * eo3((tl - NO - 0.25) / 0.2), H); c.clip(); put(c, sp, 960, 215, { rot: -0.01, depth: 1.2 }); c.restore();
       stamp(c, "МИФ", W / 2, H * 0.62, 330, slam(tl, NO, 0.18), -7);
       flash(c, tl, NO, 0.15, 0.6);
     }
   };
   SC.doc = (c, tl) => {
-    const [z, fx, fy] = kf(tl, [[0, 1.12, 0.35, 0.5], [4.4, 1.3, 0.38, 0.45]]), s = stp(tl);
+    const [z, fx, fy] = kf(tl, [[0, 1.12, 0.35, 0.3], [4.4, 1.3, 0.38, 0.3]]), s = stp(tl);
     shot(c, "s5_doc", addCam({ z, fx, fy }, wob(tl, "s5")), { filter: "sepia(0.7) contrast(1.05) brightness(1.04)" });
     c.fillStyle = `rgba(255,236,190,${0.04 + (hr(s, 31) - 0.5) * 0.05})`; c.fillRect(0, 0, W, H);
     seq(c, tl, [{ t: 0.1, s: "ЭКСПЕРИМЕНТ", fill: WH, x: 1380, y: 180 }, { t: 1.542, s: "ПОКАЗАЛ:", fill: WH, x: 1380, y: 180 }], 180, 100);
@@ -209,16 +209,16 @@
   SC.three = (c, tl) => {
     const CUT = 2.137;
     if (tl < CUT + 0.05) {
-      const [z, fx, fy] = kf(tl, [[0, 1.1, 0.5, 0.5], [1.9, 1.3, 0.5, 0.55], [CUT, 2.4, 0.5, 0.55]]);
+      const [z, fx, fy] = kf(tl, [[0, 1.1, 0.5, 0.34], [1.9, 1.3, 0.52, 0.34], [CUT, 2.4, 0.62, 0.47]]);
       shot(c, "s6a_three", addCam({ z, fx, fy }, wob(tl, "s6a")));
       [[0.5, "1"], [0.9, "2"], [1.3, "3"]].forEach(([t0, l], i) => disc(c, 1250 + i * 190, 400, 78, pop(tl, t0, 0.2), l, i === 2 ? R : Y));
-      seq(c, tl, [{ t: 0.1, s: "3 ПРИЧИНЫ", fill: Y }, { t: 1.665, s: "И ОТВЕТ...", fill: WH }], 170, 130);
+      seq(c, tl, [{ t: 0.1, s: "3 ПРИЧИНЫ", fill: Y }, { t: 1.665, s: "И ОТВЕТ...", fill: WH }], 95, 110);
     }
     if (tl >= CUT) {
       const p = tl - CUT, beat = Math.pow(Math.max(0, Math.sin((p / (60 / 90)) * Math.PI * 2 - 0.5)), 3), [z] = kf(p, [[0, 1.9], [0.3, 1.12]]);
       shot(c, "s6b_brain", addCam({ z: z * (1 + 0.03 * beat), fx: 0.5, fy: 0.5 }, wob(tl, "s6b"), shake(tl, 3.069, 0.4, 26)));
       flash(c, tl, CUT, 0.22, 0.85);
-      seq(c, tl, [{ t: CUT, s: "ПОЧЕМУ УПАЛ", fill: WH }, { t: 3.069, s: "БОЛЬШОЙ?", fill: R, slam: true, size: 230 }], 170, 130);
+      seq(c, tl, [{ t: CUT, s: "ПОЧЕМУ УПАЛ", fill: WH }, { t: 3.069, s: "БОЛЬШОЙ?", fill: R, slam: true, size: 130 }], 110, 110);
       if (tl >= 3.069) flash(c, tl, 3.069, 0.15, 0.45);
     }
   };
