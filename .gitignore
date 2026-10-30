@@ -48,3 +48,6 @@ trash/
 Thumbs.db
 .idea/
 .vscode/
+
+# Служебные артефакты HyperFrames (снимки, проверки) генерируются заново
+nauka-pencil/.hyperframes/artifacts/
