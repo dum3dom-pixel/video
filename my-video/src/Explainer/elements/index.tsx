@@ -2,6 +2,7 @@ import React from "react";
 import type { Element } from "../types";
 import { Bars, BigNumber, DotGrid, LineChart, Versus } from "./charts";
 import { Levels, Reps, Steps, Week } from "./progress";
+import { Brain, Lever } from "./science";
 import { ButtonEl, Callout, Card, Comments } from "./ui";
 
 export const ElementView: React.FC<{ e: Element }> = ({ e }) => {
@@ -30,6 +31,10 @@ export const ElementView: React.FC<{ e: Element }> = ({ e }) => {
       return <Levels e={e} />;
     case "bigNumber":
       return <BigNumber e={e} />;
+    case "brain":
+      return <Brain e={e} />;
+    case "lever":
+      return <Lever e={e} />;
     case "versus":
       return <Versus e={e} />;
   }

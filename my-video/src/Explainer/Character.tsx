@@ -1,9 +1,9 @@
 import React from "react";
-import { Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { getStaticFiles, Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { appear, fontFamily, HEIGHT, UI, WIDTH } from "./theme";
 import type { Character as CharacterSpec } from "./types";
 
-const Placeholder: React.FC<{ height: number; flip?: boolean }> = ({ height, flip }) => {
+const Placeholder: React.FC<{ height: number; flip?: boolean; label?: string }> = ({ height, flip, label = "IMG" }) => {
   const width = (height * 200) / 480;
   return (
     <svg width={width} height={height} viewBox="0 0 200 480" fill={UI.dim}>
@@ -20,10 +20,10 @@ const Placeholder: React.FC<{ height: number; flip?: boolean }> = ({ height, fli
         textAnchor="middle"
         fontFamily={fontFamily}
         fontWeight={700}
-        fontSize="21"
+        fontSize={Math.min(21, 80 / label.length)}
         fill="#0c0c0c"
       >
-        IMG
+        {label}
       </text>
     </svg>
   );
@@ -35,7 +35,11 @@ export const CharacterView: React.FC<{ c: CharacterSpec }> = ({ c }) => {
   const pos = c.pos ?? "center";
   const bg = pos === "bg";
   const height = c.height ?? (bg ? 1000 : 820);
-  const srcs = c.src === undefined ? [] : Array.isArray(c.src) ? c.src : [c.src];
+  const wanted = c.src === undefined ? [] : Array.isArray(c.src) ? c.src : [c.src];
+  // Not generated yet → placeholder named after the pose; real image shows up once the file lands in public/.
+  const present = new Set(getStaticFiles().map((f) => f.name.replace(/\\/g, "/")));
+  const srcs = wanted.filter((s) => present.has(s));
+  const missing = wanted.length > 0 && srcs.length === 0 ? wanted[0].replace(/^.*\/|\.\w+$/g, "") : undefined;
   const poseIdx =
     srcs.length > 1
       ? Math.floor((frame / fps) * (c.poseFps ?? 3)) % srcs.length
@@ -64,7 +68,7 @@ export const CharacterView: React.FC<{ c: CharacterSpec }> = ({ c }) => {
           }}
         >
           {srcs.length === 0 ? (
-            <Placeholder height={slot.height as number} flip={c.flip} />
+            <Placeholder height={slot.height as number} flip={c.flip} label={missing} />
           ) : (
             srcs.map((s, i) => (
               <Img

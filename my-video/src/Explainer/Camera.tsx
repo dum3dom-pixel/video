@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate, random } from "remotion";
+import { interpolate, random, useCurrentFrame } from "remotion";
 import { easeOut } from "./theme";
 import type { Camera } from "./types";
 
@@ -8,13 +8,21 @@ const PUNCH = 0.12;
 const PUNCH_FRAMES = 8;
 const SHAKE_PX = 4;
 
+/** Shake offset in px; interpolated between whole frames so fractional (motion blur) samples follow one coherent path. */
+const shakeAt = (axis: "x" | "y", frame: number) => {
+  const f0 = Math.floor(frame);
+  const a = random(`shake-${axis}-${f0}`);
+  const b = random(`shake-${axis}-${f0 + 1}`);
+  return (a + (b - a) * (frame - f0) - 0.5) * 2 * SHAKE_PX;
+};
+
 /** Per-scene camera move applied to the content container (HUD stays outside). */
 export const CameraMove: React.FC<{
   camera?: Camera;
-  frame: number;
   frames: number;
   children: React.ReactNode;
-}> = ({ camera = "push", frame, frames, children }) => {
+}> = ({ camera = "push", frames, children }) => {
+  const frame = useCurrentFrame(); // read here (not passed in) so motion blur can resample it at fractional frames
   let transform: string | undefined;
   if (camera !== "still") {
     const push = 1 + PUSH * Math.min(1, frame / Math.max(1, frames));
@@ -28,8 +36,8 @@ export const CameraMove: React.FC<{
     }
     let shift = "";
     if (camera === "shake") {
-      const dx = (random(`shake-x-${frame}`) - 0.5) * 2 * SHAKE_PX;
-      const dy = (random(`shake-y-${frame}`) - 0.5) * 2 * SHAKE_PX;
+      const dx = shakeAt("x", frame);
+      const dy = shakeAt("y", frame);
       shift = `translate(${dx.toFixed(2)}px, ${dy.toFixed(2)}px) `;
     }
     transform = `${shift}scale(${scale})`;

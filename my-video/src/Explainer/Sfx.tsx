@@ -18,6 +18,9 @@ export const sceneCues = (scene: Scene, index: number, enabled: boolean): Cue[] 
       cues.push({ name: "pop", frame: i * STAGGER, volume: 0.25 }),
     );
     if (scene.camera === "punch") cues.push({ name: "impact", frame: 0, volume: 0.5 });
+    if (scene.impact) {
+      cues.push({ name: "impact", frame: Math.round((scene.impact.at ?? 0) * FPS), volume: 0.6 });
+    }
     const delay = elementDelayFrames(scene);
     if (scene.element?.type === "button") {
       cues.push({ name: "click", frame: delay + BUTTON_PRESS_FRAME, volume: 0.5 });

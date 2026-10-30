@@ -2,6 +2,7 @@
 export const voiceDurations: Record<string, number> = {
   "hook": 2.736,
   "versus": 3.264,
+  "steps": 3.888,
   "cta": 3.48
 };
 export const voiceWords: Record<string, {t: number; d: number; w: string}[]> = {
@@ -94,6 +95,53 @@ export const voiceWords: Record<string, {t: number; d: number; w: string}[]> = {
       "t": 2.237,
       "d": 0.531,
       "w": "бицепс"
+    }
+  ],
+  "steps": [
+    {
+      "t": 0.1,
+      "d": 0.521,
+      "w": "Сначала"
+    },
+    {
+      "t": 0.621,
+      "d": 0.302,
+      "w": "забери"
+    },
+    {
+      "t": 0.923,
+      "d": 0.344,
+      "w": "кисть"
+    },
+    {
+      "t": 1.413,
+      "d": 0.312,
+      "w": "потом"
+    },
+    {
+      "t": 1.725,
+      "d": 0.208,
+      "w": "дави"
+    },
+    {
+      "t": 1.933,
+      "d": 0.427,
+      "w": "плечом"
+    },
+    {
+      "t": 2.36,
+      "d": 0.125,
+      "w": "и"
+    },
+    {
+      "t": 2.485,
+      "d": 0.281,
+      "w": "клади"
+    },
+    {
+      "t": 2.767,
+      "d": 0.354,
+      "w": "руку"
     }
   ]
 };

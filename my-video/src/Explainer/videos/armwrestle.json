@@ -5,6 +5,7 @@
   "sfx": true,
   "music": { "src": "sfx/beat.wav", "volume": 0.15, "duck": 0.35 },
   "subtitles": true,
+  "transitionFrames": 10,
   "character": "young man, early 20s, short buzzed dark hair, determined eyes, broad shoulders, thick veiny forearms, sleeveless black tank top, bright orange wrist wraps on both wrists, dark training pants",
   "poses": {
     "ready": "elbow on an arm-wrestling table, forearm vertical, hand open ready to grip, leaning forward, intense stare",
@@ -26,6 +27,8 @@
     {
       "id": "versus",
       "duration": 3.5,
+      "transition": "zoom",
+      "leak": true,
       "voice": "Побеждает тот, кто забрал кисть соперника.",
       "text": { "pos": "top", "lines": [{ "text": "кто сильнее за столом?", "size": "l" }] },
       "element": {
@@ -37,8 +40,17 @@
       }
     },
     {
+      "id": "steps",
+      "duration": 4.6,
+      "transition": "slide",
+      "voice": "Сначала забери кисть, потом дави плечом и клади руку.",
+      "text": { "pos": "top", "lines": [{ "text": "ТЕХНИКА за 3 шага", "size": "l" }] },
+      "element": { "type": "steps", "items": [{ "label": "забрать кисть", "color": "orange" }, { "label": "давить плечом" }, { "label": "положить руку", "color": "green" }] }
+    },
+    {
       "id": "cta",
-      "duration": 3.6,
+      "duration": 4,
+      "transition": "slide",
       "camera": "shake",
       "voice": "Качай кисть. А не только бицепс.",
       "characters": [{ "pos": "right" }],

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <style>
+      @font-face { font-family: "Pencil"; font-weight: 400; src: local("Segoe Print"); }
+      @font-face { font-family: "Pencil"; font-weight: 700; src: local("Segoe Print Bold"), local("Segoe Print"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #1b1917; }
+      #stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="14.328" data-width="1920" data-height="1080" data-no-timeline>
+      <canvas id="stage" width="1920" height="1080"></canvas>
+    <audio id="master" class="clip" data-start="0" data-duration="14.328" data-track-index="2" data-volume="1" src="assets/master.wav"></audio>
+    </div>
+    <script src="engine/data.js"></script>
+    <script src="engine/pencil.js"></script>
+    <script src="engine/figures.js"></script>
+    <script src="engine/elements.js"></script>
+    <script src="engine/main.js"></script>
+    <script>
+      PE.S.ctx = document.getElementById("stage").getContext("2d");
+      PE.bakePaper();
+      const ready = Promise.all([document.fonts.load('700 60px "Pencil"'), document.fonts.load('400 60px "Pencil"')]).then(() => PENCIL_RENDER(0));
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady["main"] = ready;
+      window.addEventListener("hf-seek", (e) => {
+        try { PENCIL_RENDER(e.detail.time); }
+        catch (err) { const c = PE.S.ctx; c.setTransform(1, 0, 0, 1, 0, 0); c.fillStyle = "#900"; c.fillRect(0, 0, 1920, 120); c.fillStyle = "#fff"; c.font = "28px monospace"; c.fillText(String(err.stack || err).slice(0, 150), 20, 70); console.error(err); }
+      });
+    </script>
+  </body>
+</html>

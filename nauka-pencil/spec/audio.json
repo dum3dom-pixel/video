@@ -1,0 +1,65 @@
+{
+ "total": 14.328,
+ "items": [
+  {
+   "id": "fx-imp-hook",
+   "src": "assets/sfx/impact.wav",
+   "start": 0.736,
+   "vol": 0.7
+  },
+  {
+   "id": "v-hook",
+   "src": "assets/voice/hook.mp3",
+   "start": 0,
+   "vol": 1
+  },
+  {
+   "id": "fx-scr-hook",
+   "src": "assets/sfx/scratch.wav",
+   "start": 0.05,
+   "vol": 0.22
+  },
+  {
+   "id": "fx-wh-hook",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 0,
+   "vol": 0.35
+  },
+  {
+   "id": "v-size",
+   "src": "assets/voice/size.mp3",
+   "start": 3.424,
+   "vol": 1
+  },
+  {
+   "id": "fx-scr-size",
+   "src": "assets/sfx/scratch.wav",
+   "start": 3.474,
+   "vol": 0.22
+  },
+  {
+   "id": "fx-imp-punch",
+   "src": "assets/sfx/impact.wav",
+   "start": 11.019,
+   "vol": 0.7
+  },
+  {
+   "id": "v-punch",
+   "src": "assets/voice/punch.mp3",
+   "start": 10.112,
+   "vol": 1
+  },
+  {
+   "id": "fx-scr-punch",
+   "src": "assets/sfx/scratch.wav",
+   "start": 10.162,
+   "vol": 0.22
+  },
+  {
+   "id": "music-0",
+   "src": "assets/sfx/beat.wav",
+   "start": 0,
+   "vol": 0.1
+  }
+ ]
+}

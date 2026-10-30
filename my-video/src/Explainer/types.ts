@@ -21,10 +21,14 @@ export type Element =
   | { type: "callout"; text: string; note?: string; color?: Accent } // red/colored thin-bordered box
   | { type: "levels"; items: { label: string; text: string; color: Accent }[] } // stacked bordered rows sliding in
   | { type: "bigNumber"; value: string; caption?: string; after?: string } // huge grey number counting/popping, `after` line in green below
+  | { type: "brain"; mode?: "rest" | "push" | "rotate"; caption?: string } // top-down head: on a hit the brain lags the skull (rotate = layers shear, push = moves together)
+  | { type: "lever"; caption?: string } // side-view heads: punch through the centre of mass only pushes, off-centre (chin) also rotates
   | { type: "versus"; left: { label: string; color?: Accent }; right: { label: string; color?: Accent }; winner: "left" | "right"; note?: string }; // A vs B tug-of-war bar: marker wobbles ~1s, then slams to the winner (~80%)
 export type SfxName = "whoosh" | "pop" | "click" | "impact" | "riser";
 export type SceneSfx = { name: SfxName; at?: number /* seconds from scene start */; volume?: number };
 export type Camera = "still" | "push" | "punch" | "shake"; // default "push": slow 1.0 -> 1.03 zoom over the scene
+export type Transition = "cut" | "fade" | "slide" | "wipe" | "flip" | "zoom"; // cut = hard cut (default); zoom = incoming scene scales 1.15 -> 1 with fade
+export type Impact = { at?: number /* seconds from scene start */; x?: number; y?: number /* px, default frame center */ }; // flash + speed lines + orange ring
 export type Scene = {
   id: string;
   voice?: string; // narration text for TTS
@@ -35,7 +39,11 @@ export type Scene = {
   text?: { lines: Line[]; pos?: "center" | "right" | "left" | "top" };
   element?: Element;
   camera?: Camera;
+  impact?: Impact;
   sfx?: SceneSfx[]; // extra cues; always played (independent of spec.sfx)
+  transition?: Transition; // transition INTO this scene; overrides spec.transition, ignored for the first scene
+  leak?: boolean; // light leak over the cut into this scene (also set by spec.leaks)
+  motionBlur?: boolean; // blur the camera-moved content; automatic for camera "punch" / "shake"
 };
 export type Music = { src: string /* path under public/ */; volume?: number /* default 0.15 */; duck?: number /* multiplier while narration plays, default 0.35 */ };
 export type ExplainerSpec = {
@@ -47,6 +55,9 @@ export type ExplainerSpec = {
   sfx?: boolean; // whoosh between scenes, pop on text lines, click/impact cues (default false)
   music?: Music;
   subtitles?: boolean; // word-by-word captions from <id>.voice.ts voiceWords (default false)
+  transition?: Transition; // default transition between scenes (default "cut")
+  transitionFrames?: number; // transition length in frames (default 10); overlaps scenes, total length is unchanged
+  leaks?: boolean; // light leak on every cut (default false)
   scenes: Scene[];
 };
 

@@ -1,0 +1,457 @@
+{
+  "id": "nauka-01",
+  "voice": "ru-RU-SvetlanaNeural",
+  "rate": "+10%",
+  "sfx": true,
+  "music": { "src": "sfx/beat.wav", "volume": 0.12, "duck": 0.3 },
+  "subtitles": true,
+  "scenes": [
+    {
+      "id": "hook",
+      "camera": "punch",
+      "voice": "Здоровяка вырубает не сила удара.",
+      "impact": { "at": 0.1, "x": 1500, "y": 260 },
+      "characters": [
+        { "src": "explainer/nauka-boya/tetsu/hook_3.png", "pos": "left", "height": 760 },
+        { "src": "explainer/nauka-boya/gromila/stagger_1.png", "pos": "right", "height": 960 }
+      ],
+      "text": { "lines": [
+        { "text": "вырубает", "size": "m", "color": "grey" },
+        { "text": "НЕ СИЛА", "size": "xl", "color": "red" }
+      ]}
+    },
+    {
+      "id": "size",
+      "voice": "Громила: два метра, тяжеловес. Тэцу — средний вес, на голову ниже.",
+      "characters": [
+        { "src": "explainer/nauka-boya/tetsu/guard.png", "pos": "left", "height": 700 },
+        { "src": "explainer/nauka-boya/gromila/guard.png", "pos": "right", "height": 1000 }
+      ],
+      "text": { "lines": [
+        { "text": "2 метра", "size": "l" },
+        { "text": "против среднего веса", "size": "m", "color": "orange" }
+      ]}
+    },
+    {
+      "id": "punch",
+      "camera": "shake",
+      "voice": "Один боковой в подбородок — и Громила оседает.",
+      "impact": { "at": 0.5, "x": 1500, "y": 300 },
+      "characters": [
+        { "src": "explainer/nauka-boya/tetsu/hook_3.png", "pos": "left", "height": 760 },
+        { "src": "explainer/nauka-boya/gromila/stagger_2.png", "pos": "right", "height": 820 }
+      ],
+      "text": { "lines": [
+        { "text": "1 БОКОВОЙ", "size": "xl", "color": "orange" },
+        { "text": "в подбородок", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "why",
+      "camera": "still",
+      "voice": "Почему? Назову три причины. Первая удивит даже тебя.",
+      "characters": [{ "src": "explainer/nauka-boya/gromila/stagger_2.png", "pos": "bg" }],
+      "text": { "pos": "center", "lines": [
+        { "text": "ПОЧЕМУ?", "size": "xl", "color": "orange" },
+        { "text": "3 причины", "size": "m" }
+      ]}
+    },
+    {
+      "id": "myth",
+      "tag": "МИФ",
+      "voice": "Нас всех учили: сильнее бьёшь — быстрее вырубишь. Это не так.",
+      "text": { "lines": [
+        { "text": "«сильнее бьёшь —", "size": "l" },
+        { "text": "быстрее вырубишь»", "size": "l" }
+      ]},
+      "element": { "type": "callout", "text": "МИФ", "note": "сила удара — не главное", "color": "red" }
+    },
+    {
+      "id": "loop-1972",
+      "voice": "В семьдесят втором году учёные поставили эксперимент и увидели, что на самом деле выключает сознание. Он ждёт нас в причине номер три.",
+      "characters": [{ "src": "explainer/nauka-boya/doc/clipboard.png", "pos": "right" }],
+      "text": { "lines": [
+        { "text": "1972", "size": "xl", "color": "orange" },
+        { "text": "эксперимент,", "size": "m" },
+        { "text": "который всё объяснил", "size": "m" }
+      ]}
+    },
+    {
+      "id": "loop-big",
+      "voice": "И отдельный вопрос: почему упал именно большой? Ответ будет в самом конце.",
+      "characters": [{ "src": "explainer/nauka-boya/gromila/stagger_2.png", "pos": "bg" }],
+      "text": { "pos": "center", "lines": [
+        { "text": "почему упал", "size": "l" },
+        { "text": "БОЛЬШОЙ?", "size": "xl", "color": "orange" }
+      ]}
+    },
+    {
+      "id": "promise",
+      "voice": "А потом покажу, как бойцы учатся держать удар. Поехали.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/explain.png", "pos": "left" }],
+      "text": { "lines": [
+        { "text": "3 ПРИЧИНЫ", "size": "xl", "color": "orange" },
+        { "text": "+ как держат удар", "size": "s", "color": "grey" }
+      ]}
+    },
+
+    {
+      "id": "olympic",
+      "tag": "МИФ О СИЛЕ",
+      "voice": "Сначала про силу. В две тысячи пятом году исследователи замерили удары семи олимпийских боксёров по манекену.",
+      "characters": [{ "src": "explainer/nauka-boya/doc/clipboard.png", "pos": "left" }],
+      "text": { "lines": [
+        { "text": "7 олимпийских боксёров", "size": "l" },
+        { "text": "удары по манекену", "size": "m", "color": "orange" },
+        { "text": "Walilko, Viano, Bir · BJSM 2005", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "force",
+      "tag": "МИФ О СИЛЕ",
+      "voice": "Средний прямой удар — около трёхсот пятидесяти килограммов силы.",
+      "element": { "type": "bigNumber", "value": "≈350 кгс", "caption": "средний прямой удар · 3427 Н" }
+    },
+    {
+      "id": "heavier",
+      "tag": "МИФ О СИЛЕ",
+      "voice": "У тяжёлых весов удар сильнее: в него вкладывается больше массы.",
+      "text": { "lines": [{ "text": "тяжелее — сильнее удар", "size": "l" }] },
+      "element": { "type": "steps", "items": [
+        { "label": "лёгкий" },
+        { "label": "средний" },
+        { "label": "тяжёлый", "color": "orange" }
+      ]}
+    },
+    {
+      "id": "push-or-turn",
+      "tag": "МИФ О СИЛЕ",
+      "voice": "Но сила — только половина. Важно, что она делает с головой: толкает её или поворачивает.",
+      "text": { "pos": "top", "lines": [{ "text": "что делает удар с головой?", "size": "l" }] },
+      "element": {
+        "type": "versus",
+        "left": { "label": "ТОЛКАЕТ" },
+        "right": { "label": "ПОВОРАЧИВАЕТ", "color": "orange" },
+        "winner": "right",
+        "note": "решает поворот"
+      }
+    },
+    {
+      "id": "bridge-3",
+      "voice": "Что именно происходит при повороте, видно только внутри черепа. Это причина номер три.",
+      "camera": "punch",
+      "rank": 3,
+      "text": { "lines": [
+        { "text": "ПРИЧИНА №3", "size": "xl", "color": "orange" }
+      ]}
+    },
+
+    {
+      "id": "b2-brain-rest",
+      "tag": "МОЗГ",
+      "rank": 3,
+      "voice": "Мозг не приклеен к кости. Он плавает в жидкости внутри черепа, как желе в банке.",
+      "element": { "type": "brain", "mode": "rest", "caption": "мозг свободно плавает" }
+    },
+    {
+      "id": "b2-brain-rotate",
+      "tag": "МОЗГ",
+      "rank": 3,
+      "camera": "shake",
+      "voice": "Когда череп резко поворачивается, кость уже едет, а мозг по инерции отстаёт.",
+      "element": { "type": "brain", "mode": "rotate", "caption": "череп повернулся — мозг отстал" }
+    },
+    {
+      "id": "b2-shear",
+      "tag": "МОЗГ",
+      "rank": 3,
+      "voice": "Слои мозга сдвигаются друг относительно друга. Это называется сдвиговая деформация.",
+      "text": { "lines": [
+        { "text": "сдвиговая деформация", "size": "l", "color": "red" },
+        { "text": "слои мозга скользят друг по другу", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b2-1972",
+      "tag": "ЭКСПЕРИМЕНТ 1972",
+      "rank": 3,
+      "voice": "Теперь обещанный эксперимент. Семьдесят второй год: Дженнарелли, Тибо и Оммайя берут двадцать пять беличьих обезьян.",
+      "text": { "lines": [{ "text": "25 беличьих обезьян", "size": "l" }] },
+      "element": { "type": "dotGrid", "count": 25, "label": "Gennarelli · Thibault · Ommaya · 1972" }
+    },
+    {
+      "id": "b2-setup",
+      "tag": "ЭКСПЕРИМЕНТ 1972",
+      "rank": 3,
+      "voice": "Одним голову двигают прямо, без поворота. Другим — поворачивают.",
+      "element": {
+        "type": "versus",
+        "left": { "label": "ТОЛЧОК" },
+        "right": { "label": "ПОВОРОТ", "color": "orange" },
+        "winner": "right",
+        "note": "сравнили оба движения"
+      }
+    },
+    {
+      "id": "b2-result",
+      "tag": "ЭКСПЕРИМЕНТ 1972",
+      "rank": 3,
+      "camera": "punch",
+      "voice": "Результат: при повороте сотрясение получили все тринадцать. При прямом толчке — далеко не все.",
+      "element": { "type": "dotGrid", "count": 13, "highlight": 13, "color": "orange", "label": "ПОВОРОТ", "caption": "13 из 13 — сотрясение" }
+    },
+    {
+      "id": "b2-hypothesis",
+      "tag": "ЭКСПЕРИМЕНТ 1972",
+      "rank": 3,
+      "voice": "Отсюда гипотеза Оммайи и Дженнарелли: сознание выключает вращение головы.",
+      "text": { "lines": [
+        { "text": "решает ВРАЩЕНИЕ", "size": "xl", "color": "orange" },
+        { "text": "гипотеза, а не закон природы", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b2-depth",
+      "tag": "ЭКСПЕРИМЕНТ 1972",
+      "rank": 3,
+      "voice": "По ней слабый поворот задевает поверхность мозга, а чем он сильнее — тем глубже уходит сдвиг.",
+      "element": { "type": "levels", "items": [
+        { "label": "СЛАБЫЙ ПОВОРОТ", "text": "поверхность мозга", "color": "white" },
+        { "label": "СИЛЬНЕЕ", "text": "глубже", "color": "orange" },
+        { "label": "ОЧЕНЬ СИЛЬНЫЙ", "text": "до центра мозга", "color": "red" }
+      ]}
+    },
+    {
+      "id": "b2-bridge",
+      "rank": 3,
+      "voice": "Значит, чтобы выключить, нужно не сильнее ударить, а сильнее повернуть голову. И вот тут в игру вступает подбородок.",
+      "text": { "lines": [
+        { "text": "не СИЛЬНЕЕ ударить,", "size": "l" },
+        { "text": "а СИЛЬНЕЕ повернуть", "size": "l", "color": "orange" }
+      ]}
+    },
+
+    {
+      "id": "b3-title",
+      "rank": 2,
+      "camera": "punch",
+      "voice": "Причина номер два: подбородок работает как рычаг.",
+      "text": { "lines": [
+        { "text": "ПРИЧИНА №2", "size": "xl", "color": "orange" },
+        { "text": "подбородок — рычаг", "size": "m" }
+      ]}
+    },
+    {
+      "id": "b3-lever",
+      "tag": "РЫЧАГ",
+      "rank": 2,
+      "voice": "Смотри. Удар точно в центр головы просто толкает её назад, поворота почти нет. А удар ниже центра даёт плечо — и голова начинает вращаться.",
+      "element": { "type": "lever", "caption": "момент силы = сила × плечо" }
+    },
+    {
+      "id": "b3-chin",
+      "tag": "РЫЧАГ",
+      "rank": 2,
+      "voice": "Подбородок выступает вперёд и сидит ниже центра головы. Попадание туда даёт длинное плечо.",
+      "text": { "lines": [
+        { "text": "подбородок", "size": "l", "color": "orange" },
+        { "text": "ниже центра головы → длинное плечо", "size": "m" }
+      ]}
+    },
+    {
+      "id": "b3-hook",
+      "tag": "РЫЧАГ",
+      "rank": 2,
+      "voice": "Боковой удар идёт по дуге сбоку, и голова вращается вокруг шеи, как вокруг оси. В обзоре исследований две тысячи двадцать второго года самое сильное вращение головы дал именно боковой.",
+      "characters": [{
+        "src": [
+          "explainer/nauka-boya/tetsu/hook_1.png",
+          "explainer/nauka-boya/tetsu/hook_2.png",
+          "explainer/nauka-boya/tetsu/hook_3.png"
+        ],
+        "pos": "left",
+        "poseFps": 2,
+        "height": 800
+      }],
+      "text": { "lines": [
+        { "text": "БОКОВОЙ", "size": "xl", "color": "orange" },
+        { "text": "больше всего вращения головы", "size": "m" },
+        { "text": "обзор 2022 года, бокс", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b3-guard",
+      "tag": "РЫЧАГ",
+      "rank": 2,
+      "voice": "Поэтому боксёры прячут подбородок за плечом. Но об этом — в конце.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/guard.png", "pos": "right", "height": 800 }],
+      "text": { "lines": [
+        { "text": "подбородок вниз", "size": "l" },
+        { "text": "разберём в конце", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b3-loop",
+      "rank": 2,
+      "camera": "shake",
+      "voice": "Но есть удар опаснее этого. Тот, которого ты не видишь.",
+      "sfx": [{ "name": "riser", "at": 0.2, "volume": 0.3 }],
+      "text": { "lines": [
+        { "text": "опаснее всего —", "size": "m", "color": "grey" },
+        { "text": "удар, которого не видишь", "size": "l", "color": "red" }
+      ]}
+    },
+
+    {
+      "id": "cta",
+      "camera": "still",
+      "voice": "Если пока полезно — подпишись. Следующий разбор: сколько килограммов в ударе. А причина номер один — самая неожиданная.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/pointing.png", "pos": "left", "height": 780 }],
+      "text": { "lines": [
+        { "text": "следующий разбор:", "size": "s", "color": "grey" },
+        { "text": "сколько кг в ударе", "size": "l" }
+      ]},
+      "element": { "type": "button", "label": "ПОДПИСАТЬСЯ", "variant": "subscribe" }
+    },
+
+    {
+      "id": "b4-title",
+      "rank": 1,
+      "camera": "punch",
+      "voice": "Причина номер один: удар, которого ты не видишь.",
+      "text": { "lines": [
+        { "text": "ПРИЧИНА №1", "size": "xl", "color": "orange" },
+        { "text": "удар, которого не видишь", "size": "m" }
+      ]}
+    },
+    {
+      "id": "b4-gromila",
+      "rank": 1,
+      "voice": "Вспомни бой. Громила замахивается, опускает руки и не следит за левой рукой Тэцу. Он не видит удар.",
+      "characters": [
+        { "src": "explainer/nauka-boya/tetsu/hook_1.png", "pos": "left", "height": 760 },
+        { "src": "explainer/nauka-boya/gromila/swing.png", "pos": "right", "height": 980 }
+      ],
+      "text": { "lines": [
+        { "text": "не видит", "size": "l", "color": "red" },
+        { "text": "= не ждёт", "size": "m", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b4-eckner",
+      "tag": "ШЕЯ",
+      "rank": 1,
+      "voice": "В две тысячи четырнадцатом Эккнер с коллегами измерили сорок шесть спортсменов контактных видов спорта.",
+      "characters": [{ "src": "explainer/nauka-boya/doc/clipboard.png", "pos": "right" }],
+      "text": { "lines": [
+        { "text": "46 спортсменов", "size": "xl", "color": "orange" },
+        { "text": "Eckner et al. · AJSM 2014", "size": "s", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b4-neck",
+      "tag": "ШЕЯ",
+      "rank": 1,
+      "voice": "Чем сильнее шея и чем раньше напрягаешь её перед ударом, тем меньше скорость, которую набирает голова.",
+      "element": { "type": "levels", "items": [
+        { "label": "СИЛЬНАЯ ШЕЯ", "text": "голова разгоняется меньше", "color": "green" },
+        { "label": "НАПРЯГ ЗАРАНЕЕ", "text": "голова разгоняется меньше", "color": "green" },
+        { "label": "НЕ ЖДАЛ УДАРА", "text": "голова улетает свободно", "color": "red" }
+      ]}
+    },
+    {
+      "id": "b4-mass",
+      "tag": "ШЕЯ",
+      "rank": 1,
+      "voice": "Тяжёлое тело само голову не защищает. Вращение идёт на шее, и важны её сила и готовность, а не вес на весах.",
+      "text": { "lines": [
+        { "text": "шея", "size": "xl", "color": "green" },
+        { "text": "а не вес на весах", "size": "m", "color": "grey" }
+      ]}
+    },
+    {
+      "id": "b4-answer",
+      "rank": 1,
+      "camera": "punch",
+      "voice": "Вот ответ, почему упал именно Громила. Он не ждал удара, шея была расслаблена, и голова повернулась по полной.",
+      "impact": { "at": 0.2, "x": 1500, "y": 300 },
+      "characters": [{ "src": "explainer/nauka-boya/gromila/stagger_1.png", "pos": "right", "height": 960 }],
+      "text": { "lines": [
+        { "text": "не ждал удара", "size": "l", "color": "red" },
+        { "text": "шея расслаблена", "size": "m" }
+      ]}
+    },
+    {
+      "id": "b4-honest",
+      "tag": "ЧЕСТНО",
+      "rank": 1,
+      "voice": "Честно: это лабораторные измерения. Снижает ли сильная шея реальные сотрясения, пока не доказано.",
+      "element": { "type": "callout", "text": "лаборатория ≠ реальный бой", "note": "что сильная шея реально снижает сотрясения — не доказано", "color": "orange" }
+    },
+
+    {
+      "id": "b5-title",
+      "tag": "КАК ДЕРЖАТЬ УДАР",
+      "voice": "Что с этим делают бойцы. Голову нельзя закалить, её можно только защищать. Нокаут — это травма мозга.",
+      "characters": [{ "src": "explainer/nauka-boya/doc/explain.png", "pos": "left" }],
+      "text": { "lines": [
+        { "text": "голову не закалить", "size": "l" },
+        { "text": "её ЗАЩИЩАЮТ", "size": "xl", "color": "green" }
+      ]}
+    },
+    {
+      "id": "b5-stance",
+      "tag": "КАК ДЕРЖАТЬ УДАР",
+      "voice": "Подбородок прижат к груди, плечо подтянуто к щеке, руки у лица.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/guard.png", "pos": "left", "height": 820 }],
+      "element": { "type": "card", "title": "СТОЙКА", "body": "подбородок к груди\nплечо к щеке\nруки у лица", "page": [1, 3] }
+    },
+    {
+      "id": "b5-see",
+      "tag": "КАК ДЕРЖАТЬ УДАР",
+      "voice": "Смотри на соперника. Удар, который ты видишь, шея встречает готовой.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/dodge.png", "pos": "left", "height": 820 }],
+      "element": { "type": "card", "title": "ГЛАЗА", "body": "видишь удар —\nшея успевает напрячься", "page": [2, 3] }
+    },
+    {
+      "id": "b5-neck",
+      "tag": "КАК ДЕРЖАТЬ УДАР",
+      "voice": "Тренируй шею. Это данные лаборатории, а не обещание, что ты станешь непробиваемым.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/explain.png", "pos": "left", "height": 820 }],
+      "element": { "type": "card", "title": "ШЕЯ", "body": "силовая работа\nпод контролем тренера", "note": "не обещание неуязвимости", "page": [3, 3] }
+    },
+    {
+      "id": "b5-stop",
+      "tag": "ВАЖНО",
+      "voice": "И главное: после тяжёлого удара по голове — стоп. Сотрясение — это травма. Нужен врач.",
+      "element": { "type": "callout", "text": "после удара по голове — СТОП", "note": "сотрясение — травма, нужен врач", "color": "red" }
+    },
+
+    {
+      "id": "final-replay",
+      "camera": "punch",
+      "voice": "Теперь вернёмся к Громиле. Боковой пришёл мимо центра головы. Голова повернулась, мозг отстал, слои сдвинулись.",
+      "characters": [{ "src": "explainer/nauka-boya/gromila/stagger_1.png", "pos": "left", "height": 940 }],
+      "element": { "type": "brain", "mode": "rotate" }
+    },
+    {
+      "id": "final-recap",
+      "voice": "Он не ждал удара, и шея не помогла. Три причины, одно падение.",
+      "characters": [{ "src": "explainer/nauka-boya/gromila/stagger_2.png", "pos": "left", "height": 820 }],
+      "element": { "type": "levels", "items": [
+        { "label": "№3", "text": "мозг отстаёт от черепа", "color": "orange" },
+        { "label": "№2", "text": "подбородок — рычаг", "color": "orange" },
+        { "label": "№1", "text": "удар, которого не видишь", "color": "orange" }
+      ]}
+    },
+    {
+      "id": "final-teaser",
+      "voice": "В следующем разборе: сколько килограммов в ударе у человека, боксёра и рекордсмена.",
+      "characters": [{ "src": "explainer/nauka-boya/tetsu/fist_closeup.png", "pos": "right", "height": 900 }],
+      "text": { "lines": [
+        { "text": "СЛЕДУЮЩИЙ РАЗБОР", "size": "m", "color": "grey" },
+        { "text": "сколько кг в ударе?", "size": "xl", "color": "orange" }
+      ]}
+    }
+  ]
+}
