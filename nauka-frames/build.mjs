@@ -46,6 +46,7 @@ const html = `<!doctype html>
       <audio id="master" class="clip" data-start="0" data-duration="${total}" data-track-index="2" data-volume="1" src="assets/master.wav"></audio>
     </div>
     <script src="engine/data.js"></script>
+    <script src="engine/paper.js"></script>
     <script src="engine/frames.js"></script>
     <script>
       window.FRAMES_CTX = document.getElementById("stage").getContext("2d");

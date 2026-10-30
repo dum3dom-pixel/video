@@ -49,7 +49,28 @@ def tag(im, label):
 T, G, D = front_view("tetsu"), front_view("gromila"), front_view("doc")
 GH, TH, DH = 760, 560, 600
 
-def shot(name, base, label):
+RAMP = np.array([(42, 37, 34), (70, 98, 122), (111, 143, 168), (201, 160, 107), (243, 232, 207)], dtype=np.float32)
+CUTS = (34, 92, 150, 205)
+
+def paper(im, seed=3):
+    """stand-in paper look: posterize to five paper tones, keep red, add fibre grain and a torn white margin"""
+    a = np.array(im.filter(ImageFilter.GaussianBlur(1.6)), dtype=np.float32)
+    L = np.clip((a.mean(2) / 255) ** 0.72 * 255 * 1.35, 0, 255)
+    idx = np.digitize(L, CUTS)
+    out = RAMP[idx]
+    red = (a[..., 0] > a[..., 1] * 1.8) & (a[..., 0] > 70)
+    out[red] = (217, 47, 43)
+    rng = np.random.default_rng(seed)
+    out += rng.normal(0, 7, L.shape)[..., None] + (rng.random(L.shape) < 0.015)[..., None] * 40
+    res = Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
+    m = Image.new("L", (W, H), 0); d = ImageDraw.Draw(m)
+    pts = [(x, 6 + rng.integers(0, 6)) for x in range(0, W + 1, 24)] + [(W - 6 - rng.integers(0, 6), y) for y in range(0, H + 1, 24)] + [(x, H - 6 - rng.integers(0, 6)) for x in range(W, -1, -24)] + [(6 + rng.integers(0, 6), y) for y in range(H, -1, -24)]
+    d.polygon(pts, fill=255)
+    rim = Image.new("RGB", (W, H), (246, 241, 228)); rim.paste(res, (0, 0), m)
+    return rim
+
+def shot(name, base, label, raw=False):
+    if not raw: base = paper(base)
     tag(base, label).save(OUT / name); print(name)
 
 b = bg("bg1_hook.png"); put(b, G, 1080, 960, GH, flip=True); put(b, T, 620, 960, TH); shot("s1a_hook_wide.png", b, "s1a")
@@ -63,4 +84,4 @@ b = bg("bg6_three.png"); put(b, T, 520, 940, TH - 60); put(b, G, 930, 980, GH, s
 b = Image.new("RGB", (W, H), (231, 214, 178)); d = ImageDraw.Draw(b)
 d.ellipse([430, 200, 1100, 760], fill=(236, 150, 160), outline=(30, 20, 20), width=14)
 for k in range(6): d.arc([500 + k * 18, 260 + k * 20, 1040 - k * 18, 700 - k * 20], 200, 340, fill=(160, 70, 90), width=10)
-shot("s6b_brain.png", b, "s6b мозг")
+shot("s6b_brain.png", b, "s6b мозг", raw=True)
