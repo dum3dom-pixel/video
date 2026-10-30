@@ -4,8 +4,25 @@
     {
       "name": "remotion-studio",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
-      "runtimeArgs": ["--prefix", "my-video", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "my-video",
+        "run",
+        "dev"
+      ],
       "port": 3000
+    },
+    {
+      "name": "paper-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--directory",
+        "nauka-paper"
+      ],
+      "port": 8765
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+ "cx": 334.0,
+ "top": 90,
+ "feet": 897,
+ "parts": {
+  "whole": {
+   "file": "assets/paper/doc/whole.png",
+   "x": 149,
+   "y": 72,
+   "w": 371,
+   "h": 844,
+   "pivot": [
+    335,
+    890
+   ]
+  }
+ }
+}

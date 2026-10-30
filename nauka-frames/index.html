@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <style>
+      @font-face { font-family: "ImpactP"; font-weight: 400; src: url("assets/fonts/impact.ttf") format("truetype"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #1a1612; }
+      #stage { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22" data-width="1920" data-height="1080" data-no-timeline>
+      <canvas id="stage" width="1920" height="1080" data-layout-allow-overflow></canvas>
+      <audio id="master" class="clip" data-start="0" data-duration="22" data-track-index="2" data-volume="1" src="assets/master.wav"></audio>
+    </div>
+    <script src="engine/data.js"></script>
+    <script src="engine/frames.js"></script>
+    <script>
+      window.FRAMES_CTX = document.getElementById("stage").getContext("2d");
+      const ready = Promise.all([document.fonts.load('60px "ImpactP"'), FRAMES.load()]).then(() => FRAMES.render(0));
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady["main"] = ready;
+      window.addEventListener("hf-seek", (e) => {
+        try { FRAMES.render(e.detail.time); }
+        catch (err) { const c = window.FRAMES_CTX; c.setTransform(1, 0, 0, 1, 0, 0); c.fillStyle = "#900"; c.fillRect(0, 0, 1920, 120); c.fillStyle = "#fff"; c.font = "28px monospace"; c.fillText(String(err.stack || err).slice(0, 150), 20, 70); console.error(err); }
+      });
+    </script>
+  </body>
+</html>

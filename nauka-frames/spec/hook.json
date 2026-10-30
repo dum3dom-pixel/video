@@ -1,0 +1,268 @@
+{
+ "id": "nauka-frames-hook",
+ "voice": "ru-RU-SvetlanaNeural",
+ "rate": "+30%",
+ "bpm": 90,
+ "scenes": [
+  {
+   "id": "hook",
+   "beats": 4,
+   "voice": "Здоровяка вырубает не сила удара.",
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0,
+     "vol": 0.3
+    },
+    {
+     "name": "impact",
+     "word": "вырубает",
+     "vol": 0.9
+    },
+    {
+     "name": "crumple",
+     "word": "вырубает",
+     "off": 0.02,
+     "vol": 0.35
+    },
+    {
+     "name": "slap",
+     "word": "не",
+     "vol": 0.6
+    }
+   ]
+  },
+  {
+   "id": "size",
+   "beats": 5,
+   "voice": "Два метра, тяжеловес — против парня на голову ниже.",
+   "sfx": [
+    {
+     "name": "swipe",
+     "at": -0.16,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "метра",
+     "vol": 0.35
+    },
+    {
+     "name": "slap",
+     "word": "тяжеловес",
+     "vol": 0.55
+    },
+    {
+     "name": "snip",
+     "word": "против",
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "парня",
+     "vol": 0.35
+    },
+    {
+     "name": "snip",
+     "word": "голову",
+     "off": 0.05,
+     "vol": 0.4
+    }
+   ]
+  },
+  {
+   "id": "punch",
+   "beats": 5,
+   "voice": "Один боковой в подбородок — и он оседает.",
+   "sfx": [
+    {
+     "name": "swipe",
+     "at": -0.16,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "at": 0.1,
+     "vol": 0.3
+    },
+    {
+     "name": "pop",
+     "word": "боковой",
+     "vol": 0.3
+    },
+    {
+     "name": "whoosh",
+     "at": 0.55,
+     "vol": 0.35
+    },
+    {
+     "name": "impact",
+     "word": "подбородок",
+     "off": 0.1,
+     "vol": 0.95
+    },
+    {
+     "name": "crumple",
+     "word": "подбородок",
+     "off": 0.1,
+     "vol": 0.35
+    },
+    {
+     "name": "slap",
+     "word": "оседает",
+     "vol": 0.7
+    }
+   ]
+  },
+  {
+   "id": "myth",
+   "beats": 6,
+   "voice": "Сильнее бьёшь — быстрее вырубишь? Нет.",
+   "sfx": [
+    {
+     "name": "swipe",
+     "at": -0.16,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "сильнее",
+     "vol": 0.3
+    },
+    {
+     "name": "pop",
+     "word": "быстрее",
+     "vol": 0.3
+    },
+    {
+     "name": "click",
+     "word": "вырубишь",
+     "vol": 0.35
+    },
+    {
+     "name": "slap",
+     "word": "нет",
+     "off": 0.1,
+     "vol": 0.7
+    },
+    {
+     "name": "impact",
+     "word": "нет",
+     "off": 0.1,
+     "vol": 0.7
+    },
+    {
+     "name": "crumple",
+     "word": "нет",
+     "off": 0.1,
+     "vol": 0.3
+    }
+   ]
+  },
+  {
+   "id": "doc",
+   "beats": 6,
+   "voice": "Эксперимент семьдесят второго года показал: решает другое.",
+   "sfx": [
+    {
+     "name": "swipe",
+     "at": -0.16,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "эксперимент",
+     "off": 0.2,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "семьдесят",
+     "vol": 0.4
+    },
+    {
+     "name": "slap",
+     "word": "решает",
+     "vol": 0.5
+    },
+    {
+     "name": "pop",
+     "word": "другое",
+     "vol": 0.55
+    },
+    {
+     "name": "click",
+     "at": 0.55,
+     "vol": 0.35
+    },
+    {
+     "name": "click",
+     "at": 0.75,
+     "vol": 0.35
+    },
+    {
+     "name": "click",
+     "at": 1.0,
+     "vol": 0.35
+    },
+    {
+     "name": "click",
+     "at": 1.3,
+     "vol": 0.35
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "beats": 7,
+   "voice": "Три причины. И ответ, почему упал именно большой.",
+   "sfx": [
+    {
+     "name": "swipe",
+     "at": -0.16,
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "word": "три",
+     "vol": 0.4
+    },
+    {
+     "name": "pop",
+     "at": 0.5,
+     "vol": 0.3
+    },
+    {
+     "name": "pop",
+     "at": 0.9,
+     "vol": 0.3
+    },
+    {
+     "name": "pop",
+     "at": 1.3,
+     "vol": 0.3
+    },
+    {
+     "name": "riser",
+     "word": "почему",
+     "vol": 0.35
+    },
+    {
+     "name": "slap",
+     "word": "большой",
+     "vol": 0.7
+    },
+    {
+     "name": "impact",
+     "word": "большой",
+     "vol": 0.8
+    },
+    {
+     "name": "crumple",
+     "word": "большой",
+     "vol": 0.3
+    }
+   ]
+  }
+ ]
+}

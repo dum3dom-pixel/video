@@ -1,0 +1,128 @@
+{
+ "cx": 348.0,
+ "top": 113,
+ "feet": 876,
+ "parts": {
+  "head": {
+   "file": "assets/paper/tetsu/head.png",
+   "x": 276,
+   "y": 95,
+   "w": 148,
+   "h": 196,
+   "pivot": [
+    350,
+    258
+   ]
+  },
+  "torso": {
+   "file": "assets/paper/tetsu/torso.png",
+   "x": 230,
+   "y": 237,
+   "w": 241,
+   "h": 224,
+   "pivot": [
+    350,
+    440
+   ]
+  },
+  "pelvis": {
+   "file": "assets/paper/tetsu/pelvis.png",
+   "x": 224,
+   "y": 412,
+   "w": 254,
+   "h": 187,
+   "pivot": [
+    350,
+    500
+   ]
+  },
+  "upperArmL": {
+   "file": "assets/paper/tetsu/upperArmL.png",
+   "x": 192,
+   "y": 236,
+   "w": 123,
+   "h": 221,
+   "pivot": [
+    256,
+    280
+   ]
+  },
+  "foreArmL": {
+   "file": "assets/paper/tetsu/foreArmL.png",
+   "x": 182,
+   "y": 352,
+   "w": 97,
+   "h": 234,
+   "pivot": [
+    233,
+    404
+   ]
+  },
+  "upperArmR": {
+   "file": "assets/paper/tetsu/upperArmR.png",
+   "x": 386,
+   "y": 237,
+   "w": 118,
+   "h": 220,
+   "pivot": [
+    444,
+    280
+   ]
+  },
+  "foreArmR": {
+   "file": "assets/paper/tetsu/foreArmR.png",
+   "x": 419,
+   "y": 352,
+   "w": 96,
+   "h": 234,
+   "pivot": [
+    467,
+    404
+   ]
+  },
+  "thighL": {
+   "file": "assets/paper/tetsu/thighL.png",
+   "x": 222,
+   "y": 530,
+   "w": 148,
+   "h": 233,
+   "pivot": [
+    305,
+    590
+   ]
+  },
+  "shinL": {
+   "file": "assets/paper/tetsu/shinL.png",
+   "x": 209,
+   "y": 642,
+   "w": 121,
+   "h": 253,
+   "pivot": [
+    294,
+    702
+   ]
+  },
+  "thighR": {
+   "file": "assets/paper/tetsu/thighR.png",
+   "x": 331,
+   "y": 530,
+   "w": 148,
+   "h": 233,
+   "pivot": [
+    395,
+    590
+   ]
+  },
+  "shinR": {
+   "file": "assets/paper/tetsu/shinR.png",
+   "x": 371,
+   "y": 642,
+   "w": 119,
+   "h": 253,
+   "pivot": [
+    406,
+    702
+   ]
+  }
+ }
+}

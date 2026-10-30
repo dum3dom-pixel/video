@@ -1,0 +1,4 @@
+out/_*
+out/_dec/
+.hyperframes/
+out/*.mp4
