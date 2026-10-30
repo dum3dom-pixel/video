@@ -1,0 +1,185 @@
+{
+ "total": 21.444,
+ "items": [
+  {
+   "id": "v-hook",
+   "src": "assets/voice/hook.mp3",
+   "start": 0,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-hook-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 0,
+   "vol": 0.4
+  },
+  {
+   "id": "fx-impact-hook-1",
+   "src": "assets/sfx/impact.wav",
+   "start": 0.638,
+   "vol": 0.85
+  },
+  {
+   "id": "fx-pop-hook-2",
+   "src": "assets/sfx/pop.wav",
+   "start": 1.042,
+   "vol": 0.35
+  },
+  {
+   "id": "v-size",
+   "src": "assets/voice/size.mp3",
+   "start": 2.718,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-size-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 2.718,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-size-1",
+   "src": "assets/sfx/pop.wav",
+   "start": 3.097,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-size-2",
+   "src": "assets/sfx/pop.wav",
+   "start": 3.491,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-size-3",
+   "src": "assets/sfx/pop.wav",
+   "start": 4.828,
+   "vol": 0.35
+  },
+  {
+   "id": "v-punch",
+   "src": "assets/voice/punch.mp3",
+   "start": 6.204,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-punch-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 6.204,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-punch-1",
+   "src": "assets/sfx/pop.wav",
+   "start": 6.404,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-impact-punch-2",
+   "src": "assets/sfx/impact.wav",
+   "start": 7.087,
+   "vol": 0.9
+  },
+  {
+   "id": "v-myth",
+   "src": "assets/voice/myth.mp3",
+   "start": 9.306,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-myth-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 9.306,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-myth-1",
+   "src": "assets/sfx/pop.wav",
+   "start": 9.406,
+   "vol": 0.3
+  },
+  {
+   "id": "fx-pop-myth-2",
+   "src": "assets/sfx/pop.wav",
+   "start": 10.329,
+   "vol": 0.3
+  },
+  {
+   "id": "fx-impact-myth-3",
+   "src": "assets/sfx/impact.wav",
+   "start": 11.808,
+   "vol": 0.9
+  },
+  {
+   "id": "v-doc",
+   "src": "assets/voice/doc.mp3",
+   "start": 13.152,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-doc-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 13.152,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-doc-1",
+   "src": "assets/sfx/pop.wav",
+   "start": 13.252,
+   "vol": 0.4
+  },
+  {
+   "id": "fx-pop-doc-2",
+   "src": "assets/sfx/pop.wav",
+   "start": 13.8,
+   "vol": 0.4
+  },
+  {
+   "id": "fx-pop-doc-3",
+   "src": "assets/sfx/pop.wav",
+   "start": 15.627,
+   "vol": 0.5
+  },
+  {
+   "id": "v-three",
+   "src": "assets/voice/three.mp3",
+   "start": 17.022,
+   "vol": 1
+  },
+  {
+   "id": "fx-whoosh-three-0",
+   "src": "assets/sfx/whoosh.wav",
+   "start": 17.022,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-three-1",
+   "src": "assets/sfx/pop.wav",
+   "start": 17.122,
+   "vol": 0.4
+  },
+  {
+   "id": "fx-riser-three-2",
+   "src": "assets/sfx/riser.wav",
+   "start": 19.159,
+   "vol": 0.35
+  },
+  {
+   "id": "fx-pop-three-3",
+   "src": "assets/sfx/pop.wav",
+   "start": 20.091,
+   "vol": 0.5
+  },
+  {
+   "id": "music-0",
+   "src": "assets/sfx/beat.wav",
+   "start": 0,
+   "vol": 0.1
+  },
+  {
+   "id": "music-1",
+   "src": "assets/sfx/beat.wav",
+   "start": 21.333,
+   "vol": 0.1
+  }
+ ]
+}

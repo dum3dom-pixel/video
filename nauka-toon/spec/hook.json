@@ -1,0 +1,65 @@
+{
+  "id": "nauka-toon-hook",
+  "voice": "ru-RU-SvetlanaNeural",
+  "rate": "+30%",
+  "scenes": [
+    {
+      "id": "hook",
+      "voice": "Здоровяка вырубает не сила удара.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.4 },
+        { "name": "impact", "word": "вырубает", "vol": 0.85 },
+        { "name": "pop", "word": "не", "vol": 0.35 }
+      ]
+    },
+    {
+      "id": "size",
+      "voice": "Два метра, тяжеловес — против парня на голову ниже.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.35 },
+        { "name": "pop", "word": "метра", "vol": 0.35 },
+        { "name": "pop", "word": "тяжеловес", "vol": 0.35 },
+        { "name": "pop", "word": "голову", "vol": 0.35 }
+      ]
+    },
+    {
+      "id": "punch",
+      "voice": "Один боковой в подбородок — и он оседает.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.35 },
+        { "name": "pop", "at": 0.2, "vol": 0.35 },
+        { "name": "impact", "word": "подбородок", "vol": 0.9 }
+      ]
+    },
+    {
+      "id": "myth",
+      "voice": "Сильнее бьёшь — быстрее вырубишь? Нет.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.35 },
+        { "name": "pop", "word": "сильнее", "vol": 0.3 },
+        { "name": "pop", "word": "быстрее", "vol": 0.3 },
+        { "name": "impact", "word": "нет", "vol": 0.9 }
+      ]
+    },
+    {
+      "id": "doc",
+      "voice": "Эксперимент семьдесят второго года показал: решает другое.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.35 },
+        { "name": "pop", "word": "эксперимент", "vol": 0.4 },
+        { "name": "pop", "word": "семьдесят", "vol": 0.4 },
+        { "name": "pop", "word": "другое", "vol": 0.5 }
+      ]
+    },
+    {
+      "id": "three",
+      "voice": "Три причины. И ответ, почему упал именно большой.",
+      "sfx": [
+        { "name": "whoosh", "at": 0, "vol": 0.35 },
+        { "name": "pop", "word": "три", "vol": 0.4 },
+        { "name": "riser", "word": "почему", "vol": 0.35 },
+        { "name": "pop", "word": "большой", "vol": 0.5 }
+      ]
+    }
+  ]
+}

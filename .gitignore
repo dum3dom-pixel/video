@@ -51,3 +51,5 @@ Thumbs.db
 
 # Служебные артефакты HyperFrames (снимки, проверки) генерируются заново
 nauka-pencil/.hyperframes/artifacts/
+nauka-toon/.hyperframes/artifacts/
+nauka-toon/.hyperframes/video-state.json
