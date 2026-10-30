@@ -183,7 +183,7 @@
     shot(c, "s4_myth", addCam({ z, fx, fy }, wob(tl, "s4"), shake(tl, NO, 0.45, 30)), { filter: g ? `grayscale(${g * 0.85}) contrast(${1 + 0.1 * g})` : "" });
     seq(c, tl, [{ t: 0.1, s: "СИЛЬНЕЕ БЬЁШЬ", fill: WH }], 80, 100);
     seq(c, tl, [{ t: 1.023, s: "БЫСТРЕЕ ВЫРУБИШЬ?", fill: Y }], 210, 100);
-    arrow(c, 250, 760, 250, 520, eo3((tl - 0.571) / 0.4), { fill: INK_, w: 46 });
+    arrow(c, 1810, 800, 1810, 560, eo3((tl - 0.571) / 0.4), { fill: INK_, w: 46 });
     if (tl >= NO) {
       const sp = memo("strike", () => sheet(1300, 26, PAL.red, 9, { amp: 3, inset: 3 }));
       c.save(); c.beginPath(); c.rect(0, 0, 310 + 1300 * eo3((tl - NO - 0.25) / 0.2), H); c.clip(); put(c, sp, 960, 215, { rot: -0.01, depth: 1.2 }); c.restore();
@@ -256,7 +256,8 @@
       cardPath(c, j); SC[ORDER[j]](c, Math.max(0, qt(t - nx.start, ORDER[j]))); c.restore();
       cur = j;
     }
-    overlays(c, t, GRAIN_A[ORDER[cur]]);
+    /* grain steps on the same grid as the scene it sits on, otherwise two step grids double the change rate */
+    overlays(c, inCard ? t : S[i].start + qt(t - S[i].start, ORDER[i]), GRAIN_A[ORDER[cur]]);
     subtitles(c, S[i], Math.max(0, t - S[i].start));
   }
 
