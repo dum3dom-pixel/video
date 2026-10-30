@@ -1,0 +1,50 @@
+# Зависимости и сборка
+node_modules/
+dist/
+build/
+out/
+.cache/
+.remotion/
+*.tsbuildinfo
+
+# Рендеры и тяжёлые видео (src/ и public/ с исходниками — в репе)
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+
+# Секреты
+.env
+.env.*
+!.env.example
+ключ.txt
+*.key
+
+# Сырые скачанные субтитры/транскрипты чужих видео
+*.vtt
+*.srt
+clean_*.txt
+
+# Скиллы ставятся по skills-lock.json, локальные настройки — личные
+.claude/settings.local.json
+my-video/.claude/skills/
+.codex/
+.agents/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Временные файлы и мусор ОС/редакторов
+tmp/
+temp/
+trash/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

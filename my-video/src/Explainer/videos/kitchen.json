@@ -1,0 +1,65 @@
+{
+  "id": "kitchen",
+  "scenes": [
+    {
+      "id": "steps",
+      "duration": 3,
+      "rank": 3,
+      "tag": "Steps",
+      "characters": [{ "pos": "left", "src": ["explainer/kitchen/img/test-1.png", "explainer/kitchen/img/test-2.png"], "poseFps": 3 }],
+      "text": { "lines": [{ "text": "Лестница роста", "color": "white", "size": "l" }] },
+      "element": {
+        "type": "steps",
+        "items": [
+          { "label": "Туториалы" },
+          { "label": "Свои задачи" },
+          { "label": "Разбор ошибок" },
+          { "label": "Проект" },
+          { "label": "Стоп", "color": "red" }
+        ]
+      }
+    },
+    {
+      "id": "comments",
+      "duration": 3,
+      "rank": 2,
+      "tag": "Comments",
+      "text": { "lines": [{ "text": "Что пишут в комментариях", "color": "white", "size": "m" }] },
+      "element": {
+        "type": "comments",
+        "items": [
+          { "author": "@newbie", "text": "Третий месяц смотрю курс, а сам ничего не могу." },
+          { "author": "@dev_anna", "text": "Закрой видео и напиши хоть что-нибудь сам." }
+        ]
+      }
+    },
+    {
+      "id": "callout",
+      "duration": 3,
+      "rank": 1,
+      "characters": [{ "pos": "right", "height": 700 }],
+      "text": { "lines": [{ "text": "Ошибка номер один", "color": "red", "size": "l" }] },
+      "element": { "type": "callout", "text": "Не копировать, а понимать", "note": "это важно", "color": "red" }
+    },
+    {
+      "id": "levels",
+      "duration": 3,
+      "rank": 4,
+      "tag": "Levels",
+      "element": {
+        "type": "levels",
+        "items": [
+          { "label": "Уровень 1", "text": "Читает документацию", "color": "grey" },
+          { "label": "Уровень 2", "text": "Решает задачи сам", "color": "orange" },
+          { "label": "Уровень 3", "text": "Объясняет другим", "color": "green" }
+        ]
+      }
+    },
+    {
+      "id": "bgchar",
+      "duration": 3,
+      "characters": [{ "pos": "bg" }],
+      "text": { "lines": [{ "text": "ФОН", "color": "white", "size": "xl" }, { "text": "персонаж за текстом", "color": "grey", "size": "m" }] }
+    }
+  ]
+}

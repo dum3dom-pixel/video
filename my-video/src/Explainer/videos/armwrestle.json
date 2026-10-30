@@ -1,0 +1,52 @@
+{
+  "id": "armwrestle",
+  "voice": "ru-RU-DmitryNeural",
+  "rate": "+20%",
+  "sfx": true,
+  "music": { "src": "sfx/beat.wav", "volume": 0.15, "duck": 0.35 },
+  "subtitles": true,
+  "character": "young man, early 20s, short buzzed dark hair, determined eyes, broad shoulders, thick veiny forearms, sleeveless black tank top, bright orange wrist wraps on both wrists, dark training pants",
+  "poses": {
+    "ready": "elbow on an arm-wrestling table, forearm vertical, hand open ready to grip, leaning forward, intense stare",
+    "pin": "pinning the opponent's hand to the table, shoulder over the arm, gritted teeth",
+    "wrist": "squeezing a thick wrist roller with both hands, forearms flexed"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "duration": 2.9,
+      "camera": "punch",
+      "voice": "В армрестлинге побеждает не бицепс.",
+      "characters": [{ "pos": "left" }],
+      "text": { "lines": [
+        { "text": "побеждает", "size": "m", "color": "grey" },
+        { "text": "НЕ БИЦЕПС", "size": "xl", "color": "red" }
+      ]}
+    },
+    {
+      "id": "versus",
+      "duration": 3.5,
+      "voice": "Побеждает тот, кто забрал кисть соперника.",
+      "text": { "pos": "top", "lines": [{ "text": "кто сильнее за столом?", "size": "l" }] },
+      "element": {
+        "type": "versus",
+        "left": { "label": "БИЦЕПС" },
+        "right": { "label": "КИСТЬ", "color": "orange" },
+        "winner": "right",
+        "note": "кисть ведёт — рука идёт за ней"
+      }
+    },
+    {
+      "id": "cta",
+      "duration": 3.6,
+      "camera": "shake",
+      "voice": "Качай кисть. А не только бицепс.",
+      "characters": [{ "pos": "right" }],
+      "text": { "lines": [
+        { "text": "качай КИСТЬ", "size": "xl", "color": "green" },
+        { "text": "а не только бицепс", "size": "s", "color": "grey" }
+      ]},
+      "element": { "type": "button", "label": "ПОДПИСАТЬСЯ", "variant": "subscribe" }
+    }
+  ]
+}

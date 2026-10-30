@@ -1,0 +1,223 @@
+{
+  "id": "demo",
+  "voice": "ru-RU-DmitryNeural",
+  "rate": "+25%",
+  "character": "young man, early 20s, messy dark hair, glasses, slim, orange hoodie, dark jeans, sneakers",
+  "poses": {
+    "standing": "standing relaxed, hands in hoodie pockets",
+    "laptop": "sitting cross-legged, typing on a laptop",
+    "tired": "slumped, rubbing his eyes, tired",
+    "win": "fist raised, confident smile"
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "voice": "Два джуна. Один курс.",
+      "rank": 5,
+      "tag": "Введение",
+      "characters": [
+        {
+          "pos": "left"
+        },
+        {
+          "pos": "right",
+          "flip": true
+        }
+      ],
+      "text": {
+        "lines": [
+          {
+            "text": "(тот же курс)",
+            "color": "white",
+            "size": "s"
+          },
+          {
+            "text": "ГОД 1",
+            "color": "orange",
+            "size": "l"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dots",
+      "voice": "Растут лишь единицы. Почему?",
+      "rank": 5,
+      "tag": "Вопрос",
+      "text": {
+        "lines": [
+          {
+            "text": "Кто растёт?",
+            "color": "white",
+            "size": "l"
+          }
+        ]
+      },
+      "element": {
+        "type": "dotGrid",
+        "count": 100,
+        "highlight": 15,
+        "color": "orange",
+        "label": "100 новичков (пример)",
+        "caption": "растут единицы"
+      }
+    },
+    {
+      "id": "bars",
+      "voice": "Одни смотрят туториалы. Другие пишут код.",
+      "rank": 4,
+      "tag": "Время",
+      "text": {
+        "lines": [
+          {
+            "text": "Куда уходит время",
+            "color": "white",
+            "size": "l"
+          },
+          {
+            "text": "условные данные, для примера",
+            "color": "grey",
+            "size": "s"
+          }
+        ]
+      },
+      "element": {
+        "type": "bars",
+        "items": [
+          {
+            "label": "Смотрят туториалы",
+            "value": 0.9,
+            "color": "grey",
+            "note": "много"
+          },
+          {
+            "label": "Пишут код сами",
+            "value": 0.45,
+            "color": "orange",
+            "note": "мало"
+          },
+          {
+            "label": "Разбирают ошибки",
+            "value": 0.25,
+            "color": "green",
+            "note": "почти нет"
+          }
+        ]
+      }
+    },
+    {
+      "id": "plateau",
+      "voice": "Без практики прогресс упирается в потолок.",
+      "rank": 4,
+      "tag": "Потолок",
+      "element": {
+        "type": "lineChart",
+        "title": "Только туториалы",
+        "xLabel": "время",
+        "yLabel": "навык",
+        "plateauAt": 0.45,
+        "note": "потолок"
+      }
+    },
+    {
+      "id": "reps",
+      "voice": "Растёт тот, кто повторяет сам.",
+      "rank": 3,
+      "tag": "Повторения",
+      "text": {
+        "lines": [
+          {
+            "text": "Повторения решают",
+            "color": "orange",
+            "size": "l"
+          }
+        ]
+      },
+      "element": {
+        "type": "reps",
+        "total": 10,
+        "filled": 7,
+        "caption": "7 из 10 задач — сам, без подсказок"
+      }
+    },
+    {
+      "id": "week",
+      "voice": "Лучше понемногу, но каждый день.",
+      "rank": 2,
+      "tag": "Ритм",
+      "text": {
+        "lines": [
+          {
+            "text": "Мало, но каждый день",
+            "color": "white",
+            "size": "l"
+          }
+        ]
+      },
+      "element": {
+        "type": "week",
+        "days": [
+          "П",
+          "В",
+          "С",
+          "Ч",
+          "П",
+          "С",
+          "В"
+        ],
+        "checked": [
+          0,
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": "rule",
+      "voice": "Сначала пробуй сам, потом спрашивай.",
+      "rank": 1,
+      "tag": "Правила",
+      "element": {
+        "type": "card",
+        "title": "Правило 1",
+        "body": "Сначала пробуй сам.\nПотом спрашивай.",
+        "note": "минимум 20 минут без подсказок",
+        "page": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "id": "year",
+      "voice": "За год набегает триста шагов.",
+      "rank": 1,
+      "element": {
+        "type": "bigNumber",
+        "value": "365",
+        "caption": "дней практики",
+        "after": "вот и вся разница"
+      }
+    },
+    {
+      "id": "like",
+      "voice": "Понравилось? Поставьте лайк.",
+      "text": {
+        "lines": [
+          {
+            "text": "Было полезно?",
+            "color": "white",
+            "size": "l"
+          }
+        ]
+      },
+      "element": {
+        "type": "button",
+        "label": "ЛАЙК",
+        "variant": "like"
+      }
+    }
+  ]
+}
