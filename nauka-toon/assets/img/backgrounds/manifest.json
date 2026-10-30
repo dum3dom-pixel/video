@@ -1,0 +1,199 @@
+{
+  "purpose": "Six environment-only backgrounds for the opening sequence. Composite actors, text and effects separately.",
+  "timing_note": "These are still background plates, not a rendered or retimed video. The existing six-scene engine timeline totals 21.444 seconds; hold lengths can be extended in editing for a 30-second introduction.",
+  "crop_note": "Crop y=80..943 for 1536x864, then scale to 1920x1080. Do not stretch the full 3:2 source to 16:9.",
+  "assets": [
+    {
+      "file": "bg1_hook.png",
+      "scene_id": "hook",
+      "description": "Wide ring establishing shot",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        300,
+        90,
+        1200,
+        330
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    },
+    {
+      "file": "bg2_size.png",
+      "scene_id": "size",
+      "description": "Front view for the size comparison",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        1229,
+        80,
+        1536,
+        944
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    },
+    {
+      "file": "bg3_punch.png",
+      "scene_id": "punch",
+      "description": "Tight side view for the hook close-up",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        0,
+        80,
+        512,
+        944
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    },
+    {
+      "file": "bg4_myth.png",
+      "scene_id": "myth",
+      "description": "Strength-training gym corner",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        850,
+        80,
+        1536,
+        944
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    },
+    {
+      "file": "bg5_doc.png",
+      "scene_id": "doc",
+      "description": "Vintage sports biomechanics laboratory",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        768,
+        80,
+        1536,
+        944
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    },
+    {
+      "file": "bg6_three.png",
+      "scene_id": "three",
+      "description": "Low ring angle for the final hook beat",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGB",
+      "grayscale": true,
+      "text_zone_px": [
+        300,
+        90,
+        1200,
+        330
+      ],
+      "text_zone_rgb": [
+        0,
+        0,
+        0
+      ],
+      "safe_crop_16_9_px": [
+        0,
+        80,
+        1536,
+        944
+      ],
+      "top_bottom_80px_black": true,
+      "people": false,
+      "baked_in_text": false,
+      "generation": "built-in image_gen; final grayscale and black cleanup authorized by user"
+    }
+  ]
+}
