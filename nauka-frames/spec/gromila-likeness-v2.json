@@ -1,0 +1,188 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-31",
+  "change": "User approved the photo-based Gromila likeness examples and requested replacement in every remaining paper-series shot. Preserve poses, clothes, compositions, lighting and Tetsu's design.",
+  "source_prompt_guide": "../channels/nauka-boya/SPRITE-STYLE.md",
+  "new_identity_reference": "assets/sheets/gromila.png",
+  "approved_sample_journal": "assets/samples/gromila-likeness-v1/prompts.json",
+  "format": {
+    "type": "PNG",
+    "width": 1536,
+    "height": 1024
+  },
+  "promoted_approved_samples": [
+    {
+      "source": "assets/samples/gromila-likeness-v1/sheet.png",
+      "destination": "assets/sheets/gromila.png"
+    },
+    {
+      "source": "assets/samples/gromila-likeness-v1/s2_size.png",
+      "destination": "assets/shots/s2_size.png"
+    },
+    {
+      "source": "assets/samples/gromila-likeness-v1/s4_myth.png",
+      "destination": "assets/shots/s4_myth.png"
+    }
+  ],
+  "edits": [
+    {
+      "id": "s1a_hook_wide",
+      "file": "assets/shots/s1a_hook_wide.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: update an existing finished paper-collage picture with the user's approved new Gromila likeness. Output a single PNG, exactly 1536x1024.\nEdit reference image 1. Preserve its pose, camera, composition, positions, clothing, props, ring, paper background, empty title zone and lighting. Only Gromila's face, hair/beard, skin tone and body shape are being replaced.\nReference image 2 is the accepted NEW Gromila sheet: the three views show ONE man, not three people. It OVERRIDES the old bald, dark-bearded character visible in the scene.\nNEW GROMILA: the same recognizable man as reference 2, high rounded forehead, very receding hairline with sparse short light-brown hair at temples/back, light-blue eyes, natural light eyebrows, a broad rounded face and nose, dense light-brown/dark-blond full beard with lighter ends. Light beige skin. Extremely thick muscular neck, rounded huge shoulders and upper arms, thick forearms, massive broad chest and a thick strong waist. Same gray tank, navy sweatpants, bare feet and bare fists. Preserve the source's scale and pose while adapting its physique. Copy the proposed sheet's recognizable face, rather than inventing another man.\nDraw his features as paper layers and restrained ink, consistent with the accepted sheet. Do not paste a photographic face. No black pointed beard, completely bald head, exaggerated black angry V-shaped brows, shiny skin or photographic background.\nWhere Tetsu appears, retain him exactly: same face, black undercut, healed eyebrow detail, mustard shorts, red hand wraps, pose and proportions. Do not change him to resemble Gromila.\nOther attached scene references show material, palette and light ONLY; do not copy their other people, poses or composition. Preserve the source's blank title area and the existing central 16:9 safe crop y=80..943. No text or new effects.\nReference image 3 is Tetsu's unchanged accepted sheet. Reference image 4 is the user's accepted new-Gromila flex scene, used for material and likeness continuity.\nExactly TWO people: Tetsu on the left and Gromila on the right, with the same approved straightened attacking left arm and the visible small gap between the red fist and the chin. Do not bend the attacking arm into another punch and do not move the fist or head. Gromila's head remains slightly turned, looking toward the opponent, calm/surprised rather than wounded. Keep both figures fully inside the frame. Red only on Tetsu's wraps.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s1a_hook_wide.png",
+        "assets/sheets/gromila.png",
+        "assets/sheets/tetsu.png",
+        "assets/shots/s4_myth.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    },
+    {
+      "id": "s1b_hook_hit",
+      "file": "assets/shots/s1b_hook_hit.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: update an existing finished paper-collage picture with the user's approved new Gromila likeness. Output a single PNG, exactly 1536x1024.\nEdit reference image 1. Preserve its pose, camera, composition, positions, clothing, props, ring, paper background, empty title zone and lighting. Only Gromila's face, hair/beard, skin tone and body shape are being replaced.\nReference image 2 is the accepted NEW Gromila sheet: the three views show ONE man, not three people. It OVERRIDES the old bald, dark-bearded character visible in the scene.\nNEW GROMILA: the same recognizable man as reference 2, high rounded forehead, very receding hairline with sparse short light-brown hair at temples/back, light-blue eyes, natural light eyebrows, a broad rounded face and nose, dense light-brown/dark-blond full beard with lighter ends. Light beige skin. Extremely thick muscular neck, rounded huge shoulders and upper arms, thick forearms, massive broad chest and a thick strong waist. Same gray tank, navy sweatpants, bare feet and bare fists. Preserve the source's scale and pose while adapting its physique. Copy the proposed sheet's recognizable face, rather than inventing another man.\nDraw his features as paper layers and restrained ink, consistent with the accepted sheet. Do not paste a photographic face. No black pointed beard, completely bald head, exaggerated black angry V-shaped brows, shiny skin or photographic background.\nWhere Tetsu appears, retain him exactly: same face, black undercut, healed eyebrow detail, mustard shorts, red hand wraps, pose and proportions. Do not change him to resemble Gromila.\nOther attached scene references show material, palette and light ONLY; do not copy their other people, poses or composition. Preserve the source's blank title area and the existing central 16:9 safe crop y=80..943. No text or new effects.\nReference image 3 is Tetsu's unchanged sheet; the last image is the updated accepted wide scene for paper material and likeness continuity.\nTetsu present: saturated red (#D92F2B) appears only on Tetsu's hand wraps; nothing else is red.\nExactly TWO people in the original tight close-up, only faces, fists, bearded jaw and shoulders. Keep Tetsu's straightened attacking left arm and the fist-to-jaw gap exactly where they are. The opponent is the NEW light-bearded man, eyes slightly widened with the same small head turn; never the old dark-bearded face. Preserve the source close-up crop and calm top area.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s1b_hook_hit.png",
+        "assets/sheets/gromila.png",
+        "assets/sheets/tetsu.png",
+        "assets/shots/s1a_hook_wide.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    },
+    {
+      "id": "s3a_punch",
+      "file": "assets/shots/s3a_punch.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: update an existing finished paper-collage picture with the user's approved new Gromila likeness. Output a single PNG, exactly 1536x1024.\nEdit reference image 1. Preserve its pose, camera, composition, positions, clothing, props, ring, paper background, empty title zone and lighting. Only Gromila's face, hair/beard, skin tone and body shape are being replaced.\nReference image 2 is the accepted NEW Gromila sheet: the three views show ONE man, not three people. It OVERRIDES the old bald, dark-bearded character visible in the scene.\nNEW GROMILA: the same recognizable man as reference 2, high rounded forehead, very receding hairline with sparse short light-brown hair at temples/back, light-blue eyes, natural light eyebrows, a broad rounded face and nose, dense light-brown/dark-blond full beard with lighter ends. Light beige skin. Extremely thick muscular neck, rounded huge shoulders and upper arms, thick forearms, massive broad chest and a thick strong waist. Same gray tank, navy sweatpants, bare feet and bare fists. Preserve the source's scale and pose while adapting its physique. Copy the proposed sheet's recognizable face, rather than inventing another man.\nDraw his features as paper layers and restrained ink, consistent with the accepted sheet. Do not paste a photographic face. No black pointed beard, completely bald head, exaggerated black angry V-shaped brows, shiny skin or photographic background.\nWhere Tetsu appears, retain him exactly: same face, black undercut, healed eyebrow detail, mustard shorts, red hand wraps, pose and proportions. Do not change him to resemble Gromila.\nOther attached scene references show material, palette and light ONLY; do not copy their other people, poses or composition. Preserve the source's blank title area and the existing central 16:9 safe crop y=80..943. No text or new effects.\nReference image 3 is Tetsu's unchanged sheet; the last image is the updated accepted wide scene for paper material and likeness continuity.\nTetsu present: saturated red (#D92F2B) appears only on Tetsu's hand wraps; nothing else is red.\nExactly TWO people, preserving the same medium/wide side-view punch composition. Tetsu's approved straight arm, wrapped fist and Gromila's jaw stay at the original coordinates, with a small visible gap and no contact. Keep the chin location especially stable because a ring is drawn there later by code. The left-side calm text area, all poses, clothing and camera remain.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s3a_punch.png",
+        "assets/sheets/gromila.png",
+        "assets/sheets/tetsu.png",
+        "assets/shots/s1a_hook_wide.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    },
+    {
+      "id": "s3b_sag",
+      "file": "assets/shots/s3b_sag.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: update an existing finished paper-collage picture with the user's approved new Gromila likeness. Output a single PNG, exactly 1536x1024.\nEdit reference image 1. Preserve its pose, camera, composition, positions, clothing, props, ring, paper background, empty title zone and lighting. Only Gromila's face, hair/beard, skin tone and body shape are being replaced.\nReference image 2 is the accepted NEW Gromila sheet: the three views show ONE man, not three people. It OVERRIDES the old bald, dark-bearded character visible in the scene.\nNEW GROMILA: the same recognizable man as reference 2, high rounded forehead, very receding hairline with sparse short light-brown hair at temples/back, light-blue eyes, natural light eyebrows, a broad rounded face and nose, dense light-brown/dark-blond full beard with lighter ends. Light beige skin. Extremely thick muscular neck, rounded huge shoulders and upper arms, thick forearms, massive broad chest and a thick strong waist. Same gray tank, navy sweatpants, bare feet and bare fists. Preserve the source's scale and pose while adapting its physique. Copy the proposed sheet's recognizable face, rather than inventing another man.\nDraw his features as paper layers and restrained ink, consistent with the accepted sheet. Do not paste a photographic face. No black pointed beard, completely bald head, exaggerated black angry V-shaped brows, shiny skin or photographic background.\nWhere Tetsu appears, retain him exactly: same face, black undercut, healed eyebrow detail, mustard shorts, red hand wraps, pose and proportions. Do not change him to resemble Gromila.\nOther attached scene references show material, palette and light ONLY; do not copy their other people, poses or composition. Preserve the source's blank title area and the existing central 16:9 safe crop y=80..943. No text or new effects.\nThe last image is the updated accepted wide scene for paper material and likeness continuity ONLY; do not add its boxer.\nTetsu absent: no red anywhere in the image.\nExactly ONE person: the NEW Gromila alone. Preserve his sinking posture on BOTH knees, arms hanging loosely, head bowed and eyes half closed and unfocused. His face must look dazed and slack, not angry or smiling. Keep his receding light-brown hair, broad face and light-brown/blond beard recognizable even with his head down. No Tetsu or red in the scene. Keep the top-third empty paper area.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s3b_sag.png",
+        "assets/sheets/gromila.png",
+        "assets/shots/s1a_hook_wide.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    },
+    {
+      "id": "s6a_three",
+      "file": "assets/shots/s6a_three.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: update an existing finished paper-collage picture with the user's approved new Gromila likeness. Output a single PNG, exactly 1536x1024.\nEdit reference image 1. Preserve its pose, camera, composition, positions, clothing, props, ring, paper background, empty title zone and lighting. Only Gromila's face, hair/beard, skin tone and body shape are being replaced.\nReference image 2 is the accepted NEW Gromila sheet: the three views show ONE man, not three people. It OVERRIDES the old bald, dark-bearded character visible in the scene.\nNEW GROMILA: the same recognizable man as reference 2, high rounded forehead, very receding hairline with sparse short light-brown hair at temples/back, light-blue eyes, natural light eyebrows, a broad rounded face and nose, dense light-brown/dark-blond full beard with lighter ends. Light beige skin. Extremely thick muscular neck, rounded huge shoulders and upper arms, thick forearms, massive broad chest and a thick strong waist. Same gray tank, navy sweatpants, bare feet and bare fists. Preserve the source's scale and pose while adapting its physique. Copy the proposed sheet's recognizable face, rather than inventing another man.\nDraw his features as paper layers and restrained ink, consistent with the accepted sheet. Do not paste a photographic face. No black pointed beard, completely bald head, exaggerated black angry V-shaped brows, shiny skin or photographic background.\nWhere Tetsu appears, retain him exactly: same face, black undercut, healed eyebrow detail, mustard shorts, red hand wraps, pose and proportions. Do not change him to resemble Gromila.\nOther attached scene references show material, palette and light ONLY; do not copy their other people, poses or composition. Preserve the source's blank title area and the existing central 16:9 safe crop y=80..943. No text or new effects.\nReference image 3 is Tetsu's unchanged sheet; the last image is the updated accepted wide scene for paper material and likeness continuity.\nTetsu present: saturated red (#D92F2B) appears only on Tetsu's hand wraps; nothing else is red.\nExactly TWO people: new Gromila kneels on ONE knee in the foreground with ONE hand on the floor, head bowed, dazed, half-closed unfocused eyes and relaxed eyebrows. Tetsu stands behind him in the exact original calm guard. Preserve hand placement, knee configuration, camera, background and title area. No new injury or effects.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s6a_three.png",
+        "assets/sheets/gromila.png",
+        "assets/sheets/tetsu.png",
+        "assets/shots/s1a_hook_wide.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    },
+    {
+      "id": "s6b_brain",
+      "file": "assets/shots/s6b_brain.png",
+      "edit_source": "Previous committed version of this shot, before the likeness replacement",
+      "prompt": "Handmade layered paper-collage illustration matching the attached approved paper references.\nEvery shape is cut from thick matte coloured paper with slightly uneven hand-torn edges,\nvisible paper fibres, subtle grain and occasional thin pale torn-fibre rims.\nBuild anatomy, muscles, hair and clothing folds from overlapping paper pieces.\nUse restrained flat paper colours with small tonal variations and soft short shadows\nbetween layers. Match the reference lighting, paper texture scale and level of detail.\nExpressive stylized faces and athletic semi-realistic proportions, as in the character sheets.\nNo continuous black body outlines; separate forms with paper edges and layer shadows.\nPalette: warm cream, kraft tan, dusty blue, mustard yellow, warm gray and navy.\nNo glossy surfaces, photorealism, 3D rendering, watercolor, pencil hatching or pixel art.\nNo text, letters, numbers, logos, watermark, speech bubbles, arrows, diagrams,\nmotion lines, impact stars or editorial effects.\nNo blood, wounds, bruises, broken teeth or weapons.\nTASK: edit ONLY the facial likeness, hair and beard of the bald bearded head-and-neck anatomical paper cutaway in reference image 1. Keep its framing, skull cutaway geometry, brain, gray neck muscles, spine, empty cream title area and paper layers unchanged. Output PNG 1536x1024.\nReference image 2 is the user's accepted NEW Gromila sheet, three views of ONE man. Use its head/face profile, light-blue eye, very high rounded forehead, receding sparse short light-brown hair at temple/back, broad rounded nose and full light-brown/dark-blond beard with lighter tips. Replace the old black pointed beard and harsh villain eyebrow with this man's recognizable features. Keep the face and hair made of paper shapes with restrained ink detail, like the accepted sheet.\nReference image 3 is the updated wide scene for paper texture, palette and lighting ONLY; do not copy its boxing ring, figures, poses or red wraps.\nScientific-palette exception: saturated red (#D92F2B) appears ONLY on the ONE brain nested inside the cream skull. Preserve the existing red paper brain and folds, cream skull shell and gray neck muscles. No red/pink/rust muscles, no blood, no wounds. Sparse light-brown hair may appear only on the OUTER intact temple/back rim and must not cover the open skull or red brain. This is a head-and-neck-only cutaway, no full body, tank top, arms or boxer. No diagram labels, letters, pointers or effects.\nMatch the paper style, colours and lighting of the attached scene picture.",
+      "references": [
+        "assets/shots/s6b_brain.png",
+        "assets/sheets/gromila.png",
+        "assets/shots/s1a_hook_wide.png"
+      ],
+      "edit_source_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+    }
+  ],
+  "unchanged_characters": [
+    "Tetsu",
+    "Doc"
+  ],
+  "validation": {
+    "png_size": [
+      1536,
+      1024
+    ],
+    "updated_gromila_assets": 9,
+    "runtime_check": {
+      "lint": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "runtime": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "layout": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "motion": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "contrast": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "craft": {
+        "errors": 0,
+        "warnings": 0
+      },
+      "audio": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "exact_snapshots": 50,
+    "shot_contact_sheets_visually_reviewed": true,
+    "poses_clothing_and_compositions_preserved": true,
+    "tetsu_and_doc_reference_sheets_unchanged": true,
+    "doc_shot_unchanged": true,
+    "draft_render": {
+      "file": "out/nauka-frames-hook-gromila-v2-draft.mp4",
+      "quality": "draft",
+      "duration_seconds": 22.0,
+      "width": 1920,
+      "height": 1080,
+      "video_codec": "h264",
+      "pixel_format": "yuv420p",
+      "fps": 30,
+      "frames": 660,
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "decoded_without_errors": true,
+      "reviewed_frame_indices": [
+        0,
+        78,
+        80,
+        81,
+        179,
+        180,
+        181,
+        279,
+        280,
+        281,
+        399,
+        400,
+        401,
+        519,
+        520,
+        521,
+        659
+      ],
+      "contact_sheet": ".hyperframes/artifacts/gromila-v2-encoded-review/seams-and-end.png",
+      "storage": "local output; out/*.mp4 is excluded by the project gitignore",
+      "encoded_beginning_end_and_scene_seams_reviewed": true
+    }
+  },
+  "base_commit": "bad8021e28616e7c46d13533efe4f1f7ac6f8749"
+}

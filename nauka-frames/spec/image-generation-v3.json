@@ -135,5 +135,13 @@
         "../nauka-toon/assets/img/doc/sheet.png"
       ]
     }
-  ]
+  ],
+  "character_revisions": {
+    "gromila": {
+      "current_journal": "spec/gromila-likeness-v2.json",
+      "identity_reference": "assets/sheets/gromila.png",
+      "approved": "2026-10-31",
+      "note": "The current photo-based face and physique supersede the historical bald/dark-beard prompts."
+    }
+  }
 }
