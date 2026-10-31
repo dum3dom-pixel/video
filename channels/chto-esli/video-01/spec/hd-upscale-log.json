@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-01",
+  "method": "FSRCNN 2x neural super-resolution, then Lanczos downsampling to exact target size",
+  "implementation": "OpenCV contrib 4.12.0",
+  "face_restoration": false,
+  "results": [
+    {
+      "id": "p2_kostya",
+      "source": "assets/hd-refs/p2_kostya.png",
+      "output": "assets/shots/p2_kostya_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        3072,
+        1728
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "ba569f754fd2eaf2e9b92c4d79fc2646f37b3391ba0413d681116e919334d6df",
+      "source_unchanged": true,
+      "output_sha256": "2a750eab9e430ddd36dd6f1ed362f459c8da5644883e17fbbfb0ba0d8cc21829",
+      "seconds": 2.2,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "p4_sasha",
+      "source": "assets/hd-refs/p4_sasha.png",
+      "output": "assets/shots/p4_sasha_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        3072,
+        1728
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "5177fd37e1495ba83a7f4060c6cf3c9b0e875865c698162567979257ca0f3488",
+      "source_unchanged": true,
+      "output_sha256": "753556603612a21005636bb1b6607a7e5c72a799b960e363871b69273e991413",
+      "seconds": 2.0,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "p3_calendar",
+      "source": "assets/hd-refs/p3_calendar.png",
+      "output": "assets/shots/p3_calendar_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        3072,
+        1728
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "4846306425071aa83a9f714e4e21267312f8f3b72980e942c50bbc24c2215edb",
+      "source_unchanged": true,
+      "output_sha256": "1a9a777a1afd7f45ee3b83e10fa6bd01ee57212110a39d68b3be4c3940b9e7ef",
+      "seconds": 2.1,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "bg_door_wall",
+      "source": "assets/hd-refs/bg_door_wall.png",
+      "output": "assets/bg/bg_door_wall_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        3072,
+        1728
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "7fcce4737d49e8556b1176784a41923f311caba360c874dc4acc85b8823a3a91",
+      "source_unchanged": true,
+      "output_sha256": "65f02bf0bfddfb2baf453930aed46eab02b2edf07950e0d14de2b12ed1dbe0fb",
+      "seconds": 2.0,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "bg_carpet_wall",
+      "source": "assets/hd-refs/bg_carpet_wall.png",
+      "output": "assets/bg/bg_carpet_wall_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        3072,
+        1728
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "681781f269665d3de405a37546dc625681e1b9afa96479504a6fd925679969c3",
+      "source_unchanged": true,
+      "output_sha256": "1ce7e8fd522afc2ea60ec41cb411eb4f8244df7fba2ed1e8b6339bffe761bafd",
+      "seconds": 2.0,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "sasha_sheet",
+      "source": "assets/sheets/sasha_sheet.png",
+      "output": "assets/sheets/sasha_sheet_hd.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "native_size": [
+        3072,
+        2048
+      ],
+      "output_size": [
+        3072,
+        2048
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "ff498e0fcd7246a14207888c8d30ebcd94a377211a323f73126a2cbc4b7443e1",
+      "source_unchanged": true,
+      "output_sha256": "f081a0dd9a9ae84386f7dd08c7f1745c2e304e860991ddd9697c7239bfeea34a",
+      "seconds": 2.6,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "kostya_sheet",
+      "source": "assets/sheets/kostya_sheet.png",
+      "output": "assets/sheets/kostya_sheet_hd.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "native_size": [
+        3072,
+        2048
+      ],
+      "output_size": [
+        3072,
+        2048
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "bb6e9d2aa5550ad6d38cbe2377354310273a0938bd1237c77bb998d737eedb70",
+      "source_unchanged": true,
+      "output_sha256": "e92e8d443d3eb49055844f2dd96384579d80fcf7cc448494d93ee5bdf5ac4773",
+      "seconds": 2.3,
+      "status": "Validated and visually reviewed; original source unchanged."
+    },
+    {
+      "id": "mama_sheet",
+      "source": "assets/sheets/mama_sheet-v2.png",
+      "output": "assets/sheets/mama_sheet_hd.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "native_size": [
+        3072,
+        2048
+      ],
+      "output_size": [
+        3072,
+        2048
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "FSRCNN_x2",
+      "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+      "face_restoration": false,
+      "source_sha256": "8691c8f5c4167ae6ee49b16838a81b7c89a7f158889841239364b240f6d271cd",
+      "source_unchanged": true,
+      "output_sha256": "76e8f02f1366ba5b04b10ad82c6a40c5c36e1f881f7ed738c7f7a0a5bb317882",
+      "seconds": 2.4,
+      "status": "Validated and visually reviewed; original source unchanged."
+    }
+  ],
+  "model_source": "https://github.com/Saafke/FSRCNN_Tensorflow",
+  "model_sha256": "366b33f0084c7b3f2bf6724f0a2c77bca94fcec9d7b6d72389d330073b380d5c",
+  "reason": "Selected after visual comparison: Real-ESRGAN oversimplified Kostya's eyes and paper fibers.",
+  "status": "Complete: all eight outputs passed dimensions, RGB opacity, PNG decoding, source SHA-256 and output SHA-256 checks.",
+  "visual_review": {
+    "status": "Reviewed against approved sources",
+    "artifacts": [
+      "renders/hd-review/hd-contact.png",
+      "renders/hd-review/face-comparisons.png",
+      "renders/hd-review.html"
+    ],
+    "observations": "Face structure, expression, hair silhouettes, poses, garments, composition, object placement and empty sheet margins retained. Calendar stays blank. FSRCNN retained small eyes and paper texture more closely than the rejected Real-ESRGAN trial. Improvement in fine detail is conservative and limited by source resolution."
+  }
+}

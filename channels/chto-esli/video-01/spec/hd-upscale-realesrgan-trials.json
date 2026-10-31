@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-01",
+  "method": "Local neural upscaling of approved sources, followed by Lanczos downsampling",
+  "implementation": "Real-ESRGAN NCNN Vulkan 20220424",
+  "official_source": "https://github.com/xinntao/Real-ESRGAN",
+  "release_sha256": "abc02804e17982a3be33675e4d471e91ea374e65b70167abc09e31acb412802d",
+  "face_restoration": false,
+  "results": [
+    {
+      "id": "p4_sasha",
+      "source": "assets/hd-refs/p4_sasha.png",
+      "output": "assets/shots/p4_sasha_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        6144,
+        3456
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "realesrgan-x4plus",
+      "tile": 128,
+      "face_restoration": false,
+      "source_sha256": "5177fd37e1495ba83a7f4060c6cf3c9b0e875865c698162567979257ca0f3488",
+      "source_unchanged": true,
+      "output_sha256": "f81f041934c5f7f1b72e0891492d862fbcc55725c5400e686e1b48901afef1e4",
+      "seconds": 159.4,
+      "status": "Dimensions, PNG decoding, opacity and source integrity verified; visual review pending."
+    },
+    {
+      "id": "p2_kostya",
+      "source": "assets/hd-refs/p2_kostya.png",
+      "output": "assets/shots/p2_kostya_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        6144,
+        3456
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "realesrgan-x4plus",
+      "tile": 128,
+      "face_restoration": false,
+      "source_sha256": "ba569f754fd2eaf2e9b92c4d79fc2646f37b3391ba0413d681116e919334d6df",
+      "source_unchanged": true,
+      "output_sha256": "3f16f4cb2f6dcf02a2b29dc736cad368526f944da28d26553682af1e69edc0fb",
+      "seconds": 149.3,
+      "status": "Dimensions, PNG decoding, opacity and source integrity verified; visual review pending."
+    },
+    {
+      "id": "p3_calendar",
+      "source": "assets/hd-refs/p3_calendar.png",
+      "output": "assets/shots/p3_calendar_hd.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "native_size": [
+        6144,
+        3456
+      ],
+      "output_size": [
+        2560,
+        1440
+      ],
+      "mode": "RGB",
+      "opaque": true,
+      "model": "realesrgan-x4plus",
+      "tile": 128,
+      "face_restoration": false,
+      "source_sha256": "4846306425071aa83a9f714e4e21267312f8f3b72980e942c50bbc24c2215edb",
+      "source_unchanged": true,
+      "output_sha256": "84d4be2106053199e8fc20b59d2b822637c22a54896b4307219ea9598bb919b0",
+      "seconds": 129.2,
+      "status": "Dimensions, PNG decoding, opacity and source integrity verified; visual review pending."
+    }
+  ],
+  "status": "Rejected after visual comparison: small eyes and paper texture oversimplified. Trial full outputs have been superseded by FSRCNN results; these hashes describe historical trials."
+}

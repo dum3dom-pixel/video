@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-01",
+  "tool": "built-in image_gen",
+  "brief": "../codex-pilot-01-hd.md",
+  "scope": "User confirmed five pilot plates and the three sheets (Sasha, Kostya, Mama), then explicitly authorized local neural upscaling for all eight approved originals.",
+  "runs": [
+    {
+      "id": "p4_sasha_hd_attempt_1",
+      "prompt": "Asset: shots/p4_sasha_hd.png, a higher-resolution re-render of an approved picture: Sasha sitting up in bed, close view; this picture gets the strongest push-in (up to 2.6x), so eyes, eyebrows, lashes, hair strands and shirt fibers must be crisp.\r\n\r\nInput image 1: the approved version of this exact picture (already the final 16:9 framing). Re-render it as a sharper master. Keep the composition, camera, every object position, the character's face, hair, expression, pose and clothing, the colors, the lighting and the paper-collage look identical to Input image 1. Do not redesign, reinterpret, restyle, add or remove anything. Change only the level of detail: crisp cut paper edges, clearly visible natural paper fibers, fine ink-like details in eyes and mouth, clean small shapes. Nothing blurred, smoothed or painterly.\r\n\r\nStyle/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.\r\n\r\nFull base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. The only permitted red is #D92F2B, exclusively on a sock cuff stripe or a calendar header when that object is visible.\r\n\r\nOutput/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9 (if the tool cannot do exactly that, the largest 16:9 it allows, never smaller than 1920x1080). Use exactly the same framing as Input image 1, which is already 16:9: nothing added at the edges, nothing cropped, every object at the same relative position and size. The lowest 20 percent of the height keeps the same quiet content as in Input image 1. Never draw guides or labels.\r\n\r\nStrict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers and calendar pages are completely blank, without grids or ruling. The clock dial has no numerals or ticks; only its two plain hands are allowed. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.",
+      "references": [
+        "C:\\Users\\DPiunov\\Desktop\\videosis\\channels\\chto-esli\\video-01\\assets\\hd-refs\\p4_sasha.png"
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a193ce-ca71-7be3-bcb3-f0ef07219494\\exec-dc289e38-a334-47ad-818e-1b1189b8f1fb.png",
+      "width": 1672,
+      "height": 941,
+      "status": "Rejected: below 1920x1080 minimum; face details drift from approved reference."
+    },
+    {
+      "id": "p4_sasha_hd_attempt_2",
+      "prompt": "STRICT HIGH-RESOLUTION IMAGE EDIT. Deliver the ACTUAL FULL-RESOLUTION 2560 x 1440 pixel opaque PNG master, landscape 16:9. This must be the file's actual pixel dimensions, not a thumbnail, not a 1672x941 or 1536px preview. Native requested resolution 2560x1440; maximize output detail.\n\nInput image 1 is the approved original image, the ONLY reference. Perform a faithful resolution-enhancing re-render. Preserve the SAME face exactly: same eye sizes and spacing, eyelid shapes, eyebrow angles, roundness of cheeks, jawline, nose, slightly open mouth, skin tone, age 12, head size relative to the body and reference framing. Do not make the face narrower, more mature or more anime-styled. Preserve every hair lock's silhouette and cowlick, shirt and pocket, both hands, bedding checks, furniture, wall carpet geometry and every object's relative position. SAME framing, camera and composition. Nothing added or removed, nothing outside the existing frame. Keep the same muted reference colors, gentle soft light and level of paper depth. Increase only real fine paper fibers and cut-edge detail for close camera zooms. No thick outlines, sharpening halos, new facial features, new wrinkles or noise. Keep clock dial blank with only its two plain hands; no ticks or numbers.\n\nAsset: shots/p4_sasha_hd.png, a higher-resolution re-render of an approved picture: Sasha sitting up in bed, close view; this picture gets the strongest push-in (up to 2.6x), so eyes, eyebrows, lashes, hair strands and shirt fibers must be crisp.\r\n\r\nInput image 1: the approved version of this exact picture (already the final 16:9 framing). Re-render it as a sharper master. Keep the composition, camera, every object position, the character's face, hair, expression, pose and clothing, the colors, the lighting and the paper-collage look identical to Input image 1. Do not redesign, reinterpret, restyle, add or remove anything. Change only the level of detail: crisp cut paper edges, clearly visible natural paper fibers, fine ink-like details in eyes and mouth, clean small shapes. Nothing blurred, smoothed or painterly.\r\n\r\nStyle/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.\r\n\r\nFull base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. The only permitted red is #D92F2B, exclusively on a sock cuff stripe or a calendar header when that object is visible.\r\n\r\nOutput/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9 (if the tool cannot do exactly that, the largest 16:9 it allows, never smaller than 1920x1080). Use exactly the same framing as Input image 1, which is already 16:9: nothing added at the edges, nothing cropped, every object at the same relative position and size. The lowest 20 percent of the height keeps the same quiet content as in Input image 1. Never draw guides or labels.\r\n\r\nStrict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers and calendar pages are completely blank, without grids or ruling. The clock dial has no numerals or ticks; only its two plain hands are allowed. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.",
+      "references": [
+        "C:\\Users\\DPiunov\\Desktop\\videosis\\channels\\chto-esli\\video-01\\assets\\hd-refs\\p4_sasha.png"
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a193ce-ca71-7be3-bcb3-f0ef07219494\\exec-b0384a99-7f60-483c-b81e-37dda3be384b.png",
+      "output": "assets/shots/p4_sasha_rerender-preview.png",
+      "width": 1672,
+      "height": 941,
+      "pixel_format": "24-bit RGB, opaque PNG",
+      "status": "PROVISIONAL REVIEW CANDIDATE ONLY. Does NOT meet HD brief minimum dimensions; not accepted for production. Faces and fine details differ slightly from approved original."
+    }
+  ],
+  "validation": {
+    "requested_dimensions": [
+      2560,
+      1440
+    ],
+    "minimum_dimensions": [
+      1920,
+      1080
+    ],
+    "actual_dimensions": [
+      1672,
+      941
+    ],
+    "passes_dimensions": false,
+    "originals_untouched": true,
+    "engine_or_timeline_changed": false,
+    "other_hd_plates_generated": false,
+    "review_artifact": "renders/p4-hd-review.html",
+    "observations": "Paper edges and texture appear clearer; camera framing largely retained, but face, carpet geometry, bedding folds and smaller details are not pixel-identical. Second output still contains visible clock tick marks despite explicit exclusions.",
+    "next_step": "Eight final local-upscaled PNGs ready for user review. Engine asset references and videos unchanged."
+  },
+  "local_upscale": {
+    "authorized": true,
+    "plan": "spec/hd-upscale-plan.json",
+    "log": "spec/hd-upscale-log.json",
+    "review": "renders/hd-review.html",
+    "status": "Complete: 5 plates at 2560x1440 and 3 sheets at 3072x2048, FSRCNN x2."
+  }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HD — сравнение исходников и апскейла</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1e6cf;color:#40372c;font:16px system-ui;padding:24px;max-width:1800px;margin:auto}h1{font-size:26px}p{line-height:1.5}.controls{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:20px 0}select,button{font:inherit;padding:8px;background:#faf3e5;color:inherit;border:1px solid #a59b8c;border-radius:6px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.viewport{aspect-ratio:16/9;overflow:hidden;background:#d6c7ab;position:relative;cursor:crosshair}.viewport img{display:block;width:100%;height:100%;object-fit:contain;transform-origin:50% 50%}.caption{display:flex;justify-content:space-between;gap:12px;margin:10px 0}output{min-width:3em}.hint{font-size:14px;color:#655a48}@media(max-width:800px){body{padding:14px}.grid{grid-template-columns:1fr}}
+</style>
+<h1>Утверждённый исходник и локальный нейросетевой апскейл</h1>
+<p>Пять плит и три листа персонажей. Сравнение при одинаковом масштабе показа: слева исходный PNG, справа HD. Перемещайте указатель по любой картинке, чтобы выбрать центр увеличения для обеих.</p>
+<div class="controls"><label>Изображение <select id="asset"></select></label><label>Зум <input id="zoom" type="range" min="1" max="5" step="0.1" value="2.6"></label><output id="zoomValue">2.6×</output><button id="reset">Центр</button><button id="native">Без зума</button></div>
+<div class="grid"><section><div class="caption"><strong>Утверждённый исходник</strong><span id="sourceSize"></span></div><div class="viewport"><img id="source" alt="Утверждённый исходник"></div></section><section><div class="caption"><strong>Локальный апскейл</strong><span id="resultSize"></span></div><div class="viewport"><img id="result" alt="HD-результат"></div></section></div>
+<p class="hint">Оригиналы сохранены. Плиты: 2560×1440. Листы: 3072×2048, с сохранением формата 3:2. Нейросеть FSRCNN ×2; отдельное восстановление лица отключено.</p>
+<p><a id="sourceLink">Открыть исходник</a> · <a id="resultLink">Открыть HD PNG</a> · <a href="../spec/hd-upscale-log.json">Журнал обработки и проверки</a></p>
+<script>
+const assets = [
+["Саша в кровати","assets/hd-refs/p4_sasha.png","assets/shots/p4_sasha_hd.png",16/9,50,37],
+["Костя в двери","assets/hd-refs/p2_kostya.png","assets/shots/p2_kostya_hd.png",16/9,56,17],
+["Календарь","assets/hd-refs/p3_calendar.png","assets/shots/p3_calendar_hd.png",16/9,50,50],
+["Стена с дверью","assets/hd-refs/bg_door_wall.png","assets/bg/bg_door_wall_hd.png",16/9,50,50],
+["Стена с ковром","assets/hd-refs/bg_carpet_wall.png","assets/bg/bg_carpet_wall_hd.png",16/9,50,50],
+["Лист Саши","assets/sheets/sasha_sheet.png","assets/sheets/sasha_sheet_hd.png",3/2,73,41],
+["Лист Кости","assets/sheets/kostya_sheet.png","assets/sheets/kostya_sheet_hd.png",3/2,73,41],
+["Лист Мамы (v2)","assets/sheets/mama_sheet-v2.png","assets/sheets/mama_sheet_hd.png",3/2,69,44]
+];
+const select=document.getElementById("asset"), zoom=document.getElementById("zoom");
+const images=[document.getElementById("source"),document.getElementById("result")];
+assets.forEach((asset,index)=>select.add(new Option(asset[0],index)));
+let center=[50,37];
+function render(){images.forEach(image=>{image.style.transform="scale("+zoom.value+")";image.style.transformOrigin=center[0]+"% "+center[1]+"%";});document.getElementById("zoomValue").value=Number(zoom.value).toFixed(1)+"×";}
+function loadAsset(){const a=assets[Number(select.value)];center=[a[4],a[5]];document.querySelectorAll(".viewport").forEach(p=>p.style.aspectRatio=a[3]);images[0].src="../"+a[1];images[1].src="../"+a[2];document.getElementById("sourceLink").href=images[0].src;document.getElementById("resultLink").href=images[1].src;render();}
+images.forEach((image,i)=>{image.onload=()=>document.getElementById(i?"resultSize":"sourceSize").textContent=image.naturalWidth+"×"+image.naturalHeight;image.onerror=()=>document.getElementById(i?"resultSize":"sourceSize").textContent="файл ещё не готов";});
+document.querySelectorAll(".viewport").forEach(view=>view.addEventListener("pointermove",event=>{const r=view.getBoundingClientRect();center=[100*(event.clientX-r.left)/r.width,100*(event.clientY-r.top)/r.height];render();}));
+select.addEventListener("change",loadAsset);zoom.addEventListener("input",render);
+document.getElementById("reset").onclick=()=>{const a=assets[Number(select.value)];center=[a[4],a[5]];render();};
+document.getElementById("native").onclick=()=>{zoom.value=1;render();};loadAsset();
+</script>
+</html>

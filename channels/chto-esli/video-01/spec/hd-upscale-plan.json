@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-01",
+  "scope": "User explicitly selected five pilot plates plus character sheets for Sasha, Kostya and Mama.",
+  "status": "Complete: eight FSRCNN x2 outputs saved, dimensions and source hashes verified, visual comparisons reviewed.",
+  "assets": [
+    {
+      "id": "p4_sasha",
+      "source": "assets/hd-refs/p4_sasha.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "output": "assets/shots/p4_sasha_hd.png",
+      "target_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "p2_kostya",
+      "source": "assets/hd-refs/p2_kostya.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "output": "assets/shots/p2_kostya_hd.png",
+      "target_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "p3_calendar",
+      "source": "assets/hd-refs/p3_calendar.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "output": "assets/shots/p3_calendar_hd.png",
+      "target_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "bg_door_wall",
+      "source": "assets/hd-refs/bg_door_wall.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "output": "assets/bg/bg_door_wall_hd.png",
+      "target_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "bg_carpet_wall",
+      "source": "assets/hd-refs/bg_carpet_wall.png",
+      "source_size": [
+        1536,
+        864
+      ],
+      "output": "assets/bg/bg_carpet_wall_hd.png",
+      "target_size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "sasha_sheet",
+      "source": "assets/sheets/sasha_sheet.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "output": "assets/sheets/sasha_sheet_hd.png",
+      "target_size": [
+        3072,
+        2048
+      ]
+    },
+    {
+      "id": "kostya_sheet",
+      "source": "assets/sheets/kostya_sheet.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "output": "assets/sheets/kostya_sheet_hd.png",
+      "target_size": [
+        3072,
+        2048
+      ]
+    },
+    {
+      "id": "mama_sheet",
+      "source": "assets/sheets/mama_sheet-v2.png",
+      "source_size": [
+        1536,
+        1024
+      ],
+      "output": "assets/sheets/mama_sheet_hd.png",
+      "target_size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "notes": [
+    "Character sheets retain 3:2 at exactly 3072x2048.",
+    "Mama uses latest v2; older Mama originals retained.",
+    "Earlier generative preview preserved at assets/shots/p4_sasha_rerender-preview.png.",
+    "p0_sock excluded.",
+    "Engine asset references and videos remain unchanged."
+  ],
+  "workflow": {
+    "method": "FSRCNN x2 neural super-resolution; Lanczos downsample only for exact plate dimensions",
+    "implementation": "Isolated OpenCV contrib 4.12.0",
+    "model_source": "https://github.com/Saafke/FSRCNN_Tensorflow",
+    "preserve": "Original aspect ratio and framing; no generative face restoration. Source integrity checked with SHA-256.",
+    "face_restoration": false
+  }
+}
