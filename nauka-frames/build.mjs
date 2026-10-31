@@ -7,7 +7,7 @@ const words = JSON.parse(fs.readFileSync("spec/words.json", "utf8"));
 const voiceDur = JSON.parse(fs.readFileSync("spec/voice.json", "utf8"));
 const BEAT = 60 / spec.bpm, LOOP = 21.333;
 const f3 = (n) => Math.round(n * 1000) / 1000;
-const SHOTS = ["s1a_hook_wide", "s1b_hook_hit", "s2_size", "s3a_punch", "s3b_sag", "s4_myth", "s5_doc", "s6a_three", "s6b_brain"];
+const SHOTS = ["s1a_hook_wide", "s1b_hook_hit", "s2_size", "s2a_gromila_solo", "s2b_tetsu_solo", "s3a_punch", "s3b_sag", "s4_myth", "s5_doc", "s6a_three", "s6b_brain"];
 
 let start = 0;
 const scenes = [], audio = [];

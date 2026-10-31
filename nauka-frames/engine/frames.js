@@ -1,11 +1,11 @@
 /* Whole-picture player for the Nauka Boya hook, paper-collage look.
    Each scene is one or two finished paper-collage pictures (assets/shots/*.png, 1536x1024) moved as a whole (camera push/pan, shake,
    torn-paper card slides, drops); everything added by code is cut paper too: strips and cut-out letters, arrows, rings, stamps, scraps.
-   Motion steps at 12 fps (stop-motion), the step phase is set per scene so the hit word lands on a step.
+   Camera and eased motion run at the full frame rate; only the paper grain and the speed lines re-roll every step (15 fps, an even 2 frames at 30 fps).
    render(t) is a pure function of time; noise is seeded hashes, no Math.random/Date.now. */
 (function () {
   const P = window.PAPER, { PAL, put, strip, letters, polySheet, sheet, ellipseSheet, ringSheet, arrowPts, memo, tearPoly, trace, grainPattern, FONT } = P;
-  const W = 1920, H = 1080, DEG = Math.PI / 180, STEP = 12;
+  const W = 1920, H = 1080, DEG = Math.PI / 180, STEP = 15;
   const SP = window.SPEC, IMG = {};
   const Y = "Y", R = "R", WH = "W", INK_ = "I";
 
@@ -17,6 +17,7 @@
   const eo3 = (x) => 1 - Math.pow(1 - cl(x), 3);
   const eob = (x) => { x = cl(x); const c1 = 1.9, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
   const bounce = (x) => { x = cl(x); const n = 7.5625, d = 2.75; if (x < 1 / d) return n * x * x; if (x < 2 / d) return n * (x -= 1.5 / d) * x + 0.75; if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + 0.9375; return n * (x -= 2.625 / d) * x + 0.984375; };
+  const eio = (x) => { x = cl(x); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
   const stp = (t) => Math.floor(t * STEP + 1e-6);
 
   /* keyframes [[t, v...], ...] -> smooth interpolation of the v's */
@@ -43,12 +44,13 @@
     c.restore();
     return (nx, ny) => { const x = (nx - fx) * iw, y = (ny - fy) * ih; return [W / 2 + dx + x * Math.cos(r) - y * Math.sin(r), H / 2 + dy + x * Math.sin(r) + y * Math.cos(r)]; };
   }
-  /* alive-paper wobble: tiny stepped drift, always on */
-  const wob = (t, key) => { const s = stp(t); return { dx: (hr(s, key, 1) - 0.5) * 6, dy: (hr(s, key, 2) - 0.5) * 6, rot: (hr(s, key, 3) - 0.5) * 0.5 }; };
+  /* alive-paper drift: slow sines instead of per-step jumps, always on */
+  const wob = (t, key) => { const a = (hs(key) % 628) / 100; return { dx: 4 * Math.sin(t * 1.3 + a) + 2 * Math.sin(t * 2.9 + 2 * a), dy: 3 * Math.sin(t * 1.1 + 1.5 * a) + 1.5 * Math.sin(t * 2.3 + a), rot: 0.18 * Math.sin(t * 0.9 + 3 * a) }; };
+  /* impact shake: damped 7 Hz oscillation that starts on the hit */
   function shake(t, t0, dur, amp) {
     const p = (t - t0) / dur; if (p < 0 || p > 1) return { dx: 0, dy: 0, rot: 0 };
-    const s = stp(t), k = Math.pow(1 - p, 2) * amp;
-    return { dx: (hr(s, 11) - 0.5) * 2 * k, dy: (hr(s, 12) - 0.5) * 2 * k, rot: (hr(s, 13) - 0.5) * 2 * k * 0.03 };
+    const k = Math.pow(1 - p, 2) * amp * 0.8, w = (t - t0) * Math.PI * 2 * 7;
+    return { dx: Math.cos(w) * k, dy: Math.cos(w * 1.3 + 1) * k * 0.8, rot: Math.sin(w * 0.9 + 2) * k * 0.03 };
   }
   const addCam = (cam, ...ds) => { for (const d of ds) { cam.dx = (cam.dx || 0) + d.dx; cam.dy = (cam.dy || 0) + d.dy; cam.rot = (cam.rot || 0) + d.rot; } return cam; };
 
@@ -86,7 +88,7 @@
   }
   /* pop-in value: scale with overshoot, plus a slam variant that lands from big */
   const pop = (t, t0, d = 0.22) => { const p = (t - t0) / d; return p < 0 ? 0 : 0.4 + 0.6 * eob(p); };
-  const slam = (t, t0, d = 0.16) => { const p = (t - t0) / d; return p < 0 ? 0 : p >= 1 ? 1 : lerp(2.6, 1, eo3(p)); };
+  const slam = (t, t0, d = 0.2) => { const p = (t - t0) / d; return p < 0 ? 0 : p >= 1 ? 1 : lerp(2.2, 1, eo3(p)); };
   const slamA = (t, t0) => (t < t0 ? 0 : cl((t - t0) / 0.05));
   /* a title line that changes: shows the last phrase whose start time has passed */
   function seq(c, t, list, y, size, o = {}) {
@@ -154,11 +156,27 @@
     seq(c, tl, [{ t: HIT, s: "ВЫРУБАЕТ", fill: Y, slam: true }], 105, 140);
     seq(c, tl, [{ t: 1.042, s: "НЕ СИЛА УДАРА", fill: R }], 255, 82);
   };
+  /* one hero alone and centred at a time: Gromila, a torn card brings in Tetsu, then both for the height comparison */
   SC.size = (c, tl) => {
-    const [z, fx, fy] = kf(tl, [[0, 1.45, 0.65, 0.3], [1.0, 1.45, 0.65, 0.3], [1.45, 1.45, 0.345, 0.3], [2.0, 1.45, 0.345, 0.3], [2.6, 1.1, 0.5, 0.38], [3.4, 1.16, 0.5, 0.38]]);
-    const map = shot(c, "s2_size", addCam({ z, fx, fy }, wob(tl, "s2"), shake(tl, 0.773, 0.35, 16)));
-    const [hx, hy] = map(...ANCH.s2.tetsuHead);
-    arrow(c, hx + 330, hy - 170, hx + 60, hy - 30, eo3((tl - 2.0) / 0.3), { fill: INK_ });
+    const TS = 1.15, TD = 0.42, BOTH = 2.0, w = wob(tl, "s2");
+    if (tl < TS + TD) {
+      const [z, fx, fy] = kf(tl, [[0, 1.5, 0.635, 0.3], [TS + TD, 1.58, 0.635, 0.3]]);
+      shot(c, "s2a_gromila_solo", addCam({ z, fx, fy }, w, shake(tl, 0.773, 0.4, 14)));
+    }
+    const [z, fx, fy] = kf(tl, [[TS, 1.5, 0.34, 0.3], [BOTH, 1.55, 0.34, 0.3], [3.4, 1.16, 0.5, 0.38]]);
+    if (tl >= TS && tl < BOTH + 0.25) {
+      const p = (tl - TS) / TD, e = eio(p);
+      c.save(); c.shadowColor = "rgba(34,22,8,0.6)"; c.shadowBlur = 60; c.shadowOffsetX = 20 * (1 - e);
+      c.translate(W / 2 - W * (1 - e), H / 2); c.rotate(-3 * DEG * (1 - e)); c.translate(-W / 2, -H / 2);
+      cardPath(c, 8); shot(c, "s2b_tetsu_solo", addCam({ z, fx, fy }, w)); c.restore();
+    }
+    if (tl >= BOTH) {
+      c.globalAlpha = sm((tl - BOTH) / 0.25);
+      const map = shot(c, "s2_size", addCam({ z, fx, fy }, w));
+      c.globalAlpha = 1;
+      const [hx, hy] = map(...ANCH.s2.tetsuHead);
+      arrow(c, hx + 330, hy - 170, hx + 60, hy - 30, eo3((tl - 2.0) / 0.3), { fill: INK_ });
+    }
     seq(c, tl, [{ t: 0.1, s: "ДВА МЕТРА", fill: Y }, { t: 0.773, s: "ТЯЖЕЛОВЕС", fill: WH, slam: true }, { t: 1.446, s: "ПРОТИВ ПАРНЯ", fill: WH }, { t: 2.11, s: "НА ГОЛОВУ НИЖЕ", fill: R, slam: true }], 75, 96);
   };
   SC.punch = (c, tl) => {
@@ -224,13 +242,10 @@
   };
   const ORDER = ["hook", "size", "punch", "myth", "doc", "three"];
   const GRAIN_A = { hook: 0.55, size: 0.55, punch: 0.55, myth: 0.55, doc: 0.9, three: 0.55 };
-  const HITS = { hook: 0.638, size: 0.773, punch: 0.783, myth: 2.502, doc: 2.475, three: 3.069 };
-  /* stop-motion time: 12 steps per second, phase chosen so the scene's hit word lands exactly on a step */
-  const qt = (tl, id) => { const ph = HITS[id] % (1 / STEP); return Math.floor((tl - ph) * STEP + 1e-6) / STEP + ph; };
 
   // card that brings scene i in (directions vary so the cuts do not feel the same)
   const TR = [null, { dx: 1, dy: 0, rot: 4 }, { dx: -1, dy: 0, rot: -4 }, { dx: 0, dy: 1, rot: 3 }, { dx: 1, dy: 0, rot: -3 }, { dx: 0, dy: -1, rot: 4 }];
-  const LEAD = 0.16, TRD = 0.42;
+  const LEAD = 0.2, TRD = 0.5;
 
   /* word-by-word subtitles: four words per card on cut strips, the current word on mustard */
   function subtitles(c, sc, tl) {
@@ -247,17 +262,17 @@
     const S = SP.scenes; let i = S.findIndex((s) => t < s.start + s.dur); if (i < 0) i = S.length - 1;
     const nx = S[i + 1], inCard = nx && t >= nx.start - LEAD;
     c.fillStyle = "#2a2522"; c.fillRect(0, 0, W, H);
-    SC[ORDER[i]](c, qt(t - S[i].start, ORDER[i]));
+    SC[ORDER[i]](c, t - S[i].start);
     let cur = i;
     if (inCard) {
-      const j = i + 1, tq = Math.floor(t * STEP + 1e-6) / STEP, p = (tq - (nx.start - LEAD)) / TRD, e = eo3(p), tr = TR[j];
+      const j = i + 1, p = (t - (nx.start - LEAD)) / TRD, e = eio(p), tr = TR[j];
       c.save(); c.shadowColor = "rgba(34,22,8,0.6)"; c.shadowBlur = 60; c.shadowOffsetX = -tr.dx * 20; c.shadowOffsetY = -tr.dy * 20;
       c.translate(W / 2 + tr.dx * W * (1 - e), H / 2 + tr.dy * H * (1 - e)); c.rotate(tr.rot * DEG * (1 - e)); c.translate(-W / 2, -H / 2);
-      cardPath(c, j); SC[ORDER[j]](c, Math.max(0, qt(t - nx.start, ORDER[j]))); c.restore();
+      cardPath(c, j); SC[ORDER[j]](c, Math.max(0, t - nx.start)); c.restore();
       cur = j;
     }
-    /* grain steps on the same grid as the scene it sits on, otherwise two step grids double the change rate */
-    overlays(c, inCard ? t : S[i].start + qt(t - S[i].start, ORDER[i]), GRAIN_A[ORDER[cur]]);
+    /* grain re-rolls every step on the global grid */
+    overlays(c, t, GRAIN_A[ORDER[cur]]);
     subtitles(c, S[i], Math.max(0, t - S[i].start));
   }
 
