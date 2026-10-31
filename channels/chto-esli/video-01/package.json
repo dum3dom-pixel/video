@@ -1,0 +1,13 @@
+{
+  "name": "pomnish-kak-budet-pilot-01",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "voice": "python scripts/voice.py",
+    "check": "npx --yes hyperframes@0.8.221 check",
+    "preview": "npx --yes hyperframes@0.8.221 preview",
+    "render:calm": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/render.ps1 -Variant calm",
+    "render:dynamic": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/render.ps1 -Variant dynamic"
+  }
+}

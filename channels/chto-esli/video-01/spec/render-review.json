@@ -1,0 +1,30 @@
+[
+  {
+    "file": "renders\\pilot-01-calm.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "duration": 21.25,
+    "bytes": 30506892,
+    "full_decode": "passed",
+    "audio_rms": 0.14851468801498413,
+    "audio_sha256": "3a6d1114f77fb8f62815bc9acbaf1b2985c2cc2258a9e95ac4918644ace2dc77",
+    "contact_sheet": "renders\\review-calm.jpg"
+  },
+  {
+    "file": "renders\\pilot-01-dynamic.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": "24/1",
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "duration": 21.25,
+    "bytes": 28870268,
+    "full_decode": "passed",
+    "audio_rms": 0.14851468801498413,
+    "audio_sha256": "3a6d1114f77fb8f62815bc9acbaf1b2985c2cc2258a9e95ac4918644ace2dc77",
+    "contact_sheet": "renders\\review-dynamic.jpg"
+  }
+]

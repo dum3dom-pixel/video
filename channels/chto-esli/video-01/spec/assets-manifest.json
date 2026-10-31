@@ -1,0 +1,50 @@
+[
+  {
+    "file": "sheets/sasha_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ff498e0fcd7246a14207888c8d30ebcd94a377211a323f73126a2cbc4b7443e1"
+  },
+  {
+    "file": "sheets/kostya_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "bb6e9d2aa5550ad6d38cbe2377354310273a0938bd1237c77bb998d737eedb70"
+  },
+  {
+    "file": "bg/bg_door_wall.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2de89a65e6bf5eae447214b79635e2fe5d6c534ff5840dc83c0338e7e4319597"
+  },
+  {
+    "file": "bg/bg_carpet_wall.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "eac9d73ea98aadec00652dd356c474a9a1c8b466694511b90aa2b1e414f671f2"
+  },
+  {
+    "file": "shots/p0_sock.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "03448338417dd8059fe7c27e847fd5c3b519c2cef9147f128dae74bd6bdb5963"
+  },
+  {
+    "file": "shots/p2_kostya.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "7bfa4a9329eacea06bb362df4463078eb00198eb056012a6121fcb68933e9f44"
+  },
+  {
+    "file": "shots/p3_calendar.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "4447f0499540d0752a2fbb6eff925f80e4b89a36c64e71034996291bf75adac3"
+  },
+  {
+    "file": "shots/p4_sasha.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "165f2cb64b4b9eb02520c4b67b163459878d27263f3d4621d7325340fe46db36"
+  }
+]

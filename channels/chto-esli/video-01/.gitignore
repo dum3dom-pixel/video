@@ -1,0 +1,8 @@
+.hyperframes/
+scripts/__pycache__/
+assets/fonts/
+assets/voice/_windows-request.json
+
+# Keep the two requested pilot deliverables in Git.
+!renders/pilot-01-calm.mp4
+!renders/pilot-01-dynamic.mp4
