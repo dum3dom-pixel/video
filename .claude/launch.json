@@ -23,6 +23,18 @@
         "nauka-paper"
       ],
       "port": 8765
+    },
+    {
+      "name": "pose-wallpaper",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8766",
+        "--directory",
+        "pose-wallpaper"
+      ],
+      "port": 8766
     }
   ]
 }

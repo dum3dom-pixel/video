@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pose Wallpaper</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#120b18}
+canvas{display:block;position:fixed;inset:0;width:100%;height:100%}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const fx = document.createElement('canvas'), fc = fx.getContext('2d');
+let W, H, D, U, S, cx, cy, parts = [];
+
+function resize() {
+  D = Math.min(devicePixelRatio || 1, 2);
+  W = innerWidth; H = innerHeight;
+  cv.width = fx.width = Math.round(W * D);
+  cv.height = fx.height = Math.round(H * D);
+  U = H / 1080; S = H * 0.72; cx = W * 0.46; cy = H * 0.5;
+  parts = Array.from({ length: 80 }, () => ({
+    x: Math.random() * W, y: Math.random() * H, v: (6 + Math.random() * 18) * U,
+    r: (1 + Math.random() * 2.4) * U, ph: Math.random() * 7,
+    c: ['255,232,26', '90,255,230', '255,110,190'][(Math.random() * 3) | 0]
+  }));
+}
+addEventListener('resize', resize);
+resize();
+
+/* ---------- pose model: MediaPipe-style 29 landmarks, figure height ~1.0, origin at centre ---------- */
+const lerp = (a, b, x) => [a[0] + (b[0] - a[0]) * x, a[1] + (b[1] - a[1]) * x];
+const nrm = v => { const n = Math.hypot(v[0], v[1]) || 1; return [v[0] / n, v[1] / n]; };
+
+function ik(a, b, l1, l2, sg) {
+  const dx = b[0] - a[0], dy = b[1] - a[1], n = Math.hypot(dx, dy) || 1e-4;
+  const d = Math.min(n, l1 + l2 - 1e-3), k = (l1 * l1 - l2 * l2 + d * d) / (2 * d);
+  const h = Math.sqrt(Math.max(l1 * l1 - k * k, 0)), ux = dx / n, uy = dy / n;
+  return [a[0] + ux * k - uy * h * sg, a[1] + uy * k + ux * h * sg];
+}
+
+function hand(P, i, wr, d) {
+  const q = [-d[1], d[0]];
+  P[17 + i] = [wr[0] + d[0] * .045 + q[0] * .012, wr[1] + d[1] * .045 + q[1] * .012];
+  P[19 + i] = [wr[0] + d[0] * .062 - q[0] * .003, wr[1] + d[1] * .062 - q[1] * .003];
+  P[21 + i] = [wr[0] + d[0] * .036 - q[0] * .014, wr[1] + d[1] * .036 - q[1] * .014];
+}
+
+function face(P, x, y) {
+  P[0] = [x, y];
+  [[1, -1], [4, 1]].forEach(([b, s]) => {
+    P[b] = [x + s * .013, y - .027]; P[b + 1] = [x + s * .03, y - .03]; P[b + 2] = [x + s * .046, y - .027];
+  });
+  P[7] = [x - .07, y - .005]; P[8] = [x + .07, y - .005];
+  P[9] = [x - .02, y + .03]; P[10] = [x + .02, y + .03];
+}
+
+function faceSide(P, hx, hy, o) {
+  P[0] = [hx - .05, hy + .015];
+  [[1, 0], [4, o]].forEach(([b, dx]) => {
+    P[b] = [hx - .03 + dx, hy - .012]; P[b + 1] = [hx - .018 + dx, hy - .016]; P[b + 2] = [hx - .006 + dx, hy - .012];
+  });
+  P[7] = [hx + .03, hy]; P[8] = [hx + .03 + o, hy];
+  P[9] = [hx - .04, hy + .04]; P[10] = [hx - .028 + o, hy + .045];
+}
+
+function curl(p, t) {
+  const P = [], sw = Math.sin(t * .9) * .004, br = Math.sin(t * 1.8) * .003;
+  face(P, sw, -.425 + br);
+  for (const s of [-1, 1]) {
+    const i = s < 0 ? 0 : 1;
+    const sh = [s * .12 + sw, -.31 + br], el = [sh[0] + s * .018, sh[1] + .19];
+    const f = 2.35 * p + .02, d = nrm([-s * Math.sin(f) * .5, Math.cos(f)]);
+    const wr = [el[0] + d[0] * .18, el[1] + d[1] * .18];
+    P[11 + i] = sh; P[13 + i] = el; P[15 + i] = wr; hand(P, i, wr, d);
+    P[23 + i] = [s * .09 + sw * .5, br]; P[25 + i] = [s * .1, .25]; P[27 + i] = [s * .11, .49];
+  }
+  return P;
+}
+
+function squat(p, t) {
+  const P = [], d = .17 * p, e = Math.min(1, p * 1.6), sy = -.31 + d, sw = Math.sin(t * .9) * .004;
+  face(P, sw, -.425 + d);
+  for (const s of [-1, 1]) {
+    const i = s < 0 ? 0 : 1;
+    const el = lerp([s * .138, sy + .19], [s * .1, sy + .09], e);
+    const wr = lerp([s * .156, sy + .37], [s * .03, sy + .04], e);
+    P[11 + i] = [s * .12 + sw, sy]; P[13 + i] = el; P[15 + i] = wr; hand(P, i, wr, nrm([wr[0] - el[0], wr[1] - el[1]]));
+    P[23 + i] = [s * .09, d]; P[25 + i] = [s * (.1 + .06 * p), .22 + .1 * p]; P[27 + i] = [s * (.11 + .03 * p), .49];
+  }
+  return P;
+}
+
+function pushup(p, t) {
+  const P = [], sy = .2 - (.36 - .24 * p);
+  for (const s of [-1, 1]) {
+    const i = s < 0 ? 0 : 1, o = s * .012;
+    const sh = [-.2 + o, sy], wr = [-.2 + o, .2], an = [.48 + o, .2];
+    P[11 + i] = sh; P[15 + i] = wr; P[13 + i] = ik(sh, wr, .19, .18, -1); hand(P, i, wr, [-1, 0]);
+    P[23 + i] = lerp(sh, an, .4); P[25 + i] = lerp(sh, an, .72); P[27 + i] = an;
+  }
+  faceSide(P, -.31, sy - .02, .008);
+  return P;
+}
+
+const EX = [
+  { name: 'curl', T: 2.8, reps: 8, fn: curl, ang: [11, 13, 15], label: 'elbow angle' },
+  { name: 'squat', T: 3.4, reps: 6, fn: squat, ang: [23, 25, 27], label: 'knee angle' },
+  { name: 'push-up', T: 3.0, reps: 6, fn: pushup, ang: [11, 13, 15], label: 'elbow angle' }
+];
+const BONES = [[0, 1], [1, 2], [2, 3], [3, 7], [0, 4], [4, 5], [5, 6], [6, 8], [9, 10],
+  [11, 12], [11, 13], [13, 15], [12, 14], [14, 16], [15, 17], [15, 19], [15, 21], [17, 19],
+  [16, 18], [16, 20], [16, 22], [18, 20], [11, 23], [12, 24], [23, 24], [23, 25], [25, 27], [24, 26], [26, 28]];
+
+const angleOf = (P, [a, b, c], i) => {
+  const A = P[a + i], B = P[b + i], C = P[c + i];
+  const v = Math.atan2(A[1] - B[1], A[0] - B[0]), w = Math.atan2(C[1] - B[1], C[0] - B[0]);
+  return Math.abs(((w - v + 3 * Math.PI) % (2 * Math.PI)) - Math.PI) * 180 / Math.PI;
+};
+
+/* ---------- state ---------- */
+let ex = 0, exStart = 0, prevEx = -1, prevStart = 0, blendStart = -9;
+let count = 0, popT = -9, lastT = 0, hist = [];
+const pulses = [];
+
+function switchTo(n, t) {
+  prevEx = ex; prevStart = exStart; ex = n; exStart = t; blendStart = t; count = 0; hist = [];
+}
+addEventListener('keydown', e => { const n = '123'.indexOf(e.key); if (n >= 0 && n !== ex) switchTo(n, lastT); });
+
+const phase = (t, s, T) => (1 - Math.cos(2 * Math.PI * (t - s) / T)) / 2;
+
+/* ---------- drawing ---------- */
+function rr(g, x, y, w, h, r) {
+  g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r);
+  g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
+}
+
+function background(t, floorY) {
+  const g = ctx.createLinearGradient(0, 0, W, H);
+  g.addColorStop(0, '#2c1738'); g.addColorStop(.55, '#1a1031'); g.addColorStop(1, '#06171d');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  [[.2, .3, 'rgba(255,60,160,.20)', .9, 0], [.75, .7, 'rgba(0,230,200,.20)', 1.1, 2], [.5, .45, 'rgba(255,220,40,.08)', .7, 4]]
+    .forEach(([bx, by, c, sp, ph]) => {
+      const x = W * (bx + .08 * Math.sin(t * .13 * sp + ph)), y = H * (by + .08 * Math.cos(t * .11 * sp + ph)), r = H * .75;
+      const rg = ctx.createRadialGradient(x, y, 0, x, y, r);
+      rg.addColorStop(0, c); rg.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = rg; ctx.fillRect(0, 0, W, H);
+    });
+  const st = 64 * U;
+  for (let x = st / 2; x < W; x += st) for (let y = st / 2; y < H; y += st) {
+    const d = Math.hypot(x - cx, y - cy) / U;
+    const a = .05 + .1 * Math.max(0, Math.sin(d / 55 - t * 1.6)) * Math.exp(-d / 650);
+    ctx.fillStyle = `rgba(190,255,245,${a})`; ctx.fillRect(x, y, 2.2 * U, 2.2 * U);
+  }
+  const fg = ctx.createRadialGradient(cx, floorY, 0, cx, floorY, 380 * U);
+  fg.addColorStop(0, 'rgba(90,255,230,.28)'); fg.addColorStop(1, 'rgba(90,255,230,0)');
+  ctx.save(); ctx.translate(0, floorY); ctx.scale(1, .16); ctx.translate(0, -floorY);
+  ctx.fillStyle = fg; ctx.fillRect(cx - 400 * U, floorY - 400 * U, 800 * U, 800 * U); ctx.restore();
+  for (const q of parts) {
+    q.y -= q.v * (1 / 60); if (q.y < -10) { q.y = H + 10; q.x = Math.random() * W; }
+    const a = .25 + .35 * Math.sin(t * 1.3 + q.ph);
+    ctx.fillStyle = `rgba(${q.c},${Math.max(a, .05)})`; ctx.beginPath(); ctx.arc(q.x, q.y, q.r, 0, 7); ctx.fill();
+  }
+  const sy = ((t % 7) / 7) * (H + 300 * U) - 150 * U;
+  const sg = ctx.createLinearGradient(0, sy - 90 * U, 0, sy + 90 * U);
+  sg.addColorStop(0, 'rgba(120,255,235,0)'); sg.addColorStop(.5, 'rgba(120,255,235,.07)'); sg.addColorStop(1, 'rgba(120,255,235,0)');
+  ctx.fillStyle = sg; ctx.fillRect(0, sy - 90 * U, W, 180 * U);
+}
+
+function skeleton(g, P) {
+  const pt = P.map(p => [cx + p[0] * S, cy + p[1] * S]);
+  const hx = (pt[0][0] + pt[7][0] + pt[8][0]) / 3, hy = (pt[0][1] + pt[7][1] + pt[8][1]) / 3;
+  g.fillStyle = 'rgba(255,255,255,.05)'; g.beginPath(); g.arc(hx, hy, .078 * S, 0, 7); g.fill();
+  g.fillStyle = 'rgba(40,210,190,.12)'; g.beginPath();
+  [11, 12, 24, 23].forEach((k, n) => n ? g.lineTo(...pt[k]) : g.moveTo(...pt[k])); g.fill();
+  g.lineCap = 'round';
+  [[14 * U, 'rgba(120,255,235,.16)'], [4.2 * U, 'rgba(255,255,255,.95)']].forEach(([w, c]) => {
+    g.lineWidth = w; g.strokeStyle = c; g.beginPath();
+    BONES.forEach(([a, b]) => { g.moveTo(...pt[a]); g.lineTo(...pt[b]); }); g.stroke();
+  });
+  pt.forEach((p, k) => {
+    const r = (k < 11 ? 7 : k >= 17 && k <= 22 ? 6 : 13) * U;
+    g.fillStyle = 'rgba(255,232,26,.18)'; g.beginPath(); g.arc(p[0], p[1], r * 2.2, 0, 7); g.fill();
+    g.fillStyle = '#ffe81a'; g.strokeStyle = 'rgba(120,100,0,.9)'; g.lineWidth = 1.5 * U;
+    g.beginPath(); g.arc(p[0], p[1], r, 0, 7); g.fill(); g.stroke();
+    if (r >= 13 * U) {
+      g.fillStyle = '#3a3000'; g.font = `700 ${10 * U}px "Segoe UI",sans-serif`;
+      g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(k, p[0], p[1] + U);
+    }
+  });
+  return pt;
+}
+
+function angles(P, E) {
+  const sides = E.name === 'push-up' ? [0] : [0, 1];
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  for (const i of sides) {
+    const [a, b, c] = E.ang.map(k => [cx + P[k + i][0] * S, cy + P[k + i][1] * S]);
+    const v = Math.atan2(a[1] - b[1], a[0] - b[0]), w = Math.atan2(c[1] - b[1], c[0] - b[0]);
+    const df = ((w - v + 3 * Math.PI) % (2 * Math.PI)) - Math.PI;
+    ctx.strokeStyle = 'rgba(90,255,230,.9)'; ctx.lineWidth = 3 * U;
+    ctx.beginPath(); ctx.arc(b[0], b[1], 38 * U, v, v + df, df < 0); ctx.stroke();
+    const m = v + df / 2, side = i ? 1 : -1;
+    ctx.fillStyle = '#5affe6'; ctx.font = `700 ${26 * U}px "Segoe UI",sans-serif`;
+    ctx.fillText(Math.round(angleOf(P, E.ang, i)) + '°', b[0] + Math.cos(m) * 78 * U + side * 10 * U, b[1] + Math.sin(m) * 62 * U);
+  }
+}
+
+function panel(x, y, w, h) {
+  rr(ctx, x, y, w, h, 18 * U); ctx.fillStyle = 'rgba(38,28,44,.62)'; ctx.fill();
+  ctx.strokeStyle = 'rgba(255,255,255,.09)'; ctx.lineWidth = 1.5 * U; ctx.stroke();
+}
+
+function hud(t, E) {
+  const pw = 600 * U, ph = 350 * U, x = W - pw - 60 * U, y = 60 * U, F = '"Segoe UI",Arial,sans-serif';
+  panel(x, y, pw, ph);
+  ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+  ctx.fillStyle = '#fff'; ctx.font = `700 ${46 * U}px ${F}`; ctx.fillText('Exercise: ' + E.name, x + 40 * U, y + 84 * U);
+  const pop = 1 + .22 * Math.exp(-(t - popT) * 6);
+  ctx.save(); ctx.translate(x + 40 * U, y + 190 * U); ctx.scale(pop, pop);
+  ctx.fillStyle = '#2bff3a'; ctx.shadowColor = 'rgba(43,255,58,.7)'; ctx.shadowBlur = 24 * U;
+  ctx.font = `800 ${96 * U}px ${F}`; ctx.fillText('Count: ' + count, 0, 0); ctx.restore();
+  ctx.fillStyle = '#2bff3a'; ctx.shadowColor = `rgba(43,255,58,${.4 + .3 * Math.sin(t * 3)})`; ctx.shadowBlur = 16 * U;
+  ctx.font = `700 ${46 * U}px ${F}`; ctx.fillText('Form: GOOD', x + 40 * U, y + 258 * U); ctx.shadowBlur = 0;
+  ctx.font = `500 ${30 * U}px ${F}`; let mx = x + 40 * U;
+  ['1:Curl', '2:Squat', '3:Push-up'].forEach((s, k) => {
+    ctx.fillStyle = k === ex ? '#fff' : 'rgba(255,255,255,.45)'; ctx.fillText(s, mx, y + 318 * U); mx += ctx.measureText(s).width + 36 * U;
+  });
+}
+
+function chart(t, E) {
+  const pw = 600 * U, x = W - pw - 60 * U, y = 60 * U + 350 * U + 24 * U, h = 170 * U, pad = 24 * U;
+  panel(x, y, pw, h);
+  const cur = hist.length ? hist[hist.length - 1].a : 0;
+  ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic'; ctx.font = `600 ${22 * U}px "Segoe UI",sans-serif`;
+  ctx.fillStyle = 'rgba(255,255,255,.55)'; ctx.fillText(E.label.toUpperCase(), x + pad, y + 36 * U);
+  ctx.textAlign = 'right'; ctx.fillStyle = '#5affe6'; ctx.fillText(Math.round(cur) + '°', x + pw - pad, y + 36 * U);
+  const gx = x + pad, gy = y + 54 * U, gw = pw - pad * 2, gh = h - 54 * U - 20 * U;
+  ctx.strokeStyle = 'rgba(255,255,255,.08)'; ctx.lineWidth = U;
+  [0, .5, 1].forEach(f => { ctx.beginPath(); ctx.moveTo(gx, gy + gh * f); ctx.lineTo(gx + gw, gy + gh * f); ctx.stroke(); });
+  if (hist.length < 2) return;
+  const pts = hist.map(q => [gx + gw * (1 - (t - q.t) / 6), gy + gh * (1 - (q.a - 20) / 160)]);
+  ctx.beginPath(); pts.forEach((p, k) => k ? ctx.lineTo(...p) : ctx.moveTo(...p));
+  ctx.strokeStyle = '#5affe6'; ctx.lineWidth = 3 * U; ctx.lineJoin = 'round'; ctx.stroke();
+  ctx.lineTo(pts[pts.length - 1][0], gy + gh); ctx.lineTo(pts[0][0], gy + gh); ctx.closePath();
+  const fg = ctx.createLinearGradient(0, gy, 0, gy + gh);
+  fg.addColorStop(0, 'rgba(90,255,230,.28)'); fg.addColorStop(1, 'rgba(90,255,230,0)'); ctx.fillStyle = fg; ctx.fill();
+  const e = pts[pts.length - 1]; ctx.fillStyle = '#ffe81a'; ctx.beginPath(); ctx.arc(e[0], e[1], 6 * U, 0, 7); ctx.fill();
+}
+
+function frame(ms) {
+  const t = ms / 1000; lastT = t;
+  let E = EX[ex];
+  if (t - exStart >= E.reps * E.T) { switchTo((ex + 1) % 3, t); E = EX[ex]; }
+  const tau = t - exStart, c = Math.floor(tau / E.T + .5);
+  if (c > count) { count = c; popT = t; pulses.push(t); }
+  let P = E.fn(phase(t, exStart, E.T), t);
+  const k = Math.min(Math.max((t - blendStart) / 1.1, 0), 1);
+  if (k < 1 && prevEx >= 0) {
+    const e = k * k * (3 - 2 * k), E0 = EX[prevEx], P0 = E0.fn(phase(t, prevStart, E0.T), t);
+    P = P.map((p, i) => lerp(P0[i], p, e));
+  }
+  hist.push({ t, a: (angleOf(P, E.ang, 0) + angleOf(P, E.ang, 1)) / 2 });
+  while (hist[0].t < t - 6) hist.shift();
+
+  ctx.setTransform(D, 0, 0, D, 0, 0);
+  background(t, cy + Math.max(P[27][1], P[28][1]) * S + 16 * U);
+
+  fc.setTransform(D, 0, 0, D, 0, 0);
+  fc.globalCompositeOperation = 'destination-out'; fc.fillStyle = 'rgba(0,0,0,.18)'; fc.fillRect(0, 0, W, H);
+  fc.globalCompositeOperation = 'source-over';
+  skeleton(fc, P);
+  ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(fx, 0, 0); ctx.setTransform(D, 0, 0, D, 0, 0);
+
+  angles(P, E);
+  const chest = [cx + (P[11][0] + P[12][0]) / 2 * S, cy + (P[11][1] + P[12][1]) / 2 * S];
+  for (let n = pulses.length - 1; n >= 0; n--) {
+    const a = (t - pulses[n]) / 1.2; if (a > 1) { pulses.splice(n, 1); continue; }
+    ctx.strokeStyle = `rgba(255,232,26,${.6 * (1 - a)})`; ctx.lineWidth = 3 * U;
+    ctx.beginPath(); ctx.arc(chest[0], chest[1], (60 + 380 * a) * U, 0, 7); ctx.stroke();
+  }
+  hud(t, E); chart(t, E);
+  const vg = ctx.createRadialGradient(W / 2, H / 2, H * .45, W / 2, H / 2, H * 1.05);
+  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.5)'); ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
