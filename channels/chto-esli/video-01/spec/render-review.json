@@ -6,11 +6,11 @@
     "fps": "24/1",
     "video_codec": "h264",
     "audio_codec": "aac",
-    "duration": 21.25,
-    "bytes": 30506892,
+    "duration": 16.25,
+    "bytes": 23740030,
     "full_decode": "passed",
-    "audio_rms": 0.14851468801498413,
-    "audio_sha256": "3a6d1114f77fb8f62815bc9acbaf1b2985c2cc2258a9e95ac4918644ace2dc77",
+    "audio_rms": 0.14497731626033783,
+    "audio_sha256": "248f174e0b61e278bdee40eab29e45b8d58d404d2e6aa3d2c47fa6b4752cc574",
     "contact_sheet": "renders\\review-calm.jpg"
   },
   {
@@ -20,11 +20,11 @@
     "fps": "24/1",
     "video_codec": "h264",
     "audio_codec": "aac",
-    "duration": 21.25,
-    "bytes": 28870268,
+    "duration": 16.25,
+    "bytes": 22607903,
     "full_decode": "passed",
-    "audio_rms": 0.14851468801498413,
-    "audio_sha256": "3a6d1114f77fb8f62815bc9acbaf1b2985c2cc2258a9e95ac4918644ace2dc77",
+    "audio_rms": 0.14497731626033783,
+    "audio_sha256": "248f174e0b61e278bdee40eab29e45b8d58d404d2e6aa3d2c47fa6b4752cc574",
     "contact_sheet": "renders\\review-dynamic.jpg"
   }
 ]

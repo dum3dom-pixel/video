@@ -42,4 +42,19 @@ fs.writeFileSync(path.join(root, 'index.html'), html('calm'));
 fs.mkdirSync(path.join(root, 'compositions'), {recursive:true});
 fs.writeFileSync(path.join(root, 'compositions/dynamic.html'), html('dynamic'));
 if(fs.existsSync(path.join(root, 'dynamic.html')))fs.unlinkSync(path.join(root, 'dynamic.html'));
+// Second minute: separate composition, own timeline and engine.
+const m02Path = path.join(root, 'spec/timeline-m02.json');
+if (fs.existsSync(m02Path)) {
+  const m02 = JSON.parse(fs.readFileSync(m02Path, 'utf8'));
+  const m02Duration = Math.ceil(m02.total * 24) / 24;
+  fs.writeFileSync(path.join(root, 'engine/data-m02.js'), `window.M02 = ${JSON.stringify({...m02, duration: m02Duration})};
+`);
+  fs.writeFileSync(path.join(root, 'compositions/m02.html'), html('dynamic')
+    .replace(/data-duration="[\d.]+" data-width/, `data-duration="${m02Duration}" data-width`)
+    .replace(/data-duration="[\d.]+" data-track-index/, `data-duration="${m02.total}" data-track-index`)
+    .replace('assets/master.wav', 'assets/master-m02.wav')
+    .replace('engine/data.js', 'engine/data-m02.js')
+    .replace('engine/pilot.js', 'engine/m02.js'));
+  console.log(`Built second-minute composition: ${m02Duration}s`);
+}
 console.log(`Built two HyperFrames compositions: ${duration}s at 24 fps; animation at 12 fps.`);

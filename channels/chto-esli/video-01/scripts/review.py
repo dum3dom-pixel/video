@@ -12,7 +12,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
 FFMPEG=imageio_ffmpeg.get_ffmpeg_exe()
-TIMES=[0.75,3.65,6.25,12.9,16.1,20.25]
+SPEC=json.loads((ROOT/'spec'/'timeline.json').read_text(encoding='utf-8'))
+TOTAL=-(-SPEC['total']*24//1)/24
+TIMES=[round(sc['start']+min(sc['speechDur']*.5,1.2),2) for sc in SPEC['scenes']]
 
 
 def review(variant):
@@ -25,7 +27,7 @@ def review(variant):
     assert (video['width'],video['height'])==(1920,1080)
     assert video['codec_name']=='h264' and audio['codec_name']=='aac'
     assert video['avg_frame_rate']=='24/1'
-    assert abs(float(probe['format']['duration'])-21.25)<0.08
+    assert abs(float(probe['format']['duration'])-TOTAL)<0.08
     # Decode every video frame and the complete audio to catch corrupt/truncated output.
     subprocess.run([FFMPEG,'-v','error','-i',str(path),'-f','null','-'],capture_output=True,check=True)
     pcm=subprocess.run([FFMPEG,'-v','error','-i',str(path),'-vn','-f','f32le','-ac','1','-ar','22050','-'],capture_output=True,check=True).stdout
