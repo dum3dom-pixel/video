@@ -7,6 +7,10 @@ BEAT = 60 / 90
 ns = {}
 exec(open("nauka-frames/scripts/codex_paste.py", encoding="utf8").read().split("sheets = [")[0], ns)
 STYLE, REF, T, G, D, ACC_T, ACC_NONE = (ns[k] for k in ("STYLE", "REF", "T", "G", "D", "ACC_T", "ACC_NONE"))
+# Gromila's look was replaced on 2026-10-31 (nauka-frames/spec/gromila-likeness-v2.json); the bald dark-bearded G from codex_paste.py is outdated
+G = ("Gromila, huge heavyweight, about 2 meters tall: high rounded forehead, very receding hairline with sparse short light-brown hair at the temples, light-blue eyes, natural light eyebrows, broad rounded face and nose, "
+     "dense light-brown / dark-blond full beard with lighter ends, light beige skin, extremely thick muscular neck, rounded huge shoulders and upper arms, massive broad chest and thick waist, "
+     "light-gray sleeveless tank top, navy-blue sweatpants, barefoot, bare fists.")
 MATCH = "Match the paper style, colours and lighting of the attached scene picture (s1a_hook_wide.png)."
 
 hook = json.load(open("nauka-frames/spec/hook.json", encoding="utf8"))["scenes"]
@@ -148,6 +152,7 @@ cx = ["# Codex: продолжение ролика 01 до 1:30", "",
       "## Что уже сделано (не менять)",
       "- Хук 22 с собран и отрендерен: `nauka-frames/out/nauka-frames-hook.mp4`. Голос и тайминги хука не меняем.",
       "- Листы героев в бумажном стиле: `nauka-frames/assets/sheets/{tetsu,gromila,doc}.png`. Девять кадров хука: `nauka-frames/assets/shots/`.",
+      "- Громила обновлён 31.10 по принятым примерам (светлая кожа, залысины, светлая борода, голубые глаза; см. `nauka-frames/spec/gromila-likeness-v2.json`). Старого лысого Громилу с тёмной бородой больше не рисуем. Перед генерацией прочитать [SPRITE-STYLE.md](SPRITE-STYLE.md).",
       "- Принятый эталон стиля: `nauka-frames/assets/shots/s1a_hook_wide.png`. Рука Тэцу в хуке прямая, это согласовано: в новых кадрах сохранять тот же силуэт.", "",
       "## Правила (те же, что в v3)",
       "- Бумажный коллаж: рваные края с белой кромкой, тени между слоями, зерно, палитра крафт / крем / пыльно-синий / горчичный / тёплый серый, красный `#D92F2B` только там, где указано в строке «акцент».",
@@ -168,9 +173,9 @@ for fn, sc, sh, acc, scene, calm in SHOTS:
     cx += [f"### {fn} (сцена `{sc}`)", f"Приложить: {att}", f"Сохранить как: `nauka-frames/assets/shots/{fn}.png`", f"Спокойная зона: {calm}", "```", p, "```", ""]
 cx += ["## Чек-лист на каждый результат",
        "- Бумажный коллаж, рваные края, тени между слоями, без чёрных контуров; тот же материал и свет, что в `s1a_hook_wide.png`.",
-       "- Герои как на листах; Громила не хмурый боец, а по смыслу сцены (в `s14_unseen` он смотрит мимо, в `s12_chin_profile` спокоен).",
+       "- Герои как на листах; Громила как на новом листе, с выражением по смыслу сцены (в `s14_unseen` он смотрит мимо, в `s12_chin_profile` спокоен).",
        "- Нет текста, цифр на шкале, стрелок, эффектов, крови, медицинских знаков.",
-       "- Красный только в указанном месте.",
+       "- Красный только в указанном месте. В `s7_dummy`, `s9_jelly_jar` и `s18_bag_scale` красный акцент осознанно стоит не на бинтах Тэцу (как красный мозг в `s6b_brain`), хотя `SPRITE-STYLE.md` разрешает красный только на бинтах: если Codex считает это ошибкой, пусть скажет, не подгоняя молча.",
        "- Есть спокойная зона под надписи и схемы (см. строки «Спокойная зона»).",
        "- PNG 1536×1024.", "",
        "## После генерации: что делает Codex",
