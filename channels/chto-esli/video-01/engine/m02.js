@@ -42,10 +42,14 @@
     g.addColorStop(0,'rgba(50,32,12,0)');g.addColorStop(1,'rgba(50,32,12,.30)');c.fillStyle=g;c.fillRect(0,0,W,H);vignette=cv;
   }
 
+  // Camera coordinates stay in the 1536x1024 frame. A 16:9 plate (any resolution) is mapped to 1536x864
+  // and centred in that frame, so y is shifted by half of the missing height.
   function camera(c,name,{z=1,x=768,y=512}={},extra){
-    x=clamp(x,768/z,1536-768/z);y=clamp(y,432/z,1024-432/z);
+    const im=IMG[name],ph=1536*im.height/im.width,off=(1024-ph)/2;
+    x=clamp(x,768/z,1536-768/z);y=clamp(y-off,432/z,ph-432/z);
     const scale=1.25*z,dx=W/2-x*scale,dy=H/2-y*scale;
-    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(IMG[name],0,0,1536,1024);
+    c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';
+    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(im,0,0,1536,ph);
     if(extra)extra(c);c.restore();
   }
 

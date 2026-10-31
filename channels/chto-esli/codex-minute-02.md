@@ -1,6 +1,6 @@
 # ТЗ второй минуты ролика 01: пять изображений
 
-Продолжение [codex-pilot-01.md](codex-pilot-01.md). Раскадровка и озвучка: [video-01-minute-02.md](video-01-minute-02.md). Формат и правила те же, что в пилоте: бумажный коллаж, палитра из шести цветов, красный `#D92F2B` только на названном предмете (здесь это магнит на холодильнике), без текста и цифр, нижняя пятая кадра свободна, 1536×1024.
+Продолжение [codex-pilot-01.md](codex-pilot-01.md). Раскадровка и озвучка: [video-01-minute-02.md](video-01-minute-02.md). Формат и правила те же, что в пилоте: бумажный коллаж, палитра из шести цветов, красный `#D92F2B` только на названном предмете (здесь это магнит на холодильнике), без текста и цифр, нижняя пятая кадра свободна. Лист мамы 1536×1024, все кадры сцен 16:9, 2560×1440 (целый кадр, без обрезки).
 
 Пути относительны к `channels/chto-esli/video-01/assets/`. Существующие файлы не перезаписывать: пробные версии сохранять рядом с суффиксом.
 
@@ -77,7 +77,7 @@ Input image 1: bg/bg_door_wall.png. Use only as the paper material, palette, sof
 
 Physical room, not screen coordinates: a modest Russian apartment kitchen, September 2005, same family and same warm album grading as the bedroom plates. West wall: one cream-and-warm-gray rounded refrigerator of the early 2000s, with exactly one small round paper magnet at about adult eye height: a sea-themed magnet (a stylized wave and a lifebuoy ring), the ring red #D92F2B and cream, the only red in the picture. South wall: one window with a plain cream curtain trimmed in brick brown, soft mustard-cream morning daylight entering only through it; under the window a wooden kitchen table covered with a mustard-and-cream checked oilcloth that hangs a little over the edges, two plain wooden stools tucked at the near side. East wall: a counter with a blank wooden cutting board (no bread yet), a plain faded-teal kettle and a plain warm-gray gas stove. Lower third of the walls: a muted brick-brown band. Floor: olive-and-cream paper-strip linoleum. No other furniture, decorations, calendar or clock.
 
-Camera A (kitchen master): fixed wide view from the doorway, lens about 1.3 m above the floor, looking south, natural roughly 35 mm-equivalent perspective. Refrigerator screen-left with its magnet clearly visible, window and table centered, counter and stove screen-right. Everything meaningful above y=752; bottom fifth only quiet floor. Lock framing, perspective and object positions for all later kitchen shots.
+Camera A (kitchen master): fixed wide view from the doorway, lens about 1.3 m above the floor, looking south, natural roughly 35 mm-equivalent perspective. Refrigerator screen-left with its magnet clearly visible, window and table centered, counter and stove screen-right. Everything meaningful above 70 percent of the height; bottom fifth only quiet floor. Lock framing, perspective and object positions for all later kitchen shots.
 
 Lighting: dim early morning, soft cream-mustard daylight only through the south window, weaker warm light from the doorway behind the camera. Same exposure and warm album grading as the bedroom; no additional light source or drawn light beam.
 
@@ -87,7 +87,7 @@ Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, o
 
 Red rule: #D92F2B only on the lifebuoy ring of the fridge magnet, nowhere else. One complete finished room illustration.
 
-Output/composition: one opaque PNG, exactly 1536x1024 pixels, landscape 3:2. Keep all faces, hair silhouettes, hands, feet and meaningful objects entirely within x=96..1440 and y=128..752. The lowest 20 percent, y=820..1023, contains only unimportant background, floor or blanket, with no faces, hands, feet or significant props. Leave y=753..819 as extra breathing room. The central 16:9 crop keeps x=0..1535, y=80..943; essential action must survive this crop and a mild push-in. These coordinates are instructions; never draw guides or labels.
+Output/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9. The whole frame is used, nothing is cropped later. If the tool cannot produce exactly 2560x1440, produce the largest landscape 16:9 image it allows (never smaller than 1920x1080). Keep all faces, hair silhouettes, hands and meaningful objects entirely within x=10 to 94 percent of the width and y=7 to 70 percent of the height. The lowest 20 percent of the height contains only unimportant background, floor or oilcloth, with no faces, hands or significant props; leave the band between 70 and 80 percent as breathing room. Essential action must survive a push-in up to 1.5x. These proportions are instructions; never draw guides or labels.
 
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. The oilcloth check, curtain trim and floor pattern are material patterns, not annotations. The magnet carries no lettering. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
@@ -111,7 +111,7 @@ Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, o
 
 Red rule: no red #D92F2B visible (the magnet is out of frame).
 
-Output/composition: one opaque PNG, exactly 1536x1024 pixels, landscape 3:2. Keep all faces, hair silhouettes, hands, feet and meaningful objects entirely within x=96..1440 and y=128..752. The lowest 20 percent, y=820..1023, contains only unimportant background, floor or blanket, with no faces, hands, feet or significant props. Leave y=753..819 as extra breathing room. The central 16:9 crop keeps x=0..1535, y=80..943; essential action must survive this crop and a mild push-in. These coordinates are instructions; never draw guides or labels.
+Output/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9. The whole frame is used, nothing is cropped later. If the tool cannot produce exactly 2560x1440, produce the largest landscape 16:9 image it allows (never smaller than 1920x1080). Keep all faces, hair silhouettes, hands and meaningful objects entirely within x=10 to 94 percent of the width and y=7 to 70 percent of the height. The lowest 20 percent of the height contains only unimportant background, floor or oilcloth, with no faces, hands or significant props; leave the band between 70 and 80 percent as breathing room. Essential action must survive a push-in up to 1.5x. These proportions are instructions; never draw guides or labels.
 
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. The oilcloth check, curtain trim and floor pattern are material patterns, not annotations. The magnet carries no lettering. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
@@ -141,7 +141,7 @@ Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, o
 
 Red rule: #D92F2B only on the lifebuoy ring of the fridge magnet, nowhere else.
 
-Output/composition: one opaque PNG, exactly 1536x1024 pixels, landscape 3:2. Keep all faces, hair silhouettes, hands, feet and meaningful objects entirely within x=96..1440 and y=128..752. The lowest 20 percent, y=820..1023, contains only unimportant background, floor or blanket, with no faces, hands, feet or significant props. Leave y=753..819 as extra breathing room. The central 16:9 crop keeps x=0..1535, y=80..943; essential action must survive this crop and a mild push-in. These coordinates are instructions; never draw guides or labels.
+Output/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9. The whole frame is used, nothing is cropped later. If the tool cannot produce exactly 2560x1440, produce the largest landscape 16:9 image it allows (never smaller than 1920x1080). Keep all faces, hair silhouettes, hands and meaningful objects entirely within x=10 to 94 percent of the width and y=7 to 70 percent of the height. The lowest 20 percent of the height contains only unimportant background, floor or oilcloth, with no faces, hands or significant props; leave the band between 70 and 80 percent as breathing room. Essential action must survive a push-in up to 1.5x. These proportions are instructions; never draw guides or labels.
 
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. The oilcloth check, curtain trim and floor pattern are material patterns, not annotations. The magnet carries no lettering. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
@@ -169,7 +169,7 @@ Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, o
 
 Red rule: no red #D92F2B visible.
 
-Output/composition: one opaque PNG, exactly 1536x1024 pixels, landscape 3:2. Keep all faces, hair silhouettes, hands, feet and meaningful objects entirely within x=96..1440 and y=128..752. The lowest 20 percent, y=820..1023, contains only unimportant background, floor or blanket, with no faces, hands, feet or significant props. Leave y=753..819 as extra breathing room. The central 16:9 crop keeps x=0..1535, y=80..943; essential action must survive this crop and a mild push-in. These coordinates are instructions; never draw guides or labels.
+Output/composition: one opaque PNG, exactly 2560x1440 pixels, landscape 16:9. The whole frame is used, nothing is cropped later. If the tool cannot produce exactly 2560x1440, produce the largest landscape 16:9 image it allows (never smaller than 1920x1080). Keep all faces, hair silhouettes, hands and meaningful objects entirely within x=10 to 94 percent of the width and y=7 to 70 percent of the height. The lowest 20 percent of the height contains only unimportant background, floor or oilcloth, with no faces, hands or significant props; leave the band between 70 and 80 percent as breathing room. Essential action must survive a push-in up to 1.5x. These proportions are instructions; never draw guides or labels.
 
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. The oilcloth check, curtain trim and floor pattern are material patterns, not annotations. The magnet carries no lettering. No additional people, props, modern devices, brands, blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
@@ -183,7 +183,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 | В кадре текст или цифры на магните | Remove all lettering; the magnet is only a stylized wave and a lifebuoy ring. |
 | Красный не только на магните | The only red #D92F2B is the lifebuoy ring on the fridge magnet; make everything else brick, mustard, cream, olive, teal or warm gray. |
 | Кухня разная в разных кадрах | Use input image 3 as the exact camera and layout; do not move the fridge, window, table or counter. |
-| Нижняя пятая занята | Move faces, hands and key objects above y=752; leave y=820..1023 only floor or oilcloth. |
+| Нижняя пятая занята | Move faces, hands and key objects up above 70 percent of the height; leave the lowest fifth only floor or oilcloth. |
 
 ## Чек-лист приёмки
 
@@ -192,5 +192,5 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 - [ ] Красный есть только на спасательном круге магнита и нигде больше.
 - [ ] Ни в одном кадре нет букв и цифр.
 - [ ] В `k_soup` нет лица взрослого, только рука и рукав.
-- [ ] Лица, руки и ключевые предметы выше `y=752`.
-- [ ] Размер 1536×1024, фон непрозрачный.
+- [ ] Лица, руки и ключевые предметы выше 70% высоты кадра.
+- [ ] Лист мамы 1536×1024; кадры сцен 16:9 (2560×1440, не меньше 1920×1080); фон непрозрачный.
