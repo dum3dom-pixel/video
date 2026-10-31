@@ -42,10 +42,12 @@
   }
 
   function camera(c,name,{z=1,x=768,y=512}={},extra){
-    // At z=1 this is exactly the central y=80..943, 1536x864 crop.
-    x=clamp(x,768/z,1536-768/z);y=clamp(y,432/z,1024-432/z);
+    // At z=1 a 3:2 plate shows its central y=80..943, 1536x864 crop; a 16:9 plate of any resolution is centred in the same frame.
+    const im=IMG[name],ph=1536*im.height/im.width,off=(1024-ph)/2;
+    x=clamp(x,768/z,1536-768/z);y=clamp(y,off+432/z,off+ph-432/z);
     const scale=1.25*z,dx=W/2-x*scale,dy=H/2-y*scale;
-    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(IMG[name],0,0,1536,1024);
+    c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';
+    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(im,0,off,1536,ph);
     if(extra)extra(c);c.restore();
     return {scale,dx,dy};
   }

@@ -43,13 +43,13 @@
   }
 
   // Camera coordinates stay in the 1536x1024 frame. A 16:9 plate (any resolution) is mapped to 1536x864
-  // and centred in that frame, so y is shifted by half of the missing height.
+  // and centred in that frame, so extra() props and camera values keep the same coordinates.
   function camera(c,name,{z=1,x=768,y=512}={},extra){
     const im=IMG[name],ph=1536*im.height/im.width,off=(1024-ph)/2;
-    x=clamp(x,768/z,1536-768/z);y=clamp(y-off,432/z,ph-432/z);
+    x=clamp(x,768/z,1536-768/z);y=clamp(y,off+432/z,off+ph-432/z);
     const scale=1.25*z,dx=W/2-x*scale,dy=H/2-y*scale;
     c.imageSmoothingEnabled=true;c.imageSmoothingQuality='high';
-    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(im,0,0,1536,ph);
+    c.save();c.translate(dx,dy);c.scale(scale,scale);c.drawImage(im,0,off,1536,ph);
     if(extra)extra(c);c.restore();
   }
 
