@@ -8,7 +8,7 @@
   const mix=(a,b,u)=>a+(b-a)*u;
   const smooth=u=>{u=clamp(u);return u*u*(3-2*u)};
   const IMG={};
-  const FILES={door:'bg/bg_door_wall.png',kostya:'shots/p2_kostya.png',calendar:'shots/p3_calendar.png',sasha:'shots/p4_sasha.png',sock:'shots/p0_sock.png'};
+  const FILES={door:'bg/bg_door_wall_hd.png',kostya:'shots/p2_kostya_hd.png',calendar:'shots/p3_calendar_hd.png',sasha:'shots/p4_sasha_hd.png',sock:'shots/p0_sock.png'};
   const SC=Object.fromEntries(SP.scenes.map(s=>[s.id,s]));
   let sock=null,vignette=null;
 

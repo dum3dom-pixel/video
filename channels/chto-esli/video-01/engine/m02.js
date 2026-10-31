@@ -9,7 +9,7 @@
   const smooth=u=>{u=clamp(u);return u*u*(3-2*u)};
   const INK='#4c443b',CREAM='#F1E6CF',MUSTARD='#D9A441',BRICK='#8C4A32',RED='#D92F2B';
   const IMG={},MISSING={};
-  const FILES={sasha:'shots/p4_sasha.png',calendar:'shots/p3_calendar.png',carpet:'bg/bg_carpet_wall.png',soup:'shots/k_soup.png',table:'shots/k_sasha_table.png',kitchen:'bg/bg_kitchen.png',mama:'shots/k_mama_bread.png'};
+  const FILES={sasha:'shots/p4_sasha_hd.png',calendar:'shots/p3_calendar_hd.png',carpet:'bg/bg_carpet_wall_hd.png',soup:'shots/k_soup.png',table:'shots/k_sasha_table.png',kitchen:'bg/bg_kitchen.png',mama:'shots/k_mama_bread.png'};
   const SC=Object.fromEntries(SP.scenes.map(s=>[s.id,s]));
   const WD=id=>SP.words.filter(w=>w.scene===id);
   const norm=s=>s.toLowerCase().replace(/ё/g,'е');
