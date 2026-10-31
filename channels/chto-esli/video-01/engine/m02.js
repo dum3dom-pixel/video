@@ -7,7 +7,7 @@
   const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
   const mix=(a,b,u)=>a+(b-a)*u;
   const smooth=u=>{u=clamp(u);return u*u*(3-2*u)};
-  const INK='#4c443b',CREAM='#F1E6CF',MUSTARD='#D9A441',BRICK='#8C4A32',RED='#D92F2B';
+  const INK='#4c443b',CREAM='#F1E6CF',MUSTARD='#D9A441',BRICK='#8C4A32';
   const IMG={},MISSING={};
   const FILES={sasha:'shots/p4_sasha_hd.png',calendar:'shots/p3_calendar_hd.png',carpet:'bg/bg_carpet_wall_hd.png',soup:'shots/k_soup.png',table:'shots/k_sasha_table.png',kitchen:'bg/bg_kitchen.png',mama:'shots/k_mama_bread.png'};
   const SC=Object.fromEntries(SP.scenes.map(s=>[s.id,s]));
@@ -65,17 +65,6 @@
   function textOnStrip(c,text,cx,cy,font,color=INK){
     c.save();c.font=font;c.fillStyle=color;c.textAlign='center';c.textBaseline='middle';c.fillText(text,cx,cy);c.restore();
   }
-  function strike(c,x0,x1,y,p,seed=3){
-    if(p<=0)return;
-    c.save();c.strokeStyle=RED;c.lineCap='round';c.lineWidth=13;c.beginPath();
-    const n=Math.max(2,Math.floor((x1-x0)/40));
-    for(let i=0;i<=n;i++){
-      const u=i/n;if(u>p)break;
-      const px=mix(x0,x1,u),py=y+(P.hr(i,seed)-.5)*10+(u-.5)*-14;
-      i?c.lineTo(px,py):c.moveTo(px,py);
-    }
-    c.stroke();c.restore();
-  }
   function pop(c,cx,cy,t,t0,draw){
     const u=clamp((t-t0)/.22);if(t<t0)return;
     const s=u<1?1+.28*(1-u)*(1-u)*Math.cos(u*9):1;
@@ -120,25 +109,35 @@
     c.restore();
   }
 
-  function rulesNote(c,t,small){
-    const u=smooth((t-SC.rules.start)/.2);if(u<=0)return;
-    c.save();
-    if(small){paperStrip(c,310,150,420,110,{fill:'#4c443b',rot:-.03,seed:71});textOnStrip(c,'ПРАВИЛА',310,150,'700 56px PilotSans',CREAM);}
-    else{const s=mix(1.35,1,u);c.translate(W/2,400);c.scale(s,s);c.rotate(-.025);c.globalAlpha=u;
-      paperStrip(c,0,0,860,230,{fill:'#4c443b',seed:71});textOnStrip(c,'ПРАВИЛА',0,0,'700 120px PilotSans',CREAM);}
+  // A row of code-drawn cassettes 2006-2026 slides left until "2024" is centred, then lifts.
+  function cassettesRow(c,t){
+    const sc=SC.cassettes,FOCUS=18,GAP=270;
+    const tk=wordAt('cassettes','кассет'),tn=wordAt('cassettes','никогда');
+    const pos=mix(0,FOCUS,smooth((t-sc.start)/Math.max(.5,tk-sc.start)));
+    for(let i=0;i<21;i++){
+      const x=W/2+(i-pos)*GAP;if(x<-200||x>W+200)continue;
+      const hot=i===FOCUS&&t>=tk,lift=hot?smooth((t-tk)/.3)*40:0,shake=i===FOCUS&&t>=tn?Math.sin((t-tn)*40)*4*clamp(1-(t-tn)/.5):0;
+      c.save();c.translate(x+shake,480-lift);c.rotate((P.hr(i,31)-.5)*.05);
+      c.shadowColor='rgba(30,20,10,.45)';c.shadowBlur=20;c.shadowOffsetY=8;
+      c.fillStyle=INK;c.beginPath();c.roundRect(-115,-75,230,150,14);c.fill();c.shadowColor='transparent';
+      paperStrip(c,0,-28,190,62,{fill:hot?MUSTARD:CREAM,seed:40+i,shadow:false});
+      textOnStrip(c,String(2006+i),0,-26,'700 44px PilotSans',hot?BRICK:INK);
+      c.fillStyle=CREAM;for(const rx of [-45,45]){c.beginPath();c.arc(rx,38,20,0,Math.PI*2);c.fill();}
+      c.fillStyle=INK;for(const rx of [-45,45]){c.beginPath();c.arc(rx,38,8,0,Math.PI*2);c.fill();}
+      c.restore();
+    }
+  }
+
+  function rulesNote(c,t){
+    const u=smooth((t-SC.restart.start)/.2);if(u<=0)return;
+    c.save();c.globalAlpha=u;
+    paperStrip(c,310,150,420,110,{fill:'#4c443b',rot:-.03,seed:71});textOnStrip(c,'ПРАВИЛА',310,150,'700 56px PilotSans',CREAM);
     c.restore();
   }
 
-  function forgetProps(c,t){
-    const sc=SC.forget;
-    paperStrip(c,W/2,500,860,200,{seed:81});
-    textOnStrip(c,'Забудешь',W/2,500,'700 100px PilotSerif');
-    strike(c,W/2-370,W/2+370,505,(t-wordAt('forget','забудешь'))/.4);
-    const tags=[['цены','цен',560],['даты','дат',W/2],['лица','лиц',1360]];
-    for(const [txt,stem,x] of tags){
-      pop(c,x,680,t,wordAt('forget',stem),cc=>{paperStrip(cc,0,0,300,120,{fill:MUSTARD,seed:x});textOnStrip(cc,txt,0,0,'700 62px PilotSans',INK);});
-    }
-    const tb=wordAt('forget','перезапуск'),tn=wordAt('forget','нет');
+  function restartProps(c,t){
+    pop(c,W/2,500,t,SC.restart.start+.1,cc=>{paperStrip(cc,0,0,900,190,{seed:81});textOnStrip(cc,'Перезапуска нет',0,0,'700 92px PilotSerif');});
+    const tb=wordAt('restart','перезапуск'),tn=wordAt('restart','нет');
     pop(c,1650,500,t,tb,cc=>{
       const dead=clamp((t-tn)/.3);
       cc.fillStyle=dead>0?'#a59b8c':BRICK;cc.shadowColor='rgba(55,40,22,.3)';cc.shadowBlur=16;cc.shadowOffsetY=6;
@@ -149,12 +148,9 @@
     });
   }
 
-  function proveProps(c,t){
-    const u=smooth((t-SC.prove.start)/.25);if(u<=0)return;
-    c.save();c.globalAlpha=u;
-    paperStrip(c,370,150,560,130,{seed:91,rot:-.02});textOnStrip(c,'Докажешь',370,150,'700 78px PilotSerif');
-    strike(c,110,630,155,(t-wordAt('prove','докажешь'))/.4,5);
-    c.restore();
+  function wordsProps(c,t){
+    const t0=wordAt('words','работают');
+    pop(c,440,150,t,t0,cc=>{cc.rotate(-.02);paperStrip(cc,0,0,700,130,{seed:91});textOnStrip(cc,'Словам не верят',0,0,'700 72px PilotSerif');});
   }
 
   function ageTag(c,t){
@@ -173,14 +169,17 @@
         else if(t<end){camera(c,'calendar',{z:mix(1.1,1.16,smooth((t-a)/(end-a))),x:715,y:480},cc=>calendarYear(cc,t,a,end));}
         else camera(c,'sasha',{z:mix(2.2,2.6,smooth((t-end)/(sc.start+sc.dur-end))),x:770,y:388});
         break;}
+      case 'cassettes':
+        camera(c,'carpet',{z:mix(1.1,1.16,u),x:768,y:470});c.fillStyle='rgba(40,25,10,.45)';c.fillRect(0,0,W,H);cassettesRow(c,t);break;
       case 'question':
         camera(c,'sasha',{z:1.35,x:768,y:330});c.fillStyle='rgba(40,25,10,.4)';c.fillRect(0,0,W,H);questionCard(c,t);break;
-      case 'rules':
-        camera(c,'carpet',{z:mix(1,1.04,u),x:768,y:470});rulesNote(c,t,false);break;
-      case 'forget':
-        camera(c,'carpet',{z:mix(1.04,1.1,u),x:768,y:470});rulesNote(c,t,true);forgetProps(c,t);break;
-      case 'prove':
-        camera(c,'soup',{z:mix(1,1.14,smooth(u)),x:mix(768,720,u),y:mix(512,540,u)});proveProps(c,t);break;
+      case 'restart':
+        camera(c,'carpet',{z:mix(1,1.08,u),x:768,y:470});rulesNote(c,t);restartProps(c,t);break;
+      case 'words':
+        camera(c,'soup',{z:mix(1,1.14,smooth(u)),x:mix(768,720,u),y:mix(512,540,u)});wordsProps(c,t);break;
+      case 'convince':{
+        const a=wordAt('convince','сбудется',1);
+        camera(c,'calendar',{z:mix(1.1,1.16,u),x:715,y:480},cc=>calendarYear(cc,t,a,sc.start+sc.dur));break;}
       case 'alone':
         camera(c,'table',{z:mix(1.3,1,smooth(u)),x:768,y:mix(470,512,smooth(u))});break;
       case 'day1':
@@ -232,7 +231,7 @@
   }
 
   function transition(c,t){
-    for(const id of ['rules','prove','alone','kitchen','mama']){
+    for(const id of ['cassettes','restart','words','convince','alone','kitchen','mama']){
       const at=SC[id].start,u=(t-at+.12)/.27;if(u<=0||u>=1)continue;
       const x=mix(-W-70,W+70,smooth(u));
       c.save();c.fillStyle=CREAM;c.shadowColor='rgba(56,35,18,.2)';c.shadowBlur=16;c.beginPath();c.moveTo(x,0);
