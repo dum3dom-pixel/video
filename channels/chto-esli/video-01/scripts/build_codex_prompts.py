@@ -141,11 +141,11 @@ A = {
     "ded": "sheets/ded_sheet.png",
     "lena": "sheets/lena_sheet.png",
     "cast": "sheets/supporting_cast_sheet.png",
-    "tape": "sheets/props_tape_sheet.png",
+    "tape": "sheets/props_tape_sheet-v2.png",
     "misc": "sheets/props_misc_sheet.png",
     "door": "bg/bg_door_wall_hd.png",
     "carpet": "bg/bg_carpet_wall_hd.png",
-    "kitchen": "bg/bg_kitchen.png",
+    "kitchen": "bg/bg_kitchen-v2.png",
     "class": "bg/bg_classroom.png",
     "kroom": "bg/bg_kostya_room.png",
     "yard": "bg/bg_yard.png",
@@ -208,10 +208,6 @@ S("kostya38_sheet", "SHEETS", "sheet", "Костя в 38: лысый, лист �
   "Character sheet of Kostya at 38 in the same format as the attached 17-year-old sheet. Calm neutral pose, warm tired eyes, "
   "bald head (smooth shaved scalp with cut-paper highlights), light stubble.",
   ["kostya38"], ["kostya"], layout=SHEET_LAYOUT, code="Финал; контраст с 17-летним Костей из хука", prio="A")
-S("papa_sheet", "SHEETS", "sheet", "Папа, 40 лет, усы подковой",
-  "Character sheet of Papa, 40. Calm neutral pose. The moustache must be thick, chestnut and horseshoe-shaped: it is a key "
-  "recognition feature.",
-  ["papa40"], ["mama"], layout=SHEET_LAYOUT, prio="A")
 S("ded_sheet", "SHEETS", "sheet", "Дед Лёша, ~72 года",
   "Character sheet of Grandfather Lyosha. Calm neutral pose, hands visible, work apron.",
   ["ded"], ["mama"], layout=SHEET_LAYOUT, prio="A")
@@ -226,15 +222,6 @@ S("supporting_cast_sheet", "SHEETS", "sheet", "Массовка: Димка 12 �
   ["dimka12", "dimka19", "gena", "teacher", "seller"], ["sasha"],
   layout="Layout: five figures in one row, left to right in the order listed, each about 85 percent of the canvas height.",
   prio="A")
-S("props_tape_sheet", "SHEETS", "sheet", "Двухкассетник, кассета, коробка, маркер",
-  "Props sheet. (1) A twin-deck cassette recorder from 2005, shown front view and three-quarter view: warm gray plastic body, "
-  "two cassette doors with clear windows and both reels visible, a row of piano-style keys, exactly one key (record) in red "
-  "#D92F2B and the others warm gray, two round speakers with faded-teal grille cloth, a carry handle on top. (2) One compact "
-  "cassette front view and side view: olive body, blank cream label, two windows with reels. (3) A mustard cardboard shoebox "
-  "with its lid beside it. (4) A dark brown felt-tip marker with cap. No letters or logos on anything.",
-  [], [], red="the record key of the deck (one single key)",
-  layout="Layout: the deck takes the left half (two views); right half top row cassette front and side; bottom row shoebox with lid and marker.",
-  prio="A")
 S("props_misc_sheet", "SHEETS", "sheet", "Мелкие предметы: паяльник, копилка, смартфон, чашки",
   "Props sheet. (1) A soldering iron with a wooden handle and a thin metal tip, on a small stand. (2) A candy tin used as a "
   "piggy bank, mustard lid with a coin slot, a few coins beside it. (3) A bulky 2005 CRT monitor with a beige-warm-gray tower "
@@ -243,12 +230,6 @@ S("props_misc_sheet", "SHEETS", "sheet", "Мелкие предметы: пая�
   [], [], layout="Layout: six objects in a 3 by 2 grid, each object large in its cell.", prio="A")
 
 # ====================================== BACKGROUNDS ======================================
-S("bg_kitchen", "BG", "bg", "Кухня 2005: клеёнка, магнит из Анапы",
-  "Empty Soviet-panel-block kitchen in 2005, morning light. Table in the middle with a checked oilcloth (olive and cream checks), "
-  "four wooden stools, a cream refrigerator on the LEFT with one small round magnet shaped like a lifebuoy (red and cream), window "
-  "on the back wall with a teal curtain, a gas stove on the RIGHT with a dented kettle, a cutting board with a bread loaf on the "
-  "table, a wall clock above the door. Same wall paper, floor and woodwork materials as the attached bedroom.",
-  [], ["door"], red="the lifebuoy fridge magnet (small, only that)", code="Опорный задник для 10+ кадров", prio="A")
 S("bg_classroom", "BG", "bg", "Класс 2005, пустой",
   "Empty school classroom in 2005, morning light. A big olive-green blackboard filling the back wall (blank), three rows of wooden "
   "desks with chairs, teacher's desk on the left, tall windows on the right with morning light, empty picture frames on the wall.",
@@ -687,7 +668,7 @@ def main() -> None:
     lines += ["## Итого", ""] + [f"- {k}: {v}" for k, v in counts.items()]
     lines += [f"- всего картинок: {len(SHOTS)}, из них приоритет A: {sum(s['prio']=='A' for s in SHOTS)}, B: {sum(s['prio']=='B' for s in SHOTS)}", ""]
     lines += ["Уже готовы и повторно не генерируются: `bg/bg_door_wall_hd.png`, `bg/bg_carpet_wall_hd.png`, `shots/p2_kostya_hd.png`, "
-              "`shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd`, `kostya_sheet_hd`, `mama_sheet_hd`.", "",
+              "`shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd`, `kostya_sheet_hd`, `mama_sheet_hd`, `papa_sheet`, `props_tape_sheet-v2` и кухня `bg_kitchen-v2` (их Codex сделал раньше по старому плану, не перегенерировать; кухня и есть мастер-задник всех кухонных кадров).", "",
               "---", "", "# Полные промты", ""]
     for key, title in SECTIONS.items():
         group = [s for s in SHOTS if s["sec"] == key]

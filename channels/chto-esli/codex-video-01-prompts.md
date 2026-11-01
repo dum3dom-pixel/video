@@ -11,24 +11,21 @@
 | `sasha_ages_sheet` | sheet | A | Саша в 5 возрастах: 12, 15, 19, 26, 33 | sasha_sheet_hd | нет | дрейф ≤1.08× | Единственная опора для взрослого Саши в кадрах |
 | `sasha_faces_sheet` | sheet | A | Лица Саши крупно: 6 голов (12, 15, 19, 26, 31, 33) | sasha_sheet_hd | нет | дрейф ≤1.08× | Эталон лица для крупных планов |
 | `kostya38_sheet` | sheet | A | Костя в 38: лысый, лист по образцу листа Кости | kostya_sheet_hd | нет | дрейф ≤1.08× | Финал; контраст с 17-летним Костей из хука |
-| `papa_sheet` | sheet | A | Папа, 40 лет, усы подковой | mama_sheet_hd | нет | дрейф ≤1.08× | — |
 | `ded_sheet` | sheet | A | Дед Лёша, ~72 года | mama_sheet_hd | нет | дрейф ≤1.08× | — |
 | `lena_sheet` | sheet | A | Лена, 26 лет | mama_sheet_hd | нет | дрейф ≤1.08× | — |
 | `supporting_cast_sheet` | sheet | A | Массовка: Димка 12 и 19, Гена, учительница, продавщица | sasha_sheet_hd | нет | дрейф ≤1.08× | — |
-| `props_tape_sheet` | sheet | A | Двухкассетник, кассета, коробка, маркер | — | the record key of the deck (one single key) | дрейф ≤1.08× | — |
 | `props_misc_sheet` | sheet | A | Мелкие предметы: паяльник, копилка, смартфон, чашки | — | нет | дрейф ≤1.08× | — |
 
 ## 0. Задники (пустые комнаты, без людей)
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `bg_kitchen` | bg | A | Кухня 2005: клеёнка, магнит из Анапы | bg_door_wall_hd | the lifebuoy fridge magnet (small, only that) | дрейф ≤1.08× | Опорный задник для 10+ кадров |
 | `bg_classroom` | bg | A | Класс 2005, пустой | bg_door_wall_hd | нет | дрейф ≤1.08× | — |
 | `bg_kostya_room` | bg | A | Комната Кости | bg_door_wall_hd | нет | дрейф ≤1.08× | — |
 | `bg_yard` | bg | A | Двор в мае: панельный дом, гаражи, старый тополь | bg_door_wall_hd | нет | дрейф ≤1.08× | Для e3_bench, e3_fallen и зимней версии |
 | `bg_garage` | bg | A | Гараж деда: верстак, паяльник, радио | bg_door_wall_hd | нет | дрейф ≤1.08× | — |
 | `bg_terrace` | bg | A | Терраса, июль 2019 | bg_door_wall_hd | нет | дрейф ≤1.08× | — |
-| `bg_kitchen_adult` | bg | A | Кухня взрослого Саши (2024 и 2026) | bg_kitchen | нет | дрейф ≤1.08× | — |
+| `bg_kitchen_adult` | bg | A | Кухня взрослого Саши (2024 и 2026) | bg_kitchen-v2 | нет | дрейф ≤1.08× | — |
 
 ## Хук 0:00–0:38
 
@@ -36,8 +33,8 @@
 |---|---|---|---|---|---|---|---|
 | `h_sasha_palm` | wide | A | [ладонь на лице] «Ты помнишь следующие двадцать один год» | bg_door_wall_hd, sasha_sheet_hd | нет | медленный наезд до 1.10× | Текст-мысль «Прекрасно…» |
 | `h_school_bag` | wide | B | [Мысль] «…а в школу всё равно идти» | bg_door_wall_hd | нет | дрейф ≤1.08× | Мысль подписью, можно заменить p4_sasha |
-| `h_cassette_box` | wide | A | [коробка кассет] «…ты поставишь брату одну из своих кассет» | props_tape_sheet | нет | проезд вдоль ряда до «2024», затем врезка CU | Годы на наклейках, остановка на «2024» |
-| `h_cassette_2024_cu` | cu | A | Крупно кассета «2024» (наклейка пустая) | props_tape_sheet | нет | дрейф ≤1.08× | Год «2024» на наклейке накладывает код, красным |
+| `h_cassette_box` | wide | A | [коробка кассет] «…ты поставишь брату одну из своих кассет» | props_tape_sheet-v2 | нет | проезд вдоль ряда до «2024», затем врезка CU | Годы на наклейках, остановка на «2024» |
+| `h_cassette_2024_cu` | cu | A | Крупно кассета «2024» (наклейка пустая) | props_tape_sheet-v2 | нет | дрейф ≤1.08× | Год «2024» на наклейке накладывает код, красным |
 | `h_kostya_hair_cu` | cu | A | Крупно: Костя 17 лет, волосы и лицо (вместо зума 2.6×) | kostya_sheet_hd, bg_door_wall_hd | нет | без зума; дрейф ≤1.05× | Заменяет digital zoom на p2_kostya |
 | `h_sasha_eyes_cu` | cu | A | Крупно: глаза Саши 12 лет (вместо зума 2.6×) | sasha_sheet_hd, sasha_faces_sheet | нет | без зума; дрейф ≤1.05× | Заменяет digital zoom на p4_sasha |
 
@@ -46,18 +43,18 @@
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
 | `r_paper_desk` | wide | A | Фон под три правила (текст кладёт код) | bg_door_wall_hd | нет | дрейф ≤1.08× | «Перезапуска нет» / «Словам не верят» / «Знание тает»; третье правило: текст тает |
-| `r_adults_soup` | wide | A | «Взрослые кивают и просят доесть суп» | bg_kitchen, mama_sheet_hd, papa_sheet, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Лёгкий «кивок» двух бумажных слоёв |
+| `r_adults_soup` | wide | A | «Взрослые кивают и просят доесть суп» | bg_kitchen-v2, mama_sheet_hd, papa_sheet, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Лёгкий «кивок» двух бумажных слоёв |
 
 ## Эпоха 1. День первый 1:18–2:36
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e1_mama_bread` | wide | A | «Мама режет хлеб и спрашивает, почему ты так смотришь» | bg_kitchen, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | медленный наезд до 1.10× | — |
+| `e1_mama_bread` | wide | A | «Мама режет хлеб и спрашивает, почему ты так смотришь» | bg_kitchen-v2, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | медленный наезд до 1.10× | — |
 | `e1_videocall` | cu | A | Воспоминание: «видеосвязь, мама просит включить звук» | mama_sheet_hd, props_misc_sheet | нет | дрейф ≤1.08× | Значок выключенного микрофона, лёгкое «зависание» кадра; тон холоднее |
-| `e1_oilcloth` | cu | A | Макро: клеёнка с надорванным краем, ладонь Саши | bg_kitchen | нет | наезд до 1.10× | «Клеёнку выбросят через четыре года» |
-| `e1_papa_pan` | wide | A | «Папа ест яичницу со сковородки и читает газету. У него усы» | bg_kitchen, papa_sheet, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | наезд на усы до 1.10×, дальше CU | — |
+| `e1_oilcloth` | cu | A | Макро: клеёнка с надорванным краем, ладонь Саши | bg_kitchen-v2 | нет | наезд до 1.10× | «Клеёнку выбросят через четыре года» |
+| `e1_papa_pan` | wide | A | «Папа ест яичницу со сковородки и читает газету. У него усы» | bg_kitchen-v2, papa_sheet, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | наезд на усы до 1.10×, дальше CU | — |
 | `e1_papa_lowers` | wide | A | «Папа медленно опускает газету» | papa_sheet, e1_papa_pan | нет | медленный наезд до 1.10× | — |
-| `e1_cocoa` | wide | A | «Ты просишь кофе. Мама ставит перед тобой какао» | bg_kitchen, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
+| `e1_cocoa` | wide | A | «Ты просишь кофе. Мама ставит перед тобой какао» | bg_kitchen-v2, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
 | `e1_clock_ten` | wide | B | «Отбой в десять. Тебе тридцать три» | bg_door_wall_hd, sasha_sheet_hd, props_misc_sheet | нет | дрейф ≤1.08× | Подпись «Отбой в 22:00»; можно заменить ближайшим кадром |
 | `e1_school_board` | wide | A | «Сколько будет три пятых плюс две седьмых — ты не знаешь» | bg_classroom, sasha_sheet_hd, supporting_cast_sheet | нет | дрейф ≤1.08× | Дроби и вопросительный знак рисует код, меловым шрифтом |
 | `e1_plan_night` | wide | A | «Вечером ты пишешь план. Очень взрослый» | bg_door_wall_hd, sasha_sheet_hd | нет | медленный наезд до 1.10× | — |
@@ -68,16 +65,16 @@
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e2_try_mama` | wide | A | Попытка 1: маме про телефон без кнопок | bg_kitchen, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Бумажный смартфон выскакивает и сминается |
+| `e2_try_mama` | wide | A | Попытка 1: маме про телефон без кнопок | bg_kitchen-v2, mama_sheet_hd, sasha_sheet_hd | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Бумажный смартфон выскакивает и сминается |
 | `e2_try_teacher` | wide | A | Попытка 2: учителю про интернет, «Садись, два» | bg_classroom, supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | Бумажная «2» шлёпается в дневник |
 | `e2_try_dimka` | wide | A | Попытка 3: Димка «А игры там есть?» | supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | — |
 | `e2_stairs` | wide | A | [лбом о перила] «держать всё в голове невыносимо, мелочи уже тают» | bg_door_wall_hd, sasha_sheet_hd | нет | дрейф ≤1.08× | Лёгкий «тук» на «стукаешься» |
-| `e2_kostya_room` | wide | A | «У Кости есть двухкассетник. «Зачем тебе?» — «Голос записывать»» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet | the record key of the deck (one key) | дрейф ≤1.08× | — |
-| `e2_kostya_gives` | wide | A | «Костя долго смотрит и отдаёт магнитофон» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet | the record key of the deck (one key) | медленный наезд до 1.10× | — |
-| `e2_market` | wide | A | «Кассета на рынке стоит тридцать пять рублей» | props_tape_sheet, supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | Бумажный ценник |
-| `e2_labels` | wide | A | «Берёшь двадцать одну… подписываешь маминым маркером» | props_tape_sheet, bg_door_wall_hd | нет | проезд по ряду | Годы 2006…2025 появляются по одному; «2026» уезжает вбок |
-| `e2_rec_keys` | cu | A | Макро: два пальца жмут две кнопки; катушки | props_tape_sheet | the record key of the deck | дрейф ≤1.08× | Вращение катушек, щелчок «Начинаешь с конца» |
-| `e2_recording` | wide | A | «— Привет. Это ты. Только старше. Не выключай» | bg_door_wall_hd, sasha_sheet_hd, props_tape_sheet | the record key of the deck | медленный наезд до 1.10× | — |
+| `e2_kostya_room` | wide | A | «У Кости есть двухкассетник. «Зачем тебе?» — «Голос записывать»» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | дрейф ≤1.08× | — |
+| `e2_kostya_gives` | wide | A | «Костя долго смотрит и отдаёт магнитофон» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | медленный наезд до 1.10× | — |
+| `e2_market` | wide | A | «Кассета на рынке стоит тридцать пять рублей» | props_tape_sheet-v2, supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | Бумажный ценник |
+| `e2_labels` | wide | A | «Берёшь двадцать одну… подписываешь маминым маркером» | props_tape_sheet-v2, bg_door_wall_hd | нет | проезд по ряду | Годы 2006…2025 появляются по одному; «2026» уезжает вбок |
+| `e2_rec_keys` | cu | A | Макро: два пальца жмут две кнопки; катушки | props_tape_sheet-v2 | the record key of the deck | дрейф ≤1.08× | Вращение катушек, щелчок «Начинаешь с конца» |
+| `e2_recording` | wide | A | «— Привет. Это ты. Только старше. Не выключай» | bg_door_wall_hd, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck | медленный наезд до 1.10× | — |
 | `e2_life_work` | wide | B | «работа» (взрослая жизнь по кассете 2025) | — | нет | дрейф ≤1.08× | Счётчик ленты |
 | `e2_life_bus` | wide | B | «маршрутка» | — | нет | дрейф ≤1.08× | — |
 | `e2_life_sofa` | wide | B | «сериал перед сном» | — | нет | дрейф ≤1.08× | Шипение, зерно сильнее |
@@ -106,16 +103,16 @@
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e4_flash_papers` | wide | A | Флешбек: папа с банковскими бумагами | bg_kitchen, papa_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Сепия, бумажная бирка «$» |
+| `e4_flash_papers` | wide | A | Флешбек: папа с банковскими бумагами | bg_kitchen-v2, papa_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Сепия, бумажная бирка «$» |
 | `e4_car_taken` | wide | A | «Машину забрали» | bg_yard, papa_sheet | нет | дрейф ≤1.08× | Стрелка ×1,5 |
-| `e4_silent_dinner` | wide | A | «Папа год молчал за ужином» | bg_kitchen, papa_sheet, mama_sheet_hd, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
+| `e4_silent_dinner` | wide | A | «Папа год молчал за ужином» | bg_kitchen-v2, papa_sheet, mama_sheet_hd, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
 | `e4_suitcase` | wide | A | «Через два года родители разъехались» | bg_door_wall_hd | нет | дрейф ≤1.08× | — |
 | `e4_straight_a` | wide | A | «…три года учился на одни пятёрки» | bg_door_wall_hd, sasha_ages_sheet | нет | дрейф ≤1.08× | Пятёрки шлёпаются в дневник |
-| `e4_warn_kitchen` | wide | A | Сентябрь 2008: «Пап, никогда не бери кредит в долларах» | bg_kitchen, sasha_ages_sheet, papa_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
-| `e4_cassette_night` | wide | A | Ночь, кассета «2008» (кассета отвечает на просьбу) | bg_door_wall_hd, sasha_ages_sheet, props_tape_sheet | нет | дрейф ≤1.08× | — |
-| `e4_briefcase` | wide | A | Четверг: «Банк завтра в десять» — папа складывает бумаги | bg_kitchen, papa_sheet, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Титр «Банк завтра в 10:00» |
+| `e4_warn_kitchen` | wide | A | Сентябрь 2008: «Пап, никогда не бери кредит в долларах» | bg_kitchen-v2, sasha_ages_sheet, papa_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
+| `e4_cassette_night` | wide | A | Ночь, кассета «2008» (кассета отвечает на просьбу) | bg_door_wall_hd, sasha_ages_sheet, props_tape_sheet-v2 | нет | дрейф ≤1.08× | — |
+| `e4_briefcase` | wide | A | Четверг: «Банк завтра в десять» — папа складывает бумаги | bg_kitchen-v2, papa_sheet, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | Титр «Банк завтра в 10:00» |
 | `e4_papa_look_cu` | cu | A | Папа долго смотрит на сына: «Ты никогда ни о чём его не просил» | papa_sheet | нет | без зума | Пауза |
-| `e4_winter_fork` | wide | A | «Папа откладывает вилку. — Ты откуда знал? — Кассета сказала» | bg_kitchen, papa_sheet, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
+| `e4_winter_fork` | wide | A | «Папа откладывает вилку. — Ты откуда знал? — Кассета сказала» | bg_kitchen-v2, papa_sheet, sasha_ages_sheet | the lifebuoy fridge magnet only if the fridge is in frame | дрейф ≤1.08× | — |
 
 ## Эпоха 4б. Пункт седьмой 6:50–7:12
 
@@ -133,7 +130,7 @@
 | `e5_sundays` | wide | B | «Почти триста воскресений: радио, велосипед, кран, проводка» | bg_garage, ded_sheet, sasha_ages_sheet | нет | дрейф ≤1.08× | Календарные листки летят |
 | `e5_spring_2011` | wide | A | «Весна 2011. Паяльник теперь твой» | bg_garage, sasha_ages_sheet, props_misc_sheet | нет | медленный наезд до 1.10× | Титр «2011 · 18 лет» |
 | `e5_iron_palm_cu` | cu | A | Крупно: паяльник на ладони | props_misc_sheet | нет | без зума | Пауза |
-| `e5_night_tape` | wide | A | Ночь: ставишь «2024», слушаешь три раза | bg_door_wall_hd, sasha_ages_sheet, props_tape_sheet | the record key of the deck | медленный наезд до 1.10× | — |
+| `e5_night_tape` | wide | A | Ночь: ставишь «2024», слушаешь три раза | bg_door_wall_hd, sasha_ages_sheet, props_tape_sheet-v2 | the record key of the deck | медленный наезд до 1.10× | — |
 
 ## Монтаж 2011–2015 8:09–8:44
 
@@ -167,36 +164,36 @@
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `f_kostya_door` | wide | A | Осень 2026: Костя (лысый, 38) с коробкой на пороге | bg_kitchen_adult, kostya38_sheet, sasha_ages_sheet, props_tape_sheet | нет | дрейф ≤1.08× | Титр «2026 · 33 года» |
-| `f_player` | wide | A | Ты ставишь «2024»: тишина, шипение, «Он ответил» | bg_kitchen_adult, sasha_ages_sheet, kostya38_sheet, props_tape_sheet | the record key of the deck | дрейф ≤1.08× | — |
+| `f_kostya_door` | wide | A | Осень 2026: Костя (лысый, 38) с коробкой на пороге | bg_kitchen_adult, kostya38_sheet, sasha_ages_sheet, props_tape_sheet-v2 | нет | дрейф ≤1.08× | Титр «2026 · 33 года» |
+| `f_player` | wide | A | Ты ставишь «2024»: тишина, шипение, «Он ответил» | bg_kitchen_adult, sasha_ages_sheet, kostya38_sheet, props_tape_sheet-v2 | the record key of the deck | дрейф ≤1.08× | — |
 | `f_kostya_frown` | wide | A | «— Это что? — Ночь, когда ты мне ответил» | kostya38_sheet | нет | медленный наезд до 1.10× | — |
 | `f_pat` | wide | A | «— Дурак, — говорит он и хлопает тебя по плечу» | bg_kitchen_adult, kostya38_sheet, sasha_ages_sheet | нет | дрейф ≤1.08× | Тёплый тон возвращается |
-| `f_last_tape` | wide | A | «Остаётся одна. «2026», детским почерком» | props_tape_sheet, kostya38_sheet | нет | наезд до 1.10× | Наклейка «2026» детским почерком |
-| `f_rec_keys` | cu | A | «Нажимаешь обе кнопки сразу, как учил брат» | props_tape_sheet | the record key of the deck | без зума | Вращение катушек |
-| `f_recording` | wide | A | «…рассказываешь тому пацану, которому некому было сказать» | bg_kitchen_adult, sasha_ages_sheet, kostya38_sheet, props_tape_sheet | the record key of the deck | медленный наезд до 1.10× | Список «папа сбрил усы…» — титрами |
+| `f_last_tape` | wide | A | «Остаётся одна. «2026», детским почерком» | props_tape_sheet-v2, kostya38_sheet | нет | наезд до 1.10× | Наклейка «2026» детским почерком |
+| `f_rec_keys` | cu | A | «Нажимаешь обе кнопки сразу, как учил брат» | props_tape_sheet-v2 | the record key of the deck | без зума | Вращение катушек |
+| `f_recording` | wide | A | «…рассказываешь тому пацану, которому некому было сказать» | bg_kitchen_adult, sasha_ages_sheet, kostya38_sheet, props_tape_sheet-v2 | the record key of the deck | медленный наезд до 1.10× | Список «папа сбрил усы…» — титрами |
 
 ## Вопрос 11:24–11:38
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `q_blank_tape` | cu | A | «Одна кассета, девяносто минут и один человек» | props_tape_sheet | нет | дрейф ≤1.08× | Вопрос в титре |
+| `q_blank_tape` | cu | A | «Одна кассета, девяносто минут и один человек» | props_tape_sheet-v2 | нет | дрейф ≤1.08× | Вопрос в титре |
 
 ## Превью (две обложки)
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `pv_a_deck` | wide | A | Превью A: двухкассетник, палец на двух кнопках, кассета «2024» | props_tape_sheet | the record key of the deck (one key) | статичный | Красное «2024» на наклейке и «1 МИНУТА» |
+| `pv_a_deck` | wide | A | Превью A: двухкассетник, палец на двух кнопках, кассета «2024» | props_tape_sheet-v2 | the record key of the deck (one key) | статичный | Красное «2024» на наклейке и «1 МИНУТА» |
 | `pv_b_boy` | wide | A | Превью B: мальчик 12 лет со взрослыми глазами, календарь за спиной | sasha_sheet_hd, sasha_faces_sheet, bg_carpet_wall_hd | the calendar header | статичный | «МОЛЧАТЬ 21 ГОД» |
 
 ## Итого
 
-- sheet: 9
-- bg: 7
+- sheet: 7
+- bg: 6
 - wide: 67
 - cu: 16
-- всего картинок: 99, из них приоритет A: 88, B: 11
+- всего картинок: 96, из них приоритет A: 85, B: 11
 
-Уже готовы и повторно не генерируются: `bg/bg_door_wall_hd.png`, `bg/bg_carpet_wall_hd.png`, `shots/p2_kostya_hd.png`, `shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd`, `kostya_sheet_hd`, `mama_sheet_hd`.
+Уже готовы и повторно не генерируются: `bg/bg_door_wall_hd.png`, `bg/bg_carpet_wall_hd.png`, `shots/p2_kostya_hd.png`, `shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd`, `kostya_sheet_hd`, `mama_sheet_hd`, `papa_sheet`, `props_tape_sheet-v2` и кухня `bg_kitchen-v2` (их Codex сделал раньше по старому плану, не перегенерировать; кухня и есть мастер-задник всех кухонных кадров).
 
 ---
 
@@ -285,30 +282,6 @@ Output/composition: one opaque PNG on plain cream paper background, landscape 3:
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
 
-### papa_sheet → `sheets/papa_sheet.png`
-
-Момент: Папа, 40 лет, усы подковой
-
-```text
-Asset: sheets/papa_sheet.png, a reference sheet. Character sheet of Papa, 40. Calm neutral pose. The moustache must be thick, chestnut and horseshoe-shaped: it is a key recognition feature.
-
-Characters (identity must match the attached sheets; the text is the fallback):
-- Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
-
-Attachments:
-- Input image 1: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-
-Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
-
-Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. There is no red anywhere in this picture.
-
-Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
-
-Output/composition: one opaque PNG on plain cream paper background, landscape 3:2, 1536x1024 or larger. Layout: three full-length figures left to right (front view, side view, back view) at identical scale, then one large head-and-shoulders portrait at the right, as tall as the figures. Figures and objects are drawn BIG: together they fill at least 85 percent of the canvas height and most of its width, with only narrow even margins. No scene, no floor line, no props unless listed, no labels, no captions, no numbers.
-
-Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
-```
-
 ### ded_sheet → `sheets/ded_sheet.png`
 
 Момент: Дед Лёша, ~72 года
@@ -385,24 +358,6 @@ Output/composition: one opaque PNG on plain cream paper background, landscape 3:
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
 
-### props_tape_sheet → `sheets/props_tape_sheet.png`
-
-Момент: Двухкассетник, кассета, коробка, маркер
-
-```text
-Asset: sheets/props_tape_sheet.png, a reference sheet. Props sheet. (1) A twin-deck cassette recorder from 2005, shown front view and three-quarter view: warm gray plastic body, two cassette doors with clear windows and both reels visible, a row of piano-style keys, exactly one key (record) in red #D92F2B and the others warm gray, two round speakers with faded-teal grille cloth, a carry handle on top. (2) One compact cassette front view and side view: olive body, blank cream label, two windows with reels. (3) A mustard cardboard shoebox with its lid beside it. (4) A dark brown felt-tip marker with cap. No letters or logos on anything.
-
-Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
-
-Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. The only permitted red is #D92F2B, exclusively on: the record key of the deck (one single key). No other red anywhere.
-
-Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
-
-Output/composition: one opaque PNG on plain cream paper background, landscape 3:2, 1536x1024 or larger. Layout: the deck takes the left half (two views); right half top row cassette front and side; bottom row shoebox with lid and marker. Figures and objects are drawn BIG: together they fill at least 85 percent of the canvas height and most of its width, with only narrow even margins. No scene, no floor line, no props unless listed, no labels, no captions, no numbers.
-
-Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
-```
-
 ### props_misc_sheet → `sheets/props_misc_sheet.png`
 
 Момент: Мелкие предметы: паяльник, копилка, смартфон, чашки
@@ -422,27 +377,6 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```
 
 ## 0. Задники (пустые комнаты, без людей)
-
-### bg_kitchen → `bg/bg_kitchen.png`
-
-Момент: Кухня 2005: клеёнка, магнит из Анапы
-
-```text
-Asset: bg/bg_kitchen.png, an empty background set. Empty Soviet-panel-block kitchen in 2005, morning light. Table in the middle with a checked oilcloth (olive and cream checks), four wooden stools, a cream refrigerator on the LEFT with one small round magnet shaped like a lifebuoy (red and cream), window on the back wall with a teal curtain, a gas stove on the RIGHT with a dented kettle, a cutting board with a bread loaf on the table, a wall clock above the door. Same wall paper, floor and woodwork materials as the attached bedroom.
-
-Attachments:
-- Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
-
-Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
-
-Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. The only permitted red is #D92F2B, exclusively on: the lifebuoy fridge magnet (small, only that). No other red anywhere.
-
-Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
-
-Output/composition: one opaque PNG, landscape 16:9, an EMPTY set with no people, whole picture to the edges. Use the largest 16:9 size the tool allows (target 2560x1440; never below 1536x864) and report the real size. Eye-level camera, a clear open floor area in the middle third where characters will later appear, important furniture in the upper 75 percent, the lowest 20 percent calm and quiet. Never draw guides or labels.
-
-Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
-```
 
 ### bg_classroom → `bg/bg_classroom.png`
 
@@ -557,7 +491,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 Asset: bg/bg_kitchen_adult.png, an empty background set. Empty modern flat kitchen: plain cream cupboards, a small table with two chairs, a kettle, a window, a doorway on the right leading to a dark corridor with a room door. Neat and a bit lonely. Same paper-collage materials as the other kitchen but newer.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -626,7 +560,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 Asset: shots/h_cassette_box.png, a finished full scene. Top and slightly side view of an open old shoebox on a kitchen table; in it 21 identical olive cassettes stand tightly in a row with blank labels. One cassette near the right end is lifted a little higher than the others. The row runs along the long side of the frame so the camera can travel along it. Warm evening light, a little dust.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -647,7 +581,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 Asset: shots/h_cassette_2024_cu.png, a close-up master. Extreme close-up of one olive cassette, slightly rotated, filling the frame: its blank cream label large and clean, the two reel windows with detailed reels, the screws and the cut paper edges all visible. Soft warm light.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -746,7 +680,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 4: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -776,7 +710,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -827,7 +761,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -852,7 +786,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -904,7 +838,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1062,7 +996,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1170,7 +1104,7 @@ Attachments:
 - Input image 1: bg/bg_kostya_room.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 4: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1198,7 +1132,7 @@ Attachments:
 - Input image 1: bg/bg_kostya_room.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 4: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1223,7 +1157,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 2: sheets/supporting_cast_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1249,7 +1183,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 2: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -1274,7 +1208,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1300,7 +1234,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1629,7 +1563,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -1681,7 +1615,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 4: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -1755,7 +1689,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1783,7 +1717,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1808,7 +1742,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1859,7 +1793,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 
 Attachments:
-- Input image 1: bg/bg_kitchen.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -2073,7 +2007,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2434,7 +2368,7 @@ Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/kostya38_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 4: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2462,7 +2396,7 @@ Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/kostya38_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 4: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2537,7 +2471,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 2: sheets/kostya38_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -2562,7 +2496,7 @@ Characters (identity must match the attached sheets; the text is the fallback):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2590,7 +2524,7 @@ Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/kostya38_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 4: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2613,7 +2547,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 Asset: shots/q_blank_tape.png, a close-up master. A single blank cassette on a plain cream paper surface, label clean and large, centred, soft warm light.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2636,7 +2570,7 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 Asset: shots/pv_a_deck.png, a finished full scene. Close hero image: the twin-deck recorder fills most of the frame in three-quarter view, a finger presses two keys at once, a cassette in the left deck has a large blank label, strong readable silhouette, clean empty space at the right for code text.
 
 Attachments:
-- Input image 1: sheets/props_tape_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 

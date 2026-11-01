@@ -88,25 +88,6 @@
    "layout": "Layout: three full-length figures left to right (front view, side view, back view) at identical scale, then one large head-and-shoulders portrait at the right, as tall as the figures."
   },
   {
-   "id": "papa_sheet",
-   "sec": "SHEETS",
-   "kind": "sheet",
-   "ru": "Папа, 40 лет, усы подковой",
-   "en": "Character sheet of Papa, 40. Calm neutral pose. The moustache must be thick, chestnut and horseshoe-shaped: it is a key recognition feature.",
-   "chars": [
-    "papa40"
-   ],
-   "att": [
-    "sheets/mama_sheet_hd.png"
-   ],
-   "red": "none",
-   "cam": "дрейф ≤1.08×",
-   "code": "",
-   "prio": "A",
-   "file": "sheets/papa_sheet.png",
-   "layout": "Layout: three full-length figures left to right (front view, side view, back view) at identical scale, then one large head-and-shoulders portrait at the right, as tall as the figures."
-  },
-  {
    "id": "ded_sheet",
    "sec": "SHEETS",
    "kind": "sheet",
@@ -168,21 +149,6 @@
    "layout": "Layout: five figures in one row, left to right in the order listed, each about 85 percent of the canvas height."
   },
   {
-   "id": "props_tape_sheet",
-   "sec": "SHEETS",
-   "kind": "sheet",
-   "ru": "Двухкассетник, кассета, коробка, маркер",
-   "en": "Props sheet. (1) A twin-deck cassette recorder from 2005, shown front view and three-quarter view: warm gray plastic body, two cassette doors with clear windows and both reels visible, a row of piano-style keys, exactly one key (record) in red #D92F2B and the others warm gray, two round speakers with faded-teal grille cloth, a carry handle on top. (2) One compact cassette front view and side view: olive body, blank cream label, two windows with reels. (3) A mustard cardboard shoebox with its lid beside it. (4) A dark brown felt-tip marker with cap. No letters or logos on anything.",
-   "chars": [],
-   "att": [],
-   "red": "the record key of the deck (one single key)",
-   "cam": "дрейф ≤1.08×",
-   "code": "",
-   "prio": "A",
-   "file": "sheets/props_tape_sheet.png",
-   "layout": "Layout: the deck takes the left half (two views); right half top row cassette front and side; bottom row shoebox with lid and marker."
-  },
-  {
    "id": "props_misc_sheet",
    "sec": "SHEETS",
    "kind": "sheet",
@@ -196,23 +162,6 @@
    "prio": "A",
    "file": "sheets/props_misc_sheet.png",
    "layout": "Layout: six objects in a 3 by 2 grid, each object large in its cell."
-  },
-  {
-   "id": "bg_kitchen",
-   "sec": "BG",
-   "kind": "bg",
-   "ru": "Кухня 2005: клеёнка, магнит из Анапы",
-   "en": "Empty Soviet-panel-block kitchen in 2005, morning light. Table in the middle with a checked oilcloth (olive and cream checks), four wooden stools, a cream refrigerator on the LEFT with one small round magnet shaped like a lifebuoy (red and cream), window on the back wall with a teal curtain, a gas stove on the RIGHT with a dented kettle, a cutting board with a bread loaf on the table, a wall clock above the door. Same wall paper, floor and woodwork materials as the attached bedroom.",
-   "chars": [],
-   "att": [
-    "bg/bg_door_wall_hd.png"
-   ],
-   "red": "the lifebuoy fridge magnet (small, only that)",
-   "cam": "дрейф ≤1.08×",
-   "code": "Опорный задник для 10+ кадров",
-   "prio": "A",
-   "file": "bg/bg_kitchen.png",
-   "layout": ""
   },
   {
    "id": "bg_classroom",
@@ -307,7 +256,7 @@
    "en": "Empty modern flat kitchen: plain cream cupboards, a small table with two chairs, a kettle, a window, a doorway on the right leading to a dark corridor with a room door. Neat and a bit lonely. Same paper-collage materials as the other kitchen but newer.",
    "chars": [],
    "att": [
-    "bg/bg_kitchen.png"
+    "bg/bg_kitchen-v2.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -361,7 +310,7 @@
    "en": "Top and slightly side view of an open old shoebox on a kitchen table; in it 21 identical olive cassettes stand tightly in a row with blank labels. One cassette near the right end is lifted a little higher than the others. The row runs along the long side of the frame so the camera can travel along it. Warm evening light, a little dust.",
    "chars": [],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "none",
    "cam": "проезд вдоль ряда до «2024», затем врезка CU",
@@ -378,7 +327,7 @@
    "en": "Extreme close-up of one olive cassette, slightly rotated, filling the frame: its blank cream label large and clean, the two reel windows with detailed reels, the screws and the cut paper edges all visible. Soft warm light.",
    "chars": [],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -456,7 +405,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/mama_sheet_hd.png",
     "sheets/papa_sheet.png",
     "sheets/sasha_sheet_hd.png"
@@ -479,7 +428,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/mama_sheet_hd.png",
     "sheets/sasha_sheet_hd.png"
    ],
@@ -520,7 +469,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png"
+    "bg/bg_kitchen-v2.png"
    ],
    "red": "none",
    "cam": "наезд до 1.10×",
@@ -540,7 +489,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/papa_sheet.png",
     "sheets/sasha_sheet_hd.png"
    ],
@@ -582,7 +531,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/mama_sheet_hd.png",
     "sheets/sasha_sheet_hd.png"
    ],
@@ -708,7 +657,7 @@
     "sasha12"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/mama_sheet_hd.png",
     "sheets/sasha_sheet_hd.png"
    ],
@@ -796,7 +745,7 @@
     "bg/bg_kostya_room.png",
     "sheets/kostya_sheet_hd.png",
     "sheets/sasha_sheet_hd.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck (one key)",
    "cam": "дрейф ≤1.08×",
@@ -819,7 +768,7 @@
     "bg/bg_kostya_room.png",
     "sheets/kostya_sheet_hd.png",
     "sheets/sasha_sheet_hd.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck (one key)",
    "cam": "медленный наезд до 1.10×",
@@ -839,7 +788,7 @@
     "sasha12"
    ],
    "att": [
-    "sheets/props_tape_sheet.png",
+    "sheets/props_tape_sheet-v2.png",
     "sheets/supporting_cast_sheet.png",
     "sheets/sasha_sheet_hd.png"
    ],
@@ -860,7 +809,7 @@
     "sasha12"
    ],
    "att": [
-    "sheets/props_tape_sheet.png",
+    "sheets/props_tape_sheet-v2.png",
     "bg/bg_door_wall_hd.png"
    ],
    "red": "none",
@@ -880,7 +829,7 @@
     "sasha12"
    ],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "дрейф ≤1.08×",
@@ -901,7 +850,7 @@
    "att": [
     "bg/bg_door_wall_hd.png",
     "sheets/sasha_sheet_hd.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "медленный наезд до 1.10×",
@@ -1163,7 +1112,7 @@
     "papa40"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/papa_sheet.png"
    ],
    "red": "the lifebuoy fridge magnet only if the fridge is in frame",
@@ -1205,7 +1154,7 @@
     "sasha15"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/papa_sheet.png",
     "sheets/mama_sheet_hd.png",
     "sheets/sasha_ages_sheet.png"
@@ -1265,7 +1214,7 @@
     "papa40"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/sasha_ages_sheet.png",
     "sheets/papa_sheet.png"
    ],
@@ -1288,7 +1237,7 @@
    "att": [
     "bg/bg_door_wall_hd.png",
     "sheets/sasha_ages_sheet.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -1308,7 +1257,7 @@
     "sasha15"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/papa_sheet.png",
     "sheets/sasha_ages_sheet.png"
    ],
@@ -1349,7 +1298,7 @@
     "sasha15"
    ],
    "att": [
-    "bg/bg_kitchen.png",
+    "bg/bg_kitchen-v2.png",
     "sheets/papa_sheet.png",
     "sheets/sasha_ages_sheet.png"
    ],
@@ -1520,7 +1469,7 @@
    "att": [
     "bg/bg_door_wall_hd.png",
     "sheets/sasha_ages_sheet.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "медленный наезд до 1.10×",
@@ -1805,7 +1754,7 @@
     "bg/bg_kitchen_adult.png",
     "sheets/kostya38_sheet.png",
     "sheets/sasha_ages_sheet.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -1828,7 +1777,7 @@
     "bg/bg_kitchen_adult.png",
     "sheets/sasha_ages_sheet.png",
     "sheets/kostya38_sheet.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "дрейф ≤1.08×",
@@ -1888,7 +1837,7 @@
     "kostya38"
    ],
    "att": [
-    "sheets/props_tape_sheet.png",
+    "sheets/props_tape_sheet-v2.png",
     "sheets/kostya38_sheet.png"
    ],
    "red": "none",
@@ -1908,7 +1857,7 @@
     "sasha33"
    ],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "без зума",
@@ -1931,7 +1880,7 @@
     "bg/bg_kitchen_adult.png",
     "sheets/sasha_ages_sheet.png",
     "sheets/kostya38_sheet.png",
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck",
    "cam": "медленный наезд до 1.10×",
@@ -1948,7 +1897,7 @@
    "en": "A single blank cassette on a plain cream paper surface, label clean and large, centred, soft warm light.",
    "chars": [],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -1965,7 +1914,7 @@
    "en": "Close hero image: the twin-deck recorder fills most of the frame in three-quarter view, a finger presses two keys at once, a cassette in the left deck has a large blank label, strong readable silhouette, clean empty space at the right for code text.",
    "chars": [],
    "att": [
-    "sheets/props_tape_sheet.png"
+    "sheets/props_tape_sheet-v2.png"
    ],
    "red": "the record key of the deck (one key)",
    "cam": "статичный",

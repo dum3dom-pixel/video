@@ -1,8 +1,8 @@
 # ТЗ для Codex: все картинки ролика 01 «Кассеты» (сценарий v5)
 
-Это главный документ. Он заменяет [codex-pilot-01.md](codex-pilot-01.md) (там носок), [codex-minute-02.md](codex-minute-02.md) и [codex-minutes-03-05.md](codex-minutes-03-05.md) (они написаны под сценарий v3). Промты на каждую картинку лежат в [codex-video-01-prompts.md](codex-video-01-prompts.md): 99 самодостаточных английских промтов и таблицы кадров. Текст ролика: [video-01-script-v5.md](video-01-script-v5.md).
+Это главный документ. Он заменяет [codex-pilot-01.md](codex-pilot-01.md) (там носок), [codex-minute-02.md](codex-minute-02.md) и [codex-minutes-03-05.md](codex-minutes-03-05.md) (они написаны под сценарий v3). Промты на каждую картинку лежат в [codex-video-01-prompts.md](codex-video-01-prompts.md): 96 самодостаточных английских промтов и таблицы кадров. Текст ролика: [video-01-script-v5.md](video-01-script-v5.md).
 
-Что нужно получить: набор чётких картинок, из которых я (код) собираю 11-минутный ролик. Картинок 99: 9 листов, 7 пустых задников, 83 кадра (67 целых сцен и 16 крупных планов). Приоритет A у 88, приоритет B у 11 (запасные: если картинок не хватает, код закрывает их ближайшим кадром).
+Что нужно получить: набор чётких картинок, из которых я (код) собираю 11-минутный ролик. Картинок 96: 7 листов, 6 пустых задников, 83 кадра (67 целых сцен и 16 крупных планов). Приоритет A у 85, приоритет B у 11 (запасные: если картинок не хватает, код закрывает их ближайшим кадром).
 
 ## 1. Почему раньше было мыльно, и что меняем
 
@@ -29,8 +29,8 @@
 
 | Этап | Что | Сколько | Что проверяю |
 |---|---|---|---|
-| 0 | **Листы:** `sasha_ages_sheet`, `sasha_faces_sheet`, `kostya38_sheet`, `papa_sheet`, `ded_sheet`, `lena_sheet`, `supporting_cast_sheet`, `props_tape_sheet`, `props_misc_sheet`. Для листов и ключевых предметов сделай по 2 варианта, выбери лучший, второй сохрани с `-alt`. Следующие этапы строятся на листах | 9 | Лицо Саши одно на все возрасты; фигуры крупные |
-| 1 | **Задники:** `bg_kitchen`, `bg_classroom`, `bg_kostya_room`, `bg_yard`, `bg_garage`, `bg_terrace`, `bg_kitchen_adult`. Вкладывай `bg_door_wall_hd.png` для общих материалов | 7 | Пустые, без людей; центр свободен |
+| 0 | **Листы:** `sasha_ages_sheet`, `sasha_faces_sheet`, `kostya38_sheet`, `ded_sheet`, `lena_sheet`, `supporting_cast_sheet`, `props_misc_sheet`. Листы папы (`papa_sheet.png`) и предметов (`props_tape_sheet-v2.png`) уже сделаны, их не трогай. Для листов и ключевых предметов сделай по 2 варианта, выбери лучший, второй сохрани с `-alt`. Следующие этапы строятся на листах | 7 | Лицо Саши одно на все возрасты; фигуры крупные |
+| 1 | **Задники:** `bg_classroom`, `bg_kostya_room`, `bg_yard`, `bg_garage`, `bg_terrace`, `bg_kitchen_adult`. Вкладывай `bg_door_wall_hd.png` для общих материалов. Кухня 2005 уже есть: `bg/bg_kitchen-v2.png` (мастер всех кухонных кадров, не перегенерируй) | 6 | Пустые, без людей; центр свободен |
 | 2 | **Хук и правила:** секции HOOK и RULES (8 картинок, из них 3 cu: `h_cassette_2024_cu`, `h_kostya_hair_cu`, `h_sasha_eyes_cu`) | 8 | Совпадают ли лица с готовыми `p2_kostya_hd`, `p4_sasha_hd` |
 | 3 | **Эпохи 1, 2, 3, 3б** | 34 | Дом, Саша 12 лет, Костя, мама, папа |
 | 4 | **Эпохи 4, 4б, 5, монтаж 2011–2015** | 22 | Саша 15 и 18–20 лет, дед, «девятка» |
@@ -92,7 +92,7 @@
 
 ## 6. Что уже готово и что не трогать
 
-Готово и повторно не генерируется (хук пилота, фрагмент 0:00–0:12): `bg/bg_door_wall_hd.png`, `bg/bg_carpet_wall_hd.png`, `shots/p2_kostya_hd.png`, `shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd.png`, `kostya_sheet_hd.png`, `mama_sheet_hd.png`.
+Готово и повторно не генерируется: `bg/bg_kitchen-v2.png`, `sheets/papa_sheet.png`, `sheets/props_tape_sheet-v2.png` (сделаны по старому плану) и хук пилота (0:00–0:12): `bg/bg_door_wall_hd.png`, `bg/bg_carpet_wall_hd.png`, `shots/p2_kostya_hd.png`, `shots/p3_calendar_hd.png`, `shots/p4_sasha_hd.png`, листы `sasha_sheet_hd.png`, `kostya_sheet_hd.png`, `mama_sheet_hd.png`.
 
 Не используется: `p0_sock.png` и всё про носок.
 

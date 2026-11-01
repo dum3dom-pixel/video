@@ -91,30 +91,6 @@ Output/composition: one opaque PNG on plain cream paper background, landscape 3:
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
 
-## papa_sheet → `sheets/papa_sheet.png`
-
-Что это: Папа, 40 лет, усы подковой
-
-```text
-Asset: sheets/papa_sheet.png, a reference sheet. Character sheet of Papa, 40. Calm neutral pose. The moustache must be thick, chestnut and horseshoe-shaped: it is a key recognition feature.
-
-Characters (identity must match the attached sheets; the text is the fallback):
-- Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
-
-Attachments:
-- Input image 1: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-
-Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
-
-Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. There is no red anywhere in this picture.
-
-Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
-
-Output/composition: one opaque PNG on plain cream paper background, landscape 3:2, 1536x1024 or larger. Layout: three full-length figures left to right (front view, side view, back view) at identical scale, then one large head-and-shoulders portrait at the right, as tall as the figures. Figures and objects are drawn BIG: together they fill at least 85 percent of the canvas height and most of its width, with only narrow even margins. No scene, no floor line, no props unless listed, no labels, no captions, no numbers.
-
-Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
-```
-
 ## ded_sheet → `sheets/ded_sheet.png`
 
 Что это: Дед Лёша, ~72 года
@@ -187,24 +163,6 @@ Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, o
 Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
 
 Output/composition: one opaque PNG on plain cream paper background, landscape 3:2, 1536x1024 or larger. Layout: five figures in one row, left to right in the order listed, each about 85 percent of the canvas height. Figures and objects are drawn BIG: together they fill at least 85 percent of the canvas height and most of its width, with only narrow even margins. No scene, no floor line, no props unless listed, no labels, no captions, no numbers.
-
-Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
-```
-
-## props_tape_sheet → `sheets/props_tape_sheet.png`
-
-Что это: Двухкассетник, кассета, коробка, маркер
-
-```text
-Asset: sheets/props_tape_sheet.png, a reference sheet. Props sheet. (1) A twin-deck cassette recorder from 2005, shown front view and three-quarter view: warm gray plastic body, two cassette doors with clear windows and both reels visible, a row of piano-style keys, exactly one key (record) in red #D92F2B and the others warm gray, two round speakers with faded-teal grille cloth, a carry handle on top. (2) One compact cassette front view and side view: olive body, blank cream label, two windows with reels. (3) A mustard cardboard shoebox with its lid beside it. (4) A dark brown felt-tip marker with cap. No letters or logos on anything.
-
-Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
-
-Full base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. The only permitted red is #D92F2B, exclusively on: the record key of the deck (one single key). No other red anywhere.
-
-Sharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible; faces are built from deliberate small cut-paper shapes with clear eyes, brows and mouth. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable; do not draw tiny faces or tiny details that would turn into noise.
-
-Output/composition: one opaque PNG on plain cream paper background, landscape 3:2, 1536x1024 or larger. Layout: the deck takes the left half (two views); right half top row cassette front and side; bottom row shoebox with lid and marker. Figures and objects are drawn BIG: together they fill at least 85 percent of the canvas height and most of its width, with only narrow even margins. No scene, no floor line, no props unless listed, no labels, no captions, no numbers.
 
 Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.
 ```
