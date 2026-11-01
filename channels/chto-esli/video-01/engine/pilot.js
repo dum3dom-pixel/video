@@ -8,34 +8,14 @@
   const mix=(a,b,u)=>a+(b-a)*u;
   const smooth=u=>{u=clamp(u);return u*u*(3-2*u)};
   const IMG={};
-  const FILES={door:'bg/bg_door_wall_hd.png',kostya:'shots/p2_kostya_hd.png',calendar:'shots/p3_calendar_hd.png',sasha:'shots/p4_sasha_hd.png',sock:'shots/p0_sock.png'};
+  const FILES={door:'bg/bg_door_wall_hd.png',kostya:'shots/p2_kostya_hd.png',calendar:'shots/p3_calendar_hd.png',sasha:'shots/p4_sasha_hd.png'};
   const SC=Object.fromEntries(SP.scenes.map(s=>[s.id,s]));
-  let sock=null,vignette=null;
-
-  function makeSock() {
-    // Technical green removal is an explicit code step in the image brief.
-    const cv=document.createElement('canvas');cv.width=1536;cv.height=1024;
-    const c=cv.getContext('2d',{willReadFrequently:true});c.drawImage(IMG.sock,0,0);
-    const pixels=c.getImageData(0,0,1536,1024),d=pixels.data;
-    let x0=1536,y0=1024,x1=0,y1=0;
-    for(let y=0;y<1024;y++)for(let x=0;x<1536;x++){
-      const i=(y*1536+x)*4,r=d[i],g=d[i+1],b=d[i+2],excess=g-Math.max(r,b);
-      if(excess>25&&g>90){d[i+3]=0;continue;}
-      if(excess>0&&g>90){d[i+3]=Math.round(255*(1-excess/25));d[i+1]=Math.max(r,b);}
-      if(d[i+3]>100){x0=Math.min(x0,x);y0=Math.min(y0,y);x1=Math.max(x1,x);y1=Math.max(y1,y);}
-    }
-    if(x1<=x0||y1<=y0)throw new Error('Empty keyed sock');
-    c.putImageData(pixels,0,0);
-    const out=document.createElement('canvas');out.width=x1-x0+17;out.height=y1-y0+17;
-    out.getContext('2d').drawImage(cv,x0-8,y0-8,out.width,out.height,0,0,out.width,out.height);
-    return out;
-  }
+  let vignette=null;
 
   async function load(){
     await Promise.all(Object.entries(FILES).map(([key,file])=>new Promise((resolve,reject)=>{
       const im=new Image();IMG[key]=im;im.onload=resolve;im.onerror=()=>reject(new Error(file));im.src=(window.PILOT_ASSET_BASE||'assets/')+file;
     })));
-    sock=makeSock();
     const cv=document.createElement('canvas');cv.width=W;cv.height=H;
     const c=cv.getContext('2d'),g=c.createRadialGradient(W*.5,H*.46,H*.42,W*.5,H*.46,H*1.12);
     g.addColorStop(0,'rgba(50,32,12,0)');g.addColorStop(1,'rgba(50,32,12,.30)');c.fillStyle=g;c.fillRect(0,0,W,H);vignette=cv;
@@ -61,29 +41,20 @@
     c.font='700 72px PilotSerif';c.fillText('2005',625,598);c.restore();
   }
 
-  function flight(c,t){
-    const begin=.15,end=SP.sockImpact+.08;
-    if(t<begin||t>end)return;
-    const u=clamp((t-begin)/(end-begin));
-    const burst=dynamic?Math.pow(u,7):Math.pow(u,4.3);
-    const width=80+190*u+3100*burst,height=width*sock.height/sock.width;
-    const x=mix(1085,980,smooth(u)),y=mix(255,440,smooth(u));
-    // At the end of the throw the sock naturally occludes the lens. Never cut
-    // its silhouette with a rectangular subtitle-zone mask; captions draw last.
-    c.save();
-    c.translate(x,y);c.rotate((dynamic?-.42:-.18)+u*(dynamic?1.12:.52));
-    c.drawImage(sock,-width/2,-height/2,width,height);c.restore();
-  }
-
   function image(c,t){
-    if(t<SC.lead.start){
-      camera(c,'door',{z:1+.018*smooth(t/SC.lead.start),x:768,y:512});flight(c,t);return;
+    if(t<SC.enter.start){
+      camera(c,'door',{z:1+.018*smooth(t/SC.enter.start),x:768,y:512});return;
     }
     if(t<SC.calendar.start){
-      const u=smooth((t-SC.lead.start)/(SC.calendar.start-SC.lead.start));
+      const u=smooth((t-SC.enter.start)/(SC.calendar.start-SC.enter.start));
+      // The brother steps into the open door: a short dissolve from the empty room (paper wipe in the dynamic cut).
+      const fade=dynamic?1:smooth((t-SC.enter.start)/.35);
+      if(fade<1)camera(c,'door',{z:1.018,x:768,y:512});
+      c.save();c.globalAlpha=fade;
       const hairPunch=dynamic&&t>SC.hair.start+SC.hair.dur*.70;
       if(hairPunch){camera(c,'kostya',{z:2.60+.06*smooth((t-(SC.hair.start+SC.hair.dur*.70))/1.6),x:860,y:235});}
       else camera(c,'kostya',{z:mix(1.01,1.15,u),x:mix(768,820,u),y:mix(505,420,u)});
+      c.restore();
       return;
     }
     if(t<SC.reveal.start){
@@ -134,7 +105,7 @@
 
   function transition(c,t){
     if(!dynamic)return;
-    const cuts=[SC.lead.start,SC.calendar.start,SC.reveal.start];
+    const cuts=[SC.enter.start,SC.calendar.start,SC.reveal.start];
     for(const at of cuts){
       const u=(t-at+.12)/.27;if(u<=0||u>=1)continue;
       const x=mix(-W-70,W+70,smooth(u));
@@ -147,7 +118,7 @@
 
   function render(time){
     // HyperFrames can seek before asynchronous images are decoded.
-    if(!sock||!vignette)return;
+    if(!vignette)return;
     const t=Math.floor(clamp(time,0,SP.duration)*12+1e-6)/12;
     ctx.setTransform(1,0,0,1,0,0);ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';ctx.clearRect(0,0,W,H);
     image(ctx,t);ctx.drawImage(vignette,0,0);
