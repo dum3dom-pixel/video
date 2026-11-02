@@ -1,0 +1,1486 @@
+[
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_carpet_wall.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "eac9d73ea98aadec00652dd356c474a9a1c8b466694511b90aa2b1e414f671f2"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_carpet_wall_hd.png",
+    "width": 2560,
+    "height": 1440,
+    "mode": "RGB",
+    "sha256": "1ce7e8fd522afc2ea60ec41cb411eb4f8244df7fba2ed1e8b6339bffe761bafd"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_classroom-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "13c234c11ad258e8faa468f6eed523c7de6a571de88d7a50f1146cec3d0a74ff"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_classroom.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "fee906b889205d84332755db9ec95de90604510b1e2c2e6769b3a79b5d14ce78"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_door_wall.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "2de89a65e6bf5eae447214b79635e2fe5d6c534ff5840dc83c0338e7e4319597"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_door_wall_hd.png",
+    "width": 2560,
+    "height": 1440,
+    "mode": "RGB",
+    "sha256": "65f02bf0bfddfb2baf453930aed46eab02b2edf07950e0d14de2b12ed1dbe0fb"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_garage-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "3534d1203ab8eec5f75ea352762e67c8da04105faac56b3f7d7a629dc10dc2d6"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_garage.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "b160c59c33b99f16f12d19f7fa574e5979be5183fc505c5668242e660696824e"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kitchen-try.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "2124825d45820f2f495a0ecea3308f3dbccf7bb14caf7535deb9d1b4d4f1c491"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kitchen-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "e05b51b172eae4d975f954d1b862dd5575f3af6ef906a8de44db8db3ac668911"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kitchen_adult-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "cb0d62aa60edf4f689cfa8344f2e47f2b227d846cae888213dcecb24f14e68c2"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kitchen_adult.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "210f9e077ee13a258c09166f1c88211190f4589ac6e286b836e9897168b115c1"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kostya_room-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "ac1a61ec371a284f206005b26bd295af8a020348e544b8bf103c8d80a1cedec5"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_kostya_room.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "0e952f7169b6f10ac242002ffbc7557b0f017eefacccad7339182772baba10b8"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_terrace-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "41089423c1fbb19c8c51b285ecc980aee9bafc1d64dc7bb5d230260e8f218f20"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_terrace.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "fa2e1bb94b17917c1fa5f6dbcf9cb223fa147b3335340c052c7a2657a8c6881b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_yard-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "0edefd079534b02f555508afa4c8d3213502cc61d3ed572c9705453e61522e02"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/bg/bg_yard.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f6414bedec451004b6a2167083380407796b93406c27da984714536d929daa5e"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/hd-refs/bg_carpet_wall.png",
+    "width": 1536,
+    "height": 864,
+    "mode": "RGB",
+    "sha256": "681781f269665d3de405a37546dc625681e1b9afa96479504a6fd925679969c3"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/hd-refs/bg_door_wall.png",
+    "width": 1536,
+    "height": 864,
+    "mode": "RGB",
+    "sha256": "7fcce4737d49e8556b1176784a41923f311caba360c874dc4acc85b8823a3a91"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/hd-refs/p2_kostya.png",
+    "width": 1536,
+    "height": 864,
+    "mode": "RGB",
+    "sha256": "ba569f754fd2eaf2e9b92c4d79fc2646f37b3391ba0413d681116e919334d6df"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/hd-refs/p3_calendar.png",
+    "width": 1536,
+    "height": 864,
+    "mode": "RGB",
+    "sha256": "4846306425071aa83a9f714e4e21267312f8f3b72980e942c50bbc24c2215edb"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/hd-refs/p4_sasha.png",
+    "width": 1536,
+    "height": 864,
+    "mode": "RGB",
+    "sha256": "5177fd37e1495ba83a7f4060c6cf3c9b0e875865c698162567979257ca0f3488"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/ded_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "92ce7539c79dfbaf2a1a705f81cb46cf6a0ebd1ecc01cec131f740a42605fbe5"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/ded_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "e157eb15ccae70f98156fb0d5d91b0da066be62b68ab0e84aae034743cba7b60"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/kostya38_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "ec72d1f9f158dfcdb98bb89e69b68e2d71ddb3d7b53c3e382b23e3df6cc508a9"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/kostya38_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "4a1f2d38cffd9044b81d1221e8460c5e766ade9c981dc88c4ca7da707b756a84"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/kostya_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "bb6e9d2aa5550ad6d38cbe2377354310273a0938bd1237c77bb998d737eedb70"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/kostya_sheet_hd.png",
+    "width": 3072,
+    "height": 2048,
+    "mode": "RGB",
+    "sha256": "e92e8d443d3eb49055844f2dd96384579d80fcf7cc448494d93ee5bdf5ac4773"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/lena_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "772c7fca214a716d1bbe8d9cb291edd2b25ecc3075399836db830deba1cc52ff"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/lena_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "c9400fe4bcc5c15babeb6f5ea2f4edd45b2c1b0e31186a4a6359fa47e6784eb9"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/mama_sheet-v2.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "8691c8f5c4167ae6ee49b16838a81b7c89a7f158889841239364b240f6d271cd"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/mama_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "d33b97551fa86817062898efd763b879cd3ab70f0441c32165df3af3100f9482"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/mama_sheet_hd.png",
+    "width": 3072,
+    "height": 2048,
+    "mode": "RGB",
+    "sha256": "76e8f02f1366ba5b04b10ad82c6a40c5c36e1f881f7ed738c7f7a0a5bb317882"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/papa_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "82f3faff1d5457ef2dd84bce971b8c93443f8950a4ee581c1b4fcf148673a0be"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/props_misc_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "8537520179720548a1171726d7470d05faa3a02bce1f31313db7ea09d95f1622"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/props_misc_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "127f7d2de8b0239bdaacc5238ff6bc18cc7cae537365d7b2e766afe8d5e7d641"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/props_tape_sheet-v2.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "969325a02158f3aa05eeec18aeb4430c83af8b7fb4cbf1f3376dccdc8ec4f640"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/props_tape_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "c5d93772feb1f041cd9a7e7c1e584f8884fb009bcfdd90d22c3ece782c4bcdac"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_ages_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "cfff5a359935c85270dccb3b26ce80a7b41279bd14af6131ed9e8f113a0e5d33"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_ages_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "662fb3cb653af56afb525b7dd8b5b96312acfd987cedc848458df76cdd9f532c"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "adad19acb78e2e08694d568de96485faa3153fb83c82e93e1885c81c2fcdf4a2"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "c704151ea79f29261c633bf75c7dc285c93bff9d73c397d047d298d8f8fe13bd"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "ff498e0fcd7246a14207888c8d30ebcd94a377211a323f73126a2cbc4b7443e1"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/sasha_sheet_hd.png",
+    "width": 3072,
+    "height": 2048,
+    "mode": "RGB",
+    "sha256": "f081a0dd9a9ae84386f7dd08c7f1745c2e304e860991ddd9697c7239bfeea34a"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/supporting_cast_sheet-alt.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "8ecd7f61a15482971ead89c2b56abce476e9e4191d529ef1f5e94e536a33efc8"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/sheets/supporting_cast_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "af538afdfcd42d9bfe60fa891abb53ea066b5163a8c59b4144aebd4db195fbe2"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_clock_ten.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "b256591e6b2dac599a4221417ff0912ea8ea0048eeaeea6aeea4063110e6f07b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_cocoa.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "e67878901ee56125c41a348dc674307e141b7ed318d89008a0eb41c426000a63"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_lights_out.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "68d5c0fa48c32f276071f1cbbe3e967c2730224b675d5c396ef5519da8aa064c"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_mama_bread.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6e8dfbdf931b61fec656a463d7798da3461404e5146b75953aedd21f8448645f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_oilcloth.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "1c84e105251856b65c498a5657c4dee282ceb723d2daf69ef522b9da7616cef4"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_papa_lowers.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a1d48f7d0514f849d8e028eb6c3521a6e314ec989f5ab6d52e6e8affb4d1bef7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_papa_pan.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "90e057940b8c4012a35a0303d432c6bee46bac126e9cf260b24e36199960ebd5"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_plan_night.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "18271023cfd082c3637bc130ed61d96d9c6fb4b187329e47078f84db1f9efbb9"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_plan_sheet.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "836bed83d0e61e0467b5cfa806d73101fc0d69d6626f27b2c7559a017b750b0a"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_school_board.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "bcfde50bfb95515d173aa7f954b31b62de5c21054b9249388341e2eec8101032"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e1_videocall.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f03cd6fa62a92fb8110ebb8e0bd8af89f4ef8d6a4f8c3efa9810d6a909c70a51"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_2024_night.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "476f03fc0cc79c08c91228b81370f2dc132a5b5bf983f6414620673233b45d59"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_kostya_gives.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "97cad644da0a5c4c312d82af47d929e6abc43f1911b26b5ed68d69b350be9b53"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_kostya_room.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "3c7b60e2fe362cb6f791d5b0eb63bad7365d61807145d6959f4b8bd9a0a12f97"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_labels.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a8aa0036ccdfb5b52ba33b070eae4e7ace582fbda743313f997af0216e0ee955"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_life_bus.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "7a3e7237c253f69636b66d997c31f6f0d88d97135c527115cdd027aa7b7dd7cb"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_life_sofa.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "1a095d7132d56763edc6fd6b263e19a1b99a7c9af467af93a084fc27f1af046f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_life_work-v2.png",
+    "width": 1672,
+    "height": 940,
+    "mode": "RGB",
+    "sha256": "a35e1bf462af2495781ceb8df11a0aec168b9fc4a7577422c1a029dfb45ddd1f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_life_work.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a72f979f124d0c9a2fd604a6ff9afab97a72f6c04bb2da53234d2d30f88ae087"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_market.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f4e9c08ed15d38895448430a676b9d5ef6503d81827794a8e5117347dfdfbcf7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_recording.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6c535a29a4385437cc1d48c01dff2a8bac63546077b532d8db9d5ffeb5189b2f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_rec_keys-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "19848e6a89c20913928f7c99494434146d3fe3dac31d53a8b48650ff8c3139aa"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_rec_keys-v3.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "cbd1bbc3babc7d460c8b9d125ee4f81a20fb11be12fd4a5e6163d4b78d2ba055"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_rec_keys.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "762b52b3610a4e7c7feb76e012c54eaaf2e57c8e11c52f2682837601c943587a"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_stairs.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "85c8ae40c6e5ecf2f64ac14f6cb82cb6cc2ce8114b4f75b5d1b9d12d38f8c4df"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_try_dimka.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "7af00c116d50113c17fa395f46ee806b8f807cc3b1020feb11ce513cd7d3e18b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_try_mama-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "d0cf2bddc9bc49cb7a4784775f4c70e7661e727c243adcd729bf302ba0522488"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_try_mama.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "c5ff6e77f8ca4045b29d034e64eeee847e476b1014c1d3f8c73a436c6853a72d"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e2_try_teacher.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9c11af29a5ce2cd1766bdae2c396bff3102566646573d1aeea3ada1ff79005de"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_computer.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "2841aaa82715d89d71b3117672e7abc410fb09694c85287d36c37bcc830e8401"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_fractions_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "540dd9f35ef6cbac61313f35c68c7a07f7fdee7366f5a852b93a0ee0a9e2ae85"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_gena.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "390f32b55db98791b849771a9e19b10d49e382be961ed83b21c226c69c552135"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_library.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9c392c8a11110c2d0dd843aead968fcccde111a83a733f0b34058eb793b664a6"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_notebooks.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9cd3347ea0d103d00c7661c1299827dd186f76b596b98d8c9a2c2813270e2ffb"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3b_piggybank.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a37cb5af49760abd38125376fcc7144588599c00e77c934cc04e4ed63a9d1191"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3_bed_edge.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "8a25f2709b7343622e33843819024e4913fce6204dcc9e4897a0991680062ae4"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3_bench.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a27108bb17e2f106c9d8f368d8ab3d074b06a8e02603f89816a869847d8a24e6"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e3_fallen.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "7d022ce03064e7e3afaed1fea219f9c44b56bfbcc0762a97169b8e8dc4d8ce40"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4b_pc_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6ca932608a3aacef6d050b7ddf85b35ad344fe25186916b3f17f6cdfa986baa1"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4b_pc_floor.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_briefcase.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "d56ca62bcbb134baa7f9511a6c12c465363389959bc6337d0db529bbbf158bd2"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_car_taken.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "c64ff8e04aa4394e48c71e72441b3d5c150b4d6767f6a2ad4434184713e0ca6e"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_cassette_night.png",
+    "width": 1672,
+    "height": 940,
+    "mode": "RGB",
+    "sha256": "6dcca2a0197532c9fceb2cdb3324175d22f130d0da566ce8316bc63f00609690"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_flash_papers.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f3b2f63783bacb0cf747c424399b81481db4e9d8f39def824c130fdab096693a"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_papa_look_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a04d58fd06148fd813657eb2418154c5af28ed8a459eab6178acc056103da84f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_silent_dinner.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "ea8d894a26f4c4d888a19f1922cfd8881b914c19b9e71f5e61292a3b3d4ae63f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_straight_a-try.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f9660ae202de4711c86383fd00cb81814cb7de7a4bfeec3991fa30858bd1f735"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_straight_a.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "8eb0fa2e7f37c5918fa66d768e00437454758d49fedbd7f47b9d7a169d97c652"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_suitcase-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "e4e6358c7fa458de41318e9c6af58c1f47cd9fbdd73c04ef6be358f935cbe11c"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_suitcase.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "1a1b644f416a4025704181c50c6b90456ab2275d4dfc42bb10603b32a3b96dfb"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_warn_kitchen.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6843311a4e30943f37cc3ebd388a8a5a897250489b467aa56c68552063b5711d"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_winter_fork-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "531c4f3a5769b0416a777b3cf1fbd1357d8c99c2a4de34f3305a4be0abe60923"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e4_winter_fork.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9ee97f3aca71b42678ac729f50f07a1d4c1ffbb9e4e8d4426658cedad156c37d"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_burn.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "0254e15368d42e8cf9327a618941ec6d1260cf45d6cb3a30c668757e34d5629b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_garage.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "18da949ec56734e78f4e9a975b00c1ff6e45e5c3e206016b188516811ecf6494"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_iron_palm_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "ed693b5694e6956ec6956365c5f0e57f43ea5ea1c53604e9a026526fbbf626f1"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_night_tape.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6a68dc45d44f884b44692d859796fdc8b6b664d41f120ac0d7dc33d70f167a02"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_spring_2011.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f4b1dde6417a5d1557228cb7a177ef5653846f4ee6fe1acf5db407288aacf5cc"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e5_sundays.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "483bff1210bb0f24f89ae808291cec8a915cda876764befb24fa1d89e76c05f7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e6_cups.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "70a039cecaa19aa56cbbe5984c727175a187ad49c3df10428831008cadc8d775"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e6_dishes.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "bf05b726117438dc89bbaec01c315e4a597668c6e1fabd85d2dd946b9a770bd0"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e6_lena_cup_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "725101f99b2677a87daa63568336aa898d112df6991d79023e3c35653522bcfd"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e6_station.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "367361274081569f627c59b1b184a7c6a703e888c97aebff4a7e03b85c4c8d75"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/e6_terrace.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "7a65bf6ddde76e5253cdc49233841518e581489b30e0490e203d4ea7d8e4544f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_kostya_door.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a1493e78f7c5d290cd90bfb6c09ca0776c1b39ab3e4e5062eadd3f27245e8377"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_kostya_frown.png",
+    "width": 1672,
+    "height": 940,
+    "mode": "RGB",
+    "sha256": "6d83ac7c3a1e586d9df8acb4e1fb340a495cab02b7de21403bcd377255563ac8"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_last_tape.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "8701eb0664f6be9e6e4f0b119e385cf8eb01ca6607066e3088dcdff33933de49"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_pat.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "1e95101f32c1f40c264186c86d8963028866b52e3e113b344edb4e6e160430ca"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_player.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "30c0960469722a21e58adb4315f3e242002bce3734856b7443178347fb492d3b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_recording.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "eed4e9891f9f956be8227138af9073cae52557d3e7e9c7a216c5d3a60bc5c5c5"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/f_rec_keys.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "4f92ecc82bd7df1e2338bd69ea9b64073aa53985afb81fd084f030786acaf300"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_cassette_2024_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "f4c3bfc78903c7bae9f62cb209499b5c3d7ec2dc984c1357c0721f6d4f9ad2ae"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_cassette_box.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6503ef480013ce16f4360763f0dd5573e1303435bea8e1f3c01c5400276214b7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_kostya_hair_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "aeb1de9e862919eb10245225267994d617a9bd48659e2b8fbf4b467495a64781"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_sasha_eyes_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "6d10e4b6a80fabfe31fc8e2e9e4c4ca2312707cfc9b16fb2091d76223e72e3de"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_sasha_palm.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "4aecd3b196a430c2e06f3c4e37cff34994d4f539fc1c6259f8b8fc380ea899a5"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/h_school_bag.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "dbf868dd5999e0d2e775201dab95d5817315078508527e6c60e01c12f6addd1c"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_mama_bread-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "821c8314aa5c629b3955c33f12415ef46d91ba5e77995c69038350b3025e3340"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_mama_bread.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9d3651797f8b617ccca0e07da73a30da6d4dd16facff228e40e9b243cb356d11"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_sasha_table-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a54e98ee42296acca3545c30d429f7d2725af45bb94f62885495bb8cf6a0a4d7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_sasha_table.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "9b98f62fa5f10ddfce5e4641f9cd08bd9f0bc2af56d870cdf05325caf33ae581"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_soup-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "b7482d447b9b5628c0c45ac0d82b3bdec213513511ccc064519d46ccd9d95ee4"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/k_soup.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "b89b40ea5557482d7eb8a9c79f2f1caa3186143e16569e4b9f709deddd48ab19"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_dimka_phone.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_graduation-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "7df310848c9b068c0aa3a8c14eedb5beb63e325972c0f628e6c8f6d9af500bc7"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_graduation.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "2f9a205ebf56e05a5de614c2bc7923fc16bd61ea197c2008e440bbb8f64a7d5d"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_kostya_car.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_varya_call-v2.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "aad03ce1470bfe38ce81967255891f11c1770cd33ee17b8967ff02e98516c544"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/m_varya_call.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "a84f0cc937dafa2bd3a3dfd4d577c15badb354b94f6df3282b833235005c7806"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p0_sock.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "03448338417dd8059fe7c27e847fd5c3b519c2cef9147f128dae74bd6bdb5963"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p2_kostya.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "7bfa4a9329eacea06bb362df4463078eb00198eb056012a6121fcb68933e9f44"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p2_kostya_hd.png",
+    "width": 2560,
+    "height": 1440,
+    "mode": "RGB",
+    "sha256": "2a750eab9e430ddd36dd6f1ed362f459c8da5644883e17fbbfb0ba0d8cc21829"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p3_calendar.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "4447f0499540d0752a2fbb6eff925f80e4b89a36c64e71034996291bf75adac3"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p3_calendar_hd.png",
+    "width": 2560,
+    "height": 1440,
+    "mode": "RGB",
+    "sha256": "1a9a777a1afd7f45ee3b83e10fa6bd01ee57212110a39d68b3be4c3940b9e7ef"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p4_sasha.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "165f2cb64b4b9eb02520c4b67b163459878d27263f3d4621d7325340fe46db36"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p4_sasha_hd.png",
+    "width": 2560,
+    "height": 1440,
+    "mode": "RGB",
+    "sha256": "753556603612a21005636bb1b6607a7e5c72a799b960e363871b69273e991413"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/p4_sasha_rerender-preview.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "bec16ddf63a68069900665e1ffa8abe551a58688c7efa7640cb5621948259bf1"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/pv_a_deck.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "5cdceb8e7c50a079215ccd0f7507456261033d858520ed9aa69a836a0f30fcf0"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/pv_b_boy.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "999a906bfb657ec30707c304a289d1fcb24f88fadf43a2b37d00de967b0f04d0"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/q_blank_tape.png",
+    "width": 1672,
+    "height": 940,
+    "mode": "RGB",
+    "sha256": "6a6132dda944f44b9fce1b2eeb2e029519fc0cf3728e6ee09fc12b6c460bb8e4"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/r_adults_soup.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "763aba0e96907677742f321a1c14fc4c6ba37fbdfae0828d51707b35f85166ae"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/r_paper_desk.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "24ddb960abefcf5bf1c04f27a2350cabeceed6618ed2ef55da51ef1a78ca693b"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/t_light_strip.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "038a4cc495c2f671752ef79a73537123e6fa075883b7a5bd778ce403167bd324"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/t_night_kitchen.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "c296cd6eaccfb4dfc8d59a0dd4b3f7bf715a4879f88148928e52a1901c91f9e0"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/t_old_night.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "70e1ee3ebaefa949fcd7bfffd55574feb7b11c2426f8d8461455ed4fd9aefe1f"
+  },
+  {
+    "file": "channels/chto-esli/video-01/assets/shots/t_realize_cu.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "sha256": "17dababf4798f7b5967a7bf69f88976db3acc02e0fe16c00700a779acdbafa6f"
+  },
+  {
+    "file": "my-video/public/real/scene1.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "780af49e4a544427aab566bfbaf9ab954662fe9c5c692e0fc526e2d7642825f1"
+  },
+  {
+    "file": "my-video/public/real/scene2.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "5628bc75096e9955aec0a9ef817766d450561ef82b58e16c3a6a5fc6b4049a76"
+  },
+  {
+    "file": "my-video/public/real/scene3.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "d162fdc01761b37dbf1c30cf21f940ceaff3d2d88e286ab7607f0be000e462a3"
+  },
+  {
+    "file": "my-video/public/real/scene4.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "9d2c2884f644ec17b696aec1c19c2722e56ec4a2d3e602c57864371d8197d5d0"
+  },
+  {
+    "file": "my-video/public/real/scene5.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "d12ce6bcdf8c4e973347d8a41f761d08080d28695bf32df3db3c65ca0c2c473d"
+  },
+  {
+    "file": "my-video/public/real/scene6.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "fa46bc3a128ae7fde9e205581bfbe104df02fc53a37c8de1f87bf71d657cbaf9"
+  },
+  {
+    "file": "my-video/public/real/scene7.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "de24ba3c654bfaeb3e1660cd5ed656eb495baf271c6b7c4b0ce087034e74ae94"
+  },
+  {
+    "file": "my-video/public/real/scene8.png",
+    "width": 1080,
+    "height": 1920,
+    "mode": "RGB",
+    "sha256": "4db10c78d1e8120bc1bc4a49da9026d6060be49ec5509ccc08077d7cc9de2dfb"
+  },
+  {
+    "file": "my-video/public/explainer/kitchen/img/test-1.png",
+    "width": 600,
+    "height": 1400,
+    "mode": "RGB",
+    "sha256": "30a903ec8e0b44cf5325f8bb121ae7b517e75e3bb7b7e255dc34e577a6060be2"
+  },
+  {
+    "file": "my-video/public/explainer/kitchen/img/test-2.png",
+    "width": 600,
+    "height": 1400,
+    "mode": "RGB",
+    "sha256": "f1a60a6abb5a7e7d72ba4d34483a844ec2520c9425ec94f2ea99d2ca0355511a"
+  },
+  {
+    "file": "nauka-frames/assets/sheets/doc.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "5e850e09d20f78a6ed9c80cba041074c491d954d486ccc64ab33d0ea901af73a"
+  },
+  {
+    "file": "nauka-frames/assets/sheets/gromila.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "391a8a57bef7ee89d44732983adf5d7739d0dc0857c9990889eab3c9d176bc7c"
+  },
+  {
+    "file": "nauka-frames/assets/sheets/tetsu.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "e5cbde149e367aa25d8aa02cc11452d45a412b8d045e38a3b82346a6a3882d0f"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s1a_hook_wide.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "e1d9242e73820d44ddb4e64635fa17eb32ebf531822636dea1c002b31a3c6838"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s1b_hook_hit.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "57a769b815c8a6adf45c8ac50da4056cb6d5c585186a94d8ee133c57fca2cdb1"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s2a_gromila_solo.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "b2d974ef32be478d0edcfd6b99f78a9b40963b9b08600f364e0ee790f3a850dc"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s2b_tetsu_solo.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "5b2905b8c8ff7b44f974c0d027efb15bb6766618ad3eee6bc98dde1c03f1a1d6"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s2_size.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "b6cd292e10058d81debbd27de4f487cd24b9ff2c98ea8785dd02da9ee2cf5ab7"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s3a_punch.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "1f6a2463448f83ccb6a9f61791f57e100a25426f8c934e56e9f7c187ddb08eb2"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s3b_sag.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "9c46ff4f357c622e5230c4ec4ae53e7ded86cacd61d7739496d4beec02b24666"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s4_myth.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "ceb6369c130735ed9d3ae7b967f45429e09a7dd6ce713525e8a2b2c2dc0ad851"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s5_doc.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "6afbc77a7e3bc3b5c464ee00dc41a5832993a15e3d05756ea79c4ab17c913ba5"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s6a_three.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "525a9fe5096eca6367d9b889c13e02a9c540d82d2c39b878949d66382a614bfb"
+  },
+  {
+    "file": "nauka-frames/assets/shots/s6b_brain.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "3d7465c7ae501e9d38b42e2578bce0690505ee064aac5db8b2416341082d57d2"
+  },
+  {
+    "file": "nauka-frames/assets/samples/gromila-likeness-v1/s2_size.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "b6cd292e10058d81debbd27de4f487cd24b9ff2c98ea8785dd02da9ee2cf5ab7"
+  },
+  {
+    "file": "nauka-frames/assets/samples/gromila-likeness-v1/s4_myth.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "ceb6369c130735ed9d3ae7b967f45429e09a7dd6ce713525e8a2b2c2dc0ad851"
+  },
+  {
+    "file": "nauka-frames/assets/samples/gromila-likeness-v1/sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "391a8a57bef7ee89d44732983adf5d7739d0dc0857c9990889eab3c9d176bc7c"
+  },
+  {
+    "file": "nauka-paper/assets/paper/doc/whole.png",
+    "width": 371,
+    "height": 844,
+    "mode": "RGBA",
+    "sha256": "ce1d8a4faea1e3e3b7c568ede88bcf3f35e09aefe8325f79e7ae1776496bfb3e"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/foreArmL.png",
+    "width": 143,
+    "height": 213,
+    "mode": "RGBA",
+    "sha256": "db054b0c989469f44c5221f23f9d34050a0c32caf16c79b35007fccdbd08e129"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/foreArmR.png",
+    "width": 145,
+    "height": 213,
+    "mode": "RGBA",
+    "sha256": "793d3efa581a3672475e71f0b18ed09d9854c9fa345097eb19aeece3298b72e2"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/head.png",
+    "width": 185,
+    "height": 176,
+    "mode": "RGBA",
+    "sha256": "03439856d6c653c6daecce7ce0be82cf447fbb0eafbf24df8feecdb9c8526f8d"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/pelvis.png",
+    "width": 344,
+    "height": 227,
+    "mode": "RGBA",
+    "sha256": "bb2d084a27481af2b7dd4c56202bd7314eda2f3b956952dcf279c823da358cb1"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/shinL.png",
+    "width": 183,
+    "height": 282,
+    "mode": "RGBA",
+    "sha256": "bd257bf5270edc50405f4b9b4e748573ba1992d85707e2af20238cde3d92edf0"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/shinR.png",
+    "width": 183,
+    "height": 282,
+    "mode": "RGBA",
+    "sha256": "ee00d1b0702343dbba8612a8db08778e583dc98bc0fb350515070a53bce4d40d"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/thighL.png",
+    "width": 188,
+    "height": 203,
+    "mode": "RGBA",
+    "sha256": "41c2e7eba9a38a128b04c47db231d9282387790ac43d4c8ac7f415b4df79188b"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/thighR.png",
+    "width": 184,
+    "height": 203,
+    "mode": "RGBA",
+    "sha256": "747cccac87bba23094b734622fac1797e0cf4f56285a11272360c88463ec5a29"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/torso.png",
+    "width": 323,
+    "height": 345,
+    "mode": "RGBA",
+    "sha256": "16f80aee36258396250b8cd93b74980c053a70fdc640f1749c8992de49bba8b3"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/upperArmL.png",
+    "width": 198,
+    "height": 388,
+    "mode": "RGBA",
+    "sha256": "edd116c2c86e7641f865a3ec6a6d862b3b334586e356a194673521b95ab8a288"
+  },
+  {
+    "file": "nauka-paper/assets/paper/gromila/upperArmR.png",
+    "width": 201,
+    "height": 388,
+    "mode": "RGBA",
+    "sha256": "ca7758809c605ef26032945dc5c9963caf8a733f00105c5f06d01033b3042712"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/foreArmL.png",
+    "width": 97,
+    "height": 234,
+    "mode": "RGBA",
+    "sha256": "31127a11419ca61fb2224272191ea2436eb37b8017526f7a6c7c342ac1eca60b"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/foreArmR.png",
+    "width": 96,
+    "height": 234,
+    "mode": "RGBA",
+    "sha256": "32b869ce91272db4e333be518cd12465f7264a0165aaf2358ef5ed589dcbc3f6"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/head.png",
+    "width": 148,
+    "height": 196,
+    "mode": "RGBA",
+    "sha256": "69ccedb909b0fc556bec54256cdc122327a0d340f81bc37800d5e10c21278e9c"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/pelvis.png",
+    "width": 254,
+    "height": 187,
+    "mode": "RGBA",
+    "sha256": "8315ede2306961a203a07c086f809b3e2d2112c445bea451c64fb5c0d2387cb0"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/shinL.png",
+    "width": 121,
+    "height": 253,
+    "mode": "RGBA",
+    "sha256": "b416282caea657ab47fb04952b1bd0302d9acb987a13c6a2d66fa4f268c1d629"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/shinR.png",
+    "width": 119,
+    "height": 253,
+    "mode": "RGBA",
+    "sha256": "99bcff587b81d7d81f7edd12a9a326c209c89fb7fa5ed0304cfd035c2cb68b77"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/thighL.png",
+    "width": 148,
+    "height": 233,
+    "mode": "RGBA",
+    "sha256": "935458fc40cbb48043fe6671938098fa792c2f172a8016831a47186b4f2ec32e"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/thighR.png",
+    "width": 148,
+    "height": 233,
+    "mode": "RGBA",
+    "sha256": "f0488593fca37118c7717fddd3ed56a9491e788690c81874ed3f2458a0339689"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/torso.png",
+    "width": 241,
+    "height": 224,
+    "mode": "RGBA",
+    "sha256": "f51f561ac869b5951f4fa5bb79999640a3bab7f90d3ec611e3b88fe12f83884d"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/upperArmL.png",
+    "width": 123,
+    "height": 221,
+    "mode": "RGBA",
+    "sha256": "46ae46bfcb7226f8cb4c0cc2d810d0cc44b0ed3b3b381dd002a768b5b828db94"
+  },
+  {
+    "file": "nauka-paper/assets/paper/tetsu/upperArmR.png",
+    "width": 118,
+    "height": 220,
+    "mode": "RGBA",
+    "sha256": "edc86b3d8e5220e28640f2b0332870fd08485d0aa0988674ec3ac8280a9470bd"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg1_hook.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "e3f43e205094f3263b7622f63f9ae417efcb87e53dc34a30ae3fd5da2345304e"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg2_size.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "a02a39594f6254be764800d6b60bfa1fd17b0ec15e6473cdd27611b45a855f79"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg3_punch.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "6bc99c0f65854f84dbbf54c516a7a69db7a44430def8fc9506f879138e466776"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg4_myth.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "3f3a992e3ada3ad40f9014dc1051aa14abf7afe4d28d11305b16de4a85855c2b"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg5_doc.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "0c49e836dd330906a8082ad56a857046935cad1cc8cdba048db56758340f1dc5"
+  },
+  {
+    "file": "nauka-toon/assets/img/backgrounds/bg6_three.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "d730c2f644fc2c0f1824596b58a65ff88a5192c8d45f57f1aade150a9bb53269"
+  },
+  {
+    "file": "nauka-toon/assets/img/doc/sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "b4e51188b76a5fae87e793fbe33ad286bef55235c4af0df0e34b453e9e8c9dfe"
+  },
+  {
+    "file": "nauka-toon/assets/img/gromila/sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "41d739fd36e1f32ea508ae9c3645083a425257b707981aff8e2b9e74552d05fb"
+  },
+  {
+    "file": "nauka-toon/assets/img/tetsu/sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "sha256": "e6cb4ee4a558a5d91ad169d968fba9121cbce10c5f1afdaa3aa14146bf8d78a1"
+  }
+]

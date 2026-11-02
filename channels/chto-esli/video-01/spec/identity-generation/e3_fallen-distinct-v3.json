@@ -1,0 +1,21 @@
+{
+  "id": "e3_fallen",
+  "refs": [
+    "assets/shots/e3_fallen.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "canonical": "assets/shots/e3_fallen.png",
+  "selected": "assets/shots/e3_fallen-distinct-v3.png",
+  "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the ONLY character, older brother standing left of center in gray hoodie and teal jeans. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his surprised expression, open mouth and gaze to the fallen tree on the right.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+  "record_schema": "identity-fix-v3",
+  "title": "Костя у поваленного дерева",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-f2ea932a-7739-48b1-94a1-6e8bf06f77ba.png",
+  "references": [
+    "assets/shots/e3_fallen.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "visual_review": "selected",
+  "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены."
+}

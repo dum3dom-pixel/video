@@ -1,0 +1,19 @@
+{
+  "id": "lena",
+  "canonical": "assets/sheets/lena_sheet.png",
+  "selected": "assets/sheets/lena_sheet-distinct-v3.png",
+  "refs": [
+    "assets/sheets/lena_sheet.png"
+  ],
+  "prompt": "Use case: identity-preserve, strong character differentiation requested by user. Edit this LENA26 character sheet consistently in all three full-body views and the large portrait. Her current curly hair and generic large-eyed round face look like Mama's and that is the defect to fix. Keep Lena's established freckles, calm amused personality, big mug and teal cardigan; change facial shape and haircut so she is clearly a separate person, not Mama in different clothing.\nNEW LENA26 identity: mature LONG OVAL FACE, high cheekbones, clearly LONGER fairly straight nose with a small natural bridge, smaller narrower ALMOND-shaped hazel-brown eyes, low straight brows, thin gently smiling lips and a softly squared narrow chin. Several clearly visible freckles over the nose and cheeks, same pattern in all views. Not huge round anime eyes or a tiny button nose. Distinct recognizably26-year-old woman, not an adolescent.\nHair: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB with a clean horizontal shoulder-length edge, off-center side part, one side tucked behind the ear. Smooth broad cut-paper locks, not thin individual strands. Clearly lighter than Mama's dark chestnut curls. NO CURLS, NO WAVES, NO side ponytail, NO hair clip or bow, NO upward tufts. This straight blunt silhouette must be obvious from front, side and back. No blond pure-yellow flat color; use warm shaded honey-brown within the muted reference palette.\nINVARIANTS: exact same layout (front/profile/back figures left, large portrait right), exact same body poses and mug positions, intact hands/feet and fingers, SAME faded-teal thick KNITTED LONG CARDIGAN over a cream top, olive cropped wide trousers, cream socks and teal slippers. No apron, floral robe or mustard clip. Preserve physical matte layered-paper material, warm cream plain background, crisp fibers and uneven cut edges, soft short contact shadows, original six-color palette. No black outlines, photographic skin, 3D, blur or grain overlay. One opaque PNG1536x1024 landscape3:2; full figures85-90% of height. No text/labels/numbers/extra props/watermark.",
+  "record_schema": "identity-fix-v3",
+  "title": "Лена: отдельные лицо и стрижка",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-b024c985-e17f-40a5-8934-4df1b88961c8.png",
+  "references": [
+    "assets/sheets/lena_sheet.png"
+  ],
+  "visual_review": "selected",
+  "change": "Вместо похожих на мамины волн — прямое каре; вытянутое взрослое лицо, длиннее нос, уже глаза и заметные веснушки. Бирюзовый кардиган и кружка сохранены."
+}

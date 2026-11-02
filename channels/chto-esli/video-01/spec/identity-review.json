@@ -1,0 +1,1065 @@
+{
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "api_calls": 0,
+  "upscaled": false,
+  "inventory_before_count": 212,
+  "selected": 20,
+  "installed": 20,
+  "unrelated_source_images_changed": [],
+  "images": [
+    {
+      "id": "m_kostya_car",
+      "canonical": "assets/shots/m_kostya_car.png",
+      "selected": "assets/shots/m_kostya_car-distinct-v3.png",
+      "refs": [
+        "assets/shots/m_kostya_car.png",
+        "assets/sheets/kostya25_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Edit this finished scene with TWO BROTHERS at the old hatchback. Input1 is the edit target; input2 is the required NEW KOSTYA AGE25 design. The user explicitly wants the men CLEARLY DIFFERENT in face, hair and clothes.\nChange ONLY THE DRIVER leaning out of the window at CENTER-RIGHT: this is KOSTYA25. Replace his existing long spiky hair with image2's SHORT DENSE DARK-CHESTNUT CURLS cropped at the sides, ears exposed and FULLY OPEN FOREHEAD, low rounded silhouette, no long bangs or cowlick. Give him image2's broad square-oval face, WIDE rounded jaw/chin, SMALLER hooded eyes, wide rounded-tip nose, thick straight brows, visible stubble and confident broad proud grin. He must read as an older broader man, not a duplicate of the younger narrow-faced brother.\nReplace the DRIVER'S mustard hoodie/jacket entirely with image2's OPEN FADED-TEAL COLLARED JACKET over CREAM CREW-NECK T-SHIRT. Clear collar/lapels, no hood or drawstrings, no yellow on driver. Keep his leaning pose, resting forearm and hand, looking toward his brother, same body placement and head scale.\nStanding brother SASHA20 at LEFT stays COMPLETELY UNCHANGED: narrow angular face, serious big eyes, long spiky hair with tall cowlick, MUSTARD HOODIE under warm-gray blazer, gray trousers and shoes. These two men must be instantly distinguishable at thumbnail size: spiky-haired narrow yellow-clothed Sasha versus compact-curly broad-faced teal-clothed Kostya.\nKeep exact same car, open window, mirrors, bodywork, scratches, wheels, pavement, courtyard, bench, apartment block, trees, shadows, light, camera and crop. No new objects/people or scene changes. Preserve warm handmade matte layered cut-paper style, irregular fiber edges and short soft contact shadows, crisp all over. Opaque PNG landscape16:9, keep native1672x941 size if supported. No text/labels/logos/watermark or red.",
+      "record_schema": "identity-fix-v3",
+      "title": "Саша и Костя у машины: исходный проблемный кадр",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-6ac246f5-7cd7-46cf-a19c-33a557a8526a.png",
+      "references": [
+        "assets/shots/m_kostya_car.png",
+        "assets/sheets/kostya25_sheet-distinct-v3.png"
+      ],
+      "attempts": 2,
+      "failed_attempts": [
+        {
+          "attempt": 1,
+          "error": "image generation failed: network error: error sending request",
+          "output": null
+        }
+      ],
+      "visual_review": "selected",
+      "change": "Водитель Костя25: короткие кудри, широкое лицо, щетина и открытая бирюзовая куртка с кремовой футболкой. Саша слева сохранил вихор, узкое лицо, горчичное худи и серый пиджак.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "f38495647440c722045f08f612cc202278e84937fb9be7fe0fc8fb0ba9ebd243",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/m_kostya_car.png",
+          "preserved_file": "assets/identity-review/before/shots/m_kostya_car.png",
+          "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396"
+        },
+        {
+          "requested": "assets/sheets/kostya25_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya25_sheet-distinct-v3.png",
+          "sha256": "e80dc9cf386297aa1391ad9b5bcd1bc43b11c1094278f03408f7148305ea756e"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/m_kostya_car.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/m_kostya_car.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "m_dimka_phone",
+      "canonical": "assets/shots/m_dimka_phone.png",
+      "selected": "assets/shots/m_dimka_phone-distinct-v3.png",
+      "refs": [
+        "assets/shots/m_dimka_phone.png",
+        "assets/sheets/supporting_cast_sheet-distinct-v3.png"
+      ],
+      "prompt": "Precisely edit finished scene input1. There are TWO different19-year-old men, not twins. Change ONLY DIMKA on the LEFT, the buzz-cut man talking into the phone. Input2 is his corrected canonical sheet: he is the SECOND full figure from its left.\nMake Dimka's face rounder with fuller cheeks, short rounded nose, cheerful open mouth, small round chin and distinctive short buzz cut. Keep his existing head angle, phone-to-ear gesture and smile. Replace his entire mustard hooded jacket with a SHORT OLIVE BOMBER JACKET matching input2, ribbed ROUND collar and cuffs, open front, NO HOOD, NO DRAWSTRINGS, over a BRICK-BROWN CREW-NECK T-SHIRT. Keep gray trousers, body position and phone. This is a different garment cut, not a recolored hoodie.\nSASHA on the RIGHT must stay COMPLETELY unchanged: long pointed messy brown hair with tall cowlick, narrow angular face, large serious eyes, light stubble, MUSTARD PULLOVER HOODIE with cream drawstrings and kangaroo pocket. Do not put olive on him. At thumbnail size the difference must be clear: round short-haired man in olive bomber versus narrow spiky-haired man in yellow hoodie.\nKeep exact existing composition, shop doorway and windows, all displayed objects, pavement, warm scene lighting/shadows, same camera/crop. No new props or people. Match original handmade matte cut-paper collage, layered fibers, crisp edges and shallow contact shadows. Opaque landscape16:9 PNG, same native1672x941 dimensions if supported. No text, labels, logos, numbers, watermark or new red.",
+      "record_schema": "identity-fix-v3",
+      "title": "Саша и Димка: звонок со смартфона",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-946c0724-f6ca-4176-9563-548341f3104e.png",
+      "references": [
+        "assets/shots/m_dimka_phone.png",
+        "assets/sheets/supporting_cast_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Димка слева — круглолицый и коротко стриженный, в оливковом бомбере с кирпичной футболкой; Саша справа — в горчичном худи, с угловатым лицом и вихром.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "08591d824f234442ecff8c6168e2dccad10ea83edef0b66267dcdc713e79bfa3",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/m_dimka_phone.png",
+          "preserved_file": "assets/identity-review/before/shots/m_dimka_phone.png",
+          "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3"
+        },
+        {
+          "requested": "assets/sheets/supporting_cast_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/supporting_cast_sheet-distinct-v3.png",
+          "sha256": "dff79ce7547faa3063c95f05c4a9f06f556c22803d97251c62dc62ff985422a4"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/m_dimka_phone.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/m_dimka_phone.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3"
+      },
+      "same_dimensions": true
+    },
+    {
+      "record_schema": "identity-fix-v3",
+      "id": "kostya17",
+      "title": "Костя, 17 лет: отдельный силуэт и лицо",
+      "refs": [
+        "assets/sheets/kostya_sheet-identity-v2.png",
+        "assets/sheets/kostya38_sheet.png"
+      ],
+      "selected": "assets/sheets/kostya_sheet-distinct-v3.png",
+      "canonical": "assets/sheets/kostya_sheet.png",
+      "prompt": "Use case: identity-preserve, user-approved STRONG CHARACTER REDESIGN. Create a corrected Kostya17 character sheet from image1. The previous mild edit was rejected because he still looks exactly like his brother Sasha. Make the identity separation OBVIOUS at thumbnail size. This is an explicitly requested bigger change to face, hair silhouette and build, not just recoloring.\nImage1 controls layout, material, clothing and poses ONLY. Image2 shows the same Kostya at38 and controls his substantial adult facial structure, aged back to17 here, with no beard or wrinkles.\nNEW KOSTYA17 IDENTITY, repeat consistently in every view:\n- SHORT COMPACT DENSE CURLY DARK CHESTNUT HAIR, small rounded ringlet clumps close to the skull, cropped short at the sides and nape, both ears exposed, completely open upper forehead. Low rounded head silhouette. Absolutely NO long sideways fringe, NO long wavy mop, NO spiky hair, NO cowlick or tuft on top. Clearly a short curly haircut, not straight or bald.\n- BROAD SQUARE-OVAL FACE, fuller cheeks, a WIDE ROUNDED JAW and broad chin. No narrow V-shaped pointy chin.\n- Visibly SMALLER NARROWER hooded brown eyes set wider apart, thick fairly straight brows; never big round anime child eyes.\n- Wider substantial nose with a gently rounded tip; broad easy crooked smile, one cheek dimples, natural ears slightly prominent.\n- Older brother17, lean but broader shoulders and neck than his skinny child brother; 7-head-tall teen proportions, not a giant round child head.\nCostume: gray hoodie with sleeves rolled to forearms, teal jeans, cream socks. Keep his signature youth outfit distinct from Sasha's olive/cream outfits. No yellow clothing.\nSasha is NOT depicted here: he is skinny, pointy-faced, large serious eyes, LONG SPIKY MESSY HAIR with an upright cowlick. Kostya must have the opposite shape language: broad face, small hooded eyes, cropped dense curls.\nLayout MUST remain exactly three full-length front/profile/back views of the same one17-year-old man on left two thirds, plus large head/shoulders portrait on right. All three bodies same scale, intact heads/hands/feet, fill85-90% height, relaxed visible hands. Opaque1536x1024 landscape3:2 PNG, plain warm cream background, no labels.\nKeep handmade layered matte colored paper collage, crisp irregular cut edges and visible fibers, little soft layer shadows, same warm muted six-color palette, no black outlines. Do NOT imitate photographic skin or 3D, do NOT blur or add film-grain overlay. No extra characters, text, numbers, logos, props or watermark.",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-04aeb2da-d191-4a3e-bb8b-8d4acd9464d0.png",
+      "references": [
+        "assets/sheets/kostya_sheet-identity-v2.png",
+        "assets/sheets/kostya38_sheet.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие плотные кудри без вихра, открытый лоб, широкое лицо, меньшие глаза и широкий подбородок. Серое худи и бирюзовые джинсы сохранены.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/sheets/kostya_sheet-identity-v2.png",
+          "preserved_file": "assets/sheets/kostya_sheet-identity-v2.png",
+          "sha256": "708cb5c3dc8c0001a6fa337215f55967abd3dd797af881b4c8ec4326152fe285"
+        },
+        {
+          "requested": "assets/sheets/kostya38_sheet.png",
+          "preserved_file": "assets/sheets/kostya38_sheet.png",
+          "sha256": "4a1f2d38cffd9044b81d1221e8460c5e766ade9c981dc88c4ca7da707b756a84"
+        }
+      ],
+      "before": "assets/identity-review/before/sheets/kostya_sheet.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/sheets/kostya_sheet.png",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "sha256": "bb6e9d2aa5550ad6d38cbe2377354310273a0938bd1237c77bb998d737eedb70"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "kostya25",
+      "refs": [
+        "assets/sheets/kostya_sheet-distinct-v3.png",
+        "assets/sheets/kostya38_sheet.png"
+      ],
+      "canonical": "assets/sheets/kostya25_sheet.png",
+      "selected": "assets/sheets/kostya25_sheet-distinct-v3.png",
+      "prompt": "Create a reference sheet of KOSTYA AGE25, a clearly different man from his younger brother Sasha. Image1 is his now-established17-year-old identity; image2 is his38-year-old identity. Carry forward EXACT image1 SHORT DENSE CROPPED DARK CHESTNUT CURLS, exposed ears and completely OPEN FOREHEAD, broad square-oval face, broad chin, small hooded eyes, thick straight brows and wide rounded nose. No long fringe, no spiky anime hair, no cowlick. Age25: a little broader in shoulders/jaw, thicker mature neck, clearly visible light stubble along jaw and upper lip, warm confident crooked smile and dimple.\nUser explicitly requests DIFFERENT CLOTHES from Sasha: Kostya25 now wears an OPEN FADED-TEAL COLLARED CASUAL JACKET over a plain CREAM CREW-NECK T-SHIRT, dark warm-gray straight jeans and worn gray shoes. Fully open jacket shows a large uninterrupted cream chest. Jacket has no hood, drawstrings or kangaroo pocket. Absolutely NO mustard/yellow garment, no gray blazer, no olive plaid. Sasha, not pictured, wears a mustard hoodie and has a narrow face and tall pointed cowlick; Kostya must look clearly different in silhouette AND clothing.\nLayout exactly like image1: three full-body front/profile/back views at same scale across left two thirds, plus large head/shoulders portrait at right. One same25-year-old man in all views. Relaxed stance, intact visible hands and feet, figures fill85-90% canvas. Plain warm cream paper backdrop. One opaque1536x1024 landscape3:2 PNG.\nHandmade matte layered cut-paper collage matching image1, crisp natural paper fibers and uneven edges, shallow soft contact shadows, same family-album palette cream, faded teal, warm gray, shaded brick brown and olive. No red, no black outlines, no blur, no film grain overlay, no 3D or photographic skin. No labels, text, numbers, props, extra people or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Костя, 25 лет: кудри, щетина и бирюзовая куртка",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-257b3ed3-a55c-419f-a859-43f648b8dc8e.png",
+      "references": [
+        "assets/sheets/kostya_sheet-distinct-v3.png",
+        "assets/sheets/kostya38_sheet.png"
+      ],
+      "visual_review": "selected",
+      "change": "Широкое лицо и короткие кудри сохранены при взрослении. Горчичную одежду заменили открытой бирюзовой курткой и кремовой футболкой.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "e80dc9cf386297aa1391ad9b5bcd1bc43b11c1094278f03408f7148305ea756e",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        },
+        {
+          "requested": "assets/sheets/kostya38_sheet.png",
+          "preserved_file": "assets/sheets/kostya38_sheet.png",
+          "sha256": "4a1f2d38cffd9044b81d1221e8460c5e766ade9c981dc88c4ca7da707b756a84"
+        }
+      ],
+      "before": null,
+      "before_info": null,
+      "same_dimensions": true
+    },
+    {
+      "id": "lena",
+      "canonical": "assets/sheets/lena_sheet.png",
+      "selected": "assets/sheets/lena_sheet-distinct-v3.png",
+      "refs": [
+        "assets/sheets/lena_sheet.png"
+      ],
+      "prompt": "Use case: identity-preserve, strong character differentiation requested by user. Edit this LENA26 character sheet consistently in all three full-body views and the large portrait. Her current curly hair and generic large-eyed round face look like Mama's and that is the defect to fix. Keep Lena's established freckles, calm amused personality, big mug and teal cardigan; change facial shape and haircut so she is clearly a separate person, not Mama in different clothing.\nNEW LENA26 identity: mature LONG OVAL FACE, high cheekbones, clearly LONGER fairly straight nose with a small natural bridge, smaller narrower ALMOND-shaped hazel-brown eyes, low straight brows, thin gently smiling lips and a softly squared narrow chin. Several clearly visible freckles over the nose and cheeks, same pattern in all views. Not huge round anime eyes or a tiny button nose. Distinct recognizably26-year-old woman, not an adolescent.\nHair: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB with a clean horizontal shoulder-length edge, off-center side part, one side tucked behind the ear. Smooth broad cut-paper locks, not thin individual strands. Clearly lighter than Mama's dark chestnut curls. NO CURLS, NO WAVES, NO side ponytail, NO hair clip or bow, NO upward tufts. This straight blunt silhouette must be obvious from front, side and back. No blond pure-yellow flat color; use warm shaded honey-brown within the muted reference palette.\nINVARIANTS: exact same layout (front/profile/back figures left, large portrait right), exact same body poses and mug positions, intact hands/feet and fingers, SAME faded-teal thick KNITTED LONG CARDIGAN over a cream top, olive cropped wide trousers, cream socks and teal slippers. No apron, floral robe or mustard clip. Preserve physical matte layered-paper material, warm cream plain background, crisp fibers and uneven cut edges, soft short contact shadows, original six-color palette. No black outlines, photographic skin, 3D, blur or grain overlay. One opaque PNG1536x1024 landscape3:2; full figures85-90% of height. No text/labels/numbers/extra props/watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Лена: отдельные лицо и стрижка",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-b024c985-e17f-40a5-8934-4df1b88961c8.png",
+      "references": [
+        "assets/sheets/lena_sheet.png"
+      ],
+      "visual_review": "selected",
+      "change": "Вместо похожих на мамины волн — прямое каре; вытянутое взрослое лицо, длиннее нос, уже глаза и заметные веснушки. Бирюзовый кардиган и кружка сохранены.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/sheets/lena_sheet.png",
+          "preserved_file": "assets/identity-review/before/sheets/lena_sheet.png",
+          "sha256": "c9400fe4bcc5c15babeb6f5ea2f4edd45b2c1b0e31186a4a6359fa47e6784eb9"
+        }
+      ],
+      "before": "assets/identity-review/before/sheets/lena_sheet.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/sheets/lena_sheet.png",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "sha256": "c9400fe4bcc5c15babeb6f5ea2f4edd45b2c1b0e31186a4a6359fa47e6784eb9"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e2_kostya_gives",
+      "refs": [
+        "assets/shots/e2_kostya_gives.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e2_kostya_gives.png",
+      "selected": "assets/shots/e2_kostya_gives-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the older brother on RIGHT in gray hoodie handing over the cassette deck. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his mild half-smile and downward gaze to Sasha.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья: Костя отдаёт магнитофон",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-11bfde4c-e96f-4cd8-87b0-d75c54af265d.png",
+      "references": [
+        "assets/shots/e2_kostya_gives.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Косте перенесены короткие кудри, открытый лоб и широкое лицо. Саша, действия, одежда и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "03c3a8a256bbad84cd47aef1528c19a6d61b5d48effdd551b90420fec24ec046",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e2_kostya_gives.png",
+          "preserved_file": "assets/identity-review/before/shots/e2_kostya_gives.png",
+          "sha256": "97cad644da0a5c4c312d82af47d929e6abc43f1911b26b5ed68d69b350be9b53"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e2_kostya_gives.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e2_kostya_gives.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "97cad644da0a5c4c312d82af47d929e6abc43f1911b26b5ed68d69b350be9b53"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e2_kostya_room",
+      "refs": [
+        "assets/shots/e2_kostya_room.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e2_kostya_room.png",
+      "selected": "assets/shots/e2_kostya_room-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the older brother reclining on the bed on the LEFT, gray hoodie and teal jeans. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his relaxed half-smile and sideways gaze to Sasha.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья: первая встреча в комнате Кости",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-92d6da6c-6af8-44b2-8fb6-c9a910fa5b54.png",
+      "references": [
+        "assets/shots/e2_kostya_room.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие плотные кудри и широкое лицо Кости вместо Сашиного силуэта. Саша, руки, действие, одежда и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "b0af029f5aec0c1ecfca0ec5747f9d786c1913b7336d905e13ceb337a5ced6d3",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e2_kostya_room.png",
+          "preserved_file": "assets/identity-review/before/shots/e2_kostya_room.png",
+          "sha256": "3c7b60e2fe362cb6f791d5b0eb63bad7365d61807145d6959f4b8bd9a0a12f97"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e2_kostya_room.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e2_kostya_room.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "3c7b60e2fe362cb6f791d5b0eb63bad7365d61807145d6959f4b8bd9a0a12f97"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e3_bed_edge",
+      "refs": [
+        "assets/shots/e3_bed_edge.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e3_bed_edge.png",
+      "selected": "assets/shots/e3_bed_edge-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the older brother on the LEFT seated on bed, leaning forward with elbows on knees. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his SERIOUS concerned downcast expression and head angle, do not add a smile.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья на кровати",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-827dfe9b-eedb-45dd-a2f3-e23f81acb2a0.png",
+      "references": [
+        "assets/shots/e3_bed_edge.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Косте перенесены короткие кудри, открытый лоб и широкое лицо. Саша, действия, одежда и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "9a6850c82aa0f38242c44beb073041624c2ae5ceb68fdc3277dd5e95231406e7",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e3_bed_edge.png",
+          "preserved_file": "assets/identity-review/before/shots/e3_bed_edge.png",
+          "sha256": "8a25f2709b7343622e33843819024e4913fce6204dcc9e4897a0991680062ae4"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e3_bed_edge.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e3_bed_edge.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "8a25f2709b7343622e33843819024e4913fce6204dcc9e4897a0991680062ae4"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e3_bench",
+      "refs": [
+        "assets/shots/e3_bench.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e3_bench.png",
+      "selected": "assets/shots/e3_bench-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the older brother seated on the LEFT end of the bench, gray hoodie, teal jeans. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his laughing face, closed eyes and tilted-back head; only the hair silhouette and face proportions change.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья на скамейке",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-fb196775-801f-467b-b7fa-e29cf5c1f819.png",
+      "references": [
+        "assets/shots/e3_bench.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "7edab422d70bc4f62c86e9fbd893daf6f5b550d3f3d21456ee63527cb1d797b0",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e3_bench.png",
+          "preserved_file": "assets/identity-review/before/shots/e3_bench.png",
+          "sha256": "a27108bb17e2f106c9d8f368d8ab3d074b06a8e02603f89816a869847d8a24e6"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e3_bench.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e3_bench.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "a27108bb17e2f106c9d8f368d8ab3d074b06a8e02603f89816a869847d8a24e6"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e3_fallen",
+      "refs": [
+        "assets/shots/e3_fallen.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e3_fallen.png",
+      "selected": "assets/shots/e3_fallen-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the ONLY character, older brother standing left of center in gray hoodie and teal jeans. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his surprised expression, open mouth and gaze to the fallen tree on the right.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Костя у поваленного дерева",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-f2ea932a-7739-48b1-94a1-6e8bf06f77ba.png",
+      "references": [
+        "assets/shots/e3_fallen.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "0c27e7c16707c552353a08517b707ce5704a7bafbccb4e2ab1a96f7e7e537208",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e3_fallen.png",
+          "preserved_file": "assets/identity-review/before/shots/e3_fallen.png",
+          "sha256": "7d022ce03064e7e3afaed1fea219f9c44b56bfbcc0762a97169b8e8dc4d8ce40"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e3_fallen.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e3_fallen.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "7d022ce03064e7e3afaed1fea219f9c44b56bfbcc0762a97169b8e8dc4d8ce40"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e3b_notebooks",
+      "prompt": "Use case: identity-preserve. Edit image1, the brothers writing together at a desk, to repair ONLY the older brother KOSTYA's head and hair. Image2 is his corrected canonical17-year-old reference sheet. The older brother is the large figure on the LEFT in a warm gray hoodie, teal jeans. Replace his face/head with EXACT Kostya from image2: SHORT DENSE dark-chestnut CURLS cropped close at sides with EXPOSED EARS, completely OPEN FOREHEAD and NO bangs/cowlick. BROAD square-oval face, full cheeks, wide rounded jaw/chin, visibly SMALLER hooded eyes, wider rounded-tip nose and a friendly crooked half-smile. His head shape must be distinctly different from Sasha's narrow spiky-haired big-eyed head. No pointed cowlick or huge round child eyes. Keep his existing downward writing gaze and head angle. He is17-18, not the boy Sasha and not middle-aged.\nKeep the younger child SASHA on the RIGHT completely unchanged: spiky pointed hair/cowlick, serious large eyes, olive T-shirt. Preserve both writing poses, every hand and pencil, the blank notebooks, tabletop, lamp, door, window, light/shadows, camera and image1's exact scene layout. Do not change clothes, objects, body positions or paper texture. Warm family-album matte layered cut-paper collage, crisp fibers and contact shadows, no black outline, no new grain/blur/text. Output opaque PNG landscape16:9 same1672x941 dimensions as image1 if supported. No annotations, text, numbers or new props.",
+      "refs": [
+        "assets/shots/e3b_notebooks.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e3b_notebooks.png",
+      "selected": "assets/shots/e3b_notebooks-distinct-v3.png",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья пишут в тетрадях",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-918b0b5a-7c95-481c-b00b-3030d340a34b.png",
+      "references": [
+        "assets/shots/e3b_notebooks.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие плотные кудри и широкое лицо Кости вместо Сашиного силуэта. Саша, руки, действие, одежда и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "0c0415030666228b99a3e50e7abe8a069dad365eeac1b5616fc8ed00db7c9ba2",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e3b_notebooks.png",
+          "preserved_file": "assets/identity-review/before/shots/e3b_notebooks.png",
+          "sha256": "9cd3347ea0d103d00c7661c1299827dd186f76b596b98d8c9a2c2813270e2ffb"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e3b_notebooks.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e3b_notebooks.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "9cd3347ea0d103d00c7661c1299827dd186f76b596b98d8c9a2c2813270e2ffb"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e4b_pc_floor",
+      "refs": [
+        "assets/shots/e4b_pc_floor.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/e4b_pc_floor.png",
+      "selected": "assets/shots/e4b_pc_floor-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the older brother at CENTER-RIGHT in gray hoodie holding a screwdriver behind the open computer case. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his downward gaze and small half-smile; younger Sasha on LEFT and Mama in doorway on RIGHT must stay unchanged.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Братья у компьютера",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-af75fe50-6b52-417b-8eb5-d2e37f424c52.png",
+      "references": [
+        "assets/shots/e4b_pc_floor.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "d7dd867a2da28016a7d8bdb9341689e26bb90a922f041e43559ef1ec0a3a809b",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e4b_pc_floor.png",
+          "preserved_file": "assets/identity-review/before/shots/e4b_pc_floor.png",
+          "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e4b_pc_floor.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e4b_pc_floor.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e6_cups",
+      "canonical": "assets/shots/e6_cups.png",
+      "selected": "assets/shots/e6_cups-distinct-v3.png",
+      "refs": [
+        "assets/shots/e6_cups.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the woman on RIGHT holding a cream mug, looking at Sasha on LEFT who is drying cups, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: preserve her calm smile and sideways gaze at Sasha.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+      "record_schema": "identity-fix-v3",
+      "title": "Саша моет за собой чашки",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-53d57933-49f0-4fb8-b988-32e7d80db6ee.png",
+      "references": [
+        "assets/shots/e6_cups.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "423ad844ce5f3e8cc94a73d5a07c01dbeebb56dd54b50f543a8cea98a6a0c031",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e6_cups.png",
+          "preserved_file": "assets/identity-review/before/shots/e6_cups.png",
+          "sha256": "70a039cecaa19aa56cbbe5984c727175a187ad49c3df10428831008cadc8d775"
+        },
+        {
+          "requested": "assets/sheets/lena_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/lena_sheet-distinct-v3.png",
+          "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e6_cups.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e6_cups.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "70a039cecaa19aa56cbbe5984c727175a187ad49c3df10428831008cadc8d775"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e6_dishes",
+      "canonical": "assets/shots/e6_dishes.png",
+      "selected": "assets/shots/e6_dishes-distinct-v3.png",
+      "refs": [
+        "assets/shots/e6_dishes.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the woman partly cropped at the TOP RIGHT, arguing with Sasha across the sink, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: preserve the existing partial head crop and talking mouth; do NOT expand or reframe the image to show her eyes or top of head.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+      "record_schema": "identity-fix-v3",
+      "title": "Лена и Саша у раковины",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-faa7db69-a6c3-4db3-bbe3-9597128095fa.png",
+      "references": [
+        "assets/shots/e6_dishes.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "93855c28f8012bb08d55a3533e2d173a7a8d1e95d6eaec30fcb2885d87aeab9d",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e6_dishes.png",
+          "preserved_file": "assets/identity-review/before/shots/e6_dishes.png",
+          "sha256": "bf05b726117438dc89bbaec01c315e4a597668c6e1fabd85d2dd946b9a770bd0"
+        },
+        {
+          "requested": "assets/sheets/lena_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/lena_sheet-distinct-v3.png",
+          "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e6_dishes.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e6_dishes.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "bf05b726117438dc89bbaec01c315e4a597668c6e1fabd85d2dd946b9a770bd0"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e6_lena_cup_cu",
+      "canonical": "assets/shots/e6_lena_cup_cu.png",
+      "selected": "assets/shots/e6_lena_cup_cu-distinct-v3.png",
+      "refs": [
+        "assets/shots/e6_lena_cup_cu.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the large close-up woman in foreground with a cream mug, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: preserve the slight friendly head tilt and amused smile, both hands on the mug.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+      "record_schema": "identity-fix-v3",
+      "title": "Крупный план Лены",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-152f0627-c4ae-4c23-8be0-57f5a9abfeff.png",
+      "references": [
+        "assets/shots/e6_lena_cup_cu.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "f9d8a6a8e767d67b37b14df7659fc933db0055c84bc299e0fb6a702146676062",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e6_lena_cup_cu.png",
+          "preserved_file": "assets/identity-review/before/shots/e6_lena_cup_cu.png",
+          "sha256": "725101f99b2677a87daa63568336aa898d112df6991d79023e3c35653522bcfd"
+        },
+        {
+          "requested": "assets/sheets/lena_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/lena_sheet-distinct-v3.png",
+          "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e6_lena_cup_cu.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e6_lena_cup_cu.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "725101f99b2677a87daa63568336aa898d112df6991d79023e3c35653522bcfd"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e6_station",
+      "canonical": "assets/shots/e6_station.png",
+      "selected": "assets/shots/e6_station-distinct-v3.png",
+      "refs": [
+        "assets/shots/e6_station.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the woman standing on RIGHT seen FROM BEHIND next to a suitcase, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: only her rear HAIR silhouette needs changing; do NOT turn her around or show a face. Keep the shoulder-length straight blunt bob exactly as reference rear view.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+      "record_schema": "identity-fix-v3",
+      "title": "Лена на платформе: вид сзади",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-8f631f23-d005-42a4-a082-1321a24949c4.png",
+      "references": [
+        "assets/shots/e6_station.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "31628d2631c244d25d20404371304ccf7044f40a8d0772af42e9402f1452aaff",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e6_station.png",
+          "preserved_file": "assets/identity-review/before/shots/e6_station.png",
+          "sha256": "367361274081569f627c59b1b184a7c6a703e888c97aebff4a7e03b85c4c8d75"
+        },
+        {
+          "requested": "assets/sheets/lena_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/lena_sheet-distinct-v3.png",
+          "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e6_station.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e6_station.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "367361274081569f627c59b1b184a7c6a703e888c97aebff4a7e03b85c4c8d75"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "e6_terrace",
+      "canonical": "assets/shots/e6_terrace.png",
+      "selected": "assets/shots/e6_terrace-distinct-v3.png",
+      "refs": [
+        "assets/shots/e6_terrace.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the woman on RIGHT holding a cream mug, looking up at Sasha on LEFT, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: preserve her calm amused expression, head tilt and gaze up toward Sasha.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+      "record_schema": "identity-fix-v3",
+      "title": "Саша и Лена: знакомство на террасе",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-6c99fcbe-b4ac-4a1a-948b-1cc38b6cb21c.png",
+      "references": [
+        "assets/shots/e6_terrace.png",
+        "assets/sheets/lena_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "a5ad5d1418de62aaddc03da04722482b070caeb7e70d815b99c384d46ee28707",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/e6_terrace.png",
+          "preserved_file": "assets/identity-review/before/shots/e6_terrace.png",
+          "sha256": "7a65bf6ddde76e5253cdc49233841518e581489b30e0490e203d4ea7d8e4544f"
+        },
+        {
+          "requested": "assets/sheets/lena_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/lena_sheet-distinct-v3.png",
+          "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/e6_terrace.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/e6_terrace.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "7a65bf6ddde76e5253cdc49233841518e581489b30e0490e203d4ea7d8e4544f"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "h_kostya_hair_cu",
+      "refs": [
+        "assets/shots/h_kostya_hair_cu.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/h_kostya_hair_cu.png",
+      "selected": "assets/shots/h_kostya_hair_cu-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the ONLY character in the doorway, close-up of the older brother. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his warm easy half-smile and slight head tilt.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 16:9,1672x941; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Крупный план Кости в хуке",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-455d162d-5d0c-44f0-ba25-63873f596213.png",
+      "references": [
+        "assets/shots/h_kostya_hair_cu.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Косте перенесены короткие кудри, открытый лоб и широкое лицо. Саша, действия, одежда и обстановка сохранены.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "f336c2bbe87c56368d58db8cc757c588cb79e0fc617055760d2730aee2f0b9e3",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/h_kostya_hair_cu.png",
+          "preserved_file": "assets/identity-review/before/shots/h_kostya_hair_cu.png",
+          "sha256": "aeb1de9e862919eb10245225267994d617a9bd48659e2b8fbf4b467495a64781"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/h_kostya_hair_cu.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/h_kostya_hair_cu.png",
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "sha256": "aeb1de9e862919eb10245225267994d617a9bd48659e2b8fbf4b467495a64781"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "p2_kostya",
+      "refs": [
+        "assets/shots/p2_kostya.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "canonical": "assets/shots/p2_kostya.png",
+      "selected": "assets/shots/p2_kostya-distinct-v3.png",
+      "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the ONLY character standing in the open doorway just right of center. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his half-smile, raised left-of-image hand, head/body position and scale; keep his head at the same canvas coordinates for the existing camera move.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 3:2,1536x1024; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Пилот: Костя в дверях",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-9bafc439-d8dd-4333-8004-1bae13e3220f.png",
+      "references": [
+        "assets/shots/p2_kostya.png",
+        "assets/sheets/kostya_sheet-distinct-v3.png"
+      ],
+      "visual_review": "selected",
+      "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "45159d19324a99527ef5148d5367035ffb1c9b9f41371fb33865039040702a25",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/shots/p2_kostya.png",
+          "preserved_file": "assets/identity-review/before/shots/p2_kostya.png",
+          "sha256": "7bfa4a9329eacea06bb362df4463078eb00198eb056012a6121fcb68933e9f44"
+        },
+        {
+          "requested": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "preserved_file": "assets/sheets/kostya_sheet-distinct-v3.png",
+          "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
+        }
+      ],
+      "before": "assets/identity-review/before/shots/p2_kostya.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/shots/p2_kostya.png",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "sha256": "7bfa4a9329eacea06bb362df4463078eb00198eb056012a6121fcb68933e9f44"
+      },
+      "same_dimensions": true
+    },
+    {
+      "id": "supporting_cast",
+      "canonical": "assets/sheets/supporting_cast_sheet.png",
+      "selected": "assets/sheets/supporting_cast_sheet-distinct-v3.png",
+      "refs": [
+        "assets/sheets/supporting_cast_sheet.png"
+      ],
+      "prompt": "Edit this existing supporting-cast sheet to make the characters clearly different from the two brothers and prevent identical outfits. Change ONLY the SECOND figure from the LEFT, DIMKA AGE19 (tall short-buzz-cut young man holding a phone). Preserve his round broad face, cheerful eyes and very short buzz cut, but make his nose short and round and his cheeks fuller, visibly different from narrow spiky-haired Sasha and broad curly-haired Kostya. Replace his mustard hooded jacket with a clearly OLIVE SHORT BOMBER JACKET, rounded ribbed collar, open front, NO HOOD and NO DRAWSTRINGS, over a BRICK-BROWN crew-neck T-shirt. Retain warm-gray trousers, shoes, phone and exact pose/scale. The bomber must look structurally different from Sasha's pullover mustard hoodie and Kostya's teal collared jacket, not merely a hue shift.\nEVERYTHING ELSE must stay as in input1: first child Dimka12, third broad blond bully in brick-brown sweatshirt, gray-haired teacher in glasses, seller's hands and cassettes, all faces/poses, exact lineup and spacing, cream paper background and matte layered-paper style. Do not change the other people's clothes or transfer the olive bomber to anyone else. One opaque1536x1024 PNG3:2. Crisp cut-paper fibers/edges, small soft contact shadows, no black outlines, no blur/grain overlay. No text, labels, numbers or watermark.",
+      "record_schema": "identity-fix-v3",
+      "title": "Массовка: отдельная одежда взрослого Димки",
+      "date": "2026-11-02",
+      "generator": "built-in image_gen",
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-892da0c1-2a0f-400d-89ea-10703505e94e.png",
+      "references": [
+        "assets/sheets/supporting_cast_sheet.png"
+      ],
+      "visual_review": "selected",
+      "change": "Димка19 получил короткий оливковый бомбер без капюшона и кирпичную футболку, более круглое лицо и короткий нос. Другие герои листа сохранены.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "opaque": true,
+      "sha256": "dff79ce7547faa3063c95f05c4a9f06f556c22803d97251c62dc62ff985422a4",
+      "installed": true,
+      "reference_snapshots": [
+        {
+          "requested": "assets/sheets/supporting_cast_sheet.png",
+          "preserved_file": "assets/identity-review/before/sheets/supporting_cast_sheet.png",
+          "sha256": "af538afdfcd42d9bfe60fa891abb53ea066b5163a8c59b4144aebd4db195fbe2"
+        }
+      ],
+      "before": "assets/identity-review/before/sheets/supporting_cast_sheet.png",
+      "before_info": {
+        "file": "channels/chto-esli/video-01/assets/sheets/supporting_cast_sheet.png",
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "sha256": "af538afdfcd42d9bfe60fa891abb53ea066b5163a8c59b4144aebd4db195fbe2"
+      },
+      "same_dimensions": true
+    }
+  ],
+  "audit": {
+    "date": "2026-11-02",
+    "source_images_reviewed": 212,
+    "scope": "Source PNGs throughout repository; generated package/vendor files, temporary outputs and rendered-video frames excluded from source inventory.",
+    "method": [
+      "All212 source images visually inspected in labelled contact sheets",
+      "Problematic scenes and relevant sheets opened individually at native resolution",
+      "Every selected generated output visually inspected before installation",
+      "Three rendered pilot snapshots inspected: calm3s, calm7s and dynamic7s"
+    ],
+    "contact_sheets": [
+      "assets/identity-review/audit-contact/cast-1.jpg",
+      "assets/identity-review/audit-contact/cast-2.jpg",
+      "assets/identity-review/audit-contact/legacy-1.jpg",
+      "assets/identity-review/audit-contact/nauka-1.jpg",
+      "assets/identity-review/audit-contact/other-1.jpg",
+      "assets/identity-review/audit-contact/other-2.jpg",
+      "assets/identity-review/audit-contact/other-3.jpg",
+      "assets/identity-review/audit-contact/other-4.jpg",
+      "assets/identity-review/audit-contact/shots-1.jpg",
+      "assets/identity-review/audit-contact/shots-2.jpg",
+      "assets/identity-review/audit-contact/shots-3.jpg",
+      "assets/identity-review/audit-contact/shots-4.jpg",
+      "assets/identity-review/audit-contact/shots-5.jpg",
+      "assets/identity-review/audit-contact/shots-6.jpg",
+      "assets/identity-review/audit-contact/shots-7.jpg"
+    ],
+    "inventory": "spec/identity-inventory-before.json",
+    "counts_by_project": {
+      "channels/chto-esli/video-01": 153,
+      "my-video/public": 10,
+      "nauka-frames": 17,
+      "nauka-paper": 23,
+      "nauka-toon": 9
+    },
+    "findings": [
+      {
+        "pair": "Sasha / Kostya17-25",
+        "problem": "Repeated spiky cowlick, narrow chin and similar large eyes; both wearing mustard in car scene.",
+        "action": "Broad face, short dense curls and smaller hooded eyes for Kostya throughout his young appearances; separate teal jacket at25; enlarged age-specific sheets."
+      },
+      {
+        "pair": "Sasha19 / Dimka19",
+        "problem": "Both wearing mustard hooded garments, causing the same large color and costume silhouette.",
+        "action": "Olive round-collar bomber and brick shirt, rounder face for Dimka in sheet and scene."
+      },
+      {
+        "pair": "Mama / Lena26",
+        "problem": "Similar chestnut waves, round eyes, small noses and generic young female facial structure.",
+        "action": "Straight honey-brown blunt bob, longer oval face/nose, smaller almond eyes and distinct freckles for Lena, retaining teal knitted cardigan."
+      }
+    ],
+    "unchanged_after_review": [
+      {
+        "project": "nauka-frames",
+        "reason": "Tetsu has black undercut, lean body, mustard shorts/red wraps; Gromila has receding hair, beard, massive body, gray tank/navy pants; Doc has gray hair, glasses and tracksuit. Distinct faces/costumes."
+      },
+      {
+        "project": "nauka-toon / nauka-paper",
+        "reason": "Separate historical styles, recognizable distinct Tetsu/Gromila/Doc; body-part sprites belong to the same named figures, not duplicated cast members."
+      },
+      {
+        "project": "my-video/public/real",
+        "reason": "Same real main character intentionally appears across eight different scenes; this is identity continuity."
+      },
+      {
+        "project": "my-video/public/explainer/kitchen/img",
+        "reason": "Two pose samples of the same schematic figure, not two separate named heroes."
+      },
+      {
+        "project": "chto-esli: Papa, Ded, Gena, teacher",
+        "reason": "Moustache/receding hair, elderly gray stubble/safety glasses/apron, blond broad bully and gray-bun teacher with glasses form distinct silhouettes."
+      }
+    ],
+    "code_review_only": [
+      "nauka-pencil/engine/figures.js",
+      "my-video/src/Bratok90/Character.tsx",
+      "my-video/src/Bratok90/Extras.tsx",
+      "my-video/src/BratokRealAnim/Guards.tsx",
+      "my-video/src/BratokRealAnim/Face.tsx",
+      "my-video/src/Explainer/Character.tsx"
+    ],
+    "limits": [
+      "Other historical compositions were inspected via source assets/code, not fully re-rendered frame by frame.",
+      "Previously rendered MP4s keep the old appearance until explicitly re-rendered.",
+      "Historical hd-refs and *_hd Kostya copies are retained for provenance and superseded for active pilot/new generation."
+    ],
+    "checks": {
+      "hyperframes_check": "passed:0errors,0warnings; audio check unavailable because ffmpeg not on the check process PATH (audio unchanged)",
+      "report": ".hyperframes/artifacts/checks/51863c7f-11ed-4d9f-994f-15568d3a0163.json",
+      "pilot_snapshots": [
+        "assets/identity-review/pilot-calm/frame-00-at-3s.png",
+        "assets/identity-review/pilot-calm/frame-01-at-7s.png",
+        "assets/identity-review/pilot-dynamic/frame-00-at-7s.png"
+      ],
+      "dynamic_snapshot_method": "Copied actual dynamic HTML and byte-identical engine/assets to isolated temporary check project; normalized relative paths only.",
+      "syntax_checks": "node --check engine/pilot.js; Python compile scripts/review_identity.py and scripts/build_codex_prompts.py passed"
+    },
+    "completed_selected_assets": 20,
+    "root_causes_addressed": [
+      "Kostya25 car scene used the17-year-old reference instead of an age25 reference.",
+      "Lena and supporting-cast sheets used other peoples sheets as identity references; switched to their own current sheets and clarified attachment identity ownership.",
+      "Adult Dimka and Sasha had the same mustard hooded costume silhouette; separated garment cut and colors."
+    ]
+  }
+}

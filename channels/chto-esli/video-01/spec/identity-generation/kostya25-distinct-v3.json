@@ -1,0 +1,21 @@
+{
+  "id": "kostya25",
+  "refs": [
+    "assets/sheets/kostya_sheet-distinct-v3.png",
+    "assets/sheets/kostya38_sheet.png"
+  ],
+  "canonical": "assets/sheets/kostya25_sheet.png",
+  "selected": "assets/sheets/kostya25_sheet-distinct-v3.png",
+  "prompt": "Create a reference sheet of KOSTYA AGE25, a clearly different man from his younger brother Sasha. Image1 is his now-established17-year-old identity; image2 is his38-year-old identity. Carry forward EXACT image1 SHORT DENSE CROPPED DARK CHESTNUT CURLS, exposed ears and completely OPEN FOREHEAD, broad square-oval face, broad chin, small hooded eyes, thick straight brows and wide rounded nose. No long fringe, no spiky anime hair, no cowlick. Age25: a little broader in shoulders/jaw, thicker mature neck, clearly visible light stubble along jaw and upper lip, warm confident crooked smile and dimple.\nUser explicitly requests DIFFERENT CLOTHES from Sasha: Kostya25 now wears an OPEN FADED-TEAL COLLARED CASUAL JACKET over a plain CREAM CREW-NECK T-SHIRT, dark warm-gray straight jeans and worn gray shoes. Fully open jacket shows a large uninterrupted cream chest. Jacket has no hood, drawstrings or kangaroo pocket. Absolutely NO mustard/yellow garment, no gray blazer, no olive plaid. Sasha, not pictured, wears a mustard hoodie and has a narrow face and tall pointed cowlick; Kostya must look clearly different in silhouette AND clothing.\nLayout exactly like image1: three full-body front/profile/back views at same scale across left two thirds, plus large head/shoulders portrait at right. One same25-year-old man in all views. Relaxed stance, intact visible hands and feet, figures fill85-90% canvas. Plain warm cream paper backdrop. One opaque1536x1024 landscape3:2 PNG.\nHandmade matte layered cut-paper collage matching image1, crisp natural paper fibers and uneven edges, shallow soft contact shadows, same family-album palette cream, faded teal, warm gray, shaded brick brown and olive. No red, no black outlines, no blur, no film grain overlay, no 3D or photographic skin. No labels, text, numbers, props, extra people or watermark.",
+  "record_schema": "identity-fix-v3",
+  "title": "Костя, 25 лет: кудри, щетина и бирюзовая куртка",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-257b3ed3-a55c-419f-a859-43f648b8dc8e.png",
+  "references": [
+    "assets/sheets/kostya_sheet-distinct-v3.png",
+    "assets/sheets/kostya38_sheet.png"
+  ],
+  "visual_review": "selected",
+  "change": "Широкое лицо и короткие кудри сохранены при взрослении. Горчичную одежду заменили открытой бирюзовой курткой и кремовой футболкой."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "kostya25",
+  "record_schema": "identity-trial-v2",
+  "status": "superseded_after_user_feedback",
+  "selected": "assets/identity-review/trials/kostya25-mild-v2.png",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-b2d25a0f-2217-44cf-85ac-4a9105eb2b57.png",
+  "prompt": "Use case: identity-preserve. Create the missing KOSTYA AGE 25 canonical character reference sheet, landscape 3:2 1536x1024 opaque PNG on plain warm cream paper.\nInput1 is his corrected 17-year-old sheet: carry forward EXACT recognizable eye shape, substantial straight nose, oval face, broad horizontal eyebrows, asymmetric friendly half-smile and low rounded dark brown WAVY hair with sideways S-shaped locks and open forehead. Input2 is the same man at38: use for grown-up jaw/nose structure, but here he is25, NOT bald. Do not use Sasha's huge round worried eyes or pointed spiky cowlick hair. Age25 is a little broader in shoulders and jaw than17, mature neck, visible light stubble along jaw and upper lip, warm proud grin.\nCostume is canonically a MUSTARD OPEN COLLARED JACKET over a plain CREAM CREW-NECK T-SHIRT, faded teal straight jeans, plain worn warm gray shoes. This is a jacket with separate collar/lapels and a plain opening, NOT a hoodie: NO hood, NO drawstrings, NO kangaroo pocket. Jacket stays fully open so a large cream chest area is visible. No gray blazer, no flannel, no bald head.\nLayout: exactly 3 full-body views of the SAME25-year-old Kostya (front, left-facing profile, back) across left two thirds and one large head/shoulders portrait at right, identical layout to input1. Body figures use 85-90% of canvas height with slim even margins; every hand/foot/head visible. Calm standing poses, hands relaxed visible beside body.\nMatch input1's handmade multilayer matte colored paper collage: visible paper fibers, small irregular cut edges, shallow soft contact shadows, clear facial details, crisp full canvas, no black outlines, no blur or grain overlay. Six-color warm family-album palette cream, mustard, faded teal, warm gray, brick brown, olive; no red. No labels, text, letters, numbers, props or watermark.",
+  "references": [
+    "assets/sheets/kostya_sheet-identity-v2.png",
+    "assets/sheets/kostya38_sheet.png"
+  ],
+  "reason": "User requested substantially more different faces, silhouettes and clothing after this mild identity edit."
+}

@@ -109,18 +109,27 @@ CHARS = {
     "papa40": "Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; "
               "short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an "
               "open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.",
-    "kostya17": "Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy "
-                "half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.",
-    "kostya25": "Kostya, 25 (year 2013): the same face and wavy dark brown hair as at 17, a little broader, light stubble, proud "
-                "cheerful grin; mustard jacket over a cream T-shirt.",
+    "kostya17": "Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut "
+                "curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, "
+                "fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, "
+                "easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie "
+                "with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.",
+    "kostya25": "Kostya, 25 (year 2013): the SAME short dense curls, open forehead, broad face/chin, smaller hooded eyes and "
+                "wide nose as the corrected age17 sheet, broader shoulders, visible light stubble, proud crooked grin. "
+                "OPEN FADED-TEAL COLLARED JACKET over a plain CREAM CREW-NECK T-SHIRT, dark warm-gray jeans. "
+                "No mustard garment, hood, drawstrings or blazer: Sasha wears the mustard hoodie in shared scenes.",
     "kostya38": "Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows "
                 "as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.",
     "ded": "Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses "
            "pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.",
-    "lena": "Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized "
-            "faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.",
+    "lena": "Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND "
+            "hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT "
+            "shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. "
+            "Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over "
+            "cream top, olive trousers; hands around a big mug even in the heat.",
     "dimka12": "Dimka, 12: classmate; round face, buzz cut, a huge olive sweater, always chewing something, cheerful shrug.",
-    "dimka19": "Dimka, 19: the same round face grown up, tall, cheap mustard jacket, holding a plain phone (a flat slab in warm "
+    "dimka19": "Dimka, 19: the same round face grown up, short buzz cut, tall, OLIVE short bomber jacket without a hood over "
+               "a brick-brown crew-neck shirt, warm-gray trousers; no mustard garment. Holding a plain phone (a flat slab in warm "
                "dark gray with a blank glowing screen).",
     "gena": "Gena, 14: school bully; big, broad, pale crew cut, brick-brown sweatshirt, heavy brow, scowl.",
     "teacher": "Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.",
@@ -134,12 +143,13 @@ A = {
     "sasha": "sheets/sasha_sheet_hd.png",
     "sasha_ages": "sheets/sasha_ages_sheet.png",
     "sasha_faces": "sheets/sasha_faces_sheet.png",
-    "kostya": "sheets/kostya_sheet_hd.png",
+    "kostya": "sheets/kostya_sheet-distinct-v3.png",
+    "kostya25": "sheets/kostya25_sheet-distinct-v3.png",
     "kostya38": "sheets/kostya38_sheet.png",
     "mama": "sheets/mama_sheet_hd.png",
     "papa": "sheets/papa_sheet.png",
     "ded": "sheets/ded_sheet.png",
-    "lena": "sheets/lena_sheet.png",
+    "lena": "sheets/lena_sheet-distinct-v3.png",
     "cast": "sheets/supporting_cast_sheet.png",
     "tape": "sheets/props_tape_sheet-v2.png",
     "misc": "sheets/props_misc_sheet.png",
@@ -210,16 +220,16 @@ S("kostya38_sheet", "SHEETS", "sheet", "Костя в 38: лысый, лист �
   ["kostya38"], ["kostya"], layout=SHEET_LAYOUT, code="Финал; контраст с 17-летним Костей из хука", prio="A")
 S("ded_sheet", "SHEETS", "sheet", "Дед Лёша, ~72 года",
   "Character sheet of Grandfather Lyosha. Calm neutral pose, hands visible, work apron.",
-  ["ded"], ["mama"], layout=SHEET_LAYOUT, prio="A")
+  ["ded"], ["ded"], layout=SHEET_LAYOUT, prio="A")
 S("lena_sheet", "SHEETS", "sheet", "Лена, 26 лет",
   "Character sheet of Lena. Standing pose with both hands holding a big plain mug in front of her chest; the mug is in the front "
   "and side views, and the portrait shows her warm amused look.",
-  ["lena"], ["mama"], layout=SHEET_LAYOUT, prio="A")
+  ["lena"], ["lena"], layout=SHEET_LAYOUT, prio="A")
 S("supporting_cast_sheet", "SHEETS", "sheet", "Массовка: Димка 12 и 19, Гена, учительница, продавщица",
   "Lineup of five supporting characters, each a full-length front view at the same scale, neutral pose: Dimka 12, Dimka 19, "
   "Gena 14, the teacher, and the market seller shown only as a pair of hands and arms in knitted mitts holding a stack of "
   "plain cassettes (no face).",
-  ["dimka12", "dimka19", "gena", "teacher", "seller"], ["sasha"],
+  ["dimka12", "dimka19", "gena", "teacher", "seller"], ["cast"],
   layout="Layout: five figures in one row, left to right in the order listed, each about 85 percent of the canvas height.",
   prio="A")
 S("props_misc_sheet", "SHEETS", "sheet", "Мелкие предметы: паяльник, копилка, смартфон, чашки",
@@ -510,7 +520,7 @@ S("m_dimka_phone", "MON", "wide", "2012 · 19 лет: Димка с первым
 S("m_kostya_car", "MON", "wide", "2013 · 20 лет: Костя за рулём подержанной «девятки»",
   "A hatchback car without brand marks, scratched, at a courtyard: Kostya, happy and proud, leans out of the open driver "
   "window; Sasha at 20 stands on the pavement keeping his mouth shut.",
-  ["kostya25", "sasha19"], ["yard", "kostya", "sasha_ages"], code="Титр «2013 · 20 лет»")
+  ["kostya25", "sasha19"], ["yard", "kostya25", "sasha_ages"], code="Титр «2013 · 20 лет»")
 S("m_varya_call", "MON", "wide", "2015 · 22 года: звонок из роддома; ты сползаешь по стене",
   "Night: Sasha at 22 slides down a hallway wall with a phone at his ear, eyes shut, an exhale of relief; the phone screen "
   "glows teal.",
@@ -527,10 +537,10 @@ S("e6_lena_cup_cu", "E6", "cu", "Крупно: Лена греет руки о �
   ["lena"], ["lena"], cam="без зума", code="Реплика про «аллергию на лилии»")
 S("e6_dishes", "E6", "wide", "«Будете ругаться из-за немытой посуды»",
   "A small kitchen sink piled with plates and two mugs; a half-seen couple's hands in an argument gesture at the edge of frame.",
-  ["sasha26", "lena"], ["kitchen2"], prio="B")
+  ["sasha26", "lena"], ["kitchen2", "lena"], prio="B")
 S("e6_station", "E6", "wide", "«Расстанетесь на вокзале»",
   "A quiet railway platform in autumn, two figures far apart seen from behind with a suitcase, leaves on the ground; no faces.",
-  ["sasha26", "lena"], [], prio="B", code="Тихий кадр, без реплик")
+  ["sasha26", "lena"], ["lena"], prio="B", code="Тихий кадр, без реплик")
 S("e6_cups", "E6", "wide", "«Но сначала моешь за собой чашку»",
   "Terrace: Sasha at 26 gathers dirty plastic cups from the table and carries them toward the kitchen door; Lena watches him "
   "with raised eyebrows and a smile.",
@@ -623,8 +633,13 @@ def prompt(s: dict) -> str:
                  "cu": "a close-up master"}[s["kind"]]
     parts.append(f"Asset: {s['file']}, {kind_text}. {s['en']}")
     if s["chars"]:
-        parts.append("Characters (identity must match the attached sheets; the text is the fallback):\n"
+        parts.append("Characters (match each person to THEIR OWN character sheet; never copy a different person's identity "
+                     "from another reference. Text defines any identity without its own sheet):\n"
                      + "\n".join(f"- {CHARS[c]}" for c in s["chars"]))
+        parts.append("Identity continuity: each named character has a different face, hair silhouette and costume cut. "
+                     "Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. "
+                     "Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. "
+                     "The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).")
     if s["att"]:
         parts.append("Attachments:\n" + "\n".join(f"- Input image {i}: {p}, {role(p)}" for i, p in enumerate(s["att"], 1)))
     parts.append(STYLE)

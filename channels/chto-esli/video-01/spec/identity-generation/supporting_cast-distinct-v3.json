@@ -1,0 +1,19 @@
+{
+  "id": "supporting_cast",
+  "canonical": "assets/sheets/supporting_cast_sheet.png",
+  "selected": "assets/sheets/supporting_cast_sheet-distinct-v3.png",
+  "refs": [
+    "assets/sheets/supporting_cast_sheet.png"
+  ],
+  "prompt": "Edit this existing supporting-cast sheet to make the characters clearly different from the two brothers and prevent identical outfits. Change ONLY the SECOND figure from the LEFT, DIMKA AGE19 (tall short-buzz-cut young man holding a phone). Preserve his round broad face, cheerful eyes and very short buzz cut, but make his nose short and round and his cheeks fuller, visibly different from narrow spiky-haired Sasha and broad curly-haired Kostya. Replace his mustard hooded jacket with a clearly OLIVE SHORT BOMBER JACKET, rounded ribbed collar, open front, NO HOOD and NO DRAWSTRINGS, over a BRICK-BROWN crew-neck T-shirt. Retain warm-gray trousers, shoes, phone and exact pose/scale. The bomber must look structurally different from Sasha's pullover mustard hoodie and Kostya's teal collared jacket, not merely a hue shift.\nEVERYTHING ELSE must stay as in input1: first child Dimka12, third broad blond bully in brick-brown sweatshirt, gray-haired teacher in glasses, seller's hands and cassettes, all faces/poses, exact lineup and spacing, cream paper background and matte layered-paper style. Do not change the other people's clothes or transfer the olive bomber to anyone else. One opaque1536x1024 PNG3:2. Crisp cut-paper fibers/edges, small soft contact shadows, no black outlines, no blur/grain overlay. No text, labels, numbers or watermark.",
+  "record_schema": "identity-fix-v3",
+  "title": "Массовка: отдельная одежда взрослого Димки",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-892da0c1-2a0f-400d-89ea-10703505e94e.png",
+  "references": [
+    "assets/sheets/supporting_cast_sheet.png"
+  ],
+  "visual_review": "selected",
+  "change": "Димка19 получил короткий оливковый бомбер без капюшона и кирпичную футболку, более круглое лицо и короткий нос. Другие герои листа сохранены."
+}

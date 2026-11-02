@@ -29,27 +29,30 @@
       "file": "assets/shots/e6_terrace.png",
       "width": 1672,
       "height": 941,
-      "sha256": "7a65bf6ddde76e5253cdc49233841518e581489b30e0490e203d4ea7d8e4544f",
+      "sha256": "a5ad5d1418de62aaddc03da04722482b070caeb7e70d815b99c384d46ee28707",
       "opaque_png": true,
-      "passed": true
+      "passed": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "e6_lena_cup_cu",
       "file": "assets/shots/e6_lena_cup_cu.png",
       "width": 1672,
       "height": 941,
-      "sha256": "725101f99b2677a87daa63568336aa898d112df6991d79023e3c35653522bcfd",
+      "sha256": "f9d8a6a8e767d67b37b14df7659fc933db0055c84bc299e0fb6a702146676062",
       "opaque_png": true,
-      "passed": true
+      "passed": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "e6_cups",
       "file": "assets/shots/e6_cups.png",
       "width": 1672,
       "height": 941,
-      "sha256": "70a039cecaa19aa56cbbe5984c727175a187ad49c3df10428831008cadc8d775",
+      "sha256": "423ad844ce5f3e8cc94a73d5a07c01dbeebb56dd54b50f543a8cea98a6a0c031",
       "opaque_png": true,
-      "passed": true
+      "passed": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "t_night_kitchen",
@@ -182,18 +185,32 @@
       "file": "assets/shots/e6_dishes.png",
       "width": 1672,
       "height": 941,
-      "sha256": "bf05b726117438dc89bbaec01c315e4a597668c6e1fabd85d2dd946b9a770bd0",
+      "sha256": "93855c28f8012bb08d55a3533e2d173a7a8d1e95d6eaec30fcb2885d87aeab9d",
       "opaque_png": true,
-      "passed": true
+      "passed": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "e6_station",
       "file": "assets/shots/e6_station.png",
       "width": 1672,
       "height": 941,
-      "sha256": "367361274081569f627c59b1b184a7c6a703e888c97aebff4a7e03b85c4c8d75",
+      "sha256": "31628d2631c244d25d20404371304ccf7044f40a8d0772af42e9402f1452aaff",
       "opaque_png": true,
-      "passed": true
+      "passed": true,
+      "identity_revision": "distinct-v3"
     }
-  ]
+  ],
+  "identity_revision": {
+    "date": "2026-11-02",
+    "images_updated": [
+      "e6_terrace",
+      "e6_lena_cup_cu",
+      "e6_cups",
+      "e6_dishes",
+      "e6_station"
+    ],
+    "report": "spec/identity-review.json",
+    "note": "Original generation-call counts retained; corrected identity images inspected separately."
+  }
 }

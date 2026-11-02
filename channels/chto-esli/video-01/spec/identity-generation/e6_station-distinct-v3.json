@@ -1,0 +1,21 @@
+{
+  "id": "e6_station",
+  "canonical": "assets/shots/e6_station.png",
+  "selected": "assets/shots/e6_station-distinct-v3.png",
+  "refs": [
+    "assets/shots/e6_station.png",
+    "assets/sheets/lena_sheet-distinct-v3.png"
+  ],
+  "prompt": "Use case: identity-preserve. Precisely edit the finished scene in input1. Change ONLY LENA26, the woman standing on RIGHT seen FROM BEHIND next to a suitcase, to match the corrected identity in input2. The earlier generic curly-haired young-woman face was too similar to Mama; this corrected adult face and straight hairstyle must be consistent throughout Lena's appearances.\nLENA identity: long oval adult face, high cheekbones, longer straight nose with a natural bridge, noticeably smaller narrower almond-shaped hazel-brown eyes, low straight brows, thin smiling lips, distinct freckles across nose/cheeks, softly squared narrow chin. Do not copy a childlike round face, huge eyes or tiny button nose.\nHAIR: STRAIGHT SHOULDER-LENGTH LIGHT HONEY-BROWN BLUNT BOB, off-center side part with one side tucked behind ear, broad smooth layered-paper locks and clean horizontal lower edge. NO curls, NO waves, NO flyaway tufts, NO hair clip/bow. Match image2 exactly, adapting naturally to camera angle and scene light.\nEXPRESSION/CROP: only her rear HAIR silhouette needs changing; do NOT turn her around or show a face. Keep the shoulder-length straight blunt bob exactly as reference rear view.\nSTRICT INVARIANTS: keep Lena's EXACT existing knitted teal cardigan, cream top, olive trousers, body pose, hands/fingers and any mug. Keep SASHA on LEFT entirely unchanged, including face, spiky cowlick, clothing and pose. Keep ALL background people, furniture, objects, environment, lighting/shadows and exact camera/crop as input1. Edit her head/hair only; do not move her or rebuild the scene, add props or change the action.\nPreserve original warm handmade matte layered cut-paper collage, crisp visible fibers/uneven cut edges and short soft contact shadows. No outlines, photographic skin,3D, blur, film grain overlay, text, numbers, labels, logos, watermark or red. Output ONE opaque landscape16:9 PNG at same native1672x941 size if supported.",
+  "record_schema": "identity-fix-v3",
+  "title": "Лена на платформе: вид сзади",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-8f631f23-d005-42a4-a082-1321a24949c4.png",
+  "references": [
+    "assets/shots/e6_station.png",
+    "assets/sheets/lena_sheet-distinct-v3.png"
+  ],
+  "visual_review": "selected",
+  "change": "Лене перенесены прямое каре, вытянутое лицо и выраженные веснушки с нового листа; на платформе изменён только видимый силуэт волос. Саша, одежда, позы и обстановка сохранены."
+}

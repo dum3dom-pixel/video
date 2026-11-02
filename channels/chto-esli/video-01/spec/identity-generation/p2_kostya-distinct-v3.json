@@ -1,0 +1,21 @@
+{
+  "id": "p2_kostya",
+  "refs": [
+    "assets/shots/p2_kostya.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "canonical": "assets/shots/p2_kostya.png",
+  "selected": "assets/shots/p2_kostya-distinct-v3.png",
+  "prompt": "Use case: identity-preserve. Precisely edit input image1, an existing finished paper-collage video scene. Repair ONLY the HEAD/HAIR of KOSTYA, the ONLY character standing in the open doorway just right of center. Input image2 is Kostya17's corrected canonical reference, and MUST determine his head identity.\nMake him unmistakably the SAME older brother from image2: SHORT COMPACT DENSE DARK-CHESTNUT CURLS, cropped sides with exposed ears, fully OPEN FOREHEAD, low rounded hair cap and absolutely NO long fringe, NO waves or cowlick. A visibly BROADER square-oval FACE, fuller cheeks, wider jaw and broad chin; SMALLER narrower hooded eyes, thicker straighter brows and a WIDER ROUNDED-TIP NOSE. The difference from Sasha's narrow V-chin face and huge eyes must be obvious at thumbnail size. Broader shoulders/neck than Sasha, but retain the same body pose. Seventeen-to-twenty years old, lanky. Do not give him Sasha's sharply spiked bangs, huge round child eyes or pointed upward cowlick. Adapt the reference naturally to the exact head angle and scene light. EXPRESSION: preserve his half-smile, raised left-of-image hand, head/body position and scale; keep his head at the same canvas coordinates for the existing camera move.\nSTRICT INVARIANTS: retain image1's full scene, framing, camera, spatial layout, background, lighting, depth, color palette and paper texture. Preserve Kostya's existing body pose, gray hoodie, teal trousers, hands, feet and action. All OTHER characters and objects, especially Sasha's face/spiky cowlick and clothes, remain visually unchanged. Do not repaint the whole scene, move people, add extra people, move furniture, change the scene or transfer the reference-sheet layout to the scene. No extra props. Match the original matte layered cut-paper fibers, irregular edges and shallow soft contact shadows; all crisp, no photographic skin, painting, black outlines, blur or noise overlays. Keep any existing small red key/calendar detail exactly as in input1 and add no new red.\nOutput exactly ONE opaque PNG, landscape 3:2,1536x1024; keep original dimensions if supported. Preserve all original scene margins and positions. No labels, text, numbers, arrows or watermark.",
+  "record_schema": "identity-fix-v3",
+  "title": "Пилот: Костя в дверях",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-9bafc439-d8dd-4333-8004-1bae13e3220f.png",
+  "references": [
+    "assets/shots/p2_kostya.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "visual_review": "selected",
+  "change": "Короткие кудри, открытый лоб и широкое лицо Кости перенесены с нового листа; поза и эмоция сохранены. Другие герои и обстановка сохранены."
+}

@@ -115,10 +115,11 @@
       "file": "assets/shots/e4b_pc_floor.png",
       "width": 1672,
       "height": 941,
-      "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c",
+      "sha256": "d7dd867a2da28016a7d8bdb9341689e26bb90a922f041e43559ef1ec0a3a809b",
       "references_exist": true,
       "png_valid": true,
-      "opaque": true
+      "opaque": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "e4b_pc_cu",
@@ -205,20 +206,22 @@
       "file": "assets/shots/m_dimka_phone.png",
       "width": 1672,
       "height": 941,
-      "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3",
+      "sha256": "08591d824f234442ecff8c6168e2dccad10ea83edef0b66267dcdc713e79bfa3",
       "references_exist": true,
       "png_valid": true,
-      "opaque": true
+      "opaque": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "m_kostya_car",
       "file": "assets/shots/m_kostya_car.png",
       "width": 1672,
       "height": 941,
-      "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396",
+      "sha256": "f38495647440c722045f08f612cc202278e84937fb9be7fe0fc8fb0ba9ebd243",
       "references_exist": true,
       "png_valid": true,
-      "opaque": true
+      "opaque": true,
+      "identity_revision": "distinct-v3"
     },
     {
       "id": "m_varya_call",
@@ -230,5 +233,15 @@
       "png_valid": true,
       "opaque": true
     }
-  ]
+  ],
+  "identity_revision": {
+    "date": "2026-11-02",
+    "images_updated": [
+      "e4b_pc_floor",
+      "m_dimka_phone",
+      "m_kostya_car"
+    ],
+    "report": "spec/identity-review.json",
+    "note": "Original generation-call counts retained; corrected identity images inspected separately."
+  }
 }

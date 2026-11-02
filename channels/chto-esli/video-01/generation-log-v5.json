@@ -310,7 +310,14 @@
           "review": "Good alternate without apron; mustard trousers, mug grip less natural."
         }
       ],
-      "sha256": "c9400fe4bcc5c15babeb6f5ea2f4edd45b2c1b0e31186a4a6359fa47e6784eb9"
+      "sha256": "c9400fe4bcc5c15babeb6f5ea2f4edd45b2c1b0e31186a4a6359fa47e6784eb9",
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/sheets/lena_sheet.png",
+        "current_sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed",
+        "archived_original_file": "assets/identity-review/before/sheets/lena_sheet.png",
+        "prompt_and_references": "spec/identity-review.json#lena"
+      }
     },
     {
       "id": "lena_sheet",
@@ -380,7 +387,14 @@
           "review": "Better cassette detail and larger boy, but unrequested teacher book and three-quarter faces."
         }
       ],
-      "sha256": "af538afdfcd42d9bfe60fa891abb53ea066b5163a8c59b4144aebd4db195fbe2"
+      "sha256": "af538afdfcd42d9bfe60fa891abb53ea066b5163a8c59b4144aebd4db195fbe2",
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/sheets/supporting_cast_sheet.png",
+        "current_sha256": "dff79ce7547faa3063c95f05c4a9f06f556c22803d97251c62dc62ff985422a4",
+        "archived_original_file": "assets/identity-review/before/sheets/supporting_cast_sheet.png",
+        "prompt_and_references": "spec/identity-review.json#supporting_cast"
+      }
     },
     {
       "id": "supporting_cast_sheet",
@@ -1172,6 +1186,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/h_kostya_hair_cu.png",
+        "current_sha256": "f336c2bbe87c56368d58db8cc757c588cb79e0fc617055760d2730aee2f0b9e3",
+        "archived_original_file": "assets/identity-review/before/shots/h_kostya_hair_cu.png",
+        "prompt_and_references": "spec/identity-review.json#h_kostya_hair_cu"
       }
     },
     {
@@ -2132,6 +2153,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e2_kostya_room.png",
+        "current_sha256": "b0af029f5aec0c1ecfca0ec5747f9d786c1913b7336d905e13ceb337a5ced6d3",
+        "archived_original_file": "assets/identity-review/before/shots/e2_kostya_room.png",
+        "prompt_and_references": "spec/identity-review.json#e2_kostya_room"
       }
     },
     {
@@ -2185,6 +2213,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e2_kostya_gives.png",
+        "current_sha256": "03c3a8a256bbad84cd47aef1528c19a6d61b5d48effdd551b90420fec24ec046",
+        "archived_original_file": "assets/identity-review/before/shots/e2_kostya_gives.png",
+        "prompt_and_references": "spec/identity-review.json#e2_kostya_gives"
       }
     },
     {
@@ -2491,6 +2526,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e3_bench.png",
+        "current_sha256": "7edab422d70bc4f62c86e9fbd893daf6f5b550d3f3d21456ee63527cb1d797b0",
+        "archived_original_file": "assets/identity-review/before/shots/e3_bench.png",
+        "prompt_and_references": "spec/identity-review.json#e3_bench"
       }
     },
     {
@@ -2538,6 +2580,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e3_fallen.png",
+        "current_sha256": "0c27e7c16707c552353a08517b707ce5704a7bafbccb4e2ab1a96f7e7e537208",
+        "archived_original_file": "assets/identity-review/before/shots/e3_fallen.png",
+        "prompt_and_references": "spec/identity-review.json#e3_fallen"
       }
     },
     {
@@ -2587,6 +2636,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e3_bed_edge.png",
+        "current_sha256": "9a6850c82aa0f38242c44beb073041624c2ae5ceb68fdc3277dd5e95231406e7",
+        "archived_original_file": "assets/identity-review/before/shots/e3_bed_edge.png",
+        "prompt_and_references": "spec/identity-review.json#e3_bed_edge"
       }
     },
     {
@@ -2636,6 +2692,13 @@
         ],
         "upscaled": false,
         "sha256_matches": true
+      },
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e3b_notebooks.png",
+        "current_sha256": "0c0415030666228b99a3e50e7abe8a069dad365eeac1b5616fc8ed00db7c9ba2",
+        "archived_original_file": "assets/identity-review/before/shots/e3b_notebooks.png",
+        "prompt_and_references": "spec/identity-review.json#e3b_notebooks"
       }
     },
     {
@@ -3315,7 +3378,14 @@
           "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19932-b250-7f33-afa7-3e82f879276e\\exec-d30b60dd-db7d-4474-846b-d05d1e691d29.png",
           "review": "Faces, adult stubble, wardrobe, cream mug, terrace architecture and light match the approved references. Bottom fifth includes neutral trousers/cardigan and left chair legs; no face or mug in subtitle area."
         }
-      ]
+      ],
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e6_terrace.png",
+        "current_sha256": "a5ad5d1418de62aaddc03da04722482b070caeb7e70d815b99c384d46ee28707",
+        "archived_original_file": "assets/identity-review/before/shots/e6_terrace.png",
+        "prompt_and_references": "spec/identity-review.json#e6_terrace"
+      }
     },
     {
       "id": "e4_car_taken",
@@ -3417,7 +3487,14 @@
       "initial_attachments": [
         "assets/sheets/lena_sheet.png",
         "assets/shots/e6_terrace.png"
-      ]
+      ],
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e6_lena_cup_cu.png",
+        "current_sha256": "f9d8a6a8e767d67b37b14df7659fc933db0055c84bc299e0fb6a702146676062",
+        "archived_original_file": "assets/identity-review/before/shots/e6_lena_cup_cu.png",
+        "prompt_and_references": "spec/identity-review.json#e6_lena_cup_cu"
+      }
     },
     {
       "id": "e4_suitcase",
@@ -3474,7 +3551,14 @@
           "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19932-b250-7f33-afa7-3e82f879276e\\exec-511a7dee-452c-4a83-9ad8-9f1090226dcc.png",
           "review": "Sasha carries used cups left toward kitchen, Lena watches with own mug; adult faces, cardigan and terrace match. No text/red. Bottom fifth contains quiet trousers and floor."
         }
-      ]
+      ],
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e6_cups.png",
+        "current_sha256": "423ad844ce5f3e8cc94a73d5a07c01dbeebb56dd54b50f543a8cea98a6a0c031",
+        "archived_original_file": "assets/identity-review/before/shots/e6_cups.png",
+        "prompt_and_references": "spec/identity-review.json#e6_cups"
+      }
     },
     {
       "id": "t_night_kitchen",
@@ -3894,7 +3978,14 @@
       "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c",
       "generator": "built-in image_gen",
       "upscaled": false,
-      "priority": "A"
+      "priority": "A",
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e4b_pc_floor.png",
+        "current_sha256": "d7dd867a2da28016a7d8bdb9341689e26bb90a922f041e43559ef1ec0a3a809b",
+        "archived_original_file": "assets/identity-review/before/shots/e4b_pc_floor.png",
+        "prompt_and_references": "spec/identity-review.json#e4b_pc_floor"
+      }
     },
     {
       "id": "f_pat",
@@ -4313,7 +4404,14 @@
       "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3",
       "generator": "built-in image_gen",
       "upscaled": false,
-      "priority": "A"
+      "priority": "A",
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/m_dimka_phone.png",
+        "current_sha256": "08591d824f234442ecff8c6168e2dccad10ea83edef0b66267dcdc713e79bfa3",
+        "archived_original_file": "assets/identity-review/before/shots/m_dimka_phone.png",
+        "prompt_and_references": "spec/identity-review.json#m_dimka_phone"
+      }
     },
     {
       "id": "pv_b_boy",
@@ -4379,7 +4477,14 @@
           "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19932-b250-7f33-afa7-3e82f879276e\\exec-124f18f1-3812-4905-bb0e-fd7706d4a3ef.png",
           "review": "PriorityB: dirty plates, exactly two mugs and restrained argument gestures at sides; cream shirt and teal cardigan match. Sink-side continuation of adult kitchen material/palette; no red/text. Counter and gestures above75%, quiet cabinet fronts below. Partial faces at top frame edges."
         }
-      ]
+      ],
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e6_dishes.png",
+        "current_sha256": "93855c28f8012bb08d55a3533e2d173a7a8d1e95d6eaec30fcb2885d87aeab9d",
+        "archived_original_file": "assets/identity-review/before/shots/e6_dishes.png",
+        "prompt_and_references": "spec/identity-review.json#e6_dishes"
+      }
     },
     {
       "id": "m_kostya_car",
@@ -4404,7 +4509,14 @@
       "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396",
       "generator": "built-in image_gen",
       "upscaled": false,
-      "priority": "A"
+      "priority": "A",
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/m_kostya_car.png",
+        "current_sha256": "f38495647440c722045f08f612cc202278e84937fb9be7fe0fc8fb0ba9ebd243",
+        "archived_original_file": "assets/identity-review/before/shots/m_kostya_car.png",
+        "prompt_and_references": "spec/identity-review.json#m_kostya_car"
+      }
     },
     {
       "id": "m_varya_call",
@@ -4460,7 +4572,14 @@
           "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19932-b250-7f33-afa7-3e82f879276e\\exec-c1612b32-775f-4919-891f-e2a74c1c3004.png",
           "review": "PriorityB: two adults far apart from behind on autumn railway platform, no faces, one suitcase beside Lena. Recognizable hair/cardigan and cream shirt; no text/red. Quiet foreground paving with leaves; feet and suitcase base reach80% instead of requested75%."
         }
-      ]
+      ],
+      "identity_revision": {
+        "revision": "distinct-v3",
+        "current_file": "assets/shots/e6_station.png",
+        "current_sha256": "31628d2631c244d25d20404371304ccf7044f40a8d0772af42e9402f1452aaff",
+        "archived_original_file": "assets/identity-review/before/shots/e6_station.png",
+        "prompt_and_references": "spec/identity-review.json#e6_station"
+      }
     },
     {
       "id": "e4b_pc_cu",
@@ -4973,5 +5092,16 @@
       "source": "User explicitly confirmed exactly2560x1440 after stage1 review on2026-11-01",
       "scope": "Six stage1 backgrounds to regenerate and all future images for this video"
     }
-  ]
+  ],
+  "identity_revision": {
+    "date": "2026-11-02",
+    "revision": "distinct-v3",
+    "gallery": "identity-review.html",
+    "current_asset_index": "spec/identity-review.json",
+    "prompts": "spec/identity-generation/",
+    "style": "../CHARACTER-STYLE.md",
+    "user_review": "pending",
+    "selected_images": 20,
+    "note": "User requested substantially different faces, hair silhouettes and clothing. Original images are archived in assets/identity-review/before; historical generation metadata below describes those original outputs."
+  }
 }

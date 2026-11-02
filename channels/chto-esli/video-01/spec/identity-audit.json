@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-02",
+  "source_images_reviewed": 212,
+  "scope": "Source PNGs throughout repository; generated package/vendor files, temporary outputs and rendered-video frames excluded from source inventory.",
+  "method": [
+    "All212 source images visually inspected in labelled contact sheets",
+    "Problematic scenes and relevant sheets opened individually at native resolution",
+    "Every selected generated output visually inspected before installation",
+    "Three rendered pilot snapshots inspected: calm3s, calm7s and dynamic7s"
+  ],
+  "contact_sheets": [
+    "assets/identity-review/audit-contact/cast-1.jpg",
+    "assets/identity-review/audit-contact/cast-2.jpg",
+    "assets/identity-review/audit-contact/legacy-1.jpg",
+    "assets/identity-review/audit-contact/nauka-1.jpg",
+    "assets/identity-review/audit-contact/other-1.jpg",
+    "assets/identity-review/audit-contact/other-2.jpg",
+    "assets/identity-review/audit-contact/other-3.jpg",
+    "assets/identity-review/audit-contact/other-4.jpg",
+    "assets/identity-review/audit-contact/shots-1.jpg",
+    "assets/identity-review/audit-contact/shots-2.jpg",
+    "assets/identity-review/audit-contact/shots-3.jpg",
+    "assets/identity-review/audit-contact/shots-4.jpg",
+    "assets/identity-review/audit-contact/shots-5.jpg",
+    "assets/identity-review/audit-contact/shots-6.jpg",
+    "assets/identity-review/audit-contact/shots-7.jpg"
+  ],
+  "inventory": "spec/identity-inventory-before.json",
+  "counts_by_project": {
+    "channels/chto-esli/video-01": 153,
+    "my-video/public": 10,
+    "nauka-frames": 17,
+    "nauka-paper": 23,
+    "nauka-toon": 9
+  },
+  "findings": [
+    {
+      "pair": "Sasha / Kostya17-25",
+      "problem": "Repeated spiky cowlick, narrow chin and similar large eyes; both wearing mustard in car scene.",
+      "action": "Broad face, short dense curls and smaller hooded eyes for Kostya throughout his young appearances; separate teal jacket at25; enlarged age-specific sheets."
+    },
+    {
+      "pair": "Sasha19 / Dimka19",
+      "problem": "Both wearing mustard hooded garments, causing the same large color and costume silhouette.",
+      "action": "Olive round-collar bomber and brick shirt, rounder face for Dimka in sheet and scene."
+    },
+    {
+      "pair": "Mama / Lena26",
+      "problem": "Similar chestnut waves, round eyes, small noses and generic young female facial structure.",
+      "action": "Straight honey-brown blunt bob, longer oval face/nose, smaller almond eyes and distinct freckles for Lena, retaining teal knitted cardigan."
+    }
+  ],
+  "unchanged_after_review": [
+    {
+      "project": "nauka-frames",
+      "reason": "Tetsu has black undercut, lean body, mustard shorts/red wraps; Gromila has receding hair, beard, massive body, gray tank/navy pants; Doc has gray hair, glasses and tracksuit. Distinct faces/costumes."
+    },
+    {
+      "project": "nauka-toon / nauka-paper",
+      "reason": "Separate historical styles, recognizable distinct Tetsu/Gromila/Doc; body-part sprites belong to the same named figures, not duplicated cast members."
+    },
+    {
+      "project": "my-video/public/real",
+      "reason": "Same real main character intentionally appears across eight different scenes; this is identity continuity."
+    },
+    {
+      "project": "my-video/public/explainer/kitchen/img",
+      "reason": "Two pose samples of the same schematic figure, not two separate named heroes."
+    },
+    {
+      "project": "chto-esli: Papa, Ded, Gena, teacher",
+      "reason": "Moustache/receding hair, elderly gray stubble/safety glasses/apron, blond broad bully and gray-bun teacher with glasses form distinct silhouettes."
+    }
+  ],
+  "code_review_only": [
+    "nauka-pencil/engine/figures.js",
+    "my-video/src/Bratok90/Character.tsx",
+    "my-video/src/Bratok90/Extras.tsx",
+    "my-video/src/BratokRealAnim/Guards.tsx",
+    "my-video/src/BratokRealAnim/Face.tsx",
+    "my-video/src/Explainer/Character.tsx"
+  ],
+  "limits": [
+    "Other historical compositions were inspected via source assets/code, not fully re-rendered frame by frame.",
+    "Previously rendered MP4s keep the old appearance until explicitly re-rendered.",
+    "Historical hd-refs and *_hd Kostya copies are retained for provenance and superseded for active pilot/new generation."
+  ],
+  "checks": {
+    "hyperframes_check": "passed:0errors,0warnings; audio check unavailable because ffmpeg not on the check process PATH (audio unchanged)",
+    "report": ".hyperframes/artifacts/checks/51863c7f-11ed-4d9f-994f-15568d3a0163.json",
+    "pilot_snapshots": [
+      "assets/identity-review/pilot-calm/frame-00-at-3s.png",
+      "assets/identity-review/pilot-calm/frame-01-at-7s.png",
+      "assets/identity-review/pilot-dynamic/frame-00-at-7s.png"
+    ],
+    "dynamic_snapshot_method": "Copied actual dynamic HTML and byte-identical engine/assets to isolated temporary check project; normalized relative paths only.",
+    "syntax_checks": "node --check engine/pilot.js; Python compile scripts/review_identity.py and scripts/build_codex_prompts.py passed"
+  },
+  "completed_selected_assets": 20,
+  "root_causes_addressed": [
+    "Kostya25 car scene used the17-year-old reference instead of an age25 reference.",
+    "Lena and supporting-cast sheets used other peoples sheets as identity references; switched to their own current sheets and clarified attachment identity ownership.",
+    "Adult Dimka and Sasha had the same mustard hooded costume silhouette; separated garment cut and colors."
+  ]
+}

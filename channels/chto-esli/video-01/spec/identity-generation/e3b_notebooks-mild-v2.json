@@ -1,0 +1,13 @@
+{
+  "id": "e3b_notebooks",
+  "record_schema": "identity-trial-v2",
+  "status": "superseded_after_user_feedback",
+  "selected": "assets/identity-review/trials/e3b_notebooks-mild-v2.png",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-4cda9833-52a4-4eab-8306-23bef6c958cb.png",
+  "prompt": "Use case: identity-preserve. Edit image1, the brothers writing together at a desk, to repair ONLY the older brother KOSTYA's head and hair. Image2 is his corrected canonical17-year-old reference sheet. The older brother is the large figure on the LEFT in a warm gray hoodie, teal jeans. Replace his face/head with EXACT Kostya from image2: low rounded dark-brown sideways WAVES, partly open forehead, relaxed narrower hooded eyes, substantial straight nose, longer oval face and friendly asymmetric half-smile. No pointed cowlick or huge round child eyes. Keep his existing downward writing gaze and head angle. He is17-18, not the boy Sasha and not middle-aged.\nKeep the younger child SASHA on the RIGHT completely unchanged: spiky pointed hair/cowlick, serious large eyes, olive T-shirt. Preserve both writing poses, every hand and pencil, the blank notebooks, tabletop, lamp, door, window, light/shadows, camera and image1's exact scene layout. Do not change clothes, objects, body positions or paper texture. Warm family-album matte layered cut-paper collage, crisp fibers and contact shadows, no black outline, no new grain/blur/text. Output opaque PNG landscape16:9 same1672x941 dimensions as image1 if supported. No annotations, text, numbers or new props.",
+  "references": [
+    "assets/shots/e3b_notebooks.png",
+    "assets/sheets/kostya_sheet-identity-v2.png"
+  ],
+  "reason": "User requested substantially more different faces, silhouettes and clothing after this mild identity edit."
+}

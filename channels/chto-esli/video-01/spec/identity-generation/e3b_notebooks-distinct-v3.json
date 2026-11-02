@@ -1,0 +1,21 @@
+{
+  "id": "e3b_notebooks",
+  "prompt": "Use case: identity-preserve. Edit image1, the brothers writing together at a desk, to repair ONLY the older brother KOSTYA's head and hair. Image2 is his corrected canonical17-year-old reference sheet. The older brother is the large figure on the LEFT in a warm gray hoodie, teal jeans. Replace his face/head with EXACT Kostya from image2: SHORT DENSE dark-chestnut CURLS cropped close at sides with EXPOSED EARS, completely OPEN FOREHEAD and NO bangs/cowlick. BROAD square-oval face, full cheeks, wide rounded jaw/chin, visibly SMALLER hooded eyes, wider rounded-tip nose and a friendly crooked half-smile. His head shape must be distinctly different from Sasha's narrow spiky-haired big-eyed head. No pointed cowlick or huge round child eyes. Keep his existing downward writing gaze and head angle. He is17-18, not the boy Sasha and not middle-aged.\nKeep the younger child SASHA on the RIGHT completely unchanged: spiky pointed hair/cowlick, serious large eyes, olive T-shirt. Preserve both writing poses, every hand and pencil, the blank notebooks, tabletop, lamp, door, window, light/shadows, camera and image1's exact scene layout. Do not change clothes, objects, body positions or paper texture. Warm family-album matte layered cut-paper collage, crisp fibers and contact shadows, no black outline, no new grain/blur/text. Output opaque PNG landscape16:9 same1672x941 dimensions as image1 if supported. No annotations, text, numbers or new props.",
+  "refs": [
+    "assets/shots/e3b_notebooks.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "canonical": "assets/shots/e3b_notebooks.png",
+  "selected": "assets/shots/e3b_notebooks-distinct-v3.png",
+  "record_schema": "identity-fix-v3",
+  "title": "Братья пишут в тетрадях",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-918b0b5a-7c95-481c-b00b-3030d340a34b.png",
+  "references": [
+    "assets/shots/e3b_notebooks.png",
+    "assets/sheets/kostya_sheet-distinct-v3.png"
+  ],
+  "visual_review": "selected",
+  "change": "Короткие плотные кудри и широкое лицо Кости вместо Сашиного силуэта. Саша, руки, действие, одежда и обстановка сохранены."
+}

@@ -10,10 +10,10 @@
 |---|---|---|---|---|---|---|---|
 | `sasha_ages_sheet` | sheet | A | Саша в 5 возрастах: 12, 15, 19, 26, 33 | sasha_sheet_hd | нет | дрейф ≤1.08× | Единственная опора для взрослого Саши в кадрах |
 | `sasha_faces_sheet` | sheet | A | Лица Саши крупно: 6 голов (12, 15, 19, 26, 31, 33) | sasha_sheet_hd | нет | дрейф ≤1.08× | Эталон лица для крупных планов |
-| `kostya38_sheet` | sheet | A | Костя в 38: лысый, лист по образцу листа Кости | kostya_sheet_hd | нет | дрейф ≤1.08× | Финал; контраст с 17-летним Костей из хука |
-| `ded_sheet` | sheet | A | Дед Лёша, ~72 года | mama_sheet_hd | нет | дрейф ≤1.08× | — |
-| `lena_sheet` | sheet | A | Лена, 26 лет | mama_sheet_hd | нет | дрейф ≤1.08× | — |
-| `supporting_cast_sheet` | sheet | A | Массовка: Димка 12 и 19, Гена, учительница, продавщица | sasha_sheet_hd | нет | дрейф ≤1.08× | — |
+| `kostya38_sheet` | sheet | A | Костя в 38: лысый, лист по образцу листа Кости | kostya_sheet-distinct-v3 | нет | дрейф ≤1.08× | Финал; контраст с 17-летним Костей из хука |
+| `ded_sheet` | sheet | A | Дед Лёша, ~72 года | ded_sheet | нет | дрейф ≤1.08× | — |
+| `lena_sheet` | sheet | A | Лена, 26 лет | lena_sheet-distinct-v3 | нет | дрейф ≤1.08× | — |
+| `supporting_cast_sheet` | sheet | A | Массовка: Димка 12 и 19, Гена, учительница, продавщица | supporting_cast_sheet | нет | дрейф ≤1.08× | — |
 | `props_misc_sheet` | sheet | A | Мелкие предметы: паяльник, копилка, смартфон, чашки | — | нет | дрейф ≤1.08× | — |
 
 ## 0. Задники (пустые комнаты, без людей)
@@ -35,7 +35,7 @@
 | `h_school_bag` | wide | B | [Мысль] «…а в школу всё равно идти» | bg_door_wall_hd | нет | дрейф ≤1.08× | Мысль подписью, можно заменить p4_sasha |
 | `h_cassette_box` | wide | A | [коробка кассет] «…ты поставишь брату одну из своих кассет» | props_tape_sheet-v2 | нет | проезд вдоль ряда до «2024», затем врезка CU | Годы на наклейках, остановка на «2024» |
 | `h_cassette_2024_cu` | cu | A | Крупно кассета «2024» (наклейка пустая) | props_tape_sheet-v2 | нет | дрейф ≤1.08× | Год «2024» на наклейке накладывает код, красным |
-| `h_kostya_hair_cu` | cu | A | Крупно: Костя 17 лет, волосы и лицо (вместо зума 2.6×) | kostya_sheet_hd, bg_door_wall_hd | нет | без зума; дрейф ≤1.05× | Заменяет digital zoom на p2_kostya |
+| `h_kostya_hair_cu` | cu | A | Крупно: Костя 17 лет, волосы и лицо (вместо зума 2.6×) | kostya_sheet-distinct-v3, bg_door_wall_hd | нет | без зума; дрейф ≤1.05× | Заменяет digital zoom на p2_kostya |
 | `h_sasha_eyes_cu` | cu | A | Крупно: глаза Саши 12 лет (вместо зума 2.6×) | sasha_sheet_hd, sasha_faces_sheet | нет | без зума; дрейф ≤1.05× | Заменяет digital zoom на p4_sasha |
 
 ## Правила 0:38–1:18
@@ -69,8 +69,8 @@
 | `e2_try_teacher` | wide | A | Попытка 2: учителю про интернет, «Садись, два» | bg_classroom, supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | Бумажная «2» шлёпается в дневник |
 | `e2_try_dimka` | wide | A | Попытка 3: Димка «А игры там есть?» | supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | — |
 | `e2_stairs` | wide | A | [лбом о перила] «держать всё в голове невыносимо, мелочи уже тают» | bg_door_wall_hd, sasha_sheet_hd | нет | дрейф ≤1.08× | Лёгкий «тук» на «стукаешься» |
-| `e2_kostya_room` | wide | A | «У Кости есть двухкассетник. «Зачем тебе?» — «Голос записывать»» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | дрейф ≤1.08× | — |
-| `e2_kostya_gives` | wide | A | «Костя долго смотрит и отдаёт магнитофон» | bg_kostya_room, kostya_sheet_hd, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | медленный наезд до 1.10× | — |
+| `e2_kostya_room` | wide | A | «У Кости есть двухкассетник. «Зачем тебе?» — «Голос записывать»» | bg_kostya_room, kostya_sheet-distinct-v3, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | дрейф ≤1.08× | — |
+| `e2_kostya_gives` | wide | A | «Костя долго смотрит и отдаёт магнитофон» | bg_kostya_room, kostya_sheet-distinct-v3, sasha_sheet_hd, props_tape_sheet-v2 | the record key of the deck (one key) | медленный наезд до 1.10× | — |
 | `e2_market` | wide | A | «Кассета на рынке стоит тридцать пять рублей» | props_tape_sheet-v2, supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | Бумажный ценник |
 | `e2_labels` | wide | A | «Берёшь двадцать одну… подписываешь маминым маркером» | props_tape_sheet-v2, bg_door_wall_hd | нет | проезд по ряду | Годы 2006…2025 появляются по одному; «2026» уезжает вбок |
 | `e2_rec_keys` | cu | A | Макро: два пальца жмут две кнопки; катушки | props_tape_sheet-v2 | the record key of the deck | дрейф ≤1.08× | Вращение катушек, щелчок «Начинаешь с конца» |
@@ -84,15 +84,15 @@
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e3_bench` | wide | A | «Костя. В субботу во дворе упадёт тополь… Убери велик» | bg_yard, kostya_sheet_hd, sasha_sheet_hd | нет | панорама на тополь до 1.10× | Тополиный пух слоем |
-| `e3_fallen` | wide | A | «В субботу тополь падает на гаражи» | bg_yard, kostya_sheet_hd | нет | дрейф ≤1.08× | Встряска, облако пуха |
-| `e3_bed_edge` | wide | A | «Вечером Костя садится на край кровати. — Ладно. Что надо?» | bg_carpet_wall_hd, kostya_sheet_hd, sasha_sheet_hd | нет | медленный наезд до 1.10× | — |
+| `e3_bench` | wide | A | «Костя. В субботу во дворе упадёт тополь… Убери велик» | bg_yard, kostya_sheet-distinct-v3, sasha_sheet_hd | нет | панорама на тополь до 1.10× | Тополиный пух слоем |
+| `e3_fallen` | wide | A | «В субботу тополь падает на гаражи» | bg_yard, kostya_sheet-distinct-v3 | нет | дрейф ≤1.08× | Встряска, облако пуха |
+| `e3_bed_edge` | wide | A | «Вечером Костя садится на край кровати. — Ладно. Что надо?» | bg_carpet_wall_hd, kostya_sheet-distinct-v3, sasha_sheet_hd | нет | медленный наезд до 1.10× | — |
 
 ## Эпоха 3б. План на 21 год 4:41–5:33
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e3b_notebooks` | wide | A | «Операция «Мелкий»»: две тетради на одном столе | bg_door_wall_hd, kostya_sheet_hd, sasha_sheet_hd | нет | дрейф ≤1.08× | Титр «2006 · 13 лет» |
+| `e3b_notebooks` | wide | A | «Операция «Мелкий»»: две тетради на одном столе | bg_door_wall_hd, kostya_sheet-distinct-v3, sasha_sheet_hd | нет | дрейф ≤1.08× | Титр «2006 · 13 лет» |
 | `e3b_gena` | wide | A | Гена подходит и идёт обратно | supporting_cast_sheet, sasha_sheet_hd | нет | дрейф ≤1.08× | — |
 | `e3b_fractions_cu` | cu | B | «Дроби ты тоже победил» | — | нет | дрейф ≤1.08× | «31/35» рисует код |
 | `e3b_library` | wide | B | Библиотека: самоучитель английского | sasha_sheet_hd | нет | дрейф ≤1.08× | — |
@@ -118,7 +118,7 @@
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e4b_pc_floor` | wide | A | Системный блок на полу в комнате Кости гудит; мама со счётом за свет | bg_kostya_room, mama_sheet_hd, kostya_sheet_hd, sasha_ages_sheet, props_misc_sheet | нет | дрейф ≤1.08× | Титр «2009 · 15 лет»; гул |
+| `e4b_pc_floor` | wide | A | Системный блок на полу в комнате Кости гудит; мама со счётом за свет | bg_kostya_room, mama_sheet_hd, kostya_sheet-distinct-v3, sasha_ages_sheet, props_misc_sheet | нет | дрейф ≤1.08× | Титр «2009 · 15 лет»; гул |
 | `e4b_pc_cu` | cu | B | Крупно: гудящий блок | props_misc_sheet | нет | дрейф ≤1.08× | Вращение вентилятора |
 
 ## Эпоха 5. Воскресенья 7:12–8:09
@@ -138,18 +138,18 @@
 |---|---|---|---|---|---|---|---|
 | `m_graduation` | wide | A | 2011 · 18 лет: выпускной, пиджак с папиного плеча | sasha_ages_sheet, supporting_cast_sheet | нет | дрейф ≤1.08× | Титр «2011 · 18 лет» |
 | `m_dimka_phone` | wide | A | 2012 · 19 лет: Димка с первым смартфоном | supporting_cast_sheet, sasha_ages_sheet, props_misc_sheet | нет | дрейф ≤1.08× | Титр «2012 · 19 лет» |
-| `m_kostya_car` | wide | A | 2013 · 20 лет: Костя за рулём подержанной «девятки» | bg_yard, kostya_sheet_hd, sasha_ages_sheet | нет | дрейф ≤1.08× | Титр «2013 · 20 лет» |
+| `m_kostya_car` | wide | A | 2013 · 20 лет: Костя за рулём подержанной «девятки» | bg_yard, kostya25_sheet-distinct-v3, sasha_ages_sheet | нет | дрейф ≤1.08× | Титр «2013 · 20 лет» |
 | `m_varya_call` | wide | A | 2015 · 22 года: звонок из роддома; ты сползаешь по стене | bg_door_wall_hd, sasha_ages_sheet | нет | дрейф ≤1.08× | Титр «2015 · 22 года» |
 
 ## Эпоха 6. Июль 2019 8:44–9:38
 
 | ID | Тип | Приор. | Момент | Вложения | Красный | Камера (код) | Код добавляет |
 |---|---|---|---|---|---|---|---|
-| `e6_terrace` | wide | A | Июль 2019: тебя знакомят с Леной | bg_terrace, sasha_ages_sheet, lena_sheet | нет | дрейф ≤1.08× | Титр «2019 · 26 лет» |
-| `e6_lena_cup_cu` | cu | A | Крупно: Лена греет руки о кружку | lena_sheet | нет | без зума | Реплика про «аллергию на лилии» |
-| `e6_dishes` | wide | B | «Будете ругаться из-за немытой посуды» | bg_kitchen_adult | нет | дрейф ≤1.08× | — |
-| `e6_station` | wide | B | «Расстанетесь на вокзале» | — | нет | дрейф ≤1.08× | Тихий кадр, без реплик |
-| `e6_cups` | wide | A | «Но сначала моешь за собой чашку» | bg_terrace, sasha_ages_sheet, lena_sheet | нет | дрейф ≤1.08× | — |
+| `e6_terrace` | wide | A | Июль 2019: тебя знакомят с Леной | bg_terrace, sasha_ages_sheet, lena_sheet-distinct-v3 | нет | дрейф ≤1.08× | Титр «2019 · 26 лет» |
+| `e6_lena_cup_cu` | cu | A | Крупно: Лена греет руки о кружку | lena_sheet-distinct-v3 | нет | без зума | Реплика про «аллергию на лилии» |
+| `e6_dishes` | wide | B | «Будете ругаться из-за немытой посуды» | bg_kitchen_adult, lena_sheet-distinct-v3 | нет | дрейф ≤1.08× | — |
+| `e6_station` | wide | B | «Расстанетесь на вокзале» | lena_sheet-distinct-v3 | нет | дрейф ≤1.08× | Тихий кадр, без реплик |
+| `e6_cups` | wide | A | «Но сначала моешь за собой чашку» | bg_terrace, sasha_ages_sheet, lena_sheet-distinct-v3 | нет | дрейф ≤1.08× | — |
 
 ## Поворот. Март 2024 9:38–10:15
 
@@ -208,12 +208,14 @@
 ```text
 Asset: sheets/sasha_ages_sheet.png, a reference sheet. Character lineup of Sasha at five ages standing side by side, all front view, same scale reference, neutral standing pose, arms relaxed: 12 (small boy), 15 (lanky teen), 19 (young man, hair a bit longer), 26 (adult, light stubble), 33 (adult, calm, no stubble). It must be unmistakably the same person: same eyes, brows, nose and cowlick; only age and clothing change. Ages 12 and 33 wear what is described; the middle ones wear the clothes described for their age.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -236,13 +238,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: sheets/sasha_faces_sheet.png, a reference sheet. Six large head-and-shoulder portraits of Sasha arranged in a 3x2 grid, front or three-quarter view, same lighting: ages 12, 15, 19, 26, 31, 33 in that order. Same eyes, brows, nose and cowlick in all six; only age marks differ (lanky jaw, stubble, first lines at the eyes). Neutral serious expression.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 31 (year 2024): adult man, lean, hollow-cheeked, a little tired, short hair, light stubble, gray hoodie.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -265,11 +269,13 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: sheets/kostya38_sheet.png, a reference sheet. Character sheet of Kostya at 38 in the same format as the attached 17-year-old sheet. Calm neutral pose, warm tired eyes, bald head (smooth shaved scalp with cut-paper highlights), light stubble.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
 
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
+
 Attachments:
-- Input image 1: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -289,11 +295,13 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: sheets/ded_sheet.png, a reference sheet. Character sheet of Grandfather Lyosha. Calm neutral pose, hands visible, work apron.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.
 
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
+
 Attachments:
-- Input image 1: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/ded_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -313,11 +321,13 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: sheets/lena_sheet.png, a reference sheet. Character sheet of Lena. Standing pose with both hands holding a big plain mug in front of her chest; the mug is in the front and side views, and the portrait shows her warm amused look.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
-- Input image 1: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -337,15 +347,17 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: sheets/supporting_cast_sheet.png, a reference sheet. Lineup of five supporting characters, each a full-length front view at the same scale, neutral pose: Dimka 12, Dimka 19, Gena 14, the teacher, and the market seller shown only as a pair of hands and arms in knitted mitts holding a stack of plain cassettes (no face).
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Dimka, 12: classmate; round face, buzz cut, a huge olive sweater, always chewing something, cheerful shrug.
-- Dimka, 19: the same round face grown up, tall, cheap mustard jacket, holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).
+- Dimka, 19: the same round face grown up, short buzz cut, tall, OLIVE short bomber jacket without a hood over a brick-brown crew-neck shirt, warm-gray trousers; no mustard garment. Holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).
 - Gena, 14: school bully; big, broad, pale crew cut, brick-brown sweatshirt, heavy brow, scowl.
 - Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.
 - Market seller, middle-aged woman: fingerless knitted mitts, mustard headscarf; only her hands and arms are visible.
 
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
+
 Attachments:
-- Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/supporting_cast_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -513,8 +525,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/h_sasha_palm.png, a finished full scene. Morning, the bedroom from the attached background. Sasha sits on the edge of the bed, one palm pressed over his face, the other hand gripping the blanket. Medium-wide view, the room around him calm and warm.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -601,11 +615,13 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/h_kostya_hair_cu.png, a close-up master. Close-up, head and shoulders, Kostya at 17 standing in the open bedroom doorway, the door edge visible at the right. Hair strands drawn individually, an easy half-smile, morning light from the corridor behind. Identical costume and face to the attached full shot.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
-- Input image 1: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 2: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -626,8 +642,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/h_sasha_eyes_cu.png, a close-up master. Extreme close-up of Sasha's face from forehead to chin, filling the frame, eyes wide open, a far too grown-up gaze, faint shadows under the eyes, slightly drawn brows, hair strands crisp. Soft morning light from the left.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -674,10 +692,12 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/r_adults_soup.png, a finished full scene. Kitchen table: Mama and Papa lean toward Sasha with kind, patient, condescending half-smiles, nodding, while a bowl of soup steams in front of Sasha, who looks flatly at the viewer. Camera slightly low, kitchen morning light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -705,9 +725,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_mama_bread.png, a finished full scene. Kitchen, morning. Mama cuts a bread loaf at the table and glances back over her shoulder; Sasha sits at the table staring at her with eyes that are slightly wet. Warm light from the window.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -732,8 +754,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_videocall.png, a close-up master. Night, close-up: a man's hand (gray sleeve, no face) holds a plain smartphone. On the blank glowing screen Mama at 59 sits too close to her camera, seen from below at a slight angle, squinting, glasses on her forehead. Cool teal tone, the room dark.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, about 59 (seen only on a phone screen): the same face as Mama but older: gray strands in the curls, shorter haircut, reading glasses pushed up on the forehead, confused squint.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -757,8 +781,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_oilcloth.png, a close-up master. Macro of a corner of the checked oilcloth with a frayed torn edge, bread crumbs on it, and a child's palm resting on it.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -781,9 +807,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_papa_pan.png, a finished full scene. Kitchen. Papa at the table eats fried eggs straight from a cast-iron frying pan and holds an unfolded newspaper in the other hand (columns are plain gray bands). In the foreground the shoulder and the back of the head of Sasha, who stares at his moustache. Morning light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -808,8 +836,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_papa_lowers.png, a finished full scene. Closer view: Papa has lowered the newspaper and looks over it at Sasha, eyebrows raised, a fork frozen in the air. The moment of silence is readable in the faces.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -833,9 +863,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_cocoa.png, a finished full scene. Kitchen table: Mama sets a big mug of cocoa in front of Sasha; Sasha looks at the mug with flat, tired disbelief.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -860,8 +892,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_clock_ten.png, a finished full scene. Hallway at evening: a round wall clock with a blank dial and hands showing ten o'clock, below it Sasha in pyjamas with arms crossed looking up at it with adult resignation.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -886,9 +920,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_school_board.png, a finished full scene. Classroom: Sasha stands at the blank blackboard holding a piece of chalk, shoulders slumped; the teacher sits at her desk watching; the class is seen only from behind. Morning light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
 - Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_classroom.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -913,8 +949,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_plan_night.png, a finished full scene. Sasha's bedroom at night: desk, lamp with mustard light, window dark teal. Sasha writes on a paper sheet, frowning in a grown-up way. Same desk, lamp and window as the attached background.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -938,8 +976,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_plan_sheet.png, a close-up master. Top-down view: a large blank sheet of lined-less paper in the centre under a lamp, a child's hand holding a pencil at its edge. The sheet fills 70 percent of the frame, its surface completely blank and flat for code-written text.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -962,9 +1002,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e1_lights_out.png, a finished full scene. Bedroom viewed from the desk toward the door: Mama in the doorway with her hand on the light switch, bright corridor behind her, shaking her head with a warm smile; Sasha at the desk seen from behind.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -991,9 +1033,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_try_mama.png, a finished full scene. Kitchen: Mama stirs a pot with a ladle, half turned and waving Sasha away; Sasha beside her draws a rectangle in the air with his hands.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1018,9 +1062,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_try_teacher.png, a finished full scene. Classroom: the teacher at her desk points firmly at Sasha; Sasha stands by his desk; the whole class has turned to look.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_classroom.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1045,9 +1091,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_try_dimka.png, a finished full scene. School corridor by a window sill: Dimka, chewing a bun, shrugs happily; Sasha beside him looks tired.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Dimka, 12: classmate; round face, buzz cut, a huge olive sweater, always chewing something, cheerful shrug.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/supporting_cast_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -1071,8 +1119,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_stairs.png, a finished full scene. Evening stairwell of a panel building: Sasha sits on a step and rests his forehead against the painted railing; soft window light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1096,13 +1146,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_kostya_room.png, a finished full scene. Kostya's room: Kostya half reclines on the bed with the twin-deck cassette recorder on his lap, looking at Sasha suspiciously; Sasha stands in the doorway. The record key of the deck is the only red.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kostya_room.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1124,13 +1176,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_kostya_gives.png, a finished full scene. Closer: Kostya sits holding the deck out to Sasha, a long weary look of an older brother; Sasha's hands reach up from below.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kostya_room.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 4: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1152,9 +1206,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_market.png, a finished full scene. Open-air market stall under an awning, stacks of plain cassettes in boxes. The seller's mitten-covered hands arrange them; Sasha's palm on the counter holds a few coins and bills (no numbers).
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Market seller, middle-aged woman: fingerless knitted mitts, mustard headscarf; only her hands and arms are visible.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
@@ -1179,8 +1235,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_labels.png, a finished full scene. Top-down view of Sasha's desk: a neat row of 21 cassettes with blank labels, one set aside from the rest. A hand holds a marker above one label. Lamp light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
@@ -1204,8 +1262,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_rec_keys.png, a close-up master. Macro of two small fingers pressing two keys at once: the red record key and the key next to it; above them the cassette window with both reels drawn large and flat.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
@@ -1228,8 +1288,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e2_recording.png, a finished full scene. Night at the desk: Sasha leans to the deck and speaks seriously into it, one hand on its case; lamp light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1331,13 +1393,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3_bench.png, a finished full scene. Courtyard: Kostya on the bench by the entrance laughs with his head thrown back; Sasha beside him, serious, points at the poplar by the garages; the bicycle stands under the poplar.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_yard.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -1358,12 +1422,14 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3_fallen.png, a finished full scene. The same courtyard on Saturday: the poplar lies across the garage roofs with branches and leaves everywhere; the bicycle has been rolled safely to the entrance; Kostya stands with his mouth open.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_yard.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1383,13 +1449,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3_bed_edge.png, a finished full scene. Sasha's bedroom in the evening: Kostya sits on the edge of the bed with his elbows on his knees, looking at the floor; Sasha sits on the pillow facing him.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_carpet_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -1412,13 +1480,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3b_notebooks.png, a finished full scene. Three-quarter top view of one desk: Sasha's notebook and Kostya's notebook open side by side, both brothers' hands writing, their elbows nearly touching; lamp light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -1439,9 +1509,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3b_gena.png, a finished full scene. School corridor: Gena, the big bully, has stopped in front of Sasha and is turning away uneasily; Sasha stands straight and looks back with a calm adult gaze.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Gena, 14: school bully; big, broad, pale crew cut, brick-brown sweatshirt, heavy brow, scowl.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/supporting_cast_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -1465,8 +1537,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3b_fractions_cu.png, a close-up master. Top-down: an open notebook page, completely blank, a pencil and an eraser, a small proud corner of Sasha's thumb.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -1486,8 +1560,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3b_library.png, a finished full scene. Library: tall shelves, Sasha at a long table over a thick self-study book with a blank cover and a notebook, lamp light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
@@ -1510,8 +1586,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e3b_computer.png, a finished full scene. Living room: Sasha sits at a CRT monitor with a blank teal-glow screen, spine straight, staring; a plain wall clock above him.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1559,8 +1637,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_flash_papers.png, a finished full scene. Kitchen, evening, 2008: Papa at the table with a stack of bank papers (plain gray lines) and car keys, pleased; sepia-tinted memory mood. Camera straight.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1584,8 +1664,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_car_taken.png, a finished full scene. Winter courtyard at dusk, the poplar already gone: a plain tow truck takes away a small sedan, Papa in a coat stands with his hands in pockets.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_yard.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1609,10 +1691,12 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_silent_dinner.png, a finished full scene. Kitchen supper: Papa looks into his plate, Mama glances at him sideways, Sasha at 15 looks down; quiet yellow light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1659,8 +1743,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_straight_a.png, a finished full scene. Sasha at 15 at his desk in daylight with a stack of notebooks, sitting very straight and writing diligently.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1684,9 +1770,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_warn_kitchen.png, a finished full scene. Kitchen: Sasha at 15 speaks earnestly to Papa; Papa laughs warmly, leaning back with a newspaper on his knee.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1711,8 +1799,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_cassette_night.png, a finished full scene. Night, Sasha at 15 sits at his desk holding one cassette in both hands and looking at it; lamp light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1737,9 +1827,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_briefcase.png, a finished full scene. Kitchen, Thursday evening: Papa packs bank papers into a leather briefcase; in the doorway behind him Sasha at 15 stands with his hands at his sides.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1764,8 +1856,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_papa_look_cu.png, a close-up master. Close-up of Papa's face from the forehead to the chin: moustache in crisp strands, tired eyes slowly softening as he looks at his son.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/papa_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -1788,9 +1882,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4_winter_fork.png, a finished full scene. Winter supper: Papa has put down his fork and turned to Sasha with wide eyes; snow outside the window; Sasha at 15 smiles faintly.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen-v2.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1817,15 +1913,17 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e4b_pc_floor.png, a finished full scene. Kostya's room: a beige-gray computer tower on the floor with its side panel open, glowing from inside, a monitor on the desk; Mama stands in the doorway holding a long paper bill (plain), shaking her head; Kostya and Sasha at 15 beside the tower.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.
-- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.
+- Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kostya_room.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/mama_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/kostya_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 4: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 5: sheets/props_misc_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
@@ -1870,9 +1968,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_garage.png, a finished full scene. Garage: Grandfather Lyosha at the workbench holds a soldering iron over a small radio; Sasha at 13 stands beside, watching closely.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_garage.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1897,9 +1997,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_burn.png, a finished full scene. Garage: Sasha pulls his hand back from the soldering iron, wincing, while Grandfather Lyosha stays calm, one eyebrow raised.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_garage.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1924,9 +2026,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_sundays.png, a finished full scene. Garage doorway in sunlight: Grandfather Lyosha and Sasha at 15 kneel over an upturned bicycle, tools scattered, both laughing.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_garage.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1951,8 +2055,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_spring_2011.png, a finished full scene. Garage in spring: Sasha at 18 stands holding the soldering iron on his open palm; the stool by the workbench is empty; soft light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_garage.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -1977,8 +2083,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_iron_palm_cu.png, a close-up master. Close-up of an open adult palm with a soldering iron lying across it, the wooden handle and the tip crisp; warm light; no face.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_misc_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -2001,8 +2109,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e5_night_tape.png, a finished full scene. Night in Sasha's room: Sasha at 18 sits on the bed with the deck on his knees and listens, lamp off, only teal window light and the glow of the cassette window.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2029,9 +2139,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/m_graduation.png, a finished full scene. School hall at prom: Sasha at 18 in an oversized blazer stands in a row of graduates; the teacher beside him wipes her eyes; a soldering iron handle sticks out of his blazer pocket.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
 - Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -2055,9 +2167,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/m_dimka_phone.png, a finished full scene. A shop's steps: Dimka at 19 shouts happily into his phone while holding a plain smartphone; Sasha at 19 stands a few steps away with a tolerant smile.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Dimka, 19: the same round face grown up, tall, cheap mustard jacket, holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Dimka, 19: the same round face grown up, short buzz cut, tall, OLIVE short bomber jacket without a hood over a brick-brown crew-neck shirt, warm-gray trousers; no mustard garment. Holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/supporting_cast_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -2082,13 +2196,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/m_kostya_car.png, a finished full scene. A hatchback car without brand marks, scratched, at a courtyard: Kostya, happy and proud, leans out of the open driver window; Sasha at 20 stands on the pavement keeping his mouth shut.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Kostya, 25 (year 2013): the same face and wavy dark brown hair as at 17, a little broader, light stubble, proud cheerful grin; mustard jacket over a cream T-shirt.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Kostya, 25 (year 2013): the SAME short dense curls, open forehead, broad face/chin, smaller hooded eyes and wide nose as the corrected age17 sheet, broader shoulders, visible light stubble, proud crooked grin. OPEN FADED-TEAL COLLARED JACKET over a plain CREAM CREW-NECK T-SHIRT, dark warm-gray jeans. No mustard garment, hood, drawstrings or blazer: Sasha wears the mustard hoodie in shared scenes.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_yard.png, approved set of this scene (keep its architecture, materials, light and object positions)
-- Input image 2: sheets/kostya_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 2: sheets/kostya25_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 - Input image 3: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
@@ -2109,8 +2225,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/m_varya_call.png, a finished full scene. Night: Sasha at 22 slides down a hallway wall with a phone at his ear, eyes shut, an exhale of relief; the phone screen glows teal.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2136,14 +2254,16 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e6_terrace.png, a finished full scene. Hot party terrace: friends are small distant shapes; in the foreground Sasha at 26 and Lena meet, she holds a big mug with both hands despite the heat, he smiles uncertainly.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_terrace.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/lena_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2163,11 +2283,13 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e6_lena_cup_cu.png, a close-up master. Close-up of Lena's face and hands wrapped around a big mug, amused eyes looking at the viewer, steam as paper curl shapes.
 
-Characters (identity must match the attached sheets; the text is the fallback):
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
-- Input image 1: sheets/lena_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 1: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2187,12 +2309,15 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e6_dishes.png, a finished full scene. A small kitchen sink piled with plates and two mugs; a half-seen couple's hands in an argument gesture at the edge of frame.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
+- Input image 2: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2212,9 +2337,14 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e6_station.png, a finished full scene. A quiet railway platform in autumn, two figures far apart seen from behind with a suitcase, leaves on the ground; no faces.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
+
+Attachments:
+- Input image 1: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2234,14 +2364,16 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/e6_cups.png, a finished full scene. Terrace: Sasha at 26 gathers dirty plastic cups from the table and carries them toward the kitchen door; Lena watches him with raised eyebrows and a smile.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.
-- Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.
+- Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_terrace.png, approved set of this scene (keep its architecture, materials, light and object positions)
 - Input image 2: sheets/sasha_ages_sheet.png, approved character/props reference (identity, costume and proportions must match)
-- Input image 3: sheets/lena_sheet.png, approved character/props reference (identity, costume and proportions must match)
+- Input image 3: sheets/lena_sheet-distinct-v3.png, approved character/props reference (identity, costume and proportions must match)
 
 Style/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.
 
@@ -2263,8 +2395,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/t_night_kitchen.png, a finished full scene. Cold night kitchen: Sasha at 31 sits at the table, a dark phone in front of him, a low lamp, teal window light; the corridor door with a thin strip of light in the background.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 31 (year 2024): adult man, lean, hollow-cheeked, a little tired, short hair, light stubble, gray hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2288,8 +2422,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/t_old_night.png, a finished full scene. Flashback in a desaturated cool tone: the same kitchen but empty and lonely, Sasha at 31 with a phone at his ear, an unwashed cup, nobody else.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 31 (year 2024): adult man, lean, hollow-cheeked, a little tired, short hair, light stubble, gray hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2334,8 +2470,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/t_realize_cu.png, a close-up master. Close-up of Sasha's face at 31, eyes widening as he realises, cold teal light from the phone on his cheek.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 31 (year 2024): adult man, lean, hollow-cheeked, a little tired, short hair, light stubble, gray hoodie.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_faces_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -2360,9 +2498,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_kostya_door.png, a finished full scene. Kitchen doorway: Kostya at 38, bald, stands holding the shoebox of cassettes with one arm, a half-smile; Sasha at 33 sits at the table.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2388,9 +2528,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_player.png, a finished full scene. Kitchen table: Sasha at 33 inserts a cassette into the twin deck; Kostya sits across the table. The deck's record key is red.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2416,8 +2558,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_kostya_frown.png, a finished full scene. Medium close-up of Kostya at 38 frowning in confusion, bald head, eyes searching; Sasha's shoulder in the foreground.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/kostya38_sheet.png, approved character/props reference (identity, costume and proportions must match)
@@ -2440,9 +2584,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_pat.png, a finished full scene. Kostya claps Sasha on the shoulder, both smiling softly, warm window light; the deck between them.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2467,8 +2613,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_last_tape.png, a finished full scene. Kostya's hand lifts the last cassette out of the shoebox, towards the viewer; the label is blank (code will add child handwriting). Warm light.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
@@ -2492,8 +2640,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_rec_keys.png, a close-up master. Macro of an adult thumb and finger pressing the red record key and the next key of the deck together; the cassette window above shows the two reels beginning to turn.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/props_tape_sheet-v2.png, approved character/props reference (identity, costume and proportions must match)
@@ -2516,9 +2666,11 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/f_recording.png, a finished full scene. Kitchen table, warm light: Sasha at 33 speaks into the deck with a gentle serious face; Kostya sits listening with his chin on his fist.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no stubble, calm eyes, teal-gray sweater over a cream shirt.
 - Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: bg/bg_kitchen_adult.png, approved set of this scene (keep its architecture, materials, light and object positions)
@@ -2590,8 +2742,10 @@ Strict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks
 ```text
 Asset: shots/pv_b_boy.png, a finished full scene. Sasha at 12 in the left half of the frame, a big face with grown-up eyes looking at the viewer; behind him a wall calendar with a red header and a blank page; clean empty space at the right for code text.
 
-Characters (identity must match the attached sheets; the text is the fallback):
+Characters (match each person to THEIR OWN character sheet; never copy a different person's identity from another reference. Text defines any identity without its own sheet):
 - Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.
+
+Identity continuity: each named character has a different face, hair silhouette and costume cut. Do not reuse Sasha's face or spiky cowlick for Kostya or other cast members. Use the age-specific Kostya25 reference for 2013; never copy Sasha's mustard hoodie onto him. The corrected distinct-v3 references supersede older look-alike sheets (user direction, 2026-11-02).
 
 Attachments:
 - Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)

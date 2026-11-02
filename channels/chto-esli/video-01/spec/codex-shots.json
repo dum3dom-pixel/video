@@ -9,13 +9,13 @@
   "mama38": "Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, cream apron, teal slippers. Warm, quick, practical.",
   "mama59": "Mama, about 59 (seen only on a phone screen): the same face as Mama but older: gray strands in the curls, shorter haircut, reading glasses pushed up on the forehead, confused squint.",
   "papa40": "Papa, 40: stocky, slightly heavy, taller than Mama; broad kind tired face; thick chestnut horseshoe moustache; short dark hair with receding temples; Sasha's nose and brows (by 2008 a few more lines at the eyes, a little gray in the moustache). At home: faded cream sleeveless undershirt under an open olive-and-mustard plaid shirt, warm gray sweatpants, teal slippers, a plain wedding ring.",
-  "kostya17": "Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; tousled dark brown wavy hair, easy half-smile, lanky; warm gray hoodie with rolled sleeves, faded teal jeans, white socks.",
-  "kostya25": "Kostya, 25 (year 2013): the same face and wavy dark brown hair as at 17, a little broader, light stubble, proud cheerful grin; mustard jacket over a cream T-shirt.",
+  "kostya17": "Kostya, 17 in 2005 (use for 2005-2009, he is 17 to 21): Sasha's older brother; SHORT dense dark-chestnut curls, cropped sides, exposed ears and OPEN forehead, no fringe, spikes or cowlick. Broad square-oval face, fuller cheeks, wide jaw and broad chin, smaller hooded eyes, thick straight brows, wide rounded-tip nose, easy crooked half-smile with a cheek dimple. Lanky but broader shoulders/neck than Sasha. Warm gray hoodie with rolled sleeves, faded teal jeans, cream socks. Clearly distinct from Sasha even in silhouette.",
+  "kostya25": "Kostya, 25 (year 2013): the SAME short dense curls, open forehead, broad face/chin, smaller hooded eyes and wide nose as the corrected age17 sheet, broader shoulders, visible light stubble, proud crooked grin. OPEN FADED-TEAL COLLARED JACKET over a plain CREAM CREW-NECK T-SHIRT, dark warm-gray jeans. No mustard garment, hood, drawstrings or blazer: Sasha wears the mustard hoodie in shared scenes.",
   "kostya38": "Kostya, 38 (year 2026): the same man grown up: completely bald head, warm tired eyes, the same nose and eyebrows as at 17, light stubble, broader build; olive-and-mustard flannel shirt with rolled sleeves.",
   "ded": "Grandfather Lyosha, about 72: wiry and thin, short gray cropped hair, big ears, gray stubble, round old safety glasses pushed up on the forehead, worn brown work apron over an olive checked shirt, strong veined hands.",
-  "lena": "Lena, 26: soft round face, calm amused eyes, shoulder-length warm light-brown hair, a few freckles, oversized faded-teal knitted cardigan, hands always wrapped around a big mug even in the heat.",
+  "lena": "Lena, 26: LONG OVAL adult face, high cheekbones, longer straight nose with a natural bridge, smaller ALMOND hazel-brown eyes, low straight brows, thin amused smile and distinct freckles across nose/cheeks. STRAIGHT shoulder-length LIGHT HONEY-BROWN BLUNT BOB, off-center side part and one ear tucked, no curls/waves/clip. Clearly different from Mama's round-eyed dark-chestnut wavy face. Oversized faded-teal knitted cardigan over cream top, olive trousers; hands around a big mug even in the heat.",
   "dimka12": "Dimka, 12: classmate; round face, buzz cut, a huge olive sweater, always chewing something, cheerful shrug.",
-  "dimka19": "Dimka, 19: the same round face grown up, tall, cheap mustard jacket, holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).",
+  "dimka19": "Dimka, 19: the same round face grown up, short buzz cut, tall, OLIVE short bomber jacket without a hood over a brick-brown crew-neck shirt, warm-gray trousers; no mustard garment. Holding a plain phone (a flat slab in warm dark gray with a blank glowing screen).",
   "gena": "Gena, 14: school bully; big, broad, pale crew cut, brick-brown sweatshirt, heavy brow, scowl.",
   "teacher": "Teacher, 55: gray bun, round glasses, olive cardigan, strict but not unkind.",
   "seller": "Market seller, middle-aged woman: fingerless knitted mitts, mustard headscarf; only her hands and arms are visible."
@@ -78,7 +78,7 @@
     "kostya38"
    ],
    "att": [
-    "sheets/kostya_sheet_hd.png"
+    "sheets/kostya_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -97,7 +97,7 @@
     "ded"
    ],
    "att": [
-    "sheets/mama_sheet_hd.png"
+    "sheets/ded_sheet.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -116,7 +116,7 @@
     "lena"
    ],
    "att": [
-    "sheets/mama_sheet_hd.png"
+    "sheets/lena_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -139,7 +139,7 @@
     "seller"
    ],
    "att": [
-    "sheets/sasha_sheet_hd.png"
+    "sheets/supporting_cast_sheet.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -346,7 +346,7 @@
     "kostya17"
    ],
    "att": [
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "bg/bg_door_wall_hd.png"
    ],
    "red": "none",
@@ -743,7 +743,7 @@
    ],
    "att": [
     "bg/bg_kostya_room.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_sheet_hd.png",
     "sheets/props_tape_sheet-v2.png"
    ],
@@ -766,7 +766,7 @@
    ],
    "att": [
     "bg/bg_kostya_room.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_sheet_hd.png",
     "sheets/props_tape_sheet-v2.png"
    ],
@@ -933,7 +933,7 @@
    ],
    "att": [
     "bg/bg_yard.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_sheet_hd.png"
    ],
    "red": "none",
@@ -954,7 +954,7 @@
    ],
    "att": [
     "bg/bg_yard.png",
-    "sheets/kostya_sheet_hd.png"
+    "sheets/kostya_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -975,7 +975,7 @@
    ],
    "att": [
     "bg/bg_carpet_wall_hd.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_sheet_hd.png"
    ],
    "red": "none",
@@ -997,7 +997,7 @@
    ],
    "att": [
     "bg/bg_door_wall_hd.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_sheet_hd.png"
    ],
    "red": "none",
@@ -1323,7 +1323,7 @@
    "att": [
     "bg/bg_kostya_room.png",
     "sheets/mama_sheet_hd.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya_sheet-distinct-v3.png",
     "sheets/sasha_ages_sheet.png",
     "sheets/props_misc_sheet.png"
    ],
@@ -1533,7 +1533,7 @@
    ],
    "att": [
     "bg/bg_yard.png",
-    "sheets/kostya_sheet_hd.png",
+    "sheets/kostya25_sheet-distinct-v3.png",
     "sheets/sasha_ages_sheet.png"
    ],
    "red": "none",
@@ -1576,7 +1576,7 @@
    "att": [
     "bg/bg_terrace.png",
     "sheets/sasha_ages_sheet.png",
-    "sheets/lena_sheet.png"
+    "sheets/lena_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -1595,7 +1595,7 @@
     "lena"
    ],
    "att": [
-    "sheets/lena_sheet.png"
+    "sheets/lena_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "без зума",
@@ -1615,7 +1615,8 @@
     "lena"
    ],
    "att": [
-    "bg/bg_kitchen_adult.png"
+    "bg/bg_kitchen_adult.png",
+    "sheets/lena_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
@@ -1634,7 +1635,9 @@
     "sasha26",
     "lena"
    ],
-   "att": [],
+   "att": [
+    "sheets/lena_sheet-distinct-v3.png"
+   ],
    "red": "none",
    "cam": "дрейф ≤1.08×",
    "code": "Тихий кадр, без реплик",
@@ -1655,7 +1658,7 @@
    "att": [
     "bg/bg_terrace.png",
     "sheets/sasha_ages_sheet.png",
-    "sheets/lena_sheet.png"
+    "sheets/lena_sheet-distinct-v3.png"
    ],
    "red": "none",
    "cam": "дрейф ≤1.08×",

@@ -8,7 +8,7 @@
   const mix=(a,b,u)=>a+(b-a)*u;
   const smooth=u=>{u=clamp(u);return u*u*(3-2*u)};
   const IMG={};
-  const FILES={door:'bg/bg_door_wall_hd.png',kostya:'shots/p2_kostya_hd.png',calendar:'shots/p3_calendar_hd.png',sasha:'shots/p4_sasha_hd.png'};
+  const FILES={door:'bg/bg_door_wall_hd.png',kostya:'shots/p2_kostya.png',kostyaHair:'shots/h_kostya_hair_cu.png',calendar:'shots/p3_calendar_hd.png',sasha:'shots/p4_sasha_hd.png'};
   const SC=Object.fromEntries(SP.scenes.map(s=>[s.id,s]));
   let vignette=null;
 
@@ -52,7 +52,7 @@
       if(fade<1)camera(c,'door',{z:1.018,x:768,y:512});
       c.save();c.globalAlpha=fade;
       const hairPunch=dynamic&&t>SC.hair.start+SC.hair.dur*.70;
-      if(hairPunch){camera(c,'kostya',{z:2.60+.06*smooth((t-(SC.hair.start+SC.hair.dur*.70))/1.6),x:860,y:235});}
+      if(hairPunch){camera(c,'kostyaHair',{z:1+.015*smooth((t-(SC.hair.start+SC.hair.dur*.70))/1.6),x:768,y:512});}
       else camera(c,'kostya',{z:mix(1.01,1.15,u),x:mix(768,820,u),y:mix(505,420,u)});
       c.restore();
       return;

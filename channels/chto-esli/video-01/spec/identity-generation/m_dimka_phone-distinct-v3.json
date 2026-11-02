@@ -1,0 +1,21 @@
+{
+  "id": "m_dimka_phone",
+  "canonical": "assets/shots/m_dimka_phone.png",
+  "selected": "assets/shots/m_dimka_phone-distinct-v3.png",
+  "refs": [
+    "assets/shots/m_dimka_phone.png",
+    "assets/sheets/supporting_cast_sheet-distinct-v3.png"
+  ],
+  "prompt": "Precisely edit finished scene input1. There are TWO different19-year-old men, not twins. Change ONLY DIMKA on the LEFT, the buzz-cut man talking into the phone. Input2 is his corrected canonical sheet: he is the SECOND full figure from its left.\nMake Dimka's face rounder with fuller cheeks, short rounded nose, cheerful open mouth, small round chin and distinctive short buzz cut. Keep his existing head angle, phone-to-ear gesture and smile. Replace his entire mustard hooded jacket with a SHORT OLIVE BOMBER JACKET matching input2, ribbed ROUND collar and cuffs, open front, NO HOOD, NO DRAWSTRINGS, over a BRICK-BROWN CREW-NECK T-SHIRT. Keep gray trousers, body position and phone. This is a different garment cut, not a recolored hoodie.\nSASHA on the RIGHT must stay COMPLETELY unchanged: long pointed messy brown hair with tall cowlick, narrow angular face, large serious eyes, light stubble, MUSTARD PULLOVER HOODIE with cream drawstrings and kangaroo pocket. Do not put olive on him. At thumbnail size the difference must be clear: round short-haired man in olive bomber versus narrow spiky-haired man in yellow hoodie.\nKeep exact existing composition, shop doorway and windows, all displayed objects, pavement, warm scene lighting/shadows, same camera/crop. No new props or people. Match original handmade matte cut-paper collage, layered fibers, crisp edges and shallow contact shadows. Opaque landscape16:9 PNG, same native1672x941 dimensions if supported. No text, labels, logos, numbers, watermark or new red.",
+  "record_schema": "identity-fix-v3",
+  "title": "Саша и Димка: звонок со смартфона",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-946c0724-f6ca-4176-9563-548341f3104e.png",
+  "references": [
+    "assets/shots/m_dimka_phone.png",
+    "assets/sheets/supporting_cast_sheet-distinct-v3.png"
+  ],
+  "visual_review": "selected",
+  "change": "Димка слева — круглолицый и коротко стриженный, в оливковом бомбере с кирпичной футболкой; Саша справа — в горчичном худи, с угловатым лицом и вихром."
+}

@@ -9,7 +9,7 @@
     "file": "sheets/kostya_sheet.png",
     "width": 1536,
     "height": 1024,
-    "sha256": "bb6e9d2aa5550ad6d38cbe2377354310273a0938bd1237c77bb998d737eedb70"
+    "sha256": "482619235e9c8cd26a957a6b89a6c84571272c83282dc160d307a3b6614294db"
   },
   {
     "file": "bg/bg_door_wall.png",
@@ -33,7 +33,7 @@
     "file": "shots/p2_kostya.png",
     "width": 1536,
     "height": 1024,
-    "sha256": "7bfa4a9329eacea06bb362df4463078eb00198eb056012a6121fcb68933e9f44"
+    "sha256": "45159d19324a99527ef5148d5367035ffb1c9b9f41371fb33865039040702a25"
   },
   {
     "file": "shots/p3_calendar.png",
@@ -46,5 +46,113 @@
     "width": 1536,
     "height": 1024,
     "sha256": "165f2cb64b4b9eb02520c4b67b163459878d27263f3d4621d7325340fe46db36"
+  },
+  {
+    "file": "shots/m_kostya_car.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "f38495647440c722045f08f612cc202278e84937fb9be7fe0fc8fb0ba9ebd243"
+  },
+  {
+    "file": "shots/m_dimka_phone.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "08591d824f234442ecff8c6168e2dccad10ea83edef0b66267dcdc713e79bfa3"
+  },
+  {
+    "file": "sheets/kostya25_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "e80dc9cf386297aa1391ad9b5bcd1bc43b11c1094278f03408f7148305ea756e"
+  },
+  {
+    "file": "sheets/lena_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "3e39cfaff90faca16afcd3ce8d63a9f49283b4616535c62228a03ba7ae1e85ed"
+  },
+  {
+    "file": "shots/e2_kostya_gives.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "03c3a8a256bbad84cd47aef1528c19a6d61b5d48effdd551b90420fec24ec046"
+  },
+  {
+    "file": "shots/e2_kostya_room.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "b0af029f5aec0c1ecfca0ec5747f9d786c1913b7336d905e13ceb337a5ced6d3"
+  },
+  {
+    "file": "shots/e3_bed_edge.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "9a6850c82aa0f38242c44beb073041624c2ae5ceb68fdc3277dd5e95231406e7"
+  },
+  {
+    "file": "shots/e3_bench.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "7edab422d70bc4f62c86e9fbd893daf6f5b550d3f3d21456ee63527cb1d797b0"
+  },
+  {
+    "file": "shots/e3_fallen.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "0c27e7c16707c552353a08517b707ce5704a7bafbccb4e2ab1a96f7e7e537208"
+  },
+  {
+    "file": "shots/e3b_notebooks.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "0c0415030666228b99a3e50e7abe8a069dad365eeac1b5616fc8ed00db7c9ba2"
+  },
+  {
+    "file": "shots/e4b_pc_floor.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "d7dd867a2da28016a7d8bdb9341689e26bb90a922f041e43559ef1ec0a3a809b"
+  },
+  {
+    "file": "shots/e6_cups.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "423ad844ce5f3e8cc94a73d5a07c01dbeebb56dd54b50f543a8cea98a6a0c031"
+  },
+  {
+    "file": "shots/e6_dishes.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "93855c28f8012bb08d55a3533e2d173a7a8d1e95d6eaec30fcb2885d87aeab9d"
+  },
+  {
+    "file": "shots/e6_lena_cup_cu.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "f9d8a6a8e767d67b37b14df7659fc933db0055c84bc299e0fb6a702146676062"
+  },
+  {
+    "file": "shots/e6_station.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "31628d2631c244d25d20404371304ccf7044f40a8d0772af42e9402f1452aaff"
+  },
+  {
+    "file": "shots/e6_terrace.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "a5ad5d1418de62aaddc03da04722482b070caeb7e70d815b99c384d46ee28707"
+  },
+  {
+    "file": "shots/h_kostya_hair_cu.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "f336c2bbe87c56368d58db8cc757c588cb79e0fc617055760d2730aee2f0b9e3"
+  },
+  {
+    "file": "sheets/supporting_cast_sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "dff79ce7547faa3063c95f05c4a9f06f556c22803d97251c62dc62ff985422a4"
   }
 ]

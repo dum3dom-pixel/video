@@ -1,0 +1,21 @@
+{
+  "record_schema": "identity-fix-v3",
+  "id": "kostya17",
+  "title": "Костя, 17 лет: отдельный силуэт и лицо",
+  "refs": [
+    "assets/sheets/kostya_sheet-identity-v2.png",
+    "assets/sheets/kostya38_sheet.png"
+  ],
+  "selected": "assets/sheets/kostya_sheet-distinct-v3.png",
+  "canonical": "assets/sheets/kostya_sheet.png",
+  "prompt": "Use case: identity-preserve, user-approved STRONG CHARACTER REDESIGN. Create a corrected Kostya17 character sheet from image1. The previous mild edit was rejected because he still looks exactly like his brother Sasha. Make the identity separation OBVIOUS at thumbnail size. This is an explicitly requested bigger change to face, hair silhouette and build, not just recoloring.\nImage1 controls layout, material, clothing and poses ONLY. Image2 shows the same Kostya at38 and controls his substantial adult facial structure, aged back to17 here, with no beard or wrinkles.\nNEW KOSTYA17 IDENTITY, repeat consistently in every view:\n- SHORT COMPACT DENSE CURLY DARK CHESTNUT HAIR, small rounded ringlet clumps close to the skull, cropped short at the sides and nape, both ears exposed, completely open upper forehead. Low rounded head silhouette. Absolutely NO long sideways fringe, NO long wavy mop, NO spiky hair, NO cowlick or tuft on top. Clearly a short curly haircut, not straight or bald.\n- BROAD SQUARE-OVAL FACE, fuller cheeks, a WIDE ROUNDED JAW and broad chin. No narrow V-shaped pointy chin.\n- Visibly SMALLER NARROWER hooded brown eyes set wider apart, thick fairly straight brows; never big round anime child eyes.\n- Wider substantial nose with a gently rounded tip; broad easy crooked smile, one cheek dimples, natural ears slightly prominent.\n- Older brother17, lean but broader shoulders and neck than his skinny child brother; 7-head-tall teen proportions, not a giant round child head.\nCostume: gray hoodie with sleeves rolled to forearms, teal jeans, cream socks. Keep his signature youth outfit distinct from Sasha's olive/cream outfits. No yellow clothing.\nSasha is NOT depicted here: he is skinny, pointy-faced, large serious eyes, LONG SPIKY MESSY HAIR with an upright cowlick. Kostya must have the opposite shape language: broad face, small hooded eyes, cropped dense curls.\nLayout MUST remain exactly three full-length front/profile/back views of the same one17-year-old man on left two thirds, plus large head/shoulders portrait on right. All three bodies same scale, intact heads/hands/feet, fill85-90% height, relaxed visible hands. Opaque1536x1024 landscape3:2 PNG, plain warm cream background, no labels.\nKeep handmade layered matte colored paper collage, crisp irregular cut edges and visible fibers, little soft layer shadows, same warm muted six-color palette, no black outlines. Do NOT imitate photographic skin or 3D, do NOT blur or add film-grain overlay. No extra characters, text, numbers, logos, props or watermark.",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-04aeb2da-d191-4a3e-bb8b-8d4acd9464d0.png",
+  "references": [
+    "assets/sheets/kostya_sheet-identity-v2.png",
+    "assets/sheets/kostya38_sheet.png"
+  ],
+  "visual_review": "selected",
+  "change": "Короткие плотные кудри без вихра, открытый лоб, широкое лицо, меньшие глаза и широкий подбородок. Серое худи и бирюзовые джинсы сохранены."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "m_kostya_car",
+  "canonical": "assets/shots/m_kostya_car.png",
+  "selected": "assets/shots/m_kostya_car-distinct-v3.png",
+  "refs": [
+    "assets/shots/m_kostya_car.png",
+    "assets/sheets/kostya25_sheet-distinct-v3.png"
+  ],
+  "prompt": "Use case: identity-preserve. Edit this finished scene with TWO BROTHERS at the old hatchback. Input1 is the edit target; input2 is the required NEW KOSTYA AGE25 design. The user explicitly wants the men CLEARLY DIFFERENT in face, hair and clothes.\nChange ONLY THE DRIVER leaning out of the window at CENTER-RIGHT: this is KOSTYA25. Replace his existing long spiky hair with image2's SHORT DENSE DARK-CHESTNUT CURLS cropped at the sides, ears exposed and FULLY OPEN FOREHEAD, low rounded silhouette, no long bangs or cowlick. Give him image2's broad square-oval face, WIDE rounded jaw/chin, SMALLER hooded eyes, wide rounded-tip nose, thick straight brows, visible stubble and confident broad proud grin. He must read as an older broader man, not a duplicate of the younger narrow-faced brother.\nReplace the DRIVER'S mustard hoodie/jacket entirely with image2's OPEN FADED-TEAL COLLARED JACKET over CREAM CREW-NECK T-SHIRT. Clear collar/lapels, no hood or drawstrings, no yellow on driver. Keep his leaning pose, resting forearm and hand, looking toward his brother, same body placement and head scale.\nStanding brother SASHA20 at LEFT stays COMPLETELY UNCHANGED: narrow angular face, serious big eyes, long spiky hair with tall cowlick, MUSTARD HOODIE under warm-gray blazer, gray trousers and shoes. These two men must be instantly distinguishable at thumbnail size: spiky-haired narrow yellow-clothed Sasha versus compact-curly broad-faced teal-clothed Kostya.\nKeep exact same car, open window, mirrors, bodywork, scratches, wheels, pavement, courtyard, bench, apartment block, trees, shadows, light, camera and crop. No new objects/people or scene changes. Preserve warm handmade matte layered cut-paper style, irregular fiber edges and short soft contact shadows, crisp all over. Opaque PNG landscape16:9, keep native1672x941 size if supported. No text/labels/logos/watermark or red.",
+  "record_schema": "identity-fix-v3",
+  "title": "Саша и Костя у машины: исходный проблемный кадр",
+  "date": "2026-11-02",
+  "generator": "built-in image_gen",
+  "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-6ac246f5-7cd7-46cf-a19c-33a557a8526a.png",
+  "references": [
+    "assets/shots/m_kostya_car.png",
+    "assets/sheets/kostya25_sheet-distinct-v3.png"
+  ],
+  "attempts": 2,
+  "failed_attempts": [
+    {
+      "attempt": 1,
+      "error": "image generation failed: network error: error sending request",
+      "output": null
+    }
+  ],
+  "visual_review": "selected",
+  "change": "Водитель Костя25: короткие кудри, широкое лицо, щетина и открытая бирюзовая куртка с кремовой футболкой. Саша слева сохранил вихор, узкое лицо, горчичное худи и серый пиджак."
+}

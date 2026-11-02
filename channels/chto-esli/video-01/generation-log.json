@@ -63,5 +63,16 @@
     "renders\\pilot-01-dynamic.mp4"
   ],
   "render_review": "spec/render-review.json",
-  "voice": "Russian Windows SAPI Microsoft Irina Desktop, draft, no time stretching"
+  "voice": "Russian Windows SAPI Microsoft Irina Desktop, draft, no time stretching",
+  "identity_revision": {
+    "date": "2026-11-02",
+    "revision": "distinct-v3",
+    "gallery": "identity-review.html",
+    "current_asset_index": "spec/identity-review.json",
+    "prompts": "spec/identity-generation/",
+    "style": "../CHARACTER-STYLE.md",
+    "user_review": "pending",
+    "selected_images": 20,
+    "note": "User requested substantially different faces, hair silhouettes and clothing. Original images are archived in assets/identity-review/before; historical generation metadata below describes those original outputs."
+  }
 }

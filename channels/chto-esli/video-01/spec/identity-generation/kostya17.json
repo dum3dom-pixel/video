@@ -1,0 +1,30 @@
+{
+  "id": "kostya17",
+  "canonical": "assets/sheets/kostya_sheet.png",
+  "selected": "assets/sheets/kostya_sheet-identity-v2.png",
+  "generator": "built-in image_gen",
+  "date": "2026-11-02",
+  "attempts": [
+    {
+      "prompt": "Use case: identity-preserve. Create a corrected production character reference sheet, opaque PNG landscape 3:2 1536x1024. This is KOSTYA at 17, not his younger brother Sasha. Reference image 1 is the original approved Kostya17 sheet: preserve his outfit and identity, but enlarge the tiny figures to 85-90% of canvas height. Reference image 2 is Kostya38: preserve continuity with his warmer, more horizontal eyes, eyebrows and substantial straight nose, younger here, WITH HAIR and NO beard. Reference image 3 contains Sasha portraits and is an EXCLUSION / comparison reference only: do not copy Sasha's pointed cowlick, spiky triangular bangs, large round worried eyes or tiny pointed chin.\nLayout exactly three full-length views of ONE SAME Kostya17 (front, left-facing profile, back) across the left two thirds, and one LARGE head and shoulders portrait on the right. All full figures same height and scale. Calm neutral standing pose, relaxed arms and visible hands. Lean lanky 17-year-old older brother. Tousled dark-brown WAVY HAIR, rounded loose waves, forehead partially open, lower flatter silhouette than Sasha's spikes; keep this same haircut in every view. Easy asymmetric half smile, relaxed slightly hooded brown eyes, straight substantial nose, longer oval face and gently defined chin. Close to the original Kostya, not a different invented person. Warm gray pullover hoodie with rolled sleeves to forearms, faded teal straight jeans, cream white socks, no shoes. NO mustard clothing, no jacket, no plaid and no baldness here.\nStyle must match these exact paper collage references: matte layered colored paper, clearly visible natural fibers, irregular cut edges, overlapping pieces with soft short contact shadows, restrained face details. Warm cream plain paper backdrop. Palette only warm gray, faded teal, cream, shaded brick brown and muted olive; no red. Crisp faces and edges, no depth of field, no painterly blurring, no film grain overlay. No labels, letters, numbers, diagrams, props, signature or watermark. Keep every head, hand and foot completely inside canvas.",
+      "references": [
+        "assets/sheets/kostya_sheet.png",
+        "assets/sheets/kostya38_sheet.png",
+        "assets/sheets/sasha_faces_sheet.png"
+      ],
+      "file": "assets/identity-review/trials/kostya17-attempt1.png",
+      "review": "Rejected: oversized pointed crown/cowlick still resembled Sasha."
+    },
+    {
+      "prompt": "Edit the provided character sheet (image 1). Change ONLY Kostya17's face and HAIR in all three body views and the large portrait, consistently. This sheet currently still looks like his brother Sasha, and that is the defect to fix. Use image 2 (his approved 38-year-old self) for the structure of his eyes/nose/chin, aged DOWN to 17 with no beard and no wrinkles.\nMANDATORY HAIR CORRECTION: replace the tall spiky crown and huge upward-pointing cowlick with a LOW, ROUNDED WAVY haircut, thick loose S-shaped brown locks swept sideways OFF his forehead. Visible broad upper forehead; loose WAVES along the temples; ears partly visible. Crown follows a smooth rounded low arc; no upward central tuft, no anime spikes, no triangular jagged bangs. Not a buzz cut, not straight hair. Round waves have a tangible layered-paper edge. This must look clearly different from a pointed spiky cowlick hairstyle even in silhouette. Keep natural medium dark-brown hair color, never change the color instead of the shape.\nFace: Kostya has a longer oval face and more substantial straight nose, relaxed narrower hooded brown eyes, horizontal arched brows and an easy asymmetric half-smile. Keep the recognizable younger version of the image2 man's face with a gentle chin, no childlike giant circular eyes. Seventeen, lanky, not a muscular adult.\nINVARIANTS: exact same 3 full-body views front/profile/back plus large portrait layout; identical gray hoodie with rolled sleeves, teal jeans, cream socks; identical poses, scale, paper texture, light and plain cream background. Preserve the whole hands/feet and 1536x1024 opaque PNG landscape. No text, labels, numbers or props. Crisp handmade matte cut-paper collage with soft small layer shadows, no black outlines or painting.",
+      "references": [
+        "assets/identity-review/trials/kostya17-attempt1.png",
+        "assets/sheets/kostya38_sheet.png"
+      ],
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a1994f-747d-7052-bace-2a635c529de3\\exec-a6c80f3e-a679-4640-a3ae-486412514923.png",
+      "review": "Selected: rounded sideways waves, open forehead, relaxed hooded eyes; fixed clothing and 3-view layout retained."
+    }
+  ],
+  "status": "superseded_after_user_feedback",
+  "reason": "User rejected the mild wave-hair differentiation and requested clearly distinct facial structure, short curls and different clothing. Use distinct-v3."
+}
