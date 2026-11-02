@@ -1,0 +1,199 @@
+{
+  "stage": 5,
+  "status": "generated_awaiting_user_review",
+  "checked_at": "2026-11-01T22:53:32.235866+00:00",
+  "expected": 19,
+  "passed": 19,
+  "generation_calls": 23,
+  "priority_counts": {
+    "A": 17,
+    "B": 2
+  },
+  "resolution_counts": {
+    "1672x941": 17,
+    "1672x940": 2
+  },
+  "upscaled": false,
+  "api_calls": 0,
+  "known_issues": [
+    "Нативные PNG1672×940–941 меньше желаемых2560×1440; сохранены без апскейла, по разрешённому пользователем минимуму.",
+    "В крупном плане Лены кружка поднята из нижней пятой, но её край остаётся около79% высоты вместо75%; волосы близко к верхнему краю.",
+    "В нескольких кадрах ноги, рукава или края коробки заходят в нижнюю пятую по бокам; центральное место под субтитры преимущественно свободно.",
+    "В общих ночных планах лицо Саши небольшое. В реакции Кости переднее плечо и дальний фон мягче основного лица.",
+    "В f_pat видимая клавиша записи нейтральная по требованию кадра без красного; её цвет отличается от соседних сцен.",
+    "ПревьюA оставляет справа около четверти ширины, а не трети; превьюB сохраняет кремово-кирпичное деление стены. Надписи добавляет код."
+  ],
+  "assets": [
+    {
+      "id": "e6_terrace",
+      "file": "assets/shots/e6_terrace.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7a65bf6ddde76e5253cdc49233841518e581489b30e0490e203d4ea7d8e4544f",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "e6_lena_cup_cu",
+      "file": "assets/shots/e6_lena_cup_cu.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "725101f99b2677a87daa63568336aa898d112df6991d79023e3c35653522bcfd",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "e6_cups",
+      "file": "assets/shots/e6_cups.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "70a039cecaa19aa56cbbe5984c727175a187ad49c3df10428831008cadc8d775",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "t_night_kitchen",
+      "file": "assets/shots/t_night_kitchen.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c296cd6eaccfb4dfc8d59a0dd4b3f7bf715a4879f88148928e52a1901c91f9e0",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "t_old_night",
+      "file": "assets/shots/t_old_night.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "70e1ee3ebaefa949fcd7bfffd55574feb7b11c2426f8d8461455ed4fd9aefe1f",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "t_light_strip",
+      "file": "assets/shots/t_light_strip.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "038a4cc495c2f671752ef79a73537123e6fa075883b7a5bd778ce403167bd324",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "t_realize_cu",
+      "file": "assets/shots/t_realize_cu.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "17dababf4798f7b5967a7bf69f88976db3acc02e0fe16c00700a779acdbafa6f",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_kostya_door",
+      "file": "assets/shots/f_kostya_door.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a1493e78f7c5d290cd90bfb6c09ca0776c1b39ab3e4e5062eadd3f27245e8377",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_player",
+      "file": "assets/shots/f_player.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "30c0960469722a21e58adb4315f3e242002bce3734856b7443178347fb492d3b",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_kostya_frown",
+      "file": "assets/shots/f_kostya_frown.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "6d83ac7c3a1e586d9df8acb4e1fb340a495cab02b7de21403bcd377255563ac8",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_pat",
+      "file": "assets/shots/f_pat.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1e95101f32c1f40c264186c86d8963028866b52e3e113b344edb4e6e160430ca",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_last_tape",
+      "file": "assets/shots/f_last_tape.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8701eb0664f6be9e6e4f0b119e385cf8eb01ca6607066e3088dcdff33933de49",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_rec_keys",
+      "file": "assets/shots/f_rec_keys.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4f92ecc82bd7df1e2338bd69ea9b64073aa53985afb81fd084f030786acaf300",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "f_recording",
+      "file": "assets/shots/f_recording.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "eed4e9891f9f956be8227138af9073cae52557d3e7e9c7a216c5d3a60bc5c5c5",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "q_blank_tape",
+      "file": "assets/shots/q_blank_tape.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "6a6132dda944f44b9fce1b2eeb2e029519fc0cf3728e6ee09fc12b6c460bb8e4",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "pv_a_deck",
+      "file": "assets/shots/pv_a_deck.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5cdceb8e7c50a079215ccd0f7507456261033d858520ed9aa69a836a0f30fcf0",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "pv_b_boy",
+      "file": "assets/shots/pv_b_boy.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "999a906bfb657ec30707c304a289d1fcb24f88fadf43a2b37d00de967b0f04d0",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "e6_dishes",
+      "file": "assets/shots/e6_dishes.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "bf05b726117438dc89bbaec01c315e4a597668c6e1fabd85d2dd946b9a770bd0",
+      "opaque_png": true,
+      "passed": true
+    },
+    {
+      "id": "e6_station",
+      "file": "assets/shots/e6_station.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "367361274081569f627c59b1b184a7c6a703e888c97aebff4a7e03b85c4c8d75",
+      "opaque_png": true,
+      "passed": true
+    }
+  ]
+}

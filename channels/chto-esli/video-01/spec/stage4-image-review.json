@@ -1,0 +1,234 @@
+{
+  "stage": 4,
+  "generated": 22,
+  "expected": 22,
+  "files_saved_including_trials": 27,
+  "generation_calls": 27,
+  "api_calls": 0,
+  "upscaled": false,
+  "checks": "PNG decode, minimum resolution,16:9 aspect,opacity,SHA256,attached reference existence,selected gallery paths",
+  "visual_review": "All27 generated results inspected in conversation;22 selected images; known issues recorded in generation log and gallery.",
+  "user_review": "pending",
+  "images": [
+    {
+      "id": "e4_flash_papers",
+      "file": "assets/shots/e4_flash_papers.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f3b2f63783bacb0cf747c424399b81481db4e9d8f39def824c130fdab096693a",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_car_taken",
+      "file": "assets/shots/e4_car_taken.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c64ff8e04aa4394e48c71e72441b3d5c150b4d6767f6a2ad4434184713e0ca6e",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_silent_dinner",
+      "file": "assets/shots/e4_silent_dinner.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ea8d894a26f4c4d888a19f1922cfd8881b914c19b9e71f5e61292a3b3d4ae63f",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_suitcase",
+      "file": "assets/shots/e4_suitcase-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e4e6358c7fa458de41318e9c6af58c1f47cd9fbdd73c04ef6be358f935cbe11c",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_straight_a",
+      "file": "assets/shots/e4_straight_a.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "8eb0fa2e7f37c5918fa66d768e00437454758d49fedbd7f47b9d7a169d97c652",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_warn_kitchen",
+      "file": "assets/shots/e4_warn_kitchen.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6843311a4e30943f37cc3ebd388a8a5a897250489b467aa56c68552063b5711d",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_cassette_night",
+      "file": "assets/shots/e4_cassette_night.png",
+      "width": 1672,
+      "height": 940,
+      "sha256": "6dcca2a0197532c9fceb2cdb3324175d22f130d0da566ce8316bc63f00609690",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_briefcase",
+      "file": "assets/shots/e4_briefcase.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "d56ca62bcbb134baa7f9511a6c12c465363389959bc6337d0db529bbbf158bd2",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_papa_look_cu",
+      "file": "assets/shots/e4_papa_look_cu.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a04d58fd06148fd813657eb2418154c5af28ed8a459eab6178acc056103da84f",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4_winter_fork",
+      "file": "assets/shots/e4_winter_fork-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "531c4f3a5769b0416a777b3cf1fbd1357d8c99c2a4de34f3305a4be0abe60923",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4b_pc_floor",
+      "file": "assets/shots/e4b_pc_floor.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "82294b46807b8f5c86cb875d9cea16653ae4762456de46e1418988f382488a4c",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e4b_pc_cu",
+      "file": "assets/shots/e4b_pc_cu.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6ca932608a3aacef6d050b7ddf85b35ad344fe25186916b3f17f6cdfa986baa1",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_garage",
+      "file": "assets/shots/e5_garage.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "18da949ec56734e78f4e9a975b00c1ff6e45e5c3e206016b188516811ecf6494",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_burn",
+      "file": "assets/shots/e5_burn.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0254e15368d42e8cf9327a618941ec6d1260cf45d6cb3a30c668757e34d5629b",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_sundays",
+      "file": "assets/shots/e5_sundays.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "483bff1210bb0f24f89ae808291cec8a915cda876764befb24fa1d89e76c05f7",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_spring_2011",
+      "file": "assets/shots/e5_spring_2011.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f4b1dde6417a5d1557228cb7a177ef5653846f4ee6fe1acf5db407288aacf5cc",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_iron_palm_cu",
+      "file": "assets/shots/e5_iron_palm_cu.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ed693b5694e6956ec6956365c5f0e57f43ea5ea1c53604e9a026526fbbf626f1",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "e5_night_tape",
+      "file": "assets/shots/e5_night_tape.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6a68dc45d44f884b44692d859796fdc8b6b664d41f120ac0d7dc33d70f167a02",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "m_graduation",
+      "file": "assets/shots/m_graduation-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7df310848c9b068c0aa3a8c14eedb5beb63e325972c0f628e6c8f6d9af500bc7",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "m_dimka_phone",
+      "file": "assets/shots/m_dimka_phone.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "21c4bd3372cf90938d7a3d554f8e4384693daeecbae662da3f462d149afda3d3",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "m_kostya_car",
+      "file": "assets/shots/m_kostya_car.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5989dc0579a159631eec8753077faf3f534495af1beeb41a2fa452488f846396",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    },
+    {
+      "id": "m_varya_call",
+      "file": "assets/shots/m_varya_call-v2.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "aad03ce1470bfe38ce81967255891f11c1770cd33ee17b8967ff02e98516c544",
+      "references_exist": true,
+      "png_valid": true,
+      "opaque": true
+    }
+  ]
+}
