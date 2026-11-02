@@ -35,6 +35,18 @@
         "pose-wallpaper"
       ],
       "port": 8766
+    },
+    {
+      "name": "chto-esli-v1",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8767",
+        "--directory",
+        "channels/chto-esli/video-01"
+      ],
+      "port": 8767
     }
   ]
 }

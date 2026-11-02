@@ -1,0 +1,826 @@
+{
+ "shots": [
+  {
+   "id": "e5_garage",
+   "img": "shots/e5_garage.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e5_sundays",
+   "img": "shots/e5_sundays.png",
+   "cue": [
+    "006"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e5_grandpa",
+   "img": "shots/e5_garage.png",
+   "cue": [
+    "007"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.38
+    ],
+    "x": [
+     620,
+     600
+    ],
+    "y": [
+     500,
+     490
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e5_burn",
+   "img": "shots/e5_burn.png",
+   "cue": [
+    "009"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e5_sundays_laugh",
+   "img": "shots/e5_sundays.png",
+   "cue": [
+    "013"
+   ],
+   "cam": {
+    "z": [
+     1.1,
+     1.0
+    ],
+    "x": [
+     950,
+     900
+    ],
+    "y": [
+     500,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e5_garage_bench",
+   "img": "shots/e5_garage.png",
+   "cue": [
+    "015"
+   ],
+   "cam": {
+    "z": [
+     1.25,
+     1.15
+    ],
+    "x": [
+     700,
+     800
+    ],
+    "y": [
+     540,
+     540
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e5_spring_2011",
+   "img": "shots/e5_spring_2011.png",
+   "cue": [
+    "016"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:7"
+   ]
+  },
+  {
+   "id": "e5_iron_palm_cu",
+   "img": "shots/e5_iron_palm_cu.png",
+   "cue": [
+    "019"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e5_night_tape",
+   "img": "shots/e5_night_tape.png",
+   "cue": [
+    "020"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "m_graduation",
+   "img": "shots/m_graduation-v2.png",
+   "cue": [
+    "024"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:8"
+   ]
+  },
+  {
+   "id": "m_dimka_phone",
+   "img": "shots/m_dimka_phone.png",
+   "cue": [
+    "026"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:9"
+   ]
+  },
+  {
+   "id": "m_kostya_car",
+   "img": "shots/m_kostya_car.png",
+   "cue": [
+    "030"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:10"
+   ]
+  },
+  {
+   "id": "m_varya_call",
+   "img": "shots/m_varya_call-v2.png",
+   "cue": [
+    "033"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     700,
+     620
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:11"
+   ]
+  },
+  {
+   "id": "e6_terrace",
+   "img": "shots/e6_terrace.png",
+   "cue": [
+    "040"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:12"
+   ]
+  },
+  {
+   "id": "e6_lena_cup_cu",
+   "img": "shots/e6_lena_cup_cu.png",
+   "cue": [
+    "042"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e6_dishes",
+   "img": "shots/e6_dishes.png",
+   "cue": [
+    "047"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e6_station",
+   "img": "shots/e6_station.png",
+   "cue": [
+    "048"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e6_terrace_2",
+   "img": "shots/e6_terrace.png",
+   "cue": [
+    "051"
+   ],
+   "cam": {
+    "z": [
+     1.2,
+     1.3
+    ],
+    "x": [
+     620,
+     600
+    ],
+    "y": [
+     520,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e6_cups",
+   "img": "shots/e6_cups.png",
+   "cue": [
+    "052"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e6_lena_cup_cu_2",
+   "img": "shots/e6_lena_cup_cu.png",
+   "cue": [
+    "054"
+   ],
+   "cam": {
+    "z": [
+     1.06,
+     1.0
+    ],
+    "x": [
+     900,
+     768
+    ],
+    "y": [
+     500,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "t_night_kitchen",
+   "img": "shots/t_night_kitchen.png",
+   "cue": [
+    "057"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:13"
+   ]
+  },
+  {
+   "id": "t_old_night",
+   "img": "shots/t_old_night.png",
+   "cue": [
+    "060"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "t_light_strip",
+   "img": "shots/t_light_strip.png",
+   "cue": [
+    "064"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "x": [
+     768,
+     1000
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "t_realize_cu",
+   "img": "shots/t_realize_cu.png",
+   "cue": [
+    "067"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "t_night_phone",
+   "img": "shots/t_night_kitchen.png",
+   "cue": [
+    "068"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.35
+    ],
+    "x": [
+     768,
+     680
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "f_kostya_door",
+   "img": "shots/f_kostya_door.png",
+   "cue": [
+    "070"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:14"
+   ]
+  },
+  {
+   "id": "f_player",
+   "img": "shots/f_player.png",
+   "cue": [
+    "075"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "answered2"
+   ]
+  },
+  {
+   "id": "f_kostya_frown",
+   "img": "shots/f_kostya_frown.png",
+   "cue": [
+    "078"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "f_pat",
+   "img": "shots/f_pat.png",
+   "cue": [
+    "083"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "f_last_tape",
+   "img": "shots/f_last_tape.png",
+   "cue": [
+    "086"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "tape2026"
+   ]
+  },
+  {
+   "id": "f_rec_keys",
+   "img": "shots/f_rec_keys.png",
+   "cue": [
+    "089"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "f_recording",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "090"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "f_recording_kostya",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "094"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.35
+    ],
+    "x": [
+     1000,
+     1000
+    ],
+    "y": [
+     500,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "f_recording_sasha",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "096"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.35
+    ],
+    "x": [
+     600,
+     600
+    ],
+    "y": [
+     500,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "f_recording_wide",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "097"
+   ],
+   "cam": {
+    "z": [
+     1.2,
+     1.0
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "q_blank_tape",
+   "img": "shots/q_blank_tape.png",
+   "cue": [
+    "099"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve"
+  }
+ ]
+}

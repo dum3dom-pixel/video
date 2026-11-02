@@ -5,6 +5,7 @@ so build.mjs and the engine stay unchanged.
 """
 import asyncio
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -48,7 +49,10 @@ MAMA = {'voice': 'ru-RU-SvetlanaNeural'}
 DED = {'pitch': '-22Hz', 'rate': '+2%'}
 KID = {'pitch': '+45Hz', 'rate': '+8%'}
 THOUGHT = {'pitch': '-8Hz', 'rate': '+2%'}
+DIMKA = {'pitch': '+12Hz', 'rate': '+10%'}
 LINES = {
+    '— Мелкий, вставай.': [('Мелкий, вставай.', KOSTYA)],
+    '— Вырастешь — выпьешь.': [('Вырастешь — выпьешь.', MAMA)],
     '— Сань, ты чего? Заболел?': [('Сань, ты чего? Заболел?', PAPA)],
     '— Двенадцать лет, а сидит как бухгалтер.': [('Двенадцать лет, а сидит как бухгалтер.', MAMA)],
     '— Зачем тебе?': [('Зачем тебе?', KOSTYA)],
@@ -63,6 +67,11 @@ LINES = {
     '— Это что?': [('Это что?', KOSTYA)],
     '— Ты мне ночью ни разу не звонил.': [('Ты мне ночью ни разу не звонил.', KOSTYA)],
     '— Дурак, — говорит он и хлопает тебя по плечу.': [('Дурак,', KOSTYA), ('говорит он и хлопает тебя по плечу.', {})],
+    '— Сань, тебе пятнадцать. Иди делай уроки.': [('Сань, тебе пятнадцать. Иди делай уроки.', PAPA)],
+    '— Только не начинай.': [('Только не начинай.', PAPA)],
+    '— Терпи, не маленький, — говорит дед.': [('Терпи, не маленький,', DED), ('говорит дед.', {})],
+    '— Игры тут правда есть!': [('Игры тут правда есть!', DIMKA)],
+    '— Я не слушал. Прости.': [('Я не слушал. Прости.', DIMKA)],
 }
 YEARS = [
     ('2006, 2007 и дальше, до 2025', 'две тысячи шестой, две тысячи седьмой и дальше, до две тысячи двадцать пятого'),
@@ -109,16 +118,57 @@ def v4_chunks():
     return out
 
 
+# Script v5, first part (hook .. epoch 2, up to the poplar): sentence-level chunks so shots can be cued to words.
+V5_PARTS = {'v5a': ('Ты просыпаешься.', '## Эпоха 3. '), 'v5b': ('## Эпоха 3. ', '## Эпоха 5. '), 'v5c': ('## Эпоха 5. ', '## Первые сутки')}
+
+
+def v5_chunks(part):
+    text = (ROOT.parent / 'video-01-script-v5.md').read_text(encoding='utf-8')
+    a, b = V5_PARTS[part]
+    body = text[text.index(a):text.index(b)]
+    chunks, section, jump, new_section = [], 'Хук', False, False
+    for raw in body.splitlines():
+        line = raw.replace('*', '').strip()
+        if not line or line == '---':
+            continue
+        if line.startswith('## '):
+            section, new_section = line[3:].split(' (')[0], True
+            continue
+        if line.startswith('[') and line.endswith(']') and not line.startswith('[Мысль]'):
+            jump = True
+            continue
+        if line.startswith('[Мысль] '):
+            parts = [(t, THOUGHT) for t in re.split(r'(?<=[.?!])\s+', line[8:])]
+        elif line.startswith('—'):
+            parts = LINES.get(line, [(line.lstrip('— '), {})])
+        else:
+            parts = [(t, {}) for t in re.split(r'(?<=[.?!])\s+(?=[«А-ЯЁ—])', line)]
+        for i, (t, kw) in enumerate(parts):
+            for x, y in YEARS:
+                t = t.replace(x, y)
+            assert not any(c.isdigit() for c in t), t
+            last = i == len(parts) - 1
+            gap = 0.10 if not last else 0.30 if kw is THOUGHT else 0.15 if line.startswith('—') or t.endswith(':') else 0.22
+            chunks.append({'text': t, 'kw': kw, 'gap': gap, 'section': section, 'jump': jump if i == 0 else False, 'new': new_section if i == 0 else False})
+        jump = new_section = False
+    out = []
+    for n, c in enumerate(chunks):
+        nxt = chunks[n + 1] if n + 1 < len(chunks) else None
+        gap = c['gap'] + (0.55 if nxt and nxt['new'] else 0.12 if nxt and nxt['jump'] else 0.0)
+        out.append((f'{n:03d}', c['text'], c['kw'], 0.8 if nxt is None else gap, c['section']))
+    return out
+
+
 PART = sys.argv[1] if len(sys.argv) > 1 else 'pilot'
 SECTIONS = {}
-if PART == 'v4':
+if PART in ('v4', 'v5a', 'v5b', 'v5c'):
     CHUNKS = []
-    for sid, text, kw, gap, sec in v4_chunks():
+    for sid, text, kw, gap, sec in (v4_chunks() if PART == 'v4' else v5_chunks(PART)):
         CHUNKS.append((sid, text, kw, gap))
         SECTIONS[sid] = sec
 else:
     CHUNKS = M02_CHUNKS if PART == 'm02' else PILOT_CHUNKS
-SUFFIX = {'m02': '-m02', 'v4': '-v4'}.get(PART, '')
+SUFFIX = {'m02': '-m02', 'v4': '-v4', 'v5a': '-v5a', 'v5b': '-v5b', 'v5c': '-v5c'}.get(PART, '')
 RATE = '+12%'
 
 

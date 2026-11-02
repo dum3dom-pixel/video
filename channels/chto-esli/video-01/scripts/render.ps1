@@ -1,4 +1,4 @@
-param([ValidateSet('calm','dynamic','m02')][string]$Variant='calm')
+param([ValidateSet('calm','dynamic','m02','v5a')][string]$Variant='calm')
 $ErrorActionPreference='Stop'
 $pilotRoot=Split-Path -Parent $PSScriptRoot
 $pilotBin=Join-Path $pilotRoot '.hyperframes/tooling'
@@ -8,8 +8,8 @@ if (!(Test-Path -LiteralPath (Join-Path $pilotBin 'ffmpeg.exe'))) {
     Copy-Item -LiteralPath $pilotFfmpeg -Destination (Join-Path $pilotBin 'ffmpeg.exe')
 }
 $env:PATH=$pilotBin+';'+$env:PATH
-$pilotEntry=switch($Variant){'dynamic'{'compositions/dynamic.html'}'m02'{'compositions/m02.html'}default{'index.html'}}
-$pilotOutput=Join-Path $pilotRoot ($(if($Variant -eq 'm02'){'renders/m02-draft.mp4'}else{'renders/pilot-01-'+$Variant+'.mp4'}))
+$pilotEntry=switch($Variant){'dynamic'{'compositions/dynamic.html'}'m02'{'compositions/m02.html'}'v5a'{'compositions/film-v5a.html'}default{'index.html'}}
+$pilotOutput=Join-Path $pilotRoot ($(if($Variant -eq 'm02'){'renders/m02-draft.mp4'}elseif($Variant -eq 'v5a'){'renders/part1-draft.mp4'}else{'renders/pilot-01-'+$Variant+'.mp4'}))
 Push-Location $pilotRoot
 try {
     & npx --yes hyperframes@0.8.221 render --composition=$pilotEntry --output=$pilotOutput --fps=24 --quality=looks --workers=2

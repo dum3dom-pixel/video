@@ -1,0 +1,625 @@
+{
+ "shots": [
+  {
+   "id": "e3_bench",
+   "img": "shots/e3_bench.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     700,
+     920
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "date_plate:3"
+   ]
+  },
+  {
+   "id": "e3_bench_boys",
+   "img": "shots/e3_bench.png",
+   "cue": [
+    "003"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.38
+    ],
+    "x": [
+     600,
+     580
+    ],
+    "y": [
+     540,
+     540
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e3_fallen",
+   "img": "shots/e3_fallen.png",
+   "cue": [
+    "007"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.2
+    ],
+    "x": [
+     768,
+     980
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e3_bed_edge",
+   "img": "shots/e3_bed_edge.png",
+   "cue": [
+    "008"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e3b_notebooks",
+   "img": "shots/e3b_notebooks.png",
+   "cue": [
+    "011"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:4"
+   ]
+  },
+  {
+   "id": "e3b_gena",
+   "img": "shots/e3b_gena.png",
+   "cue": [
+    "015"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e3b_fractions_cu",
+   "img": "shots/e3b_fractions_cu.png",
+   "cue": [
+    "018"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "fractions"
+   ]
+  },
+  {
+   "id": "e3b_library",
+   "img": "shots/e3b_library.png",
+   "cue": [
+    "021"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e3b_computer",
+   "img": "shots/e3b_computer.png",
+   "cue": [
+    "023"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "pc_hour"
+   ]
+  },
+  {
+   "id": "e3b_piggybank",
+   "img": "shots/e3b_piggybank.png",
+   "cue": [
+    "024"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "plan7"
+   ]
+  },
+  {
+   "id": "e4_timeline",
+   "img": "bg/bg_kitchen-v2.png",
+   "cue": [
+    "029"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "timeline"
+   ]
+  },
+  {
+   "id": "e4_flash_papers",
+   "img": "shots/e4_flash_papers.png",
+   "cue": [
+    "031"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e4_car_taken",
+   "img": "shots/e4_car_taken.png",
+   "cue": [
+    "033"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e4_silent_dinner",
+   "img": "shots/e4_silent_dinner.png",
+   "cue": [
+    "035"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_suitcase",
+   "img": "shots/e4_suitcase-v2.png",
+   "cue": [
+    "036"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_straight_a",
+   "img": "shots/e4_straight_a.png",
+   "cue": [
+    "037"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_warn_kitchen",
+   "img": "shots/e4_warn_kitchen.png",
+   "cue": [
+    "038"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:5"
+   ]
+  },
+  {
+   "id": "e4_cassette_night",
+   "img": "shots/e4_cassette_night.png",
+   "cue": [
+    "043"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e4_briefcase",
+   "img": "shots/e4_briefcase.png",
+   "cue": [
+    "045"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     490
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "bank"
+   ]
+  },
+  {
+   "id": "e4_briefcase_door",
+   "img": "shots/e4_briefcase.png",
+   "cue": [
+    "051"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.4
+    ],
+    "x": [
+     600,
+     570
+    ],
+    "y": [
+     560,
+     520
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_papa_look_cu",
+   "img": "shots/e4_papa_look_cu.png",
+   "cue": [
+    "055"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_briefcase_ruble",
+   "img": "shots/e4_briefcase.png",
+   "cue": [
+    "057"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.14
+    ],
+    "x": [
+     900,
+     1000
+    ],
+    "y": [
+     500,
+     490
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4_winter_fork",
+   "img": "shots/e4_winter_fork-v2.png",
+   "cue": [
+    "059"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e4_winter_fork_sasha",
+   "img": "shots/e4_winter_fork-v2.png",
+   "cue": [
+    "062"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.38
+    ],
+    "x": [
+     1000,
+     1000
+    ],
+    "y": [
+     540,
+     540
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4b_pc_floor",
+   "img": "shots/e4b_pc_floor.png",
+   "cue": [
+    "066"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:6"
+   ]
+  },
+  {
+   "id": "e4b_pc_cu",
+   "img": "shots/e4b_pc_cu.png",
+   "cue": [
+    "068"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e4b_pc_floor_end",
+   "img": "shots/e4b_pc_floor.png",
+   "cue": [
+    "069"
+   ],
+   "cam": {
+    "z": [
+     1.1,
+     1.0
+    ],
+    "x": [
+     1150,
+     768
+    ],
+    "y": [
+     480,
+     512
+    ]
+   },
+   "in": "cut"
+  }
+ ]
+}

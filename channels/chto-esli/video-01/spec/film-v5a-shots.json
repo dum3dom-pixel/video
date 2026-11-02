@@ -1,0 +1,1065 @@
+{
+ "title": "Видео 01, часть 1: хук, правила, эпоха 1, эпоха 2 (до тополя)",
+ "note": "cue = [id фразы, номер слова в фразе (необязательно)]. Камера: x,y в координатах плиты 1536x1024 (центр 768,512), z - масштаб. in: cut | dissolve | wipe.",
+ "shots": [
+  {
+   "id": "door",
+   "img": "bg/bg_door_wall_hd.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.03
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "kostya",
+   "img": "shots/p2_kostya.png",
+   "cue": [
+    "001"
+   ],
+   "cam": {
+    "z": [
+     1.01,
+     1.12
+    ],
+    "x": [
+     768,
+     810
+    ],
+    "y": [
+     505,
+     430
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "kostya_hair",
+   "img": "shots/h_kostya_hair_cu.png",
+   "cue": [
+    "003",
+    7
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "calendar",
+   "img": "shots/p3_calendar_hd.png",
+   "cue": [
+    "004"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     740,
+     715
+    ],
+    "y": [
+     500,
+     480
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "calendar_date"
+   ]
+  },
+  {
+   "id": "sasha_pilot",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "005"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     455
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "sasha_eyes",
+   "img": "shots/h_sasha_eyes_cu.png",
+   "cue": [
+    "005",
+    3
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     505
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "palm",
+   "img": "shots/h_sasha_palm.png",
+   "cue": [
+    "006"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "school_bag",
+   "img": "shots/h_school_bag.png",
+   "cue": [
+    "009"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     790
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve",
+   "over": []
+  },
+  {
+   "id": "cassette_box",
+   "img": "shots/h_cassette_box.png",
+   "cue": [
+    "012"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     940
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "cassette_2024",
+   "img": "shots/h_cassette_2024_cu.png",
+   "cue": [
+    "013"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.07
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "cassette_label"
+   ]
+  },
+  {
+   "id": "title",
+   "img": "bg/bg_carpet_wall_hd.png",
+   "cue": [
+    "014"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.04
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "title_card"
+   ]
+  },
+  {
+   "id": "rules_desk",
+   "img": "shots/r_paper_desk.png",
+   "cue": [
+    "015"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "rules"
+   ]
+  },
+  {
+   "id": "rules_soup",
+   "img": "shots/r_adults_soup.png",
+   "cue": [
+    "018",
+    3
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "rules_desk2",
+   "img": "shots/r_paper_desk.png",
+   "cue": [
+    "020"
+   ],
+   "cam": {
+    "z": [
+     1.06,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "rules"
+   ]
+  },
+  {
+   "id": "rules_family",
+   "img": "shots/k_soup-v2.png",
+   "cue": [
+    "025"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "rules_soup2",
+   "img": "shots/r_adults_soup.png",
+   "cue": [
+    "026"
+   ],
+   "cam": {
+    "z": [
+     1.04,
+     1.12
+    ],
+    "x": [
+     768,
+     640
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e1_kitchen",
+   "img": "bg/bg_kitchen-v2.png",
+   "cue": [
+    "028"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.07
+    ],
+    "x": [
+     768,
+     700
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:1"
+   ]
+  },
+  {
+   "id": "e1_mama_bread",
+   "img": "shots/e1_mama_bread.png",
+   "cue": [
+    "031"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve",
+   "over": []
+  },
+  {
+   "id": "e1_videocall",
+   "img": "shots/e1_videocall.png",
+   "cue": [
+    "033"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "cold"
+   ]
+  },
+  {
+   "id": "e1_oilcloth",
+   "img": "shots/e1_oilcloth.png",
+   "cue": [
+    "034"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e1_papa_pan",
+   "img": "shots/e1_papa_pan.png",
+   "cue": [
+    "036"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     450
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e1_papa_lowers",
+   "img": "shots/e1_papa_lowers.png",
+   "cue": [
+    "041"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e1_cocoa",
+   "img": "shots/e1_cocoa.png",
+   "cue": [
+    "043"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     840
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e1_clock",
+   "img": "shots/e1_clock_ten.png",
+   "cue": [
+    "049"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     400
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e1_school_board",
+   "img": "shots/e1_school_board.png",
+   "cue": [
+    "051"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     420
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "chalk"
+   ]
+  },
+  {
+   "id": "e1_plan_night",
+   "img": "shots/e1_plan_night.png",
+   "cue": [
+    "055"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     960
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e1_plan_sheet",
+   "img": "shots/e1_plan_sheet.png",
+   "cue": [
+    "056"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "plan"
+   ]
+  },
+  {
+   "id": "e1_lights_out",
+   "img": "shots/e1_lights_out.png",
+   "cue": [
+    "057"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "lights"
+   ]
+  },
+  {
+   "id": "e2_try_mama",
+   "img": "shots/e2_try_mama.png",
+   "cue": [
+    "059"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:2"
+   ]
+  },
+  {
+   "id": "e2_try_teacher",
+   "img": "shots/e2_try_teacher.png",
+   "cue": [
+    "063"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     860
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_try_dimka",
+   "img": "shots/e2_try_dimka.png",
+   "cue": [
+    "065"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_stairs",
+   "img": "shots/e2_stairs.png",
+   "cue": [
+    "068"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     960
+    ],
+    "y": [
+     512,
+     460
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_kostya_room",
+   "img": "shots/e2_kostya_room.png",
+   "cue": [
+    "070"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_kostya_gives",
+   "img": "shots/e2_kostya_gives.png",
+   "cue": [
+    "074"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     860
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_kostya_gives2",
+   "img": "shots/e2_kostya_gives.png",
+   "cue": [
+    "076"
+   ],
+   "cam": {
+    "z": [
+     1.1,
+     1.14
+    ],
+    "x": [
+     900,
+     940
+    ],
+    "y": [
+     470,
+     450
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_market",
+   "img": "shots/e2_market.png",
+   "cue": [
+    "078"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_labels",
+   "img": "shots/e2_labels.png",
+   "cue": [
+    "079"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     650,
+     850
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "e2_box",
+   "img": "shots/h_cassette_box.png",
+   "cue": [
+    "081"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_labels2",
+   "img": "shots/e2_labels.png",
+   "cue": [
+    "082"
+   ],
+   "cam": {
+    "z": [
+     1.06,
+     1.1
+    ],
+    "x": [
+     1000,
+     1050
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_rec_keys",
+   "img": "shots/e2_rec_keys.png",
+   "cue": [
+    "084"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "e2_recording",
+   "img": "shots/e2_recording.png",
+   "cue": [
+    "085"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     790
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_life",
+   "img": "bg/bg_kitchen_adult-v2.png",
+   "cue": [
+    "087"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "grain"
+   ]
+  },
+  {
+   "id": "e2_life_work",
+   "img": "shots/e2_life_work-v2.png",
+   "cue": [
+    "088",
+    7
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_life_bus",
+   "img": "shots/e2_life_bus.png",
+   "cue": [
+    "088",
+    8
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_life_sofa",
+   "img": "shots/e2_life_sofa.png",
+   "cue": [
+    "088",
+    9
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "e2_2024_night",
+   "img": "shots/e2_2024_night.png",
+   "cue": [
+    "089"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     540
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "answered"
+   ]
+  }
+ ]
+}
