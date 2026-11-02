@@ -1,0 +1,140 @@
+{
+ "title": "v6 pilot: hook first 20 s",
+ "shots": [
+  {
+   "id": "door",
+   "img": "bg/bg_door_wall_hd.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.03
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "carpet",
+   "img": "bg/bg_carpet_wall_hd.png",
+   "cue": [
+    "001"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     740
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "kostya",
+   "img": "shots/p2_kostya.png",
+   "cue": [
+    "002"
+   ],
+   "cam": {
+    "z": [
+     1.01,
+     1.12
+    ],
+    "x": [
+     768,
+     810
+    ],
+    "y": [
+     505,
+     430
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "kostya_hair",
+   "img": "shots/h_kostya_hair_cu.png",
+   "cue": [
+    "004"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "calendar",
+   "img": "shots/p3_calendar_hd.png",
+   "cue": [
+    "005"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     740,
+     715
+    ],
+    "y": [
+     500,
+     480
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "calendar_date"
+   ]
+  },
+  {
+   "id": "sasha_pilot",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "006"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     455
+    ]
+   },
+   "in": "wipe"
+  }
+ ]
+}
