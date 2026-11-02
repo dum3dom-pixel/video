@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-03",
+  "tool": "built-in image_gen",
+  "scope": "Three v6 raster assets from existing Codex briefs; no engine/timeline or thumbnail-text overlay changes.",
+  "source_plan": "channels/chto-esli/video-01-opening-v6-plan.md",
+  "scene_usage": {
+    "bg/bg_room_dark_hd.png": "Opening block 0:00–0:24, before brother/calendar/hands cuts; timings approximate.",
+    "shots/h_sasha_hands_cu.png": "Opening hands line near 0:20.",
+    "shots/pv_c_plan.png": "Preview C blank image plate; seven items, red circle around #7 and title to be drawn by code."
+  },
+  "requested_dimensions": [
+    2560,
+    1440
+  ],
+  "minimum_dimensions": [
+    1536,
+    864
+  ],
+  "runs": [
+    {
+      "id": "hands-attempt-1",
+      "brief": "channels/chto-esli/codex-opening-v6-hands.md",
+      "prompt": "Asset: shots/h_sasha_hands_cu.png, a close-up master. Extreme close-up of a twelve-year-old boy's two small hands resting palms-down on a mustard-and-cream checked wool blanket, seen from slightly above and filling the upper-middle of the frame. Thin child fingers, short bitten nails, one small clean cream adhesive bandage wrapped around the index finger of the right hand. Olive T-shirt sleeve cuffs enter from the top edge. The fingers are slightly curled, as if he has just woken up and is studying his own hands. Soft morning light from the left. The lowest part of the frame is only blanket checks.\r\n\r\nCharacters (identity must match the attached sheets; the text is the fallback):\r\n- Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.\r\n\r\nAttachments:\r\n- Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)\r\n- Input image 2: shots/h_sasha_palm.png, approved scene of this morning (keep the blanket checks, the olive T-shirt, the materials and the light)\r\n\r\nStyle/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.\r\n\r\nFull base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. There is no red anywhere in this picture.\r\n\r\nClose-up master: the subject fills the frame and every detail is drawn at final scale, because the picture will be shown at 1:1 with no further zoom. Fingers, nails, the bandage edge, paper fibers, cut edges and blanket threads are individually crisp. No soft focus, no smoothing, no painterly texture.\r\n\r\nOutput/composition: one opaque PNG, landscape 16:9, whole picture to the edges, nothing cropped or letterboxed. Use the largest 16:9 size the tool allows (target 2560x1440; if the tool cannot, keep its maximum, never below 1536x864) and report the real size. The lowest 20 percent of the height is quiet (floor, table, wall or empty ground): no faces, hands or key objects there, because subtitles sit on it. Faces and key objects stay above 75 percent of the height. Never draw guides or labels.\r\n\r\nStrict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. The bandage is a clean cream strip with no stain. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.",
+      "reference_roles": [
+        {
+          "input": 1,
+          "path": "channels/chto-esli/video-01/assets/sheets/sasha_sheet_hd.png",
+          "role": "approved character reference"
+        },
+        {
+          "input": 2,
+          "path": "channels/chto-esli/video-01/assets/shots/h_sasha_palm.png",
+          "role": "approved scene/background material reference"
+        }
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-e67c8d38-02ab-42b9-a955-611573a5f5ba.png",
+      "selected": false,
+      "review": "Rejected: bandage on anatomical left hand; fingertips slightly too low."
+    },
+    {
+      "id": "hands-attempt-2",
+      "prompt": "Edit input image 1, the hands close-up, with just these two precise corrections. The boy faces the camera, therefore HIS RIGHT hand is on the VIEWER'S LEFT. Remove the cream bandage from the viewer-right hand entirely and put that same one clean cream bandage around the INDEX finger of the VIEWER-LEFT hand (the finger immediately next to its inward-pointing thumb). Exactly one bandage total. Keep both anatomically correct five-finger hands. Move both hands, forearms and shirt upward within the frame by about 8 percent of image height, preserving their size, so every fingertip ends above 72 percent of image height and the entire bottom quarter contains only the checked blanket. Preserve the exact existing blanket checks, materials, lighting, palette, paper-collage fibers and cut edges. Do not add any object, text, marks, red, wounds or blood. Keep the same wide 16:9 framing, maximize native output resolution, target actual 2560x1440 PNG if available. Opaque full-bleed PNG.",
+      "reference_roles": [
+        {
+          "input": 1,
+          "path": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-e67c8d38-02ab-42b9-a955-611573a5f5ba.png",
+          "role": "edit target"
+        }
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-84d9315b-69f2-4b7a-9c9f-833a9682547a.png",
+      "selected": true,
+      "review": [
+        "Two child hands with five fingers each, palms down. A single clean cream bandage is on Sasha's anatomical right index finger (viewer-left).",
+        "All fingertips end above 75% of image height. Bottom 20% contains only blanket checks.",
+        "Mustard/cream blanket, olive shirt and layered paper-collage material match scene references; no red, blood or writing."
+      ]
+    },
+    {
+      "id": "preview-c-attempt-1",
+      "brief": "channels/chto-esli/codex-opening-v6-preview-c.md",
+      "prompt": "Asset: shots/pv_c_plan.png, a finished full scene. Thumbnail hero image: a wooden desk seen straight from above; one large sheet of cream handmade paper with torn edges fills the left and centre of the frame, tilted about five degrees, with a soft contact shadow. The sheet's surface is completely blank and flat, because code writes the plan lines on it. A small child's hand holds a short pencil at the lower left edge of the sheet. Warm mustard lamp light falls from the upper right; an eraser and a few pencil shavings lie on the desk. Strong readable silhouette: the bright cream sheet against a dark brick-brown desk, readable at the size of a postage stamp. The right third of the frame is plain empty desk for code text.\r\n\r\nCharacters (identity must match the attached sheets; the text is the fallback):\r\n- Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that rarely smiles. Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker. Only his small hand and the olive sleeve cuff are visible in this picture.\r\n\r\nAttachments:\r\n- Input image 1: sheets/sasha_sheet_hd.png, approved character/props reference (identity, costume and proportions must match)\r\n- Input image 2: shots/e1_plan_sheet.png, approved top-down plan scene (keep the desk, lamp light, paper and pencil materials)\r\n\r\nStyle/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation; faces use small cut-paper shapes and restrained dark ink-like details in shaded palette colors. No black outlines, photographic skin, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.\r\n\r\nFull base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. Skin and pale fibers are cream; dark hair and facial details use shaded warm gray and brick brown. No additional pure-white or black flat colors. Night and evening use the same palette, only darker: mustard lamp light, muted teal window light, no black. There is no red anywhere in this picture: the red marker is added by code.\r\n\r\nOutput/composition: one opaque PNG, landscape 16:9, whole picture to the edges, nothing cropped or letterboxed. Use the largest 16:9 size the tool allows (target 2560x1440; if the tool cannot, keep its maximum, never below 1536x864) and report the real size. The bottom-right corner stays quiet (YouTube places the duration badge there). The sheet and the hand stay inside the left two thirds; the right third is empty desk. Never draw guides or labels.\r\n\r\nStrict exclusions: no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, speech bubbles, arrows, annotation marks, motion lines, impact bursts, sparkles or drawn effects. Book/notebook covers, notebook pages, paper sheets, calendar pages, cassette labels, newspaper columns, blackboards and phone or monitor screens are completely blank (newspaper columns are plain gray bands); clock dials have no numerals or ticks, only two plain hands. No lines, ruling, scribbles or circles on the sheet. Geometric carpet ornament and blanket checks are material patterns, not annotations. No additional people or props beyond those listed, no modern devices unless listed, no brands, no blood, wounds or weapons. Original fictional characters only. Scenes are complete finished illustrations; character-sheet views are intact figures, never separated body parts, puppet rigs or assembly diagrams.",
+      "reference_roles": [
+        {
+          "input": 1,
+          "path": "channels/chto-esli/video-01/assets/sheets/sasha_sheet_hd.png",
+          "role": "approved character reference"
+        },
+        {
+          "input": 2,
+          "path": "channels/chto-esli/video-01/assets/shots/e1_plan_sheet.png",
+          "role": "approved scene/background material reference"
+        }
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-1675a04c-c09b-49df-8a9b-157a5bcae473.png",
+      "selected": true,
+      "review": "Selected after visual review."
+    },
+    {
+      "id": "dark-room-attempt-1",
+      "brief": "channels/chto-esli/codex-opening-v6-dark-room.md",
+      "prompt": "Asset: bg/bg_room_dark_hd.png, an empty background set. The same bedroom as the attached backgrounds, shown before dawn with the lamp off. The carpet-covered wall and the door wall keep the architecture, furniture positions, parquet and woodwork of the attached sets. The room is dim: muted teal window light falls faintly from the window onto the bed and the floor, and the closed room door has one thin warm mustard strip of light under it, spilling a narrow bright fan across the parquet. The bed is unmade with a checked blanket, a school backpack stands by the desk. Everything else sinks into deep brick-brown and warm gray shadows, but every object stays readable.\r\n\r\nAttachments:\r\n- Input image 1: bg/bg_carpet_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)\r\n- Input image 2: bg/bg_door_wall_hd.png, approved set of this scene (keep its architecture, materials, light and object positions)\r\n\r\nStyle/material: handmade multilayer paper-collage illustration with warm, gently faded family-photo-album colors. Matte colored paper, clearly visible natural fibers, uneven cut/torn edges and thin cream fiber rims. Separate overlapping paper layers with soft shallow contact shadows. Flat forms with slight paper-tone variation. No black outlines, photographic look, smooth vector art, glossy plastic or 3D rendering. Paper fibers are physical material texture. Do not bake in film grain, noise overlays, a film vignette, blur, lens effects or transitions: code adds those later.\r\n\r\nFull base palette: mustard yellow #D9A441, cream #F1E6CF, brick brown #8C4A32, olive green #7A7F3F, faded teal #5E8C8A, warm gray #A59B8C. Use only these six base colors with restrained light/shadow variations. No additional pure-white or black flat colors. Night uses the same palette, only darker: mustard strip of light, muted teal window light, no black. There is no red anywhere in this picture.\r\n\r\nSharpness (most important technical requirement): draw this as a finished, high-detail master that will be shown at 1:1 on a 1920x1080 screen. Every edge is crisp and clean; paper fibers are sharp and visible. The whole frame is equally sharp: no depth-of-field, no soft focus, no smeared or muddy textures, no painterly mush, no upscaled look. Small background objects are kept simple and large enough to stay readable.\r\n\r\nOutput/composition: one opaque PNG, landscape 16:9, an EMPTY set with no people, whole picture to the edges. Use the largest 16:9 size the tool allows (target 2560x1440; never below 1536x864) and report the real size. Eye-level camera from the bed side, the door with its light strip visible in the middle third, a clear open floor area in front of it where characters will later appear, important furniture in the upper 75 percent, the lowest 20 percent calm and quiet. Never draw guides or labels.\r\n\r\nStrict exclusions: no people, no text, letters, numerals, pseudo-writing, logos, watermarks, signatures, captions, arrows, motion lines, sparkles or drawn effects. No wall calendar (a calendar is a separate shot), no clock with numerals. Book covers, paper sheets and screens are completely blank. Geometric carpet ornament and blanket checks are material patterns, not annotations. No modern devices, no brands, no blood, wounds or weapons. Scenes are complete finished illustrations.",
+      "reference_roles": [
+        {
+          "input": 1,
+          "path": "channels/chto-esli/video-01/assets/bg/bg_carpet_wall_hd.png",
+          "role": "approved scene/background material reference"
+        },
+        {
+          "input": 2,
+          "path": "channels/chto-esli/video-01/assets/bg/bg_door_wall_hd.png",
+          "role": "approved scene/background material reference"
+        }
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-0ec0036f-c49f-4281-a785-e24348b36fda.png",
+      "selected": false,
+      "review": "Rejected: required wall carpet missing."
+    },
+    {
+      "id": "dark-room-attempt-2",
+      "prompt": "Precise edit of Input image 1 (the generated empty before-dawn bedroom). It is missing the required patterned wall carpet. Change only this omission: hang the SAME mustard/olive/brick-brown geometric diamond-pattern carpet from Input image 2 on the currently empty left wall, shown with correct perspective and partly cropped by the left edge if needed. Its upper and middle part must be visible and recognizable. Input image 2 is only the exact carpet/material reference, not a new camera/composition. Preserve Input image 1's closed door in the middle third, thin mustard light strip strictly UNDER the door and narrow light spill, dark readable pre-dawn lighting, teal window light from the right, furniture positions, desk lamp OFF, backpack, checked blanket in foreground, quiet bottom 20 percent, crisp matte cut-paper fibers and edges, parquet, walls, camera and every other object. Keep entire scene dim, with carpet likewise in shadow, not bright or separately lit. No people, calendar, red, text, numerals, lines or effects. Do not add or move any other props or doors. One opaque full-bleed landscape 16:9 PNG, maximum native resolution available, requested 2560x1440 pixels if possible.",
+      "reference_roles": [
+        {
+          "input": 1,
+          "path": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-0ec0036f-c49f-4281-a785-e24348b36fda.png",
+          "role": "edit target"
+        },
+        {
+          "input": 2,
+          "path": "channels/chto-esli/video-01/assets/bg/bg_carpet_wall_hd.png",
+          "role": "exact wall carpet design/material reference"
+        }
+      ],
+      "generated_output": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-bc7c3825-54aa-455a-bd00-7771704ee1db.png",
+      "selected": true,
+      "review": [
+        "Empty dim bedroom, closed central door and readable narrow mustard under-door strip; desk lamp is off.",
+        "Teal window light, checked blanket, parquet, backpack and geometric wall carpet are visible. No people, calendar, red or text.",
+        "Uses the door-wall camera. The carpet is visible on the left wall in this combined composition; exact spatial continuity with the separate carpet-wall view is not guaranteed."
+      ]
+    }
+  ],
+  "deliverables": [
+    {
+      "id": "hands",
+      "path": "channels/chto-esli/video-01/assets/shots/h_sasha_hands_cu.png",
+      "width": 1672,
+      "height": 941,
+      "format": "Format24bppRgb",
+      "bytes": 2532432,
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-84d9315b-69f2-4b7a-9c9f-833a9682547a.png",
+      "checks": [
+        "Two child hands with five fingers each, palms down. A single clean cream bandage is on Sasha's anatomical right index finger (viewer-left).",
+        "All fingertips end above 75% of image height. Bottom 20% contains only blanket checks.",
+        "Mustard/cream blanket, olive shirt and layered paper-collage material match scene references; no red, blood or writing."
+      ]
+    },
+    {
+      "id": "preview-c",
+      "path": "channels/chto-esli/video-01/assets/shots/pv_c_plan.png",
+      "width": 1672,
+      "height": 941,
+      "format": "Format24bppRgb",
+      "bytes": 2665304,
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-1675a04c-c09b-49df-8a9b-157a5bcae473.png",
+      "checks": [
+        "Blank cream sheet with torn edges, small hand and pencil at lower left, mustard light, dark brick-brown desk.",
+        "Right side and bottom-right corner provide desk space for later title and duration badge. The sheet extends slightly beyond two-thirds width (~70%).",
+        "No text, ruling, plan lines, numerals, red or circles. Seven plan items and red circle remain code work."
+      ]
+    },
+    {
+      "id": "dark-room",
+      "path": "channels/chto-esli/video-01/assets/bg/bg_room_dark_hd.png",
+      "width": 1672,
+      "height": 941,
+      "format": "Format24bppRgb",
+      "bytes": 2070137,
+      "source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e6a-cfcb-7961-ade1-991e5b3fc14e\\exec-bc7c3825-54aa-455a-bd00-7771704ee1db.png",
+      "checks": [
+        "Empty dim bedroom, closed central door and readable narrow mustard under-door strip; desk lamp is off.",
+        "Teal window light, checked blanket, parquet, backpack and geometric wall carpet are visible. No people, calendar, red or text.",
+        "Uses the door-wall camera. The carpet is visible on the left wall in this combined composition; exact spatial continuity with the separate carpet-wall view is not guaranteed."
+      ]
+    }
+  ],
+  "validation": {
+    "visual_review_completed": true,
+    "opaque_png": true,
+    "minimum_dimensions_pass": true,
+    "target_2560x1440_pass": false,
+    "exact_16_9_pass": false,
+    "aspect_ratio_note": "Native output 1672x941 is approximately 16:9 (relative aspect deviation ~0.053%). Saved unchanged, no resampling or upscaling.",
+    "existing_assets_overwritten": false,
+    "brief_files_modified": false,
+    "prompts_sent_verbatim_on_first_attempt": true,
+    "red_and_text_added": false,
+    "engine_or_timeline_changed": false
+  }
+}
