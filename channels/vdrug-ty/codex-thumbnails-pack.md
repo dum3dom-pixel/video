@@ -1,154 +1,146 @@
-# Codex: пакет превью и аватаров для канала «Вдруг ты»
+# Codex: бумажный комплект «Вдруг ты»
 
-Источник разбора: скриншоты канала «ЧТО, ЕСЛИ?» (@4TOECLI, ~5,5K подписчиков, но превью на 100K+ просмотров). Плюс наши `hero-bible.md` и `codex-thumbnail-vdrug-ty.md`.
+Актуальная версия от 4 ноября 2026. [Галерея готовых изображений](branding-paper-2026-11-04/index.html) · [ZIP](branding-paper-2026-11-04/delivery.zip) · [описание и сборка](branding-paper-2026-11-04/README.md).
 
-## 1. Что работает в превью ниши (по скриншотам)
+В комплекте шесть превью, три аватара и баннер; изображения действительно сгенерированы. Предыдущая версия документа сохранена в `branding-paper-2026-11-04/previous-prompts/codex-thumbnails-pack.md`. Ниже фактические промпты; пути `raw/` и `scripts/` в тексте относятся к папке комплекта.
 
-| Приём | Как у них | Что берём себе |
-|---|---|---|
-| Один герой крупно | чёрный круглоголовый человечек в красной толстовке, слева, 40–50% кадра, вытаращенные глаза, капля пота | Свой герой: лицо с мимикой, **оранжевые наушники** вместо красной толстовки |
-| Эмоция | шок, паника, «я всё понял», прищур-ухмылка | Брови и взгляд, один из 3 вариантов эмоции на превью |
-| Один большой предмет | пуля, сердце, мозг, пачки денег, песочные часы, часы на руке, грузовик | Наши: лист «ПЛАН», телефон-кнопочник, календарь 2010, монета, песочные часы |
-| Текст | 1–4 слова, огромный, жёлтый/белый с толстой обводкой, сверху; плашка-уточнение («ТЫ НЕ УСПЕЕШЬ!», «ЧАСТЬ 2») | Те же размеры, но белый + наш оранжевый, без жёлтого |
-| Цифры | x10, 100%, $1 000 000, 12 СЕКУНД, 7 УДАРОВ | Цифра-интрига на каждом превью |
-| Фон | насыщенный, неон, свечение, ночной город, контровой свет | **Глубокий синий/тёмно-бирюзовый фон**, чтобы оранжевый давал максимальный контраст |
-| Серия | один и тот же герой на всех превью, «ЧАСТЬ 2» плашка | Один герой + один акцент = узнавание в ленте |
+# «Вдруг ты»: фактически использованные промпты
 
-Где мы расходимся специально (иначе канал назовут клоном):
-- не чёрный колобок и не красная толстовка: это их бренд (в нише это уже «занято»);
-- у нас оранжевый + синий, а не красный + жёлтый;
-- у героя открытое лицо, вихор, щетина, наушники на шее, лист «ПЛАН»;
-- детализацию делаем сами через кодовые надписи и плашки, а не через «взрыв всего подряд».
+Дата: 4 ноября 2026. Иллюстрации сгенерированы встроенным `image_gen`; надписи, номера списка, замазка и значок биткоина добавлены кодом. CLI/API не использовались.
 
-Оговорка: это разбор по скриншотам, данных по CTR у меня нет. Какое превью выиграет, покажет Test & Compare.
+Основа — приложенный пользователем бумажный эталон `channels/chto-esli/video-01/assets/thumbnails/2026-11-03/thumbnail_A_v3.png`. Первым сгенерирован T2; его `raw/T2.png` затем приложен как дополнительный эталон лица и оранжевых наушников. Для T6 использован только исходный эталон материала. Для B1 после первой генерации выполнено точечное уменьшение героя.
 
-## 2. Общий блок стиля (вставлять в начало каждого промта превью)
+Герой: юный персонаж с узким лицом, большими карими глазами, острыми каштановыми прядями и вихром, оливковой футболкой. Сохранён возраст из выбранного пользователем изображения; взрослый щетинистый герой из прежних промптов не используется. Оранжевые наушники на шее — дополнительный признак серии.
 
-```
-Сгенерируй одну картинку для превью YouTube. Строго 16:9, 1672×941 или больше, PNG. Яркая, насыщенная, детальная иллюстрация
-в стиле современной цифровой манги: чёткий контур, мягкие объёмные тени, контровой свет (rim light), лёгкое свечение у главного предмета.
-Палитра: глубокий ночной синий и тёмно-бирюзовый фон, акцентный оранжевый #E8732C, белые блики. Больше акцентных цветов нет, красного нет.
+Цвета: тёмный бирюзовый, кремовый, крафтовый, оливковый, оранжевый, золотистый. Правила боевых персонажей и их красных бинтов к этому каналу не относятся. От «Науки боя» взят принцип материала, а палитра и герой — из присланного превью.
 
-ГЕРОЙ (оригинальный персонаж, ничей фан-арт, не копировать чужих)
-Обычный мужчина лет 25: растрёпанные тёмные волосы с ОДНИМ торчащим вихром, усталые глаза с тёмными кругами, лёгкая щетина,
-выразительные брови, простая светлая рубашка с закатанными рукавами. Открытое лицо, волосы не закрывают глаза.
-На шее большие накладные ОРАНЖЕВЫЕ наушники #E8732C: единственная яркая деталь на герое, без толстовки.
-Если приложен лист персонажа, повтори его точно (лицо, причёска, одежда).
+В каждом запросе приложить реальные изображения по указанным путям. Одного текстового упоминания пути недостаточно. Итоговые размеры обеспечиваются экспортом: превью 1280×720, аватары 800×800, баннер 2560×1440. Точные нативные размеры генератора могут отличаться от пожеланий в запросе.
 
-ЧИТАЕМОСТЬ
-Герой занимает 40–50% кадра с одной стороны, один большой предмет с другой. Если уменьшить до ширины 170 px, видны: лицо, оранжевый акцент, предмет.
-Свободные зоны под код: верхняя треть (под заголовок), нижний левый угол (название канала), нижний правый угол (длительность YouTube).
+## T1 · Проснулся в 2010
 
-НЕЛЬЗЯ
-Никаких надписей, букв и водяных знаков (кроме явно указанных ниже). Не использовать красный. Не рисовать чёрного колобка в красной толстовке,
-Билла Сайфера, Киллуа и героя «Rep Theory». Без крови.
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: woke up in 2010. Hero fills RIGHT half from chest up, shocked, wide eyes, slightly open mouth, looking at old button mobile phone raised near center, phone display blank. On LEFT LOWER half one oversized old tear-off calendar with entirely blank cream front, nearly front-facing, page corners at x=8%-39%, y=47%-90%; huge enough for code to print year later. A tiny suggestion of bedside/blanket beneath props, petrol paper background. No floating graphs or holograms. Very clear one face + calendar + phone.
+Image 2 is the established paper hero with orange headphones; preserve this exact identity and neck headphones for hero scenes. For T6 use only paper material, palette and headphones from image 2.
 ```
 
-## 3. Превью (каждый промт = общий блок + «СЦЕНА»)
+Надписи кодом: `ЭТО СНОВА` / `2010?!` / `Я ПОМНЮ БУДУЩЕЕ`.
 
-### T1. «Проснулся в 2010» (ролик 1)
+На календаре кодом: `2010`.
 
-```
-СЦЕНА
-Герой сидит на краю кровати в маленькой комнате 2010 года, ошарашенный, брови подняты, рот приоткрыт, глаза широко открыты, смотрит на зрителя.
-В руке у него старый кнопочный телефон, экран светится оранжевым. На стене за ним отрывной календарь, на котором выделена одна оранжевая обводка.
-Справа в воздухе парит светящаяся голограмма: график, который резко растёт вверх (оранжевая линия, без подписей).
-Старый монитор-ЭЛТ и стопка дисков на тумбочке дают ощущение эпохи. Свет из окна слева, ночной синий оттенок.
-Текст на картинке: нет.
-```
-Надписи кодом: сверху `ЭТО 2010?!` (белый, оранжевая обводка), плашка `Я ЗНАЮ БУДУЩЕЕ` (оранжевая, белый текст).
+## T2 · Пункт №1 — главное превью
 
-### T2. «Пункт №1» (лист ПЛАН)
+Референсы: исходный бумажный эталон.
 
-```
-СЦЕНА
-Герой слева, крупно, рука у подбородка, поза «до меня дошло», прищур и приподнятая бровь.
-Справа крупно, наклонённый на ~8°, лист белой бумаги с рукописным списком из пяти строк (цифры 1–5, чёрные чернила).
-Строка №1 жирно замазана толстым оранжевым маркером, вокруг листа лёгкое оранжевое свечение. Рядом оранжевая ручка.
-Фон: тёмно-синий, мягкий контровой свет по контуру героя.
-Текст на картинке: нет (кроме слова «ПЛАН», рукописно, вверху листа; если плохо читается, оставь пустую линию).
-```
-Надписи кодом: `ПУНКТ №1?` (белый + оранжевый), плашка `ПЛАН СЛОМАЛСЯ`.
-
-### T3. «Купи сейчас» (биткоин, цифры в сценарии не проверены, это пример)
-
-```
-СЦЕНА
-Герой справа, наклонился к камере, широкая уверенная улыбка и поднятые брови, указывает пальцем на зрителя.
-Слева крупно парит светящаяся оранжевая монета с символом ₿ и искрами. За ней огромный график роста, уходящий вверх за кадр.
-В нижнем углу герой держит старый ноутбук. Фон: тёмно-синий с городскими огнями, лёгкий дым и блики.
-Текст на картинке: нет.
-```
-Надписи кодом: `КУПИ СЕЙЧАС!` (белый), плашка `$0,004 → $1 МЛРД+` (оранжевая; пометить как пример, пока факты не проверены).
-
-### T4. «Бесконечные деньги»: скучающий герой
-
-```
-СЦЕНА
-Герой сидит на горе пачек денег до потолка тёмной комнаты, смотрит прямо в камеру с плоским скучающим выражением (deadpan),
-бровь чуть приподнята, одна рука подпирает щёку. Вокруг парят разлетающиеся купюры без читаемых надписей.
-Слева крупный светящийся оранжевый замок-значок «безлимит» (простой, без текста). Фон: тёмно-бирюзовый, контровой оранжевый свет сбоку.
-Текст на картинке: нет.
-```
-Надписи кодом: `БЕЗ ЛИМИТА` (белый), плашка `И ВСЁ РАВНО СКУЧНО`.
-
-### T5. «Бессмертие»: песочные часы
-
-```
-СЦЕНА
-Герой в центре крупным планом, шок на лице, зрачки расширены, на шее оранжевые наушники.
-Позади гигантские песочные часы, в которых течёт оранжевый светящийся песок, внутри них крошечный силуэт города, который стареет (окна гаснут, башни обрастают плющом).
-По краям кадра вертикальные листы отрывного календаря, летящие по ветру. Фон: ночной синий, лёгкая дымка.
-Текст на картинке: нет.
-```
-Надписи кодом: `НАВСЕГДА?` (белый + оранжевый), плашка `1000 ЛЕТ СПУСТЯ`.
-
-### T6. «Только предмет» (без героя, для теста)
-
-```
-СЦЕНА
-Вид сверху на тёмный деревянный стол. По центру лист «ПЛАН» с пятью строками, №1 жирно замазан оранжевым маркером.
-Рядом оранжевая ручка, кнопочный телефон, отрывной календарь с обведённым годом (без читаемых цифр) и оранжевые наушники у края.
-Предметы освещены тёплым лампой слева, фон синий. Объекты расположены с запасом по краям. Героя в кадре нет.
-Текст на картинке: нет.
-```
-Надписи кодом: `ПУНКТ №1?` крупно.
-
-## 4. Аватар канала (800×800, читается в кружке 98×98)
-
-Общее для всех: круг в центре, главное строго в центре, поля ≥12% от края (YouTube обрезает до круга), контур жирный, мало деталей.
-
-### L1. Герой-лицо
-
-```
-Квадратная иконка 800×800, главный объект по центру, поля 12% со всех сторон. Крупное лицо оригинального героя: растрёпанные тёмные волосы с одним торчащим вихром,
-выразительные брови, усталые глаза, лёгкая щетина, полуулыбка. На шее большие ОРАНЖЕВЫЕ (#E8732C) наушники, которые видны под подбородком.
-Фон чисто-чёрный (или тёмно-синий, одним цветом). Чёрно-белая манга-линия, жирный контур, минимум штриховки. Единственный цвет — оранжевый.
-Без текста, без букв, без рамки, без свечения. Герой не должен быть похож на чужих персонажей (Rep Theory, Киллуа, Билл Сайфер, колобок в толстовке).
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: secret first item on a plan. Hero on RIGHT chest-up, face large at x=73%, y=40%, very startled realization, eyes wide and mouth parted, one hand naturally raised near chin without covering face. On LOWER LEFT, large plain cream rectangular paper sheet, perfectly front-facing, unrotated, at x=7%-45%, y=43%-94%, with absolutely BLANK surface: no list strokes, no marks, no writing. One small orange paper marker alongside it. Sheet will receive plan heading, five lines and orange redaction later by code. Headphones visible, blank upper left title zone.
 ```
 
-### L2. Упрощённый «знак» (как в черновике B)
+Надписи кодом: `ПУНКТ` / `№1?` / `ПЛАН СЛОМАЛСЯ`.
 
-```
-Квадратная иконка 800×800, поля 12%. Минималистичный знак: белая круглая голова с одним торчащим вихром (изогнутая линия сверху),
-две точки-глаза и выразительные брови, маленький открытый рот. На шее большие оранжевые #E8732C накладные наушники.
-Фон чисто-чёрный. Плоский векторный стиль, без градиентов, без текста, без обводки-ореола. Узнаётся при размере 98 px.
-```
+На пустом листе кодом: `ПЛАН`, номера 1–5, линии и оранжевая замазка первого пункта.
 
-### L3. Абстракция «?» из наушников
+## T3 · Я знал про биткоин
 
-```
-Квадратная иконка 800×800, поля 12%. Крупные оранжевые #E8732C накладные наушники, дуга оголовья которых образует крючок вопросительного знака «?».
-Точка вопроса — маленькая светящаяся оранжевая точка снизу. Над ними один торчащий вихор волос, как намёк на героя.
-Фон тёмно-синий одного цвета. Плоский стиль, жирные формы, без букв, без тени. Должно читаться как одна простая форма при 98 px.
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: I remembered Bitcoin. Hero fills RIGHT half, close-up same face as reference, astonished, one open hand beside cheek with natural five fingers. On LOWER LEFT a large retro beige CRT desktop computer and keyboard, warm kraft paper casing, teal screen. Center of screen one large plain amber circular paper disk with totally BLANK face, no Bitcoin symbol. Place circle center near x=25%,y=65%, radius about 10% image width so code can insert emblem. Tiny beige PC tower near far left. Upper left cream title region empty. No charts or money claims.
+Image 2 is the established paper hero with orange headphones; preserve this exact identity and neck headphones for hero scenes. For T6 use only paper material, palette and headphones from image 2.
 ```
 
-Название «ВДРУГ ТЫ» на аватаре не пишем: на 98 px оно не читается. Оно будет в имени канала и на баннере.
+Надписи кодом: `Я ЗНАЛ ПРО` / `БИТКОИН`.
 
-## 5. Как смотреть и выбирать
+Значок биткоина кодом на пустом диске. Цен, доходности и неподтверждённых финансовых чисел нет.
 
-1. Сгенерировать T1, T2, T3 (самые связанные с первым роликом), остальные потом.
-2. Наложить текст кодом (`thumbnails/make_thumbs.py`, у него уже есть схема под 1280×720).
-3. Сжать каждое до 170 px по ширине и поставить в ряд с превью конкурентов: должно отличаться цветом и героем.
-4. Аватары L1–L3: сжать до 98×98, в кружок, выбрать читаемый.
-5. В Test & Compare поставить 2–3 лучших превью, решение по CTR/времени просмотра.
+## T4 · Бесконечные деньги
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: unlimited money became boring. Hero fills RIGHT half, face large, bored deadpan eyes and cheek resting on one hand, same hairstyle olive T-shirt and orange neck headphones. LOWER LEFT contains ONE massive mountain of bundled cream/olive paper banknotes, no currency text or digits, a few simple blank notes near table. Petrol background. Keep upper LEFT cream title area empty. Distinct large silhouette, not a room filled with tiny details.
+Image 2 is the established paper hero with orange headphones; preserve this exact identity and neck headphones for hero scenes. For T6 use only paper material, palette and headphones from image 2.
+```
+
+Надписи кодом: `ДЕНЬГИ` / `БЕЗ ЛИМИТА` / `И ВСЁ РАВНО СКУЧНО`.
+
+## T5 · Бессмертие
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: immortality and passing centuries. Hero fills RIGHT half, large face with frightened realization, slightly parted lips, one hand on headphones. LOWER LEFT one giant handcrafted hourglass, amber sand in transparent-looking layered cream paper silhouette and olive/teal frame, small dark cut-paper ruined skyline inside lower chamber, simple large forms. No additional calendars, clocks or writing. Keep upper left cream torn-paper title area empty.
+Image 2 is the established paper hero with orange headphones; preserve this exact identity and neck headphones for hero scenes. For T6 use only paper material, palette and headphones from image 2.
+```
+
+Надписи кодом: `ЖИТЬ` / `ВЕЧНО?` / `1000 ЛЕТ СПУСТЯ`.
+
+## T6 · План без героя
+
+Референсы: исходный бумажный эталон.
+
+```text
+Use case: ads-marketing. ONE 16:9 landscape illustration of an EMPTY DESK with objects only. ABSOLUTELY NO PERSON, NO FACE, NO HUMAN, NO BOY, NO HANDS. The attached picture is ONLY a paper material/palette reference; exclude its human completely. Handmade thick layered matte cut-paper collage with visible fibres and softly shadowed torn edges. Petrol teal paper desktop, warm cream, olive and orange. Camera directly overhead. Upper LEFT x=0%-50%,y=0%-40% is a completely EMPTY warm cream torn-paper area reserved for later headline. On RIGHT x=54%-92%,y=21%-92% one LARGE blank cream paper rectangle, exact front-facing rectangular surface, no perspective, no marks at all. This is an empty sheet for a plan; all list lines and redaction will be added by code. One orange marker beside right edge of sheet. At LOWER LEFT, one pair chunky ORANGE headphones and one small retro button mobile phone with blank screen. Only sheet, marker, headphones, phone and desktop. No computer, no play buttons, no megaphones, no cinema props, no charts. No text, no letters, no numbers, no symbols, no logos or watermarks. Clean bold object-only arrangement. Match paper craftsmanship of reference without copying its composition.
+```
+
+Надписи кодом: `ПУНКТ` / `№1?` / `ПЛАН СЛОМАЛСЯ`.
+
+На пустом листе кодом: `ПЛАН`, номера 1–5, линии и оранжевая замазка первого пункта.
+
+## L1 · Аватар: лицо
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: logo-brand. Create ONE square 1024x1024 original YouTube avatar, NOT a sheet. Match thick handmade layered matte cut-paper aesthetic of attached references, visible paper fibres, uneven cut edges, soft short shadows, petrol teal background #203F3D, warm cream, chestnut brown and orange #E8732C. No lettering, no watermark, no outer frame, no tiny decorations, no glow, no neon, no glossy 3D. Everything important fits inside centered circle radius 38% of canvas; outer margin at least 12%. Bold highly legible silhouette at 98px. Image 1 is original paper hero/style. Image 2 shows orange neck headphones and identity continuity.
+Portrait of SAME youthful male: narrow face, huge warm brown eyes, thick brows, tousled sharp chestnut paper locks with distinct tall cowlick, olive crew-neck T-shirt and chunky ORANGE headphones around NECK. Centered head and shoulders, warm mischievous half-smile, one raised eyebrow, looking at viewer. Face occupies most of circle, headphones visible under chin, hair fits inside circle. Simplify hair layers slightly for small sizes. Do not age or add stubble.
+```
+
+## L2 · Аватар: упрощённый герой
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: logo-brand. Create ONE square 1024x1024 original YouTube avatar, NOT a sheet. Match thick handmade layered matte cut-paper aesthetic of attached references, visible paper fibres, uneven cut edges, soft short shadows, petrol teal background #203F3D, warm cream, chestnut brown and orange #E8732C. No lettering, no watermark, no outer frame, no tiny decorations, no glow, no neon, no glossy 3D. Everything important fits inside centered circle radius 38% of canvas; outer margin at least 12%. Bold highly legible silhouette at 98px. Image 1 is original paper hero/style. Image 2 shows orange neck headphones and identity continuity.
+Simplified mascot MARK derived from same hero: warm cream oval face, chestnut spiky hair with ONE tall cowlick, two large simple dark eyes, thick raised brows, small surprised open mouth, and two bold ORANGE headphone earcups under chin. Minimal thick cut-paper shapes, almost no anatomical shading, no neck folds, no realistic detail. Should feel like miniature cut-paper sibling of detailed character, not a generic white ball. Centered compact complete head and headphones silhouette.
+```
+
+## L3 · Аватар: наушники-вопрос
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: logo-brand. Create ONE square 1024x1024 original YouTube avatar, NOT a sheet. Match thick handmade layered matte cut-paper aesthetic of attached references, visible paper fibres, uneven cut edges, soft short shadows, petrol teal background #203F3D, warm cream, chestnut brown and orange #E8732C. No lettering, no watermark, no outer frame, no tiny decorations, no glow, no neon, no glossy 3D. Everything important fits inside centered circle radius 38% of canvas; outer margin at least 12%. Bold highly legible silhouette at 98px. Image 1 is original paper hero/style. Image 2 shows orange neck headphones and identity continuity.
+Abstract orange headphone/question-mark hybrid as ONE coherent bold cut-paper emblem, NO human face. The wide orange headphone headband curls like hook of a QUESTION MARK with two recognizable chunky orange earcups integrated into upper hook, one separate large round amber dot below as punctuation. A tiny chestnut hair cowlick emerging at top recalls the mascot. Strong, uncomplicated asymmetrical shape, no literal printed letters, no other props. Recognizable headphones and question mark at 98px.
+```
+
+## B1 · Баннер
+
+Референсы: исходный бумажный эталон + `raw/T2.png`.
+
+```text
+Use case: ads-marketing. ONE landscape 16:9 full-bleed channel banner background, ideally 2560x1440. Match attached original youthful brown-haired paper hero and reference paper collage materials. Petrol teal thick matte paper background, cream torn layers, warm kraft and restrained orange #E8732C. Extremely important responsive composition: ALL essential content within central horizontal band y=36%-64%, x=20%-80%. At RIGHT end of this central band, x=66%-78%, depict small compact bust of SAME chestnut spiky-haired boy, olive T-shirt, orange headphones at NECK, curious half-smile; complete head hair and headphones must fit y=37%-64%, no larger. LEFT of him a broad CLEAN EMPTY cream torn-paper label occupies x=24%-63%, y=38%-61%, for later title in code. Leave label fully blank. At extreme outer edges outside central safe band, a few oversized decorative cut-paper silhouettes: retro button phone, hourglass, blank calendar, amber blank disk, all low contrast and safely crop-able. Top and bottom 35% mainly quiet teal textured paper with subtle torn cream corner accents. NO words, letters, digits, logos, symbols, watermark, arrows or neon. Soft warm paper-layer shadows. Image 1 identity/material; image 2 accepted hero headphones identity. Do not reproduce Bitcoin thumbnail layout.
+```
+
+## Исправление B1
+
+Референс: `raw/B1.png` (первая генерация баннера).
+
+```text
+Use case: precise-object-edit. Edit this paper channel banner with a single composition correction: shrink ONLY the youthful boy bust on right to 65% of its current height and width, keeping face, hair, olive shirt, orange neck headphones and expression identical. Position the entire smaller bust including top of hair and bottom of shirt within x=67%-79%, y=38%-62% of full canvas. Currently it is too tall for responsive crop. Fill vacated area with same petrol paper background, no seams. Keep cream blank label, all outer objects, colors, material, lighting, layout and full landscape canvas unchanged. No added text or symbols. Absolutely every pixel of the hero must fit between horizontal y=38% and y=62%.
+```
+
+Надписи баннера кодом: `ВДРУГ ТЫ` / `ОДНО «ЕСЛИ» МЕНЯЕТ ВСЁ`.
+
+## Проверка
+
+Первый T6 отклонён: появился герой и посторонние предметы; сохранён как `raw/T6-rejected.png`. Здесь приведён фактический исправленный промпт T6. Исходный запрос этой попытки сохранён в `T6-rejected-prompt.txt`; файл `T6-correction.txt` содержит исправление. Вторая версия баннера — `raw/B1-safe.png`.
+
+Код сборки: `scripts/finish_pack.py`. Текст набран Arial Narrow Bold. Есть превью 170 px, круглые аватары 98 px, центральная обрезка баннера и журнал размеров/байтов/текстовых границ. CTR не измерялся. Для первого ролика сравнивать T1/T2/T3 либо T2/T3/T6; T4/T5 предназначены для других тем. Надпись «1000 лет спустя» описывает условный сюжет бессмертия.
+

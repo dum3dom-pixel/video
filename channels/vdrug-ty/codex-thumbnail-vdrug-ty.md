@@ -1,63 +1,32 @@
-# Codex: превью для канала «Вдруг ты» (ролик 1 «Вдруг ты проснулся в 2010 с памятью о будущем»)
+# Codex: главное превью «Вдруг ты проснулся в 2010…»
 
-Основа: `hero-bible.md` (герой `plan-guy`, манга ч/б, один оранжевый `#E8732C`), черновики `thumbnails/vdrug-ty-2010-A.png` (лист «ПЛАН», №1 замазан) и `-B.png` (шок + наушники).
-Текст в картинку не рисуем: кириллицу ИИ искажает. Надписи добавляем кодом (см. блок «Текст поверх»).
+Актуальная бумажная версия от 4 ноября 2026 по изображению пользователя. [Готовое превью T2](branding-paper-2026-11-04/thumbnails/T2.png) · [галерея](branding-paper-2026-11-04/index.html) · [полный пакет](codex-thumbnails-pack.md).
 
-## Промт для Codex
+В отличие от старого документа здесь используется юный каштановолосый бумажный герой из присланного изображения: узкое лицо, карие глаза, оливковая футболка; оранжевые наушники на шее связывают серию. Предыдущая версия сохранена в `branding-paper-2026-11-04/previous-prompts/`.
 
-```
-Сгенерируй одну картинку для превью YouTube-ролика. Формат 16:9, 1672×941 (или больше, строго 16:9), PNG.
-Сохрани как thumbnails/vdrug-ty-2010-codex.png.
+## Приложить референс
 
-СТИЛЬ
-Чёрно-белая манга, чернила: детальная линия и штриховка, серая кожа и волосы, чисто-чёрный фон.
-Единственный цвет во всей картинке: ярко-оранжевый #E8732C. Больше никаких цветов, красного тоже нет.
-Контраст высокий, герой читается, если уменьшить картинку до ширины 170 px.
+`channels/chto-esli/video-01/assets/thumbnails/2026-11-03/thumbnail_A_v3.png` — лицо, волосы, одежда, материал бумаги и палитра. Открыть его перед генерацией и приложить именно файл. Не копировать надписи и сюжет про биткоин.
 
-ГЕРОЙ (оригинальный персонаж, ничей фан-арт)
-Обычный мужчина лет 25: растрёпанные тёмные волосы с ОДНИМ торчащим вихром, усталые глаза с тёмными кругами,
-лёгкая щетина, простая рубашка с закатанными рукавами. Волосы не закрывают глаза: открытое лицо.
-Большие накладные наушники висят на шее, они ОРАНЖЕВЫЕ (#E8732C) и единственная цветная деталь на герое.
-Если приложен лист персонажа, повтори героя с него точно: лицо, причёску, одежду, наушники.
+## Фактически использованный промпт
 
-КОМПОЗИЦИЯ
-Герой крупно, по грудь, занимает левые ~55% кадра, камера чуть снизу, лицо повёрнуто к зрителю.
-Эмоция: шок и «я всё понял»: брови подняты высоко, глаза широко открыты, рот приоткрыт.
-Правая рука поднята к лицу, пальцы у подбородка (поза «до меня дошло»).
-Справа ближе к центру, наклонённый на ~8°, лист белой бумаги с рукописным списком из пяти пронумерованных строк (чёрные чернила, цифры 1–5).
-Строка №1 жирно замазана толстым ОРАНЖЕВЫМ маркером, как будто пункт скрыли. На листе вверху рукописное слово «ПЛАН»
-(если не получается разборчиво, оставь вверху листа пустую линию, слово добавим кодом).
-Фон за героем и листом чёрный, без деталей. Тень на земле не рисуй.
-
-СВОБОДНЫЕ ЗОНЫ (ничего важного)
-Нижний левый угол (~20% ширины × 12% высоты): пусто, туда встанет название канала.
-Нижний правый угол: пусто, там YouTube показывает длительность.
-Правая нижняя треть кадра под листом: спокойный чёрный фон, туда встанет подпись.
-
-НЕЛЬЗЯ
-Никаких надписей, букв, логотипов и водяных знаков, кроме слова «ПЛАН» на листе.
-Не повторять чужих персонажей (герой «Rep Theory» с белыми волосами на глазах, Киллуа, Билл Сайфер, колобки-стикмены).
-Без крови, без толстовки, без красного, без градиентов и свечения, без размытия.
-Не менять причёску и одежду от кадра к кадру.
+```text
+Use case: ads-marketing. Create ONE finished illustration, not a sheet, for an original Russian YouTube channel. Handmade layered cut-paper collage matching attached reference: thick matte colored paper, visible fibres, irregular cut edges, many overlapping paper pieces in hair and clothing, soft short inter-layer shadows, expressive stylized face, no ink outlines, no plastic or 3D render, no neon. Palette: deep petrol teal #203F3D, warm cream, kraft tan, olive, amber/orange #E8732C and golden paper. Hero is EXACTLY the brown-haired youthful male from reference: narrow face, huge warm brown eyes, thick eyebrows, tousled pointed chestnut paper hair with prominent cowlick, olive crew-neck T-shirt. Retain his age and recognizable facial construction; no stubble. Add chunky matte ORANGE paper over-ear headphones resting around his NECK as recurring channel identifier. Image 1 is identity, material and layout reference, NOT a request to repeat Bitcoin scene or any existing text. No other character. Absolutely NO text, letters, digits, symbols, logos, watermark or graphs. All wording and symbols will be added later with code. Keep shapes bold and readable at 170px. Landscape exactly 16:9, ideally 2048x1152. A warm cream torn-paper title area occupies upper LEFT x=0-54%, y=0-40%; keep it EMPTY, calm and clean. Hero face and main prop must stay outside title area. Bottom right 12% by 12% has no essential details. Diffuse warm craft-table light, strong tonal separation.
+Scene: secret first item on a plan. Hero on RIGHT chest-up, face large at x=73%, y=40%, very startled realization, eyes wide and mouth parted, one hand naturally raised near chin without covering face. On LOWER LEFT, large plain cream rectangular paper sheet, perfectly front-facing, unrotated, at x=7%-45%, y=43%-94%, with absolutely BLANK surface: no list strokes, no marks, no writing. One small orange paper marker alongside it. Sheet will receive plan heading, five lines and orange redaction later by code. Headphones visible, blank upper left title zone.
 ```
 
-## Текст поверх (кодом, `thumbnails/make_thumbs.py`)
+## Надписи и список кодом
 
-| Где | Текст | Стиль |
-|---|---|---|
-| Справа сверху / под листом | `ПУНКТ №1?` | жирный гротеск, ПУНКТ белый, «№1?» оранжевый `#E8732C`; 2 слова, не повторяет заголовок |
-| Нижний левый угол | `ВДРУГ` белый + `ТЫ` оранжевый | как в черновике A/B, мелко |
+| Элемент | Содержание |
+|---|---|
+| Первая строка заголовка | ПУНКТ |
+| Крупная плашка | №1? |
+| Уточнение | ПЛАН СЛОМАЛСЯ |
+| Лист | ПЛАН, номера 1–5, линии; первая строка замазана оранжевым |
 
-Заголовок ролика (в превью не дублируется): «Вдруг ты проснулся в 2010 с памятью о будущем».
+Все буквы и цифры добавлены кодом. Шрифт — Arial Narrow Bold; фон и основная краска `#203F3D`, золотистый `#F5B92E`, замазка `#E8732C`, кремовый текст на малой плашке. Выходные файлы: `branding-paper-2026-11-04/thumbnails/T2.png` и `T2.jpg`, 1280×720. [Проверка в 170 px](branding-paper-2026-11-04/review/T2-170px.png).
 
-## Запасные варианты (для Test & Compare, сменить только блок КОМПОЗИЦИЯ)
+Сборка: `python channels/vdrug-ty/branding-paper-2026-11-04/scripts/finish_pack.py`. Генерация — встроенный `image_gen`; исходник `branding-paper-2026-11-04/raw/T2.png`.
 
-- **A2 «рот закрыт рукой»:** герой обеими ладонями закрывает рот, глаза огромные, взгляд в камеру; лист «ПЛАН» с замазанным №1 меньше, у правого края.
-- **A3 «только предмет»:** без героя. Крупный план листа «ПЛАН» на чёрном столе сверху, №1 замазан оранжевым, рядом оранжевая ручка и оранжевые наушники у края кадра.
+Для сравнения готовы T1 (календарь 2010), T3 (биткоин без неподтверждённых сумм) и T6 (тот же план без героя). Результаты CTR не измерялись. Не смешивать в одном сравнении с T4/T5: они про деньги и бессмертие.
 
-## Проверка после генерации
-
-1. Уменьшить до ширины 170 px: читается ли лицо и оранжевое пятно на листе.
-2. Нет ли второго цвета кроме оранжевого и нет ли букв, кроме «ПЛАН».
-3. Не похож ли герой на Rep Theory / Киллуа / Билла Сайфера.
-4. Нижние углы свободны под название канала и длительность.

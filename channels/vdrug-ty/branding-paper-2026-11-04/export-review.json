@@ -1,0 +1,664 @@
+{
+  "date": "2026-11-04",
+  "exports": [
+    {
+      "file": "thumbnails/T1.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1467053
+    },
+    {
+      "file": "thumbnails/T1.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 468838
+    },
+    {
+      "file": "review/T1-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 33567
+    },
+    {
+      "file": "thumbnails/T2.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1434262
+    },
+    {
+      "file": "thumbnails/T2.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 437283
+    },
+    {
+      "file": "review/T2-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 30808
+    },
+    {
+      "file": "thumbnails/T3.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1411006
+    },
+    {
+      "file": "thumbnails/T3.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 448841
+    },
+    {
+      "file": "review/T3-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 32316
+    },
+    {
+      "file": "thumbnails/T4.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1434676
+    },
+    {
+      "file": "thumbnails/T4.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 454411
+    },
+    {
+      "file": "review/T4-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 33486
+    },
+    {
+      "file": "thumbnails/T5.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1434159
+    },
+    {
+      "file": "thumbnails/T5.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 452228
+    },
+    {
+      "file": "review/T5-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 33212
+    },
+    {
+      "file": "thumbnails/T6.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1376149
+    },
+    {
+      "file": "thumbnails/T6.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 399118
+    },
+    {
+      "file": "review/T6-170px.png",
+      "size": [
+        170,
+        96
+      ],
+      "bytes": 26640
+    },
+    {
+      "file": "avatars/L1.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 843311
+    },
+    {
+      "file": "review/L1-circle.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 945816
+    },
+    {
+      "file": "review/L1-98px.png",
+      "size": [
+        98,
+        98
+      ],
+      "bytes": 18881
+    },
+    {
+      "file": "avatars/L2.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 726030
+    },
+    {
+      "file": "review/L2-circle.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 821199
+    },
+    {
+      "file": "review/L2-98px.png",
+      "size": [
+        98,
+        98
+      ],
+      "bytes": 18103
+    },
+    {
+      "file": "avatars/L3.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 708099
+    },
+    {
+      "file": "review/L3-circle.png",
+      "size": [
+        800,
+        800
+      ],
+      "bytes": 805780
+    },
+    {
+      "file": "review/L3-98px.png",
+      "size": [
+        98,
+        98
+      ],
+      "bytes": 16382
+    },
+    {
+      "file": "banner/B1-2560x1440.png",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 3515068
+    },
+    {
+      "file": "banner/B1-2560x1440.jpg",
+      "size": [
+        2560,
+        1440
+      ],
+      "bytes": 843725
+    },
+    {
+      "file": "review/banner-center-1546x423.png",
+      "size": [
+        1546,
+        423
+      ],
+      "bytes": 678586
+    },
+    {
+      "file": "review/banner-wide-strip.png",
+      "size": [
+        2560,
+        423
+      ],
+      "bytes": 1134616
+    },
+    {
+      "file": "review/banner-safe-area.png",
+      "size": [
+        1280,
+        720
+      ],
+      "bytes": 1151279
+    },
+    {
+      "file": "review/contact-sheet.jpg",
+      "size": [
+        1440,
+        1410
+      ],
+      "bytes": 950790
+    }
+  ],
+  "text_boxes": [
+    {
+      "role": "T1 headline 1",
+      "text": "ЭТО СНОВА",
+      "bounds": [
+        54,
+        45,
+        607,
+        127
+      ],
+      "font_size": 112
+    },
+    {
+      "role": "T1 headline 2",
+      "text": "2010?!",
+      "bounds": [
+        56,
+        151,
+        420,
+        253
+      ],
+      "font_size": 140
+    },
+    {
+      "role": "T1 qualifier",
+      "text": "Я ПОМНЮ БУДУЩЕЕ",
+      "bounds": [
+        57,
+        273,
+        277,
+        296
+      ],
+      "font_size": 26
+    },
+    {
+      "role": "T1 calendar year",
+      "text": "2010",
+      "bounds": [
+        172,
+        463,
+        416,
+        559
+      ],
+      "font_size": 133
+    },
+    {
+      "role": "T2 headline 1",
+      "text": "ПУНКТ",
+      "bounds": [
+        54,
+        45,
+        355,
+        127
+      ],
+      "font_size": 112
+    },
+    {
+      "role": "T2 headline 2",
+      "text": "№1?",
+      "bounds": [
+        56,
+        151,
+        318,
+        252
+      ],
+      "font_size": 140
+    },
+    {
+      "role": "T2 qualifier",
+      "text": "ПЛАН СЛОМАЛСЯ",
+      "bounds": [
+        57,
+        273,
+        248,
+        292
+      ],
+      "font_size": 26
+    },
+    {
+      "role": "T2 page heading",
+      "text": "ПЛАН",
+      "bounds": [
+        155,
+        356,
+        286,
+        396
+      ],
+      "font_size": 55
+    },
+    {
+      "role": "T2 page index",
+      "text": "1.",
+      "bounds": [
+        155,
+        439,
+        179,
+        463
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T2 page index",
+      "text": "2.",
+      "bounds": [
+        155,
+        484,
+        179,
+        508
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T2 page index",
+      "text": "3.",
+      "bounds": [
+        155,
+        529,
+        179,
+        553
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T2 page index",
+      "text": "4.",
+      "bounds": [
+        155,
+        574,
+        179,
+        598
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T2 page index",
+      "text": "5.",
+      "bounds": [
+        155,
+        619,
+        179,
+        643
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T3 headline 1",
+      "text": "Я ЗНАЛ ПРО",
+      "bounds": [
+        54,
+        45,
+        613,
+        126
+      ],
+      "font_size": 110
+    },
+    {
+      "role": "T3 headline 2",
+      "text": "БИТКОИН",
+      "bounds": [
+        56,
+        151,
+        613,
+        253
+      ],
+      "font_size": 139
+    },
+    {
+      "role": "T4 headline 1",
+      "text": "ДЕНЬГИ",
+      "bounds": [
+        53,
+        45,
+        415,
+        138
+      ],
+      "font_size": 106
+    },
+    {
+      "role": "T4 headline 2",
+      "text": "БЕЗ ЛИМИТА",
+      "bounds": [
+        56,
+        151,
+        613,
+        227
+      ],
+      "font_size": 103
+    },
+    {
+      "role": "T4 qualifier",
+      "text": "И ВСЁ РАВНО СКУЧНО",
+      "bounds": [
+        57,
+        273,
+        298,
+        296
+      ],
+      "font_size": 26
+    },
+    {
+      "role": "T5 headline 1",
+      "text": "ЖИТЬ",
+      "bounds": [
+        54,
+        45,
+        325,
+        127
+      ],
+      "font_size": 112
+    },
+    {
+      "role": "T5 headline 2",
+      "text": "ВЕЧНО?",
+      "bounds": [
+        56,
+        151,
+        539,
+        253
+      ],
+      "font_size": 140
+    },
+    {
+      "role": "T5 qualifier",
+      "text": "1000 ЛЕТ СПУСТЯ",
+      "bounds": [
+        57,
+        273,
+        245,
+        292
+      ],
+      "font_size": 26
+    },
+    {
+      "role": "T6 headline 1",
+      "text": "ПУНКТ",
+      "bounds": [
+        54,
+        45,
+        355,
+        127
+      ],
+      "font_size": 112
+    },
+    {
+      "role": "T6 headline 2",
+      "text": "№1?",
+      "bounds": [
+        56,
+        151,
+        318,
+        252
+      ],
+      "font_size": 140
+    },
+    {
+      "role": "T6 qualifier",
+      "text": "ПЛАН СЛОМАЛСЯ",
+      "bounds": [
+        57,
+        273,
+        248,
+        292
+      ],
+      "font_size": 26
+    },
+    {
+      "role": "T6 page heading",
+      "text": "ПЛАН",
+      "bounds": [
+        723,
+        154,
+        854,
+        194
+      ],
+      "font_size": 55
+    },
+    {
+      "role": "T6 page index",
+      "text": "1.",
+      "bounds": [
+        723,
+        237,
+        747,
+        261
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T6 page index",
+      "text": "2.",
+      "bounds": [
+        723,
+        306,
+        747,
+        330
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T6 page index",
+      "text": "3.",
+      "bounds": [
+        723,
+        375,
+        747,
+        399
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T6 page index",
+      "text": "4.",
+      "bounds": [
+        723,
+        444,
+        747,
+        468
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "T6 page index",
+      "text": "5.",
+      "bounds": [
+        723,
+        513,
+        747,
+        537
+      ],
+      "font_size": 34
+    },
+    {
+      "role": "Banner title",
+      "text": "ВДРУГ ТЫ",
+      "bounds": [
+        592,
+        617,
+        1302,
+        762
+      ],
+      "font_size": 166
+    },
+    {
+      "role": "Banner tagline",
+      "text": "ОДНО «ЕСЛИ» МЕНЯЕТ ВСЁ",
+      "bounds": [
+        599,
+        799,
+        1049,
+        839
+      ],
+      "font_size": 39
+    }
+  ],
+  "captions": {
+    "T1": [
+      "ЭТО СНОВА",
+      "2010?!",
+      "Я ПОМНЮ БУДУЩЕЕ"
+    ],
+    "T2": [
+      "ПУНКТ",
+      "№1?",
+      "ПЛАН СЛОМАЛСЯ"
+    ],
+    "T3": [
+      "Я ЗНАЛ ПРО",
+      "БИТКОИН",
+      ""
+    ],
+    "T4": [
+      "ДЕНЬГИ",
+      "БЕЗ ЛИМИТА",
+      "И ВСЁ РАВНО СКУЧНО"
+    ],
+    "T5": [
+      "ЖИТЬ",
+      "ВЕЧНО?",
+      "1000 ЛЕТ СПУСТЯ"
+    ],
+    "T6": [
+      "ПУНКТ",
+      "№1?",
+      "ПЛАН СЛОМАЛСЯ"
+    ]
+  },
+  "font": "C:\\Windows\\Fonts\\ARIALNB.TTF",
+  "checks": [
+    "All exported images decode",
+    "6 thumbnails at 1280x720; PNG and JPG under 2 MB",
+    "3 avatars at 800x800 plus circular 98px previews",
+    "Banner at 2560x1440; title/tagline fit central crop",
+    "No unverified Bitcoin prices or returns included"
+  ],
+  "measurement": "No CTR measurements or Test & Compare run."
+}
