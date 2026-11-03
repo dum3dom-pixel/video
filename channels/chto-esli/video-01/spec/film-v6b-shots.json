@@ -1,0 +1,926 @@
+{
+ "shots": [
+  {
+   "id": "kitchen",
+   "img": "bg/bg_kitchen-v2.png",
+   "cue": [
+    "037"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.07
+    ],
+    "x": [
+     768,
+     700
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "date_plate:1"
+   ]
+  },
+  {
+   "id": "mama_bread",
+   "img": "shots/e1_mama_bread.png",
+   "cue": [
+    "039"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "videocall",
+   "img": "shots/e1_videocall.png",
+   "cue": [
+    "039",
+    "видеосвязи"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "cold"
+   ]
+  },
+  {
+   "id": "oilcloth",
+   "img": "shots/e1_oilcloth.png",
+   "cue": [
+    "040"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "papa_pan",
+   "img": "shots/e1_papa_pan.png",
+   "cue": [
+    "041"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     450
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "papa_lowers",
+   "img": "shots/e1_papa_lowers.png",
+   "cue": [
+    "042"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "cocoa",
+   "img": "shots/e1_cocoa.png",
+   "cue": [
+    "045"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     840
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "clock",
+   "img": "shots/e1_clock_ten.png",
+   "cue": [
+    "048"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     400
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "school_board",
+   "img": "shots/e1_school_board-v2.png",
+   "cue": [
+    "049"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     420
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "chalk"
+   ]
+  },
+  {
+   "id": "plan_night",
+   "img": "shots/e1_plan_night.png",
+   "cue": [
+    "051"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     960
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "lights_out",
+   "img": "shots/e1_lights_out.png",
+   "cue": [
+    "051",
+    "Остальное"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "lights"
+   ]
+  },
+  {
+   "id": "try_mama",
+   "img": "shots/e2_try_mama.png",
+   "cue": [
+    "052"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:2"
+   ]
+  },
+  {
+   "id": "try_teacher",
+   "img": "shots/e2_try_teacher.png",
+   "cue": [
+    "054"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     860
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "try_dimka",
+   "img": "shots/e2_try_dimka.png",
+   "cue": [
+    "055"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "stairs",
+   "img": "shots/e2_stairs.png",
+   "cue": [
+    "056"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     960
+    ],
+    "y": [
+     512,
+     460
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "kostya_room",
+   "img": "shots/e2_kostya_room.png",
+   "cue": [
+    "057"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "kostya_gives",
+   "img": "shots/e2_kostya_gives.png",
+   "cue": [
+    "060"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     860
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "kostya_gives2",
+   "img": "shots/e2_kostya_gives.png",
+   "cue": [
+    "061"
+   ],
+   "cam": {
+    "z": [
+     1.1,
+     1.14
+    ],
+    "x": [
+     900,
+     940
+    ],
+    "y": [
+     470,
+     450
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "market",
+   "img": "shots/e2_market.png",
+   "cue": [
+    "062"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "labels",
+   "img": "shots/e2_labels.png",
+   "cue": [
+    "062",
+    "подписываешь"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     650,
+     850
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "box",
+   "img": "shots/h_cassette_box.png",
+   "cue": [
+    "062",
+    "откладываешь"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "labels2",
+   "img": "shots/e2_labels.png",
+   "cue": [
+    "063"
+   ],
+   "cam": {
+    "z": [
+     1.06,
+     1.1
+    ],
+    "x": [
+     1000,
+     1050
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "rec_keys",
+   "img": "shots/e2_rec_keys.png",
+   "cue": [
+    "064"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "recording",
+   "img": "shots/e2_recording.png",
+   "cue": [
+    "065"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     790
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "life",
+   "img": "bg/bg_kitchen_adult-v2.png",
+   "cue": [
+    "067"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "grain"
+   ]
+  },
+  {
+   "id": "life_work",
+   "img": "shots/e2_life_work-v2.png",
+   "cue": [
+    "067",
+    "работа"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "life_bus",
+   "img": "shots/e2_life_bus.png",
+   "cue": [
+    "067",
+    "маршрутка"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "life_sofa",
+   "img": "shots/e2_life_sofa.png",
+   "cue": [
+    "067",
+    "сериал"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "night_2024",
+   "img": "shots/e2_2024_night.png",
+   "cue": [
+    "068"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     540
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "answered"
+   ]
+  },
+  {
+   "id": "bench",
+   "img": "shots/e3_bench.png",
+   "cue": [
+    "070"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     700,
+     920
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:3"
+   ]
+  },
+  {
+   "id": "bench_boys",
+   "img": "shots/e3_bench.png",
+   "cue": [
+    "072"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.38
+    ],
+    "x": [
+     600,
+     580
+    ],
+    "y": [
+     540,
+     540
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "fallen",
+   "img": "shots/e3_fallen.png",
+   "cue": [
+    "076"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.2
+    ],
+    "x": [
+     768,
+     980
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "bed_edge",
+   "img": "shots/e3_bed_edge.png",
+   "cue": [
+    "077"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.15
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "notebooks",
+   "img": "shots/e3b_notebooks.png",
+   "cue": [
+    "080"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:4"
+   ]
+  },
+  {
+   "id": "gena",
+   "img": "shots/e3b_gena.png",
+   "cue": [
+    "081",
+    "Гена"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "fractions",
+   "img": "shots/e3b_fractions_cu.png",
+   "cue": [
+    "082"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "fractions"
+   ]
+  },
+  {
+   "id": "library",
+   "img": "shots/e3b_library.png",
+   "cue": [
+    "083"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     820
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "computer",
+   "img": "shots/e3b_computer.png",
+   "cue": [
+    "083",
+    "Компьютер"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     480
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "piggybank",
+   "img": "shots/e3b_piggybank.png",
+   "cue": [
+    "084"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     800
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "plan_done",
+   "img": "shots/e1_plan_sheet.png",
+   "cue": [
+    "085"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "plan_done"
+   ]
+  }
+ ]
+}

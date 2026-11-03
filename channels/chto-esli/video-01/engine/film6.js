@@ -129,8 +129,50 @@
     }
   };
 
+  // part B plate overlays: cue line of the shot is s.cue[0]
+  const sw=(s,stem)=>wordAt(s.cue[0],stem);
+  Object.assign(PLATE,{
+    chalk(c,t,s){
+      const u=appear(t,sw(s,'сколько'),.4);
+      c.save();c.rotate(-.01);text(c,'3/5 + 2/7 = ?',520,215,{font:'700 54px PilotSerif',fill:'#EFE8D8',alpha:u*.92});c.restore();
+    },
+    fractions(c,t,s){
+      const a=appear(t,sw(s,'три'),.3),b=appear(t,sw(s,'тридцать'),.4);
+      c.save();c.rotate(-.012);
+      text(c,'3/5 + 2/7 =',390,380,{font:'700 64px PilotSerif',fill:'#5a5048',alpha:a*.9});
+      text(c,'31/35',960,380,{font:'700 96px PilotSerif',fill:'#5a5048',alpha:b*.9});c.restore();
+    },
+    plan_done(c,t,s){
+      text(c,'ПЛАН',280,240,{font:'700 66px PilotSerif',align:'left'});
+      const at=sw(s,'вычёркиваешь');
+      PLAN.forEach(([str],i)=>{
+        const y=330+i*62;
+        if(i===PLAN.length-1){c.save();c.fillStyle=MUSTARD;c.globalAlpha=.5;c.fillRect(250,y-30,620,60);c.restore();}
+        text(c,`${i+1}. ${str}`,280,y,{font:'700 44px PilotSerif',align:'left'});
+        if(i<PLAN.length-1){
+          c.save();c.font='700 44px PilotSerif';const tw=c.measureText(`${i+1}. ${str}`).width;c.restore();
+          const u=smooth((t-(at+.4+i*.5))/.35);
+          if(u>0){c.save();c.strokeStyle=INK;c.lineWidth=6;c.lineCap='round';c.globalAlpha=.85;c.beginPath();c.moveTo(270,y+2);c.lineTo(270+(tw+20)*u,y+2-4*u);c.stroke();c.restore();}
+        }
+      });
+    }
+  });
+
   // ---- screen overlays (1920x1080) ----
+  const DATE_PLATES={1:'Сентябрь 2005 · 12 лет',2:'Осень 2005 · 12 лет',3:'Май 2006 · 13 лет',4:'2006 · 13 лет'};
   const SCREEN={
+    date_plate(c,t,s,arg){
+      const u=appear(t,s.start+.35,.3)*(1-appear(t,s.start+3.6,.4));if(u<=0)return;
+      c.font='700 44px PilotSerif';const w=c.measureText(DATE_PLATES[arg]).width+70;
+      strip(c,70+w/2,86,w,92,{alpha:u,seed:5,fill:MUSTARD});text(c,DATE_PLATES[arg],70+w/2,86,{font:'700 44px PilotSerif',alpha:u});
+    },
+    cold(c){c.save();c.globalCompositeOperation='multiply';c.fillStyle='rgb(168,190,216)';c.fillRect(0,0,W,H);c.restore();},
+    grain(c){c.save();c.globalCompositeOperation='multiply';c.fillStyle='rgb(176,176,184)';c.fillRect(0,0,W,H);c.restore();},
+    answered(c,t,s){
+      const at=wordAt(s.cue[0],'ответил')-.5,u=appear(t,at,.35);if(u<=0)return;
+      c.save();c.translate(W/2,H/2-120);const k=mix(1.08,1,u);c.scale(k,k);
+      strip(c,0,0,820,170,{alpha:u,seed:9});text(c,'«Он ответил»',0,0,{font:'700 88px PilotSerif',alpha:u});c.restore();
+    },
     title_card(c,t,s){
       const u=appear(t,s.start+.15,.45);if(u<=0)return;
       c.save();c.translate(0,(1-u)*60);
