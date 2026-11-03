@@ -159,8 +159,22 @@
   });
 
   // ---- screen overlays (1920x1080) ----
-  const DATE_PLATES={1:'Сентябрь 2005 · 12 лет',2:'Осень 2005 · 12 лет',3:'Май 2006 · 13 лет',4:'2006 · 13 лет'};
+  const DATE_PLATES={1:'Сентябрь 2005 · 12 лет',2:'Осень 2005 · 12 лет',3:'Май 2006 · 13 лет',4:'2006 · 13 лет',5:'Октябрь 2008 · 15 лет',6:'2009 · 15 лет',7:'Весна 2011',8:'2011 · 18 лет',9:'2012 · 19 лет',10:'2013 · 20 лет',11:'2015 · 22 года',12:'2019 · 26 лет',13:'2024 · 31 год',14:'2026 · 33 года'};
   const SCREEN={
+    bank(c,t,s){
+      const at=wordAt(s.cue[0],'банк'),u=appear(t,at,.3)*(1-appear(t,at+3.2,.4));if(u<=0)return;
+      c.font='700 56px PilotSerif';const w=c.measureText('Банк завтра в 10:00').width+80;
+      strip(c,W/2,150,w,100,{alpha:u,seed:11,fill:MUSTARD});text(c,'Банк завтра в 10:00',W/2,150,{font:'700 56px PilotSerif',alpha:u});
+    },
+    timeline(c,t,s){
+      const u=appear(t,s.start+.2,.4);if(u<=0)return;
+      const k=appear(t,s.start+1.0,.9);
+      strip(c,W/2,H/2-40,1300,260,{alpha:u,seed:13});
+      text(c,'2006',W/2-420,H/2-40,{font:'700 110px PilotSerif',alpha:u});
+      text(c,'2008',W/2+420,H/2-40,{font:'700 110px PilotSerif',alpha:u*smooth((t-(s.start+1.6))/.5)});
+      c.save();c.globalAlpha=u;c.strokeStyle=INK;c.lineWidth=9;c.lineCap='round';c.beginPath();c.moveTo(W/2-250,H/2-40);c.lineTo(mix(W/2-250,W/2+250,k),H/2-40);c.stroke();c.restore();
+      text(c,'осень',W/2+420,H/2+50,{font:'700 48px PilotSerif',alpha:u*smooth((t-(s.start+2.0))/.5),fill:BRICK});
+    },
     date_plate(c,t,s,arg){
       const u=appear(t,s.start+.35,.3)*(1-appear(t,s.start+3.6,.4));if(u<=0)return;
       c.font='700 44px PilotSerif';const w=c.measureText(DATE_PLATES[arg]).width+70;
