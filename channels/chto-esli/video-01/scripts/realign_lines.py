@@ -61,13 +61,15 @@ for li in range(len(L)):
     idx=[k for k in range(n) if own[k]==li and k in mapped]
     if idx:starts.append(min(mapped[k] for k in idx));est.append(False)
     else:starts.append(None);est.append(True)
+LAST_RECORDED=139  # the ElevenLabs file ends inside line 139; later lines are not in it
+for k in range(LAST_RECORDED+1,len(starts)):starts[k]=None
 # fill unmapped by interpolation, keep monotonic
 for k in range(len(starts)):
     if starts[k] is None:
         a=max((q for q in range(k) if starts[q] is not None),default=None)
         b=min((q for q in range(k+1,len(starts)) if starts[q] is not None),default=None)
         if a is None:starts[k]=0.0
-        elif b is None:starts[k]=starts[a]+.5*(k-a)
+        elif b is None:starts[k]=W['duration']+.01*(k-a)  # tail missing from the recording: park after the end
         else:starts[k]=starts[a]+(starts[b]-starts[a])*(k-a)/(b-a)
 for k in range(1,len(starts)):
     if starts[k]<=starts[k-1]:print('non-monotonic',k,starts[k-1],starts[k])
