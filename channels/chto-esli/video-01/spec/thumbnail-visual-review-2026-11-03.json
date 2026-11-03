@@ -1,0 +1,33 @@
+{
+  "tool": "built-in image_gen; exact typography and Bitcoin emblem added in code",
+  "source_script": "channels/chto-esli/video-01-script-v5.md",
+  "preferred_first_test": "A",
+  "visual_review_width": 150,
+  "variants": [
+    {
+      "id": "A",
+      "headline": "Я ЗНАЛ ПРО БИТКОИН",
+      "review": "Sasha, CRT, Bitcoin emblem and all caption words recognizable at 150 px. Small adult self is secondary memory context. No extra text or profits.",
+      "support": "Hook: remembers Bitcoin at 12 in 2005. Эпоха 4б: starts mining in January 2009 with Kostya. Editorial montage, no claim of mining in 2005."
+    },
+    {
+      "id": "B",
+      "headline": "ВЧЕРА 33 СЕГОДНЯ 12",
+      "review": "Both ages readable as the same hero; whole caption readable at 150 px. Adult stubble and cooler clothes distinguish the ages.",
+      "support": "Hook: Вчера тебе было тридцать три; wakes as 12-year-old in September 2005."
+    },
+    {
+      "id": "C",
+      "headline": "БУДУЩЕЕ НА КАССЕТЕ?",
+      "review": "Cassette, two reels, child face and whole question readable at 150 px. Cassette label intentionally blank, no extra writing.",
+      "support": "Эпоха 2: records fading future memories on cassettes. 2024 tape and finale confirm remembered events."
+    }
+  ],
+  "files": [
+    "assets/thumbnails/2026-11-03/thumbnail_A.png",
+    "assets/thumbnails/2026-11-03/thumbnail_B.png",
+    "assets/thumbnails/2026-11-03/thumbnail_C.png"
+  ],
+  "verification": "All PNG RGB 1280x720. File sizes 1.30–1.47 MB. Final A and all three 150 px previews visually inspected. No promised CTR, prices or invented earnings.",
+  "interrupted_generation": "A later cassette-only C revision was interrupted by the user; not used or reported as completed."
+}

@@ -1,0 +1,1759 @@
+{
+  "revision": "sasha-redesign-2026-11-03",
+  "generator": "built-in image_gen",
+  "approved_reference": "assets/sheets/sasha_sheet-paper-v1.png",
+  "scope": "All Sasha source sheets and scene/detail assets under this video. Aliases share one replacement; historical renders, thumbnails, experiments, before/trials archives and other projects excluded.",
+  "excluded": "Other characters, empty backgrounds, scenes with no Sasha (e3_fallen, e4_car_taken, e4_flash_papers, e4_papa_look_cu, e6_lena_cup_cu, f_last_tape, etc.), rendered MP4 and cover thumbnails.",
+  "entries": [
+    {
+      "id": "sasha_sheet",
+      "group": "Основные листы",
+      "kind": "sheet",
+      "age": 12,
+      "source": "assets/sheets/sasha_sheet.png",
+      "destinations": [
+        "assets/sheets/sasha_sheet.png",
+        "assets/sheets/sasha_sheet_hd.png"
+      ],
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-4392957a-abd2-45db-b3ef-2254a2c95269.png",
+      "selected": "assets/sheets/sasha_sheet-paper-v1.png",
+      "verification": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "bytes": 2746450,
+        "sha256": "733c341427b5dd41ba9af1842b28c6b83a7e09c7e7a893a38edcda94eefd23a4"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/sasha_sheet-paper-v1.json"
+    },
+    {
+      "id": "sasha_ages_sheet",
+      "group": "Основные листы",
+      "kind": "sheet",
+      "age": 12,
+      "source": "assets/sheets/sasha_ages_sheet.png",
+      "destinations": [
+        "assets/sheets/sasha_ages_sheet-alt.png",
+        "assets/sheets/sasha_ages_sheet.png"
+      ],
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-feee2e1a-f796-4b09-b2ae-ada41a1e2cdd.png",
+      "selected": "assets/sheets/sasha_ages_sheet-paper-v1.png",
+      "verification": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "bytes": 2615338,
+        "sha256": "7d5a0a7107cccf699b01fd4c2594be99245d5ffffecceed8e42d4d6cdb298088"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/sasha_ages_sheet-paper-v1.json"
+    },
+    {
+      "id": "sasha_faces_sheet",
+      "group": "Основные листы",
+      "kind": "sheet",
+      "age": 12,
+      "source": "assets/sheets/sasha_faces_sheet.png",
+      "destinations": [
+        "assets/sheets/sasha_faces_sheet-alt.png",
+        "assets/sheets/sasha_faces_sheet.png"
+      ],
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-3709de89-ee79-4a80-9bd4-3e811086ba36.png",
+      "selected": "assets/sheets/sasha_faces_sheet-paper-v1.png",
+      "verification": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "bytes": 2771637,
+        "sha256": "3efcff4ffc32b1132d17fc2b0cdb6e6bc1ac30db93fb806af30d184093c1d210"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/sasha_faces_sheet-paper-v1.json"
+    },
+    {
+      "id": "p4_sasha",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/p4_sasha.png",
+      "destinations": [
+        "assets/shots/p4_sasha.png",
+        "assets/shots/p4_sasha_hd.png",
+        "assets/shots/p4_sasha_rerender-preview.png",
+        "assets/hd-refs/p4_sasha.png"
+      ],
+      "description": "",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-e3ce6ed5-e6c8-4ee0-a1f0-3cf7440a8179.png",
+      "selected": "assets/shots/p4_sasha-paper-v1.png",
+      "verification": {
+        "width": 1536,
+        "height": 1024,
+        "mode": "RGB",
+        "bytes": 2359060,
+        "sha256": "d68e9f867668061592bbcaddfc09d7e2d80a2c6da9f2ed040c2598c2b205f04b"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/p4_sasha-paper-v1.json"
+    },
+    {
+      "id": "h_sasha_palm",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/h_sasha_palm.png",
+      "destinations": [
+        "assets/shots/h_sasha_palm.png"
+      ],
+      "description": "Asset: shots/h_sasha_palm.png, a finished full scene. Morning, the bedroom from the attached background. Sasha sits on the edge of the bed, one palm pressed over his face, the other hand gripping the blanket. Medium-wide view, the room around him calm and warm.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-8bb180af-4ab8-43ea-9b3a-9cc2817e8148.png",
+      "selected": "assets/shots/h_sasha_palm-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2257202,
+        "sha256": "614225a60ea835bbf070e7985545b7a88d39038906beba87946461e303cd13f2"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/h_sasha_palm-paper-v1.json"
+    },
+    {
+      "id": "h_sasha_eyes_cu",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/h_sasha_eyes_cu.png",
+      "destinations": [
+        "assets/shots/h_sasha_eyes_cu.png"
+      ],
+      "description": "Asset: shots/h_sasha_eyes_cu.png, a close-up master. Extreme close-up of Sasha's face from forehead to chin, filling the frame, eyes wide open, a far too grown-up gaze, faint shadows under the eyes, slightly drawn brows, hair strands crisp. Soft morning light from the left.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-f15570a6-9856-4e41-939a-d9551e82e32e.png",
+      "selected": "assets/shots/h_sasha_eyes_cu-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2525098,
+        "sha256": "1cbfc2e0f8e2e999b3557303e32688d74d89429e0f07b4fe9b28f15338d2c499"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/h_sasha_eyes_cu-paper-v1.json"
+    },
+    {
+      "id": "k_sasha_table",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/k_sasha_table-v2.png",
+      "destinations": [
+        "assets/shots/k_sasha_table-v2.png",
+        "assets/shots/k_sasha_table.png"
+      ],
+      "description": "",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-c1335596-06b5-4986-af1d-ee4562e7d523.png",
+      "selected": "assets/shots/k_sasha_table-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2349270,
+        "sha256": "a591f0fb1415a14f5687fc26f775fef9831935e9ba57de5c9ed569b5bd253825"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/k_sasha_table-paper-v1.json"
+    },
+    {
+      "id": "r_adults_soup",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/r_adults_soup.png",
+      "destinations": [
+        "assets/shots/r_adults_soup.png"
+      ],
+      "description": "Asset: shots/r_adults_soup.png, a finished full scene. Kitchen table: Mama and Papa lean toward Sasha with kind, patient, condescending half-smiles, nodding, while a bowl of soup steams in front of Sasha, who looks flatly at the viewer. Camera slightly low, kitchen morning light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-aff97de3-66d0-4f51-b4dd-d5a4366a899c.png",
+      "selected": "assets/shots/r_adults_soup-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2368347,
+        "sha256": "71e16c4a8c3ee37dc049e442ed8e313d84bd74fa67d7863ad4d5643fccb1e8ef"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/r_adults_soup-paper-v1.json"
+    },
+    {
+      "id": "e1_mama_bread",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_mama_bread.png",
+      "destinations": [
+        "assets/shots/e1_mama_bread.png"
+      ],
+      "description": "Asset: shots/e1_mama_bread.png, a finished full scene. Kitchen, morning. Mama cuts a bread loaf at the table and glances back over her shoulder; Sasha sits at the table staring at her with eyes that are slightly wet. Warm light from the window.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a8af972b-4cc4-4190-bdf9-99b89bc8fe8c.png",
+      "selected": "assets/shots/e1_mama_bread-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2403399,
+        "sha256": "63e78023c9cfbeebcc538fe7d471e937094f7f25f90a40352531a7a1ca84a0b7"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_mama_bread-paper-v1.json"
+    },
+    {
+      "id": "e1_papa_pan",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_papa_pan.png",
+      "destinations": [
+        "assets/shots/e1_papa_pan.png"
+      ],
+      "description": "Asset: shots/e1_papa_pan.png, a finished full scene. Kitchen. Papa at the table eats fried eggs straight from a cast-iron frying pan and holds an unfolded newspaper in the other hand (columns are plain gray bands). In the foreground the shoulder and the back of the head of Sasha, who stares at his moustache. Morning light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-71618124-edf0-4f40-b14f-033e25279a2c.png",
+      "selected": "assets/shots/e1_papa_pan-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2393035,
+        "sha256": "1a635aea01ccd220395ead9872d3e146adcbf7ce190a35d5cdc3d69980743c7d"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_papa_pan-paper-v1.json"
+    },
+    {
+      "id": "e1_papa_lowers",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_papa_lowers.png",
+      "destinations": [
+        "assets/shots/e1_papa_lowers.png"
+      ],
+      "description": "Asset: shots/e1_papa_lowers.png, a finished full scene. Closer view: Papa has lowered the newspaper and looks over it at Sasha, eyebrows raised, a fork frozen in the air. The moment of silence is readable in the faces.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-378ef442-77e1-45b9-9682-abe6d1233327.png",
+      "selected": "assets/shots/e1_papa_lowers-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2432376,
+        "sha256": "74dbf04f40ffc152714629d88e0cc9a7263af61e5ea149e05fb9e9e39eeb9e65"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_papa_lowers-paper-v1.json"
+    },
+    {
+      "id": "e1_cocoa",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_cocoa.png",
+      "destinations": [
+        "assets/shots/e1_cocoa.png"
+      ],
+      "description": "Asset: shots/e1_cocoa.png, a finished full scene. Kitchen table: Mama sets a big mug of cocoa in front of Sasha; Sasha looks at the mug with flat, tired disbelief.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-45932c82-496a-4fee-a1a5-e8b4743f80d3.png",
+      "selected": "assets/shots/e1_cocoa-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2362470,
+        "sha256": "5f6216b9552a87f983c932cd90f4de5d35c4bcbfaac0370e5ed607e977e79c84"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_cocoa-paper-v1.json"
+    },
+    {
+      "id": "e1_clock_ten",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_clock_ten.png",
+      "destinations": [
+        "assets/shots/e1_clock_ten.png"
+      ],
+      "description": "Asset: shots/e1_clock_ten.png, a finished full scene. Hallway at evening: a round wall clock with a blank dial and hands showing ten o'clock, below it Sasha in pyjamas with arms crossed looking up at it with adult resignation.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-8b03c645-2587-4d71-abd4-698e42bf387e.png",
+      "selected": "assets/shots/e1_clock_ten-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2254577,
+        "sha256": "f1e3e635402a67ee762479ed09288709596eb7fae3c961ca7657403d552e05ed"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_clock_ten-paper-v1.json"
+    },
+    {
+      "id": "e1_school_board",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_school_board-v2.png",
+      "destinations": [
+        "assets/shots/e1_school_board-v2.png",
+        "assets/shots/e1_school_board.png"
+      ],
+      "description": "Asset: shots/e1_school_board.png, a finished full scene. Classroom: Sasha stands at the blank blackboard holding a piece of chalk, shoulders slumped; the teacher sits at her desk watching; the class is seen only from behind. Morning light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a3be3237-e018-4274-90ca-d10676ec14fc.png",
+      "selected": "assets/shots/e1_school_board-paper-v1.png",
+      "verification": {
+        "width": 1670,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2415748,
+        "sha256": "eccf0b3285ee30854090b0190b2f9e26a81aeff090aa8b5db282b95037f6c5a0"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_school_board-paper-v1.json"
+    },
+    {
+      "id": "e1_plan_night",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_plan_night.png",
+      "destinations": [
+        "assets/shots/e1_plan_night.png"
+      ],
+      "description": "Asset: shots/e1_plan_night.png, a finished full scene. Sasha's bedroom at night: desk, lamp with mustard light, window dark teal. Sasha writes on a paper sheet, frowning in a grown-up way. Same desk, lamp and window as the attached background.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ef6b75e8-7cb5-4413-b605-1a41ee8ef2d8.png",
+      "selected": "assets/shots/e1_plan_night-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2255626,
+        "sha256": "6d28c81c1aa2b267c07124bcd6cba0346ac678b171e02e422ca50e35155619e3"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_plan_night-paper-v1.json"
+    },
+    {
+      "id": "e1_lights_out",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e1_lights_out.png",
+      "destinations": [
+        "assets/shots/e1_lights_out.png"
+      ],
+      "description": "Asset: shots/e1_lights_out.png, a finished full scene. Bedroom viewed from the desk toward the door: Mama in the doorway with her hand on the light switch, bright corridor behind her, shaking her head with a warm smile; Sasha at the desk seen from behind.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-27b37230-d844-4170-919c-51cbe641db17.png",
+      "selected": "assets/shots/e1_lights_out-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2212994,
+        "sha256": "1040dbfbabea4cf204358f4c3d757d42e2f63a5d30890df130fc5512bde5a7df"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_lights_out-paper-v1.json"
+    },
+    {
+      "id": "e2_try_mama",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_try_mama-v2.png",
+      "destinations": [
+        "assets/shots/e2_try_mama-v2.png",
+        "assets/shots/e2_try_mama.png"
+      ],
+      "description": "Asset: shots/e2_try_mama.png, a finished full scene. Kitchen: Mama stirs a pot with a ladle, half turned and waving Sasha away; Sasha beside her draws a rectangle in the air with his hands.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-f09a1a33-78b3-47b8-aef1-a5cb421bb040.png",
+      "selected": "assets/shots/e2_try_mama-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2113824,
+        "sha256": "f866d91a249148a79f9a0f69a31dd98a41beae2c30f5eaa3d74c33f068179896"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_try_mama-paper-v1.json"
+    },
+    {
+      "id": "e2_try_teacher",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_try_teacher-v2.png",
+      "destinations": [
+        "assets/shots/e2_try_teacher-v2.png",
+        "assets/shots/e2_try_teacher.png"
+      ],
+      "description": "Asset: shots/e2_try_teacher.png, a finished full scene. Classroom: the teacher at her desk points firmly at Sasha; Sasha stands by his desk; the whole class has turned to look.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-d8d47b95-9689-437a-b39e-db2590eb704b.png",
+      "selected": "assets/shots/e2_try_teacher-paper-v1.png",
+      "verification": {
+        "width": 1671,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2451247,
+        "sha256": "c1d85e68792f5e6fb1fa167e112e1a649ac25eb400177841c864812b801b4a97"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_try_teacher-paper-v1.json"
+    },
+    {
+      "id": "e2_try_dimka",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_try_dimka.png",
+      "destinations": [
+        "assets/shots/e2_try_dimka.png"
+      ],
+      "description": "Asset: shots/e2_try_dimka.png, a finished full scene. School corridor by a window sill: Dimka, chewing a bun, shrugs happily; Sasha beside him looks tired.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-8e11b9c7-974b-4058-b928-7b4bfab50cda.png",
+      "selected": "assets/shots/e2_try_dimka-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2589746,
+        "sha256": "437643dfd4f6bd116121e71566610b4e27104a61402a00cafb5ff6b8197891fc"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_try_dimka-paper-v1.json"
+    },
+    {
+      "id": "e2_stairs",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_stairs.png",
+      "destinations": [
+        "assets/shots/e2_stairs.png"
+      ],
+      "description": "Asset: shots/e2_stairs.png, a finished full scene. Evening stairwell of a panel building: Sasha sits on a step and rests his forehead against the painted railing; soft window light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-b89fae9a-1066-4c1b-95f3-3fac2399c348.png",
+      "selected": "assets/shots/e2_stairs-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2250433,
+        "sha256": "487f20046fe25ce2b7e9704f6cf379fbef1625fcce914ea6535c27bd5e0f6c7b"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_stairs-paper-v1.json"
+    },
+    {
+      "id": "e2_kostya_room",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_kostya_room.png",
+      "destinations": [
+        "assets/shots/e2_kostya_room-distinct-v3.png",
+        "assets/shots/e2_kostya_room.png"
+      ],
+      "description": "Asset: shots/e2_kostya_room.png, a finished full scene. Kostya's room: Kostya half reclines on the bed with the twin-deck cassette recorder on his lap, looking at Sasha suspiciously; Sasha stands in the doorway. The record key of the deck is the only red.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-10e6d8ad-488e-48ca-8055-8db4c7a1fc71.png",
+      "selected": "assets/shots/e2_kostya_room-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2214862,
+        "sha256": "532f421dd26c157e3916142159c1f66b2c58594bf183de0690c2bd2598583037"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_kostya_room-paper-v1.json"
+    },
+    {
+      "id": "e2_kostya_gives",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_kostya_gives.png",
+      "destinations": [
+        "assets/shots/e2_kostya_gives-distinct-v3.png",
+        "assets/shots/e2_kostya_gives.png"
+      ],
+      "description": "Asset: shots/e2_kostya_gives.png, a finished full scene. Closer: Kostya sits holding the deck out to Sasha, a long weary look of an older brother; Sasha's hands reach up from below.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-6e0db67d-a1dc-43e5-a522-b87021ab17fa.png",
+      "selected": "assets/shots/e2_kostya_gives-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2264293,
+        "sha256": "2e8bf7b48620db4cc3855b494ec104da119d4aa1a81e23e20f45ba8c6ea7e43a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_kostya_gives-paper-v1.json"
+    },
+    {
+      "id": "e2_market",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_market.png",
+      "destinations": [
+        "assets/shots/e2_market.png"
+      ],
+      "description": "Asset: shots/e2_market.png, a finished full scene. Open-air market stall under an awning, stacks of plain cassettes in boxes. The seller's mitten-covered hands arrange them; Sasha's palm on the counter holds a few coins and bills (no numbers).",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ad9693b6-21e9-47f6-b46f-f58ae83c0350.png",
+      "selected": "assets/shots/e2_market-paper-v1.png",
+      "verification": {
+        "width": 1671,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2381910,
+        "sha256": "404398738a7bef984cb07c412845813fc2c1c955945f3c07abb2fd1cd9a466eb"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "resolved_issues": [
+        "Remove olive T-shirt chest pocket; approved tee is plain."
+      ],
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_market-paper-v3.json"
+    },
+    {
+      "id": "e2_labels",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_labels.png",
+      "destinations": [
+        "assets/shots/e2_labels.png"
+      ],
+      "description": "Asset: shots/e2_labels.png, a finished full scene. Top-down view of Sasha's desk: a neat row of 21 cassettes with blank labels, one set aside from the rest. A hand holds a marker above one label. Lamp light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-6e767473-8456-4032-915f-560c797332b3.png",
+      "selected": "assets/shots/e2_labels-paper-v1.png",
+      "verification": {
+        "width": 1670,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2353133,
+        "sha256": "e76fe96f1ba06df2d3151eeaaeb1921e8d5e94adbf1d2c7b9c707b3ff55d9d63"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "resolved_issues": [
+        "Remove olive T-shirt chest pocket; approved tee is plain."
+      ],
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_labels-paper-v2.json"
+    },
+    {
+      "id": "e2_recording",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e2_recording.png",
+      "destinations": [
+        "assets/shots/e2_recording.png"
+      ],
+      "description": "Asset: shots/e2_recording.png, a finished full scene. Night at the desk: Sasha leans to the deck and speaks seriously into it, one hand on its case; lamp light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-611406d1-fdf9-4cb9-b203-ed32b2ee3a03.png",
+      "selected": "assets/shots/e2_recording-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 1999058,
+        "sha256": "262ababab0328fb4d090a839fc270e107156071f27c3b452379c7311fd672309"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_recording-paper-v1.json"
+    },
+    {
+      "id": "e3_bed_edge",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3_bed_edge.png",
+      "destinations": [
+        "assets/shots/e3_bed_edge-distinct-v3.png",
+        "assets/shots/e3_bed_edge.png"
+      ],
+      "description": "Asset: shots/e3_bed_edge.png, a finished full scene. Sasha's bedroom in the evening: Kostya sits on the edge of the bed with his elbows on his knees, looking at the floor; Sasha sits on the pillow facing him.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-7436c512-b130-4b02-a5a4-341c5d293e36.png",
+      "selected": "assets/shots/e3_bed_edge-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2156865,
+        "sha256": "97427d04c8be1e52669aff0c00ad65cf346e36cc0dee526a54b1de2d1d1ec1eb"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3_bed_edge-paper-v1.json"
+    },
+    {
+      "id": "e3_bench",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3_bench.png",
+      "destinations": [
+        "assets/shots/e3_bench-distinct-v3.png",
+        "assets/shots/e3_bench.png"
+      ],
+      "description": "Asset: shots/e3_bench.png, a finished full scene. Courtyard: Kostya on the bench by the entrance laughs with his head thrown back; Sasha beside him, serious, points at the poplar by the garages; the bicycle stands under the poplar.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-eb45cee4-daab-48b2-9986-1f104b528253.png",
+      "selected": "assets/shots/e3_bench-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2973863,
+        "sha256": "51579859544948ff4f7b2ac40e12c12ff011dc43f12458bde6beeabd0c8e8567"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "resolved_issues": [
+        "Remove added star-shaped sparkles from courtyard; keep ordinary leaves and daylight."
+      ],
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3_bench-paper-v3.json"
+    },
+    {
+      "id": "e3b_computer",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3b_computer.png",
+      "destinations": [
+        "assets/shots/e3b_computer.png"
+      ],
+      "description": "Asset: shots/e3b_computer.png, a finished full scene. Living room: Sasha sits at a CRT monitor with a blank teal-glow screen, spine straight, staring; a plain wall clock above him.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-0eb1eb72-3eec-4aa7-b84c-59caed95668a.png",
+      "selected": "assets/shots/e3b_computer-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2324300,
+        "sha256": "f1737e8288584ab27fa8528d789e852426b848397225073a567d475c874a063d"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "resolved_issues": [
+        "Remove olive T-shirt chest pocket; approved tee is plain."
+      ],
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3b_computer-paper-v2.json"
+    },
+    {
+      "id": "e3b_gena",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3b_gena.png",
+      "destinations": [
+        "assets/shots/e3b_gena.png"
+      ],
+      "description": "Asset: shots/e3b_gena.png, a finished full scene. School corridor: Gena, the big bully, has stopped in front of Sasha and is turning away uneasily; Sasha stands straight and looks back with a calm adult gaze.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-91b30cd0-0488-40cc-b730-e1d6be078138.png",
+      "selected": "assets/shots/e3b_gena-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2485439,
+        "sha256": "db8efe52e7895a38e94677d8908fc6439d029507f7a95aeaa02375895d292824"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3b_gena-paper-v1.json"
+    },
+    {
+      "id": "e3b_library",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3b_library.png",
+      "destinations": [
+        "assets/shots/e3b_library.png"
+      ],
+      "description": "Asset: shots/e3b_library.png, a finished full scene. Library: tall shelves, Sasha at a long table over a thick self-study book with a blank cover and a notebook, lamp light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ad1193ef-474e-44b0-80ba-0d391b198048.png",
+      "selected": "assets/shots/e3b_library-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2424937,
+        "sha256": "a88411ee2de88df5de57345e16f28a87d10d19f4d1ac0729dede85b85b149299"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "resolved_issues": [
+        "Restore original SCHOOL costume: cream collared shirt with buttons, no olive overshirt, no high neck."
+      ],
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3b_library-paper-v2.json"
+    },
+    {
+      "id": "e3b_notebooks",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/e3b_notebooks.png",
+      "destinations": [
+        "assets/shots/e3b_notebooks-distinct-v3.png",
+        "assets/shots/e3b_notebooks.png"
+      ],
+      "description": "Asset: shots/e3b_notebooks.png, a finished full scene. Three-quarter top view of one desk: Sasha's notebook and Kostya's notebook open side by side, both brothers' hands writing, their elbows nearly touching; lamp light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a3f17648-af02-466c-af73-d1d6e55de20c.png",
+      "selected": "assets/shots/e3b_notebooks-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2378306,
+        "sha256": "a69eacb6842cb171bceb1b84a8ab18b45e680318a2ea5ecffe2153473dc6315b"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3b_notebooks-paper-v1.json"
+    },
+    {
+      "id": "e5_garage",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 13,
+      "source": "assets/shots/e5_garage.png",
+      "destinations": [
+        "assets/shots/e5_garage.png"
+      ],
+      "description": "Asset: shots/e5_garage.png, a finished full scene. Garage: Grandfather Lyosha at the workbench holds a soldering iron over a small radio; Sasha at 13 stands beside, watching closely.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-db41e7a6-474e-45f3-9810-f272301380b1.png",
+      "selected": "assets/shots/e5_garage-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2243020,
+        "sha256": "6a1cd2f18f133cc144d3f4f56a53d0897518d0203d733e589d08ecfc269a5477"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_garage-paper-v2.json"
+    },
+    {
+      "id": "e5_burn",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 13,
+      "source": "assets/shots/e5_burn.png",
+      "destinations": [
+        "assets/shots/e5_burn.png"
+      ],
+      "description": "Asset: shots/e5_burn.png, a finished full scene. Garage: Sasha pulls his hand back from the soldering iron, wincing, while Grandfather Lyosha stays calm, one eyebrow raised.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a6250cdb-d480-4a6f-a11d-6c04e47e1ee6.png",
+      "selected": "assets/shots/e5_burn-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2445124,
+        "sha256": "fde4ccd2db740975660880a3836dc2e2b64f768e7fad3341686eb887bd453f8d"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_burn-paper-v2.json"
+    },
+    {
+      "id": "pv_b_boy",
+      "group": "12–13 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 12,
+      "source": "assets/shots/pv_b_boy.png",
+      "destinations": [
+        "assets/shots/pv_b_boy.png"
+      ],
+      "description": "Asset: shots/pv_b_boy.png, a finished full scene. Sasha at 12 in the left half of the frame, a big face with grown-up eyes looking at the viewer; behind him a wall calendar with a red header and a blank page; clean empty space at the right for code text.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ae22a4c9-7ff4-4ccb-9609-765be6d6455f.png",
+      "selected": "assets/shots/pv_b_boy-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2310245,
+        "sha256": "454a1454774d7ea06f17ee485efad442b364959811123f6b465ecfbefa6445a7"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/pv_b_boy-paper-v1.json"
+    },
+    {
+      "id": "e4_straight_a",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_straight_a.png",
+      "destinations": [
+        "assets/shots/e4_straight_a-try.png",
+        "assets/shots/e4_straight_a.png"
+      ],
+      "description": "Asset: shots/e4_straight_a.png, a finished full scene. Sasha at 15 at his desk in daylight with a stack of notebooks, sitting very straight and writing diligently.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ee172c82-681b-4e51-9332-8fe75e98e183.png",
+      "selected": "assets/shots/e4_straight_a-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2396892,
+        "sha256": "fb6b611c9d32a02b0b9c14d7312919a1503dcf18cc0397102a330dc8a81f1cc6"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_straight_a-paper-v1.json"
+    },
+    {
+      "id": "e4_warn_kitchen",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_warn_kitchen.png",
+      "destinations": [
+        "assets/shots/e4_warn_kitchen.png"
+      ],
+      "description": "Asset: shots/e4_warn_kitchen.png, a finished full scene. Kitchen: Sasha at 15 speaks earnestly to Papa; Papa laughs warmly, leaning back with a newspaper on his knee.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-6a5ef4fb-fc9b-4e9d-a46b-29db1fd74e32.png",
+      "selected": "assets/shots/e4_warn_kitchen-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2480873,
+        "sha256": "33f0ae0bbd78a564a4147452499bdca79dc8c9effa67c8af960db8dc45aee8d8"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_warn_kitchen-paper-v1.json"
+    },
+    {
+      "id": "e4_cassette_night",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_cassette_night.png",
+      "destinations": [
+        "assets/shots/e4_cassette_night.png"
+      ],
+      "description": "Asset: shots/e4_cassette_night.png, a finished full scene. Night, Sasha at 15 sits at his desk holding one cassette in both hands and looking at it; lamp light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-6d34df9b-a47f-468e-8a5f-b8e11947677c.png",
+      "selected": "assets/shots/e4_cassette_night-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 940,
+        "mode": "RGB",
+        "bytes": 2303305,
+        "sha256": "3323a257367752a252cc91e502a77cfc57be6b922dd2943b2beb7775f45a5d08"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_cassette_night-paper-v1.json"
+    },
+    {
+      "id": "e4_briefcase",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_briefcase.png",
+      "destinations": [
+        "assets/shots/e4_briefcase.png"
+      ],
+      "description": "Asset: shots/e4_briefcase.png, a finished full scene. Kitchen, Thursday evening: Papa packs bank papers into a leather briefcase; in the doorway behind him Sasha at 15 stands with his hands at his sides.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-99305769-f4df-4102-a0be-5450c69dc61a.png",
+      "selected": "assets/shots/e4_briefcase-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2344750,
+        "sha256": "d43f55f221a900a4c6446830e6ada9bec4aae588dcadc9d8f6af446b6686eac7"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_briefcase-paper-v1.json"
+    },
+    {
+      "id": "e4_silent_dinner",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_silent_dinner.png",
+      "destinations": [
+        "assets/shots/e4_silent_dinner.png"
+      ],
+      "description": "Asset: shots/e4_silent_dinner.png, a finished full scene. Kitchen supper: Papa looks into his plate, Mama glances at him sideways, Sasha at 15 looks down; quiet yellow light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-13aa20a4-a92b-4220-b58a-3fcbd99119ac.png",
+      "selected": "assets/shots/e4_silent_dinner-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2478419,
+        "sha256": "96e8baa9191a1a3aecb6f1fd89cf44fe064d6e5d46ab907788c645e1f028b838"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_silent_dinner-paper-v1.json"
+    },
+    {
+      "id": "e4_winter_fork",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4_winter_fork.png",
+      "destinations": [
+        "assets/shots/e4_winter_fork-v2.png",
+        "assets/shots/e4_winter_fork.png"
+      ],
+      "description": "Asset: shots/e4_winter_fork.png, a finished full scene. Winter supper: Papa has put down his fork and turned to Sasha with wide eyes; snow outside the window; Sasha at 15 smiles faintly.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-9bf41f3e-a025-43ab-b497-3765272756ce.png",
+      "selected": "assets/shots/e4_winter_fork-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2337774,
+        "sha256": "f183784e8cc2c0146707df66316f7deee665f0be0a66a435cf7e05f9371fa1d3"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4_winter_fork-paper-v1.json"
+    },
+    {
+      "id": "e4b_pc_floor",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e4b_pc_floor.png",
+      "destinations": [
+        "assets/shots/e4b_pc_floor-distinct-v3.png",
+        "assets/shots/e4b_pc_floor.png"
+      ],
+      "description": "Asset: shots/e4b_pc_floor.png, a finished full scene. Kostya's room: a beige-gray computer tower on the floor with its side panel open, glowing from inside, a monitor on the desk; Mama stands in the doorway holding a long paper bill (plain), shaking her head; Kostya and Sasha at 15 beside the tower.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-5fe2cb30-702b-4084-8a36-2ea6768961d5.png",
+      "selected": "assets/shots/e4b_pc_floor-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2299374,
+        "sha256": "1e804a6bdeaac6580973fed175d218a3579e832f3c4fbeee63628c41933ed49b"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e4b_pc_floor-paper-v1.json"
+    },
+    {
+      "id": "e5_sundays",
+      "group": "15 лет: лицо и фигура",
+      "kind": "scene",
+      "age": 15,
+      "source": "assets/shots/e5_sundays.png",
+      "destinations": [
+        "assets/shots/e5_sundays.png"
+      ],
+      "description": "Asset: shots/e5_sundays.png, a finished full scene. Garage doorway in sunlight: Grandfather Lyosha and Sasha at 15 kneel over an upturned bicycle, tools scattered, both laughing.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-5e64ec8d-0467-491a-a16a-1ea3d0b66afc.png",
+      "selected": "assets/shots/e5_sundays-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2625698,
+        "sha256": "da97eb47a3d2d4d969a0af205923bafb92781e2d283da931cf044c2fcc59128e"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_sundays-paper-v1.json"
+    },
+    {
+      "id": "e5_spring_2011",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 18,
+      "source": "assets/shots/e5_spring_2011.png",
+      "destinations": [
+        "assets/shots/e5_spring_2011.png"
+      ],
+      "description": "Asset: shots/e5_spring_2011.png, a finished full scene. Garage in spring: Sasha at 18 stands holding the soldering iron on his open palm; the stool by the workbench is empty; soft light.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-ec72488f-2950-4574-b0f3-4a26f52d95ca.png",
+      "selected": "assets/shots/e5_spring_2011-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2507468,
+        "sha256": "8e201abb88da436282317c88d96a28cd81b963a1f1b2aa970786459eb3c27e3a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_spring_2011-paper-v1.json"
+    },
+    {
+      "id": "e5_night_tape",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 18,
+      "source": "assets/shots/e5_night_tape.png",
+      "destinations": [
+        "assets/shots/e5_night_tape.png"
+      ],
+      "description": "Asset: shots/e5_night_tape.png, a finished full scene. Night in Sasha's room: Sasha at 18 sits on the bed with the deck on his knees and listens, lamp off, only teal window light and the glow of the cassette window.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-635ec7ae-3711-4b99-b377-1747701df645.png",
+      "selected": "assets/shots/e5_night_tape-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2139209,
+        "sha256": "ceb56794bbc65fdee3160e6532ae70031fa2f1cc73d0f20880a04e00593f8d8a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_night_tape-paper-v1.json"
+    },
+    {
+      "id": "m_graduation",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 18,
+      "source": "assets/shots/m_graduation-v2.png",
+      "destinations": [
+        "assets/shots/m_graduation-v2.png",
+        "assets/shots/m_graduation.png"
+      ],
+      "description": "Asset: shots/m_graduation.png, a finished full scene. School hall at prom: Sasha at 18 in an oversized blazer stands in a row of graduates; the teacher beside him wipes her eyes; a soldering iron handle sticks out of his blazer pocket.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-3f25b4f2-a822-4656-9859-145ea612c2e1.png",
+      "selected": "assets/shots/m_graduation-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2592439,
+        "sha256": "1797e68e8fd654a9c08fe57ba8ab7ad49f492da83f72575df3e7686991c4bb43"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/m_graduation-paper-v2.json"
+    },
+    {
+      "id": "m_dimka_phone",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 19,
+      "source": "assets/shots/m_dimka_phone.png",
+      "destinations": [
+        "assets/shots/m_dimka_phone-distinct-v3.png",
+        "assets/shots/m_dimka_phone.png"
+      ],
+      "description": "Asset: shots/m_dimka_phone.png, a finished full scene. A shop's steps: Dimka at 19 shouts happily into his phone while holding a plain smartphone; Sasha at 19 stands a few steps away with a tolerant smile.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-c4c2d7d2-ef6e-4d77-a365-fc66fa5a5e0a.png",
+      "selected": "assets/shots/m_dimka_phone-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2335447,
+        "sha256": "f884aefdcff790f94c5410bd94f20936a2676798bb79a016c7df2b6bf8863f99"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/m_dimka_phone-paper-v1.json"
+    },
+    {
+      "id": "m_kostya_car",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 20,
+      "source": "assets/shots/m_kostya_car.png",
+      "destinations": [
+        "assets/shots/m_kostya_car-distinct-v3.png",
+        "assets/shots/m_kostya_car.png"
+      ],
+      "description": "Asset: shots/m_kostya_car.png, a finished full scene. A hatchback car without brand marks, scratched, at a courtyard: Kostya, happy and proud, leans out of the open driver window; Sasha at 20 stands on the pavement keeping his mouth shut.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a2dfed1e-fe53-469d-9d94-ac397d011881.png",
+      "selected": "assets/shots/m_kostya_car-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2750011,
+        "sha256": "2715b7e83dd1cadcf09c6e09e91e79df0fdfbc6d63567a501e049c798b743030"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/m_kostya_car-paper-v1.json"
+    },
+    {
+      "id": "m_varya_call",
+      "group": "18–22 года: лицо и фигура",
+      "kind": "scene",
+      "age": 22,
+      "source": "assets/shots/m_varya_call-v2.png",
+      "destinations": [
+        "assets/shots/m_varya_call-v2.png",
+        "assets/shots/m_varya_call.png"
+      ],
+      "description": "Asset: shots/m_varya_call.png, a finished full scene. Night: Sasha at 22 slides down a hallway wall with a phone at his ear, eyes shut, an exhale of relief; the phone screen glows teal.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-c7e30a2e-6ec4-4a1b-b6bb-8cfbe765e734.png",
+      "selected": "assets/shots/m_varya_call-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2177393,
+        "sha256": "d3dc4707f8e14d2f2b840b66d1f68dc66f5f9155fcb3eeaec814f710e61ecfa5"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/m_varya_call-paper-v1.json"
+    },
+    {
+      "id": "e6_terrace",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 26,
+      "source": "assets/shots/e6_terrace.png",
+      "destinations": [
+        "assets/shots/e6_terrace-distinct-v3.png",
+        "assets/shots/e6_terrace.png"
+      ],
+      "description": "Asset: shots/e6_terrace.png, a finished full scene. Hot party terrace: friends are small distant shapes; in the foreground Sasha at 26 and Lena meet, she holds a big mug with both hands despite the heat, he smiles uncertainly.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-3397124d-7bbd-4bef-9127-59c906e2b00d.png",
+      "selected": "assets/shots/e6_terrace-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2476329,
+        "sha256": "ac8c365ff7ffda5aa1704d37271f444955d495e7b92b54ce7ea2c29c12c263e6"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e6_terrace-paper-v1.json"
+    },
+    {
+      "id": "e6_cups",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 26,
+      "source": "assets/shots/e6_cups.png",
+      "destinations": [
+        "assets/shots/e6_cups-distinct-v3.png",
+        "assets/shots/e6_cups.png"
+      ],
+      "description": "Asset: shots/e6_cups.png, a finished full scene. Terrace: Sasha at 26 gathers dirty plastic cups from the table and carries them toward the kitchen door; Lena watches him with raised eyebrows and a smile.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-24037296-7d0f-4427-8364-e2f16f0a1da6.png",
+      "selected": "assets/shots/e6_cups-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2427142,
+        "sha256": "f3f0a7bb4c3210483480f9c2d83c9daa87f1febca4200d5996b3f7772de528ee"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e6_cups-paper-v1.json"
+    },
+    {
+      "id": "e6_station",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 26,
+      "source": "assets/shots/e6_station.png",
+      "destinations": [
+        "assets/shots/e6_station-distinct-v3.png",
+        "assets/shots/e6_station.png"
+      ],
+      "description": "Asset: shots/e6_station.png, a finished full scene. A quiet railway platform in autumn, two figures far apart seen from behind with a suitcase, leaves on the ground; no faces.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-7620fea4-e974-4305-9df6-fa3ff353ba74.png",
+      "selected": "assets/shots/e6_station-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2506780,
+        "sha256": "e9fa4ea106fe381f3f1984f9c1841374e772dde02b9d01ab453622896156484a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e6_station-paper-v1.json"
+    },
+    {
+      "id": "e2_life_bus",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/e2_life_bus.png",
+      "destinations": [
+        "assets/shots/e2_life_bus.png"
+      ],
+      "description": "Asset: shots/e2_life_bus.png, a finished full scene. Minibus interior with a wet window; the back of a man's head by the window; city lights as soft paper circles (flat, not blurred).",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-213c8414-b5b1-4c40-89da-a18e1da49489.png",
+      "selected": "assets/shots/e2_life_bus-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2761463,
+        "sha256": "716c037f6e318a9092504e2f8c5b40a1071adb8d6beb766185330cca3c3e840e"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_life_bus-paper-v1.json"
+    },
+    {
+      "id": "e2_life_work",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/e2_life_work-v2.png",
+      "destinations": [
+        "assets/shots/e2_life_work-v2.png",
+        "assets/shots/e2_life_work.png"
+      ],
+      "description": "Asset: shots/e2_life_work.png, a finished full scene. Night office: the back of a man in a warm gray shirt lit by a monitor glow; no face, the screen blank.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-b425fabb-3d81-496e-abd2-4694e77fba04.png",
+      "selected": "assets/shots/e2_life_work-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 940,
+        "mode": "RGB",
+        "bytes": 2423789,
+        "sha256": "ae22319655a7d473774a2fab2febc447b0fd61fcd479419ca49c650cd7b9a07a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_life_work-paper-v1.json"
+    },
+    {
+      "id": "t_night_kitchen",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 31,
+      "source": "assets/shots/t_night_kitchen.png",
+      "destinations": [
+        "assets/shots/t_night_kitchen.png"
+      ],
+      "description": "Asset: shots/t_night_kitchen.png, a finished full scene. Cold night kitchen: Sasha at 31 sits at the table, a dark phone in front of him, a low lamp, teal window light; the corridor door with a thin strip of light in the background.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-f67ce5c2-d81c-4a97-be0d-c37a53d60c72.png",
+      "selected": "assets/shots/t_night_kitchen-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2364902,
+        "sha256": "56dfd88000ee240a5677858af8f25f8d4d8ccca268fba9e073defcdabaf08066"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/t_night_kitchen-paper-v1.json"
+    },
+    {
+      "id": "t_old_night",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 31,
+      "source": "assets/shots/t_old_night.png",
+      "destinations": [
+        "assets/shots/t_old_night.png"
+      ],
+      "description": "Asset: shots/t_old_night.png, a finished full scene. Flashback in a desaturated cool tone: the same kitchen but empty and lonely, Sasha at 31 with a phone at his ear, an unwashed cup, nobody else.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-9ae12e76-1bee-43a1-88d6-fd76697cca68.png",
+      "selected": "assets/shots/t_old_night-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2198824,
+        "sha256": "cbe8146947f8d782663bd501ebcf06e8d53ccaf9f875f78eeecfc13ec0eb3aff"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/t_old_night-paper-v1.json"
+    },
+    {
+      "id": "t_realize_cu",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 31,
+      "source": "assets/shots/t_realize_cu.png",
+      "destinations": [
+        "assets/shots/t_realize_cu.png"
+      ],
+      "description": "Asset: shots/t_realize_cu.png, a close-up master. Close-up of Sasha's face at 31, eyes widening as he realises, cold teal window light on his cheek.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-cb9049bc-1abb-405b-972c-c1b8723821b1.png",
+      "selected": "assets/shots/t_realize_cu-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2403198,
+        "sha256": "a76d8bbc19ab4cc13c12d5ceafb3740492f9907f27debb39db2abdf002a7b9fb"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/t_realize_cu-paper-v1.json"
+    },
+    {
+      "id": "f_kostya_door",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/f_kostya_door.png",
+      "destinations": [
+        "assets/shots/f_kostya_door.png"
+      ],
+      "description": "Asset: shots/f_kostya_door.png, a finished full scene. Kitchen doorway: Kostya at 38, bald, stands holding the shoebox of cassettes with one arm, a half-smile; Sasha at 33 sits at the table.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-5e4b9ff3-7902-4dc8-9b1a-d12f10fa54b3.png",
+      "selected": "assets/shots/f_kostya_door-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2157457,
+        "sha256": "0bd42447ee16ddc0b003e63449dcb0f67af904d80b0d57ce30f44cbec72dbd06"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_kostya_door-paper-v2.json"
+    },
+    {
+      "id": "f_kostya_frown",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/f_kostya_frown.png",
+      "destinations": [
+        "assets/shots/f_kostya_frown.png"
+      ],
+      "description": "Asset: shots/f_kostya_frown.png, a finished full scene. Medium close-up of Kostya at 38 frowning in confusion, bald head, eyes searching; Sasha's shoulder in the foreground.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-544c5037-930f-44d0-abf1-a26ff0a72dba.png",
+      "selected": "assets/shots/f_kostya_frown-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 940,
+        "mode": "RGB",
+        "bytes": 2165175,
+        "sha256": "e86897f86bc2d97c8fb8fc16725168f2ada5285a42dc61c95456cf55744fce54"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_kostya_frown-paper-v2.json"
+    },
+    {
+      "id": "f_player",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/f_player.png",
+      "destinations": [
+        "assets/shots/f_player.png"
+      ],
+      "description": "Asset: shots/f_player.png, a finished full scene. Kitchen table: Sasha at 33 inserts a cassette into the twin deck; Kostya sits across the table. The deck's record key is red.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-faab471d-0017-4fe3-b812-482f4dd7d164.png",
+      "selected": "assets/shots/f_player-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2217156,
+        "sha256": "681b5f33f11fe0f353bf84366e3ad485f08cb290d4bd3885e288a98eeb8e7bcb"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_player-paper-v2.json"
+    },
+    {
+      "id": "f_pat",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/f_pat.png",
+      "destinations": [
+        "assets/shots/f_pat.png"
+      ],
+      "description": "Precise continuity edit of input1 only. Preserve BOTH men exactly, their faces and smiles, Kostya's hand touching Sasha's shoulder, the warm kitchen, table, paper textures and recorder silhouette. Change ONLY Sasha's left-foreground hand and the left cassette bay. The cassette has already been loaded several seconds ago: place that olive cassette FULLY INSIDE the left bay and close its taupe rectangular cassette-door frame, so both front bays look closed and have a blank cream label, olive cassette shell and two cream reels each. Remove the loose cassette from Sasha's hand. Rest that same hand naturally palm-down on the tabletop to the left of the recorder, all five fingers anatomically connected, elbow and cream cuff unchanged. Do not change any other posture, camera or object. No extra cassette, text, symbols, red, blur or effects. Full opaque landscape16:9 PNG, sharp layered paper collage.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-451be47f-ebc5-4ccf-aa97-47d2e97a6bc8.png",
+      "selected": "assets/shots/f_pat-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2331551,
+        "sha256": "f86098abeba1145f2e0968e6f76862d97d681c3b75869426cf92213ebb1d0952"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_pat-paper-v1.json"
+    },
+    {
+      "id": "f_recording",
+      "group": "26–33 года: лицо и фигура",
+      "kind": "scene",
+      "age": 33,
+      "source": "assets/shots/f_recording.png",
+      "destinations": [
+        "assets/shots/f_recording.png"
+      ],
+      "description": "Asset: shots/f_recording.png, a finished full scene. Kitchen table, warm light: Sasha at 33 speaks into the deck with a gentle serious face; Kostya sits listening with his chin on his fist.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-be116b53-6b7c-4539-a856-767807b20773.png",
+      "selected": "assets/shots/f_recording-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2115952,
+        "sha256": "82c2df3e9d23591b4e2a8aaf73357553aaa8279f4495a55763d094ae6f361a5a"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_recording-paper-v2.json"
+    },
+    {
+      "id": "h_sasha_hands_cu",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/h_sasha_hands_cu.png",
+      "destinations": [
+        "assets/shots/h_sasha_hands_cu.png"
+      ],
+      "description": "",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-1b8bc127-770f-4773-bc7f-ca9b907d7edd.png",
+      "selected": "assets/shots/h_sasha_hands_cu-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2213864,
+        "sha256": "de3468acf0242eadffb95bc0701819cc15e6e51592e701e42d343db9096c5dd0"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/h_sasha_hands_cu-paper-v2.json"
+    },
+    {
+      "id": "e1_oilcloth",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/e1_oilcloth.png",
+      "destinations": [
+        "assets/shots/e1_oilcloth.png"
+      ],
+      "description": "Asset: shots/e1_oilcloth.png, a close-up master. Macro of a corner of the checked oilcloth with a frayed torn edge, bread crumbs on it, and a child's palm resting on it.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-f56cabef-0032-4536-9256-aff3cf8d6263.png",
+      "selected": "assets/shots/e1_oilcloth-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2564759,
+        "sha256": "de6a5a19ef7b2a98bf620a9b726fc0476943f07834d93e400487d55e71722613"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_oilcloth-paper-v1.json"
+    },
+    {
+      "id": "e1_plan_sheet",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/e1_plan_sheet.png",
+      "destinations": [
+        "assets/shots/e1_plan_sheet.png"
+      ],
+      "description": "Asset: shots/e1_plan_sheet.png, a close-up master. Top-down view: a large blank sheet of lined-less paper in the centre under a lamp, a child's hand holding a pencil at its edge. The sheet fills 70 percent of the frame, its surface completely blank and flat for code-written text.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-2fc87d5d-be79-40b3-b782-ad51ab2c47e8.png",
+      "selected": "assets/shots/e1_plan_sheet-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2507130,
+        "sha256": "6c96840efce8e1ed1558526a9e33ca399aadf2a7bd12fddadffe47f31e1f17ba"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_plan_sheet-paper-v1.json"
+    },
+    {
+      "id": "e2_rec_keys",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/e2_rec_keys.png",
+      "destinations": [
+        "assets/shots/e2_rec_keys-v2.png",
+        "assets/shots/e2_rec_keys-v3.png",
+        "assets/shots/e2_rec_keys.png"
+      ],
+      "description": "Asset: shots/e2_rec_keys.png, a close-up master. Macro of two small fingers pressing two keys at once: the red record key and the key next to it; above them the cassette window with both reels drawn large and flat.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-34662ac8-0a3d-4bbe-9e96-110cf0cb88e7.png",
+      "selected": "assets/shots/e2_rec_keys-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2795103,
+        "sha256": "da01c6160094fb06427ad4ce495acbf0a6663de1d2bcc5cf4f0ba1e01ff03ea1"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_rec_keys-paper-v1.json"
+    },
+    {
+      "id": "e3b_fractions_cu",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/e3b_fractions_cu.png",
+      "destinations": [
+        "assets/shots/e3b_fractions_cu.png"
+      ],
+      "description": "Asset: shots/e3b_fractions_cu.png, a close-up master. Top-down: an open notebook page, completely blank, a pencil and an eraser, a small proud corner of Sasha's thumb.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-576e3d61-513e-4e30-99f6-87698fce00a1.png",
+      "selected": "assets/shots/e3b_fractions_cu-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2520639,
+        "sha256": "dc3c9d2b7808ceeefc168a53039526ee832ec7b497f0c9af1a748c6d186247e7"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e3b_fractions_cu-paper-v1.json"
+    },
+    {
+      "id": "pv_a_deck",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/pv_a_deck.png",
+      "destinations": [
+        "assets/shots/pv_a_deck.png"
+      ],
+      "description": "Asset: shots/pv_a_deck.png, a finished full scene. Close hero image: the twin-deck recorder fills most of the frame in three-quarter view, a finger presses two keys at once, a cassette in the left deck has a large blank label, strong readable silhouette, clean empty space at the right for code text.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-64936a94-19fc-44f9-8348-e8b2487175b6.png",
+      "selected": "assets/shots/pv_a_deck-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2487298,
+        "sha256": "815870dad27ae64b069ab8b4a540b41c78d8bfa6912c48f18dbbe1366ea35b1b"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/pv_a_deck-paper-v1.json"
+    },
+    {
+      "id": "pv_c_plan",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 12,
+      "source": "assets/shots/pv_c_plan.png",
+      "destinations": [
+        "assets/shots/pv_c_plan.png"
+      ],
+      "description": "",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a48a30a9-5e64-4607-acf8-2a6ef8b7dc4c.png",
+      "selected": "assets/shots/pv_c_plan-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2384483,
+        "sha256": "1f926554b19468289ceb6076169beb3edc9506a80b23223a278417810d7cdbd4"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/pv_c_plan-paper-v1.json"
+    },
+    {
+      "id": "e1_videocall",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 33,
+      "source": "assets/shots/e1_videocall.png",
+      "destinations": [
+        "assets/shots/e1_videocall.png"
+      ],
+      "description": "Asset: shots/e1_videocall.png, a close-up master. Night, close-up: a man's hand (gray sleeve, no face) holds a plain smartphone. On the blank glowing screen Mama at 59 sits too close to her camera, seen from below at a slight angle, squinting, glasses on her forehead. Cool teal tone, the room dark.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-d7b60daa-e971-45ef-8836-659b26b45554.png",
+      "selected": "assets/shots/e1_videocall-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 1998742,
+        "sha256": "7edb1fb84b900cf8f9b178f1125a6ee9bf1702fe46983e547d9a46575220a2e2"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e1_videocall-paper-v2.json"
+    },
+    {
+      "id": "e2_2024_night",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 31,
+      "source": "assets/shots/e2_2024_night.png",
+      "destinations": [
+        "assets/shots/e2_2024_night.png"
+      ],
+      "description": "Asset: shots/e2_2024_night.png, a finished full scene. Dark adult bedroom at night: a phone lights up on the bedside table; a man's hand (no face) picks it up on the first ring.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-9a1aed7f-482b-4cd1-82e7-8f12266728f7.png",
+      "selected": "assets/shots/e2_2024_night-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2165522,
+        "sha256": "88cfc7f687def5a7668a31d4b63b554eadb16ade2f8d54bcb9bc5e26f2286296"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_2024_night-paper-v2.json"
+    },
+    {
+      "id": "e2_life_sofa",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 33,
+      "source": "assets/shots/e2_life_sofa.png",
+      "destinations": [
+        "assets/shots/e2_life_sofa.png"
+      ],
+      "description": "Asset: shots/e2_life_sofa.png, a finished full scene. Dark room: feet in socks on a sofa, teal glow from a blank TV, a mug on the arm.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-a5b7595f-cb36-4d3e-a8f7-849cee590eab.png",
+      "selected": "assets/shots/e2_life_sofa-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2295090,
+        "sha256": "ad3b1dc52685f85ef7bfd670a283b03bce9201dfc2186b11c73efc1478e25724"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e2_life_sofa-paper-v2.json"
+    },
+    {
+      "id": "e5_iron_palm_cu",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 18,
+      "source": "assets/shots/e5_iron_palm_cu.png",
+      "destinations": [
+        "assets/shots/e5_iron_palm_cu.png"
+      ],
+      "description": "Asset: shots/e5_iron_palm_cu.png, a close-up master. Close-up of an open adult palm with a soldering iron lying across it, the wooden handle and the tip crisp; warm light; no face.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-0c05ba36-c79c-4035-9b15-315f99cea409.png",
+      "selected": "assets/shots/e5_iron_palm_cu-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2493315,
+        "sha256": "5abbd4510755399c2ce0123dd1d733923ef1af2fdb19c39d2243a86502ddbb7e"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e5_iron_palm_cu-paper-v2.json"
+    },
+    {
+      "id": "f_rec_keys",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 33,
+      "source": "assets/shots/f_rec_keys.png",
+      "destinations": [
+        "assets/shots/f_rec_keys.png"
+      ],
+      "description": "Asset: shots/f_rec_keys.png, a close-up master. Macro of an adult index and middle fingers pressing the red record key and the next key of the deck together; the cassette window above shows the two reels beginning to turn.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-3fe94365-5be2-47ad-88aa-60c0fb68b93e.png",
+      "selected": "assets/shots/f_rec_keys-paper-v1.png",
+      "verification": {
+        "width": 1672,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2477471,
+        "sha256": "d18e16747d247d842b7f5cdc85c75c07cbc799741132ad7c660d83de4da79e96"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/f_rec_keys-paper-v2.json"
+    },
+    {
+      "id": "e6_dishes",
+      "group": "Крупные планы рук, тела и POV",
+      "kind": "detail",
+      "age": 26,
+      "source": "assets/shots/e6_dishes.png",
+      "destinations": [
+        "assets/shots/e6_dishes-distinct-v3.png",
+        "assets/shots/e6_dishes.png"
+      ],
+      "description": "Asset: shots/e6_dishes.png, a finished full scene. A small kitchen sink piled with plates and two mugs; a half-seen couple's hands in an argument gesture at the edge of frame.",
+      "status": "installed",
+      "generated_source": "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-6b30e8c7-7f15-4435-99cc-b6d79c3e0002.png",
+      "selected": "assets/shots/e6_dishes-paper-v1.png",
+      "verification": {
+        "width": 1670,
+        "height": 941,
+        "mode": "RGB",
+        "bytes": 2283441,
+        "sha256": "b1dd12dc99d9261effa0f9b610fde821b44794c5821e01f4f4d389f2f00e080f"
+      },
+      "review": "Accepted after visual comparison with the approved paper sheet and original scene; checked Sasha identity/age, costume, pose, other cast, props, framing and absence of unwanted text/effects.",
+      "prompt_file": "spec/identity-generation/sasha-redesign-2026-11-03/e6_dishes-paper-v2.json"
+    }
+  ],
+  "counts": {
+    "compositions": 74,
+    "files": 103,
+    "installed": 74
+  },
+  "design_reference": "assets/experiments/sasha-killua-2026-11-03/sasha_redesign_B_killua_ash_silver.png",
+  "style": "Handmade layered paper/cardboard collage matching existing cast. User correction overrides previous anime rendering experiment."
+}

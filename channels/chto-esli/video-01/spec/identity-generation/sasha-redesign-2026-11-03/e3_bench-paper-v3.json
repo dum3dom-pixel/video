@@ -1,0 +1,10 @@
+{
+  "id": "e3_bench",
+  "revision": "paper-v3",
+  "references": [
+    "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-ecb32dd9-cd3e-469f-a0a9-648b34704cec.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/e3_bench.png"
+  ],
+  "prompt": "Precise clothing continuity correction. Input1 is the scene to edit. Change ONLY the OLDER BROTHER KOSTYA'S SHIRT, on the LEFT of the bench, into his original WARM-GRAY HOODIE with hood, cream drawstrings and rolled sleeves, as seen in input2. Keep Kostya's face, short brown curls, laughing expression, body pose and hands exactly unchanged. Keep younger SASHA on RIGHT COMPLETELY unchanged: new pale ash-beige spiky hair, olive tee over cream highneck sleeves, shorts, teal boots, pointing gesture and expression. Do not change Sasha's clothing. Retain input1's clean courtyard WITHOUT any starbursts or glowing sparkles; keep ordinary leaves and natural daylight. Preserve bench, building, tree, bicycle, ground, original scene composition and same paper/card textures. One opaque PNG same native1672x941. No text, labels or additional changes. Only restore LEFT brother's warmgray hoodie; never put either boy into a cream school shirt.",
+  "generator": "built-in image_gen"
+}

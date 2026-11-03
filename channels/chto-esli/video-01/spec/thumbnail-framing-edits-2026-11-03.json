@@ -1,0 +1,19 @@
+[
+  {
+    "id": "A",
+    "refs": [
+      "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-14ca319c-17d5-4b5d-886f-cf53d64aa7fe.png",
+      "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet.png"
+    ],
+    "prompt": "Edit image1, preserving the same handmade layered matte-paper portrait of Sasha age12 with olive pocket T-shirt, wide startled serious eyes, raised child hand, blank red-header calendar, cream left negative space and dark teal paper patch. Image2 is his identity reference: first top-left portrait only. Change ONLY the framing and spacing: zoom OUT approximately12%, keep the boy on the RIGHT, translate him slightly DOWN so that his ENTIRE pointed cowlick has a clear minimum5% canvas-height cream/teal margin above it. His head must remain large and focal, but NO hair crosses y=6% and no hand/fingers cross any canvas edge. The boy's head top around y=8%, chin around y=65%. Keep left45% clear for headline and calendar small in lower left. Right lower corner below y=85% must contain only quiet shirt/background, no fingers, face or meaningful prop. Do not add border or letterbox bars: seamlessly extend existing paper background. Preserve exact face identity, truthful emotion, palette, red only calendar header. No text, digits, arrows, symbols, logos or watermarks. One opaque widescreen16:9 PNG, ideally1280x720."
+  },
+  {
+    "id": "C",
+    "refs": [
+      "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-fd1d631c-6d77-41dd-bc98-deca3388ec3d.png",
+      "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/props_tape_sheet-v2.png",
+      "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet.png"
+    ],
+    "prompt": "Edit image1 to correct framing while preserving its exact ordinary olive cassette, twin cream reels, brown tape window, blank cream label partly covered by one child finger, paper textures, cream left negative space, deep desaturated teal background patch and Sasha's narrow face and tall cowlick. Image2 is the approved prop design; image3 top-left portrait is the same12-year-old Sasha. Scale the entire character-and-cassette group DOWN about15% and place it a little further LEFT within the RIGHT half, so the COMPLETE hair/cowlick is visible with6% top margin, and BOTH hands end before x=88%,y=83%. The cassette should still be large and primary: approximately x=48%..88%,y=40%..79%. Face is supporting context, above cassette, not competing. All key details kept5% inside frame. The entire lower-right area x=86%..100%,y=84%..100% must be plain quiet cream/kraft paper desk or background with NO hand/fingers/cassette. Left42% stays empty clean warm cream for two huge text lines, especially x=5%..42%,y=15%..65%. Seamlessly expand paper background, no borders/letterboxing. Keep complete recognizable cassette, child hands anatomically correct. No writing, numerals, symbols, text, arrows, brands, glowing effects, red or watermarks. One opaque landscape16:9 PNG, ideally1280x720."
+  }
+]

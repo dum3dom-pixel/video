@@ -1,0 +1,10 @@
+{
+  "id": "e2_2024_night",
+  "revision": "paper-v2",
+  "references": [
+    "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-0d00c668-4e3b-4198-a10c-785d6c0913ee.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/e2_2024_night.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the NEW paper target; image2 is the old scene ONLY to copy the correct CLOTHING, never its old Sasha hair or face. Restore ONLY the arm clothing to image2's TEAL CHECKED ADULT PYJAMA sleeve, with the same loose cuff and two muted crossing stripe directions. Remove the olive/cream child costume. Keep adult hand picking up phone, bedside table and dark bedroom identical. Preserve the exact handmade layered paper/card material and original palette/light: matte colored paper with inherent fibers, imperfect cut edges, shallow soft contact shadows, no smooth anime ink contours. Preserve camera, crop, positions, faces, all hands/fingers, other characters and objects. No extra changes, writing, numbers, logos or effects. ONE opaque PNG at the target native size/aspect.",
+  "generator": "built-in image_gen"
+}

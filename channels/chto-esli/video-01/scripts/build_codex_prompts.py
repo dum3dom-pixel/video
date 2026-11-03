@@ -85,22 +85,25 @@ EXCL = (
 # Characters: every prompt that shows a person repeats the matching line, so identity does not depend only on attachments.
 # --------------------------------------------------------------------------------------
 SASHA_CORE = (
-    "Sasha: the same face at every age: tousled dark brown hair with one stubborn cowlick on top, large serious dark eyes with "
-    "faint shadows under them (a far too grown-up gaze), eyebrows slightly drawn together, a straight small nose, a mouth that "
-    "rarely smiles."
+    "Sasha: approved paper-v1 redesign, the same identity at every age: light ash-beige / pearl warm-gray hair with "
+    "voluminous sharp radial locks and short jagged bangs, gray-teal watchful eyes, narrow angular face, small straight nose "
+    "and a far too grown-up gaze. Hair, face and clothes are overlapping matte paper/card with fibers, uneven cut edges and "
+    "soft contact shadows, matching the attached paper-v1 sheets. No old brown hair or single tall cowlick, no smooth anime "
+    "fill or continuous black outlines. Mature his facial anatomy and proportions appropriately with age."
 )
 CHARS = {
-    "sasha12": SASHA_CORE + " Age 12 (year 2005): small, thin boy. Home: olive T-shirt with one chest pocket, warm gray trousers, "
-               "barefoot or in socks. School: cream shirt, warm gray trousers. Outdoors: olive windbreaker.",
-    "sasha15": SASHA_CORE + " Age 15 (year 2008): taller and lanky, longer arms and neck, hair a little longer, same cowlick, "
+    "sasha12": SASHA_CORE + " Age 12 (year 2005): small, thin boy. Home: plain loose olive T-shirt WITHOUT a chest pocket over "
+               "cream high-neck long sleeves, dark warm-gray shorts, teal high boots with cream cuffs/toes and small mustard tabs. "
+               "Keep bare feet in bed and cream pyjamas at bedtime when specified. School: cream collared shirt, warm gray trousers. Outdoors: olive windbreaker.",
+    "sasha15": SASHA_CORE + " Age 15 (year 2008): taller and lanky, longer arms and neck, same ash-beige spiky hair identity, "
                "same too-old gaze. Faded teal sweatshirt or cream shirt, warm gray trousers.",
     "sasha19": SASHA_CORE + " Age 18 to 20 (years 2011-2013): lean young man, hair slightly longer, first light shadow on the "
                "jaw. Graduation: an oversized warm gray blazer that is too wide in the shoulders. Otherwise a mustard hoodie.",
-    "sasha26": SASHA_CORE + " Age 26 (year 2019): adult man, narrow face, short hair with the cowlick still alive, light stubble, "
+    "sasha26": SASHA_CORE + " Age 26 (year 2019): adult man, narrow mature face, ash-beige spiky hair, light stubble, "
                "tired kind eyes. Cream linen shirt with rolled sleeves, warm gray trousers.",
     "sasha31": SASHA_CORE + " Age 31 (year 2024): adult man, lean, hollow-cheeked, a little tired, short hair, light stubble, "
                "gray hoodie.",
-    "sasha33": SASHA_CORE + " Age 33 (year 2026): adult man, faint lines at the eyes, short neat hair with the cowlick, no "
+    "sasha33": SASHA_CORE + " Age 33 (year 2026): adult man, faint lines at the eyes, ash-beige spiky hair, no "
                "stubble, calm eyes, teal-gray sweater over a cream shirt.",
     "mama38": "Mama, 38: curly chestnut hair held by a mustard clip, kind tired round face, olive robe with small mustard flowers, "
               "cream apron, teal slippers. Warm, quick, practical.",
@@ -140,9 +143,9 @@ CHARS = {
 # Attachment shorthand (paths relative to video-01/assets/).
 # --------------------------------------------------------------------------------------
 A = {
-    "sasha": "sheets/sasha_sheet_hd.png",
-    "sasha_ages": "sheets/sasha_ages_sheet.png",
-    "sasha_faces": "sheets/sasha_faces_sheet.png",
+    "sasha": "sheets/sasha_sheet-paper-v1.png",
+    "sasha_ages": "sheets/sasha_ages_sheet-paper-v1.png",
+    "sasha_faces": "sheets/sasha_faces_sheet-paper-v1.png",
     "kostya": "sheets/kostya_sheet-distinct-v3.png",
     "kostya25": "sheets/kostya25_sheet-distinct-v3.png",
     "kostya38": "sheets/kostya38_sheet.png",
@@ -202,14 +205,14 @@ SHEET_LAYOUT = ("Layout: three full-length figures left to right (front view, si
 S("sasha_ages_sheet", "SHEETS", "sheet", "Саша в 5 возрастах: 12, 15, 19, 26, 33",
   "Character lineup of Sasha at five ages standing side by side, all front view, same scale reference, neutral standing pose, "
   "arms relaxed: 12 (small boy), 15 (lanky teen), 19 (young man, hair a bit longer), 26 (adult, light stubble), 33 (adult, "
-  "calm, no stubble). It must be unmistakably the same person: same eyes, brows, nose and cowlick; only age and clothing change. "
+  "calm, no stubble). It must be unmistakably the same person: same eyes, brows, nose and ash-beige spiky hair identity; only age and clothing change. "
   "Ages 12 and 33 wear what is described; the middle ones wear the clothes described for their age.",
   ["sasha12", "sasha15", "sasha19", "sasha26", "sasha33"], ["sasha"],
   layout="Layout: five full-length front-view figures in one row, left to right in age order 12, 15, 19, 26, 33, every figure "
          "about 85 percent of the canvas height.", code="Единственная опора для взрослого Саши в кадрах", prio="A")
 S("sasha_faces_sheet", "SHEETS", "sheet", "Лица Саши крупно: 6 голов (12, 15, 19, 26, 31, 33)",
   "Six large head-and-shoulder portraits of Sasha arranged in a 3x2 grid, front or three-quarter view, same lighting: ages 12, 15, "
-  "19, 26, 31, 33 in that order. Same eyes, brows, nose and cowlick in all six; only age marks differ (lanky jaw, stubble, first "
+  "19, 26, 31, 33 in that order. Same eyes, brows, nose and ash-beige spiky hair identity in all six; only age marks differ (lanky jaw, stubble, first "
   "lines at the eyes). Neutral serious expression.",
   ["sasha12", "sasha15", "sasha19", "sasha26", "sasha31", "sasha33"], ["sasha"],
   layout="Layout: six head-and-shoulders portraits in a 3 by 2 grid, each portrait filling its cell almost completely.",

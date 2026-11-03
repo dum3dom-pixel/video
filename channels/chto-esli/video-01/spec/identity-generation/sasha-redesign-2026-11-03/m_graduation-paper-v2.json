@@ -1,0 +1,10 @@
+{
+  "id": "m_graduation",
+  "revision": "paper-v2",
+  "references": [
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/m_graduation-v2.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet-paper-v1.png"
+  ],
+  "prompt": "Use case: identity-preserve. In image1 update ONLY SASHA, the YOUNG MAN AT THE EXACT CENTER, in oversized warm-gray blazer and cream shirt holding a dark book/diploma, beside the gray-haired teacher. Match image2's TOP-RIGHT portrait (age19, use at18 here): NEW light ash-beige sharply spiky layered-paper hair, gray-teal eyes, narrow angular face, mature attentive gaze. Preserve his serious neutral expression, exact pose/scale/placement, graduation blazer and soldering-iron handle in chest pocket. Do not change ANY other graduate or teacher, their hair, faces, costumes, positions, balloons, curtain, lighting, camera or blank diplomas. Keep handmade PAPER/CARDBOARD collage throughout new Sasha: matte layers, visible fibers, irregular cut edges and soft short shadows, no anime contours or smooth fills. No text, digits, logo or new effects. One opaque1672x941 PNG, same crop.",
+  "generator": "built-in image_gen"
+}

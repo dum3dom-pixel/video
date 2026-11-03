@@ -1,0 +1,24 @@
+{
+  "status": "Two exploratory sheets completed; no canon or thumbnail replacement",
+  "tool": "built-in image_gen; no local image editing or upscaling",
+  "reference_manifest": "generation-prompts.json",
+  "variants": [
+    {
+      "id": "A",
+      "file": "sasha_redesign_A.png",
+      "visual_review": "Three intact full-body views front/profile/back and one large portrait. Consistent silver-ash starburst hair, gray-teal eyes, cream T-shirt, deep muted teal underlayer, gray shorts and olive cuff boots. Clean anime linework and cel shading, no collage texture, writing or logos. Hair, hands and feet inside frame. Profile faces viewer-right, which satisfies user's unspecified profile direction.",
+      "difference": "Closest to the supplied Killua reference; compact youthful face and confident half-smile."
+    },
+    {
+      "id": "B",
+      "file": "sasha_redesign_B.png",
+      "visual_review": "Three intact full-body views front/profile/back and one large portrait. Ash-beige asymmetric fringe, small cowlick, angular narrow face, muted eyes, olive T-shirt, cream underlayer, dark shorts and teal boots consistent across views. Clean anime rendering; no text, watermark, power effects or paper texture. Complete hair/hands/boots. Profile faces viewer-right.",
+      "difference": "Distinct directional haircut and more restrained mature gaze; different face and silhouette, not merely a recolor."
+    }
+  ],
+  "source_outputs": {
+    "A": "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-45dce3a6-d9a4-47a9-86fe-71b37e88ac82.png",
+    "B": "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-6e448713-07ce-4392-a549-366ff9c85f8f.png"
+  },
+  "references": "Old Sasha context sheets copied to references/. Four original user Killua images supplied through recent-conversation image inputs; local paths not exposed, roles and order preserved in manifest."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "e2_life_sofa",
+  "revision": "paper-v2",
+  "references": [
+    "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-b2e5d242-c764-44ea-8e10-8ce584e2a867.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/e2_life_sofa.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the NEW paper target; image2 is the old scene ONLY to copy the correct CLOTHING, never its old Sasha hair or face. Remove the added OLIVE T-SHIRT band across the lower foreground. Restore image2's uninterrupted WARM-GRAY TROUSER LAP at the lower edge. No olive or cream shirt is visible in this POV. Keep both trouser legs and socks, TV, sofa, mug, camera and dark light unchanged. Preserve the exact handmade layered paper/card material and original palette/light: matte colored paper with inherent fibers, imperfect cut edges, shallow soft contact shadows, no smooth anime ink contours. Preserve camera, crop, positions, faces, all hands/fingers, other characters and objects. No extra changes, writing, numbers, logos or effects. ONE opaque PNG at the target native size/aspect.",
+  "generator": "built-in image_gen"
+}

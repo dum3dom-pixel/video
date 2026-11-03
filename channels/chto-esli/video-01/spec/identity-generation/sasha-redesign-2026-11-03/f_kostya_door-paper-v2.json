@@ -1,0 +1,9 @@
+{
+  "id": "f_kostya_door",
+  "revision": "paper-v2",
+  "references": [
+    "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-71286745-4a9d-4d68-908a-2e7be4107ede.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit ONLY SASHA, the LIGHT ASH-BEIGE SPIKY-HAIRED man on the LEFT (foreground at left for the close-up). He is33 and must be CLEAN SHAVEN. Erase ONLY his tiny dark stubble/beard/moustache dots or hatching from chin, jaw, cheek and upper lip, replacing them with matching warm matte paper skin. Preserve his mature face shape, nose, mouth and expression; do not make him younger or change his hair/eyes/clothes/pose. The BALD man KOSTYA on RIGHT must remain completely unchanged INCLUDING his own STUBBLE. Do not shave Kostya, do not change cassette bays or hand positions. Preserve the exact handmade layered paper/card material and original palette/light: matte colored paper with inherent fibers, imperfect cut edges, shallow soft contact shadows, no smooth anime ink contours. Preserve camera, crop, positions, faces, all hands/fingers, other characters and objects. No extra changes, writing, numbers, logos or effects. ONE opaque PNG at the target native size/aspect.",
+  "generator": "built-in image_gen"
+}

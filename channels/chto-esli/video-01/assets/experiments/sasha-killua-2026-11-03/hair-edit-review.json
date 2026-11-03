@@ -1,0 +1,11 @@
+{
+  "file": "sasha_redesign_B_killua_hair.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "tool": "built-in image_gen",
+  "prompt": "hair-edit-prompt.json",
+  "review": "Visually inspected: full rounded spiky Killua-like hair and short jagged bangs applied consistently to front, profile, rear and portrait. B ash-beige color, serious face, olive/cream costume, teal boots and layout retained. Complete body silhouettes and no labels.",
+  "source": "C:/Users/DPiunov/.codex/generated_images/01a19e53-fab2-73c2-a0c7-ea90d208128f/exec-088610dd-3fed-4336-9194-b55825d551ea.png"
+}

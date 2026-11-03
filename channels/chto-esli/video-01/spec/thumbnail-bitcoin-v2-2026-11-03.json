@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "id": "thumbnail_A_v2",
+  "source": "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/thumbnails/2026-11-03/thumbnail_A_source.png",
+  "refs": [
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/thumbnails/2026-11-03/thumbnail_A_source.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/sasha_faces_sheet.png"
+  ],
+  "headline": [
+    "В 12 ЗНАЛ",
+    "БУДУЩЕЕ"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit image1 with ONE surgical change: REMOVE the SMALL ADULT MAN between the old computer and the large boy, including all of the small adult's head, hair, face, neck and sweater. Replace precisely that man's area with seamlessly continuous plain deep muted teal textured paper matching the immediately adjacent background. Do not replace him with any other character or object. Final scene contains EXACTLY ONE PERSON: the original large12-year-old boy on the RIGHT.\nSTRICT INVARIANTS: Keep the LARGE BOY, his exact face/eyes/mouth, messy pointed dark-brown hair and high cowlick, olive pocket T-shirt, raised hand, all fingers and pose exactly unchanged. Image2's TOP-LEFT portrait is his approved face reference only. Keep the beige CRT monitor, keyboard, partial tower, desk, blank mustard circle on the screen, cream upper-left blank paper area, teal paper shapes, palette, lighting, paper fibers, shadows, exact framing and camera all unchanged. Do not redraw the whole composition. Preserve the screen circle perfectly BLANK, no Bitcoin symbol added in this pass. Text and emblem will be added afterwards in code.\nNo text, digits, lettering, labels, glyphs, logos, watermark, arrows or circles around anything. No adult, second person, ghost portrait, money, charts or new prop. Preserve the original handmade layered matte cut-paper style, no photo/3D/blur. ONE opaque16:9 PNG, preserve1672x941 native size if possible. This is the fictional 'Кассеты' story about a boy with adult memories of the future."
+}

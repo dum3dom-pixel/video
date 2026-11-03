@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "A",
+    "file": "sasha_redesign_A.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 1705118,
+    "sha256": "371fb5d32beebdb983db99d143d275a3714d84820598e4056da613c5fa6920dc"
+  },
+  {
+    "variant": "B",
+    "file": "sasha_redesign_B.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGB",
+    "format": "PNG",
+    "bytes": 1693794,
+    "sha256": "75561e8445fc6779cb666159702c94839e7f671b6d47862d87dc21448ae182c2"
+  }
+]

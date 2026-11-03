@@ -1,0 +1,28 @@
+{
+  "revision": "sasha-redesign-2026-11-03",
+  "generator": "built-in image_gen",
+  "status": "complete",
+  "counts": {
+    "compositions": 74,
+    "files": 103,
+    "installed": 74
+  },
+  "native_generation": true,
+  "local_upscale": false,
+  "image_generation_retries": "Transient network errors for workshop/graduation resolved with built-in image_gen. Rejected visual variants retained separately.",
+  "reviewed_compositions": 74,
+  "verified_aliases": 103,
+  "unrelated_source_files_verified_unchanged": 61,
+  "unrelated_changes": [],
+  "contacts": [
+    "assets/identity-review/sasha-redesign-2026-11-03/final-contact-1.jpg",
+    "assets/identity-review/sasha-redesign-2026-11-03/final-contact-2.jpg",
+    "assets/identity-review/sasha-redesign-2026-11-03/final-contact-3.jpg",
+    "assets/identity-review/sasha-redesign-2026-11-03/final-contact-4.jpg"
+  ],
+  "inventory": "SASHA-REDESIGN.md",
+  "comparison": "sasha-redesign-review.html",
+  "prompts": "spec/sasha-paper-final-prompts.json",
+  "source_backup": "assets/identity-review/before/sasha-redesign-2026-11-03",
+  "existing_mp4": "Not re-rendered; source PNG replacement is active for future preview/render."
+}

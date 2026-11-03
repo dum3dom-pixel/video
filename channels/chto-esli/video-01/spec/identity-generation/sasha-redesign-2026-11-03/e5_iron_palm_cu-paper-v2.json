@@ -1,0 +1,10 @@
+{
+  "id": "e5_iron_palm_cu",
+  "revision": "paper-v2",
+  "references": [
+    "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-426f5579-8a56-4022-8c42-ff5f7365268b.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/e5_iron_palm_cu.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the NEW paper target; image2 is the old scene ONLY to copy the correct CLOTHING, never its old Sasha hair or face. Restore ONLY the clothing at the wrist/upper right to image2's WARM-GRAY BLAZER sleeve over MUSTARD YELLOW hoodie cuff. Remove the olive/cream child costume. Preserve the adult open palm, soldering iron, position, radio-workshop objects and lighting exactly. Preserve the exact handmade layered paper/card material and original palette/light: matte colored paper with inherent fibers, imperfect cut edges, shallow soft contact shadows, no smooth anime ink contours. Preserve camera, crop, positions, faces, all hands/fingers, other characters and objects. No extra changes, writing, numbers, logos or effects. ONE opaque PNG at the target native size/aspect.",
+  "generator": "built-in image_gen"
+}

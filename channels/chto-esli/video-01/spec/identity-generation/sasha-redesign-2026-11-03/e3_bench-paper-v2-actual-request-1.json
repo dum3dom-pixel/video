@@ -1,0 +1,13 @@
+{
+  "id": "e3_bench",
+  "revision": "paper-v2",
+  "generator": "built-in image_gen",
+  "references": [
+    "C:\\Users\\DPiunov\\.codex\\generated_images\\01a19e53-fab2-73c2-a0c7-ea90d208128f\\exec-9c95b2a4-8613-4f92-9eb9-d26cacfd3e8f.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/sheets/sasha_sheet-paper-v1.png",
+    "C:/Users/DPiunov/Desktop/videosis/channels/chto-esli/video-01/assets/identity-review/before/sasha-redesign-2026-11-03/shots/e3_bench.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Input1 is the NEW PAPER scene to correct, KEEP its new Sasha face, ash-beige radial spiky hair, gray-teal eyes, pose, expression, paper textures and ALL scene details. Input2 is the approved paper Sasha material/design reference. Input3 is old scene ONLY for original context/costume, do NOT copy old brown hair or old face. Make ONLY this correction: Remove added star-shaped sparkles from courtyard; keep ordinary leaves and daylight. For pocket removal, remove the whole patch pocket and seams, replacing with uninterrupted same olive matte paper shirt surface, preserve cream long sleeves underneath. For school shirt correction, replace ONLY the boy's torso costume with cream button-down school shirt and turned-down collar as input3, no olive tee and no highneck. For courtyard correction, remove ALL small starbursts, glowing floating particles and sparkles from ground/air/tree, reconstruct ordinary matching foliage, wall and pavement paper; keep all real objects and both brothers exactly as in input1. Apply ONLY the relevant correction to this asset. All forms are thick matte colored PAPER/CARD with visible fibers, imperfect cut/torn edges and soft contact shadows, no ink contours or smooth anime fill. Preserve exact camera/crop, palette, lighting, number and identity of other people, hand poses, cassette/monitor/notebook props and blank labels/screens/pages. No extra changes, no text/logos/effects. One opaque PNG at input1 native size/aspect.",
+  "attempt": 1,
+  "actual_request": true
+}
