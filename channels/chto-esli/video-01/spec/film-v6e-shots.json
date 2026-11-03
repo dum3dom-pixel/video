@@ -1,0 +1,371 @@
+{
+ "shots": [
+  {
+   "id": "old_night",
+   "img": "shots/t_old_night.png",
+   "cue": [
+    "140"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     520
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "night_phone",
+   "img": "shots/t_night_kitchen.png",
+   "cue": [
+    "140",
+    "набрал"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.35
+    ],
+    "x": [
+     768,
+     680
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "light_strip",
+   "img": "shots/t_light_strip.png",
+   "cue": [
+    "141"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.12
+    ],
+    "x": [
+     768,
+     1000
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "realize",
+   "img": "shots/t_realize_cu.png",
+   "cue": [
+    "142"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "night_phone2",
+   "img": "shots/t_night_kitchen.png",
+   "cue": [
+    "143"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.35
+    ],
+    "x": [
+     768,
+     680
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "kostya_door",
+   "img": "shots/f_kostya_door.png",
+   "cue": [
+    "144"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "date_plate:14"
+   ]
+  },
+  {
+   "id": "player",
+   "img": "shots/f_player.png",
+   "cue": [
+    "147"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "answered"
+   ]
+  },
+  {
+   "id": "frown",
+   "img": "shots/f_kostya_frown.png",
+   "cue": [
+    "148"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "pat",
+   "img": "shots/f_pat.png",
+   "cue": [
+    "154"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "last_tape",
+   "img": "shots/f_last_tape.png",
+   "cue": [
+    "155"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "tape2026"
+   ]
+  },
+  {
+   "id": "rec_keys",
+   "img": "shots/f_rec_keys.png",
+   "cue": [
+    "156"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "recording",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "157"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "recording_sasha",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "157",
+    "сбрил"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.35
+    ],
+    "x": [
+     600,
+     600
+    ],
+    "y": [
+     500,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "recording_kostya",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "157",
+    "посуду"
+   ],
+   "cam": {
+    "z": [
+     1.3,
+     1.35
+    ],
+    "x": [
+     1000,
+     1000
+    ],
+    "y": [
+     500,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "recording_wide",
+   "img": "shots/f_recording.png",
+   "cue": [
+    "158"
+   ],
+   "cam": {
+    "z": [
+     1.2,
+     1.0
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "blank_tape",
+   "img": "shots/q_blank_tape.png",
+   "cue": [
+    "159"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "lights"
+   ]
+  }
+ ]
+}

@@ -25,7 +25,7 @@ for i in range(len(lines)):
     a, b = starts[i], starts[i + 1]
     by_line.append([w for w in ww if a - .05 <= w['s'] < b - .05])
 
-pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', 'assets/voice-eleven/vo-v6-roger.mp3', '-f', 's16le', '-ac', '1', '-ar', str(SR), '-'],
+pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', 'assets/voice-eleven/vo-v6-full.wav', '-f', 's16le', '-ac', '1', '-ar', str(SR), '-'],
                      capture_output=True, check=True).stdout
 audio = np.frombuffer(pcm, dtype=np.int16).astype(np.float32)
 

@@ -61,7 +61,7 @@ for li in range(len(L)):
     idx=[k for k in range(n) if own[k]==li and k in mapped]
     if idx:starts.append(min(mapped[k] for k in idx));est.append(False)
     else:starts.append(None);est.append(True)
-LAST_RECORDED=139  # the ElevenLabs file ends inside line 139; later lines are not in it
+LAST_RECORDED=160  # lines after this are not in the recording (none now: roger + tail cover 0-160)
 for k in range(LAST_RECORDED+1,len(starts)):starts[k]=None
 # fill unmapped by interpolation, keep monotonic
 for k in range(len(starts)):

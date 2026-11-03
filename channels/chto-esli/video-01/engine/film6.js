@@ -132,6 +132,10 @@
   // part B plate overlays: cue line of the shot is s.cue[0]
   const sw=(s,stem)=>wordAt(s.cue[0],stem);
   Object.assign(PLATE,{
+    tape2026(c,t,s){
+      const u=appear(t,s.start+.6,.5);if(u<=0)return;
+      c.save();c.translate(660,315);c.rotate(-.2);text(c,'2026',0,0,{font:'italic 700 78px PilotSerif',fill:'#4c443b',alpha:u*.9});c.restore();
+    },
     chalk(c,t,s){
       const u=appear(t,sw(s,'сколько'),.4);
       c.save();c.rotate(-.01);text(c,'3/5 + 2/7 = ?',520,215,{font:'700 54px PilotSerif',fill:'#EFE8D8',alpha:u*.92});c.restore();
