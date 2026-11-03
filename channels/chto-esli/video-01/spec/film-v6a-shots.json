@@ -1,0 +1,563 @@
+{
+ "title": "v6 part A: hook, plan, rules (lines 0-36)",
+ "shots": [
+  {
+   "id": "door",
+   "img": "bg/bg_room_dark_hd.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.03
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "carpet",
+   "img": "bg/bg_carpet_wall_hd.png",
+   "cue": [
+    "001"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     740
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "dim"
+   ]
+  },
+  {
+   "id": "kostya",
+   "img": "shots/p2_kostya.png",
+   "cue": [
+    "002"
+   ],
+   "cam": {
+    "z": [
+     1.01,
+     1.12
+    ],
+    "x": [
+     768,
+     810
+    ],
+    "y": [
+     505,
+     430
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "kostya_hair",
+   "img": "shots/h_kostya_hair_cu.png",
+   "cue": [
+    "004"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "calendar",
+   "img": "shots/p3_calendar_hd.png",
+   "cue": [
+    "005"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     740,
+     715
+    ],
+    "y": [
+     500,
+     480
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "calendar_date"
+   ]
+  },
+  {
+   "id": "sasha_pilot",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "006"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     455
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "hands",
+   "img": "shots/h_sasha_hands_cu.png",
+   "cue": [
+    "007"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "palm",
+   "img": "shots/h_sasha_palm.png",
+   "cue": [
+    "008"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "sasha_sit",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "010"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     500,
+     470
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "graph2009"
+   ]
+  },
+  {
+   "id": "sasha_eyes",
+   "img": "shots/h_sasha_eyes_cu.png",
+   "cue": [
+    "011"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     505
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "title",
+   "img": "bg/bg_carpet_wall_hd.png",
+   "cue": [
+    "012"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.04
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "title_card"
+   ]
+  },
+  {
+   "id": "heart",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "013"
+   ],
+   "cam": {
+    "z": [
+     1.15,
+     1.25
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     450,
+     440
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "eyes2",
+   "img": "shots/h_sasha_eyes_cu.png",
+   "cue": [
+    "014"
+   ],
+   "cam": {
+    "z": [
+     1.04,
+     1.0
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     505,
+     512
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "school_board",
+   "img": "shots/e1_school_board-v2.png",
+   "cue": [
+    "016"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     790
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "school_bag",
+   "img": "shots/h_school_bag.png",
+   "cue": [
+    "016",
+    "как"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     790
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "clock",
+   "img": "shots/e1_clock_ten.png",
+   "cue": [
+    "017"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     470
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "plan_night",
+   "img": "shots/e1_plan_night.png",
+   "cue": [
+    "018"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     900
+    ],
+    "y": [
+     512,
+     560
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "plan_sheet",
+   "img": "shots/e1_plan_sheet.png",
+   "cue": [
+    "019"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.02
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "plan"
+   ]
+  },
+  {
+   "id": "rules_desk",
+   "img": "shots/r_paper_desk.png",
+   "cue": [
+    "029"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.0
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "rules"
+   ]
+  },
+  {
+   "id": "rules_soup",
+   "img": "shots/r_adults_soup.png",
+   "cue": [
+    "031",
+    "просят"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve"
+  },
+  {
+   "id": "rules_desk2",
+   "img": "shots/r_paper_desk.png",
+   "cue": [
+    "032"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.0
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "rules"
+   ]
+  },
+  {
+   "id": "lights_out",
+   "img": "shots/e1_lights_out.png",
+   "cue": [
+    "034"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe",
+   "over": [
+    "lights"
+   ]
+  },
+  {
+   "id": "cassette_box",
+   "img": "shots/h_cassette_box.png",
+   "cue": [
+    "036"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     768,
+     940
+    ],
+    "y": [
+     512,
+     500
+    ]
+   },
+   "in": "wipe"
+  },
+  {
+   "id": "cassette_2024",
+   "img": "shots/h_cassette_2024_cu.png",
+   "cue": [
+    "036",
+    "кассет"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.05
+    ],
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     512,
+     512
+    ]
+   },
+   "in": "dissolve",
+   "over": [
+    "cassette_label"
+   ]
+  }
+ ]
+}

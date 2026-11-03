@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const part = process.argv[2] || 'v5a';
+const engine = process.argv[3] || 'film';
 const timeline = JSON.parse(fs.readFileSync(path.join(root, `spec/timeline-${part}.json`), 'utf8'));
 const shotList = JSON.parse(fs.readFileSync(path.join(root, `spec/film-${part}-shots.json`), 'utf8'));
 const duration = Math.ceil(timeline.total * 24) / 24;
@@ -25,7 +26,7 @@ const html = `<!doctype html>
 <audio id="master" class="clip" data-start="0" data-duration="${timeline.total}" data-track-index="2" data-volume="1" src="../assets/master-${part}.wav"></audio>
 </div>
 <script>window.PILOT_ASSET_BASE='../assets/';</script>
-<script src="../engine/data-film-${part}.js"></script><script src="../engine/paper.js"></script><script src="../engine/film.js"></script>
+<script src="../engine/data-film-${part}.js"></script><script src="../engine/paper.js"></script><script src="../engine/${engine}.js"></script>
 <script>
 const ready=Promise.all([document.fonts.load('700 68px PilotSans'),document.fonts.load('700 150px PilotSerif'),document.fonts.load('40px PilotSerif'),PILOT_ENGINE.load()]).then(()=>PILOT_ENGINE.render(0));
 window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};window.__hf.buildReady.main=ready;

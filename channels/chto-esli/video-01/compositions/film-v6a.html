@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru" data-resolution="landscape"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=1920, height=1080">
+<style>
+@font-face{font-family:PilotSans;src:url('../assets/fonts/arial-bold.ttf');font-weight:700}
+@font-face{font-family:PilotSerif;src:url('../assets/fonts/georgia.ttf')}
+@font-face{font-family:PilotSerif;src:url('../assets/fonts/georgia-bold.ttf');font-weight:700}
+*{box-sizing:border-box;margin:0}html,body{width:1920px;height:1080px;overflow:hidden;background:#a59b8c}
+#stage{position:absolute;inset:0;width:1920px;height:1080px}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="142.5" data-width="1920" data-height="1080" data-fps="24" data-no-timeline>
+<canvas id="stage" width="1920" height="1080" data-layout-allow-overflow></canvas>
+<audio id="master" class="clip" data-start="0" data-duration="142.47" data-track-index="2" data-volume="1" src="../assets/master-v6a.wav"></audio>
+</div>
+<script>window.PILOT_ASSET_BASE='../assets/';</script>
+<script src="../engine/data-film-v6a.js"></script><script src="../engine/paper.js"></script><script src="../engine/film6.js"></script>
+<script>
+const ready=Promise.all([document.fonts.load('700 68px PilotSans'),document.fonts.load('700 150px PilotSerif'),document.fonts.load('40px PilotSerif'),PILOT_ENGINE.load()]).then(()=>PILOT_ENGINE.render(0));
+window.__hf=window.__hf||{};window.__hf.buildReady=window.__hf.buildReady||{};window.__hf.buildReady.main=ready;
+window.addEventListener('hf-seek',e=>PILOT_ENGINE.render(e.detail.time));
+</script></body></html>
