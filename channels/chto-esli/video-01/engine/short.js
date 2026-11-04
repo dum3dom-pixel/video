@@ -69,7 +69,7 @@
   // ---- overlays drawn in image space (move with the camera): units = 1/1000 of the plate height ----
   const PLATE={
     calendar_date(c,t,s){
-      const a=appear(t,wordAt('001','двенадцатое')-.05,.2);
+      const a=appear(t,wordAt('002','двенадцатое')-.05,.2);
       c.save();c.globalAlpha=a;c.fillStyle='#62513e';c.textAlign='center';c.textBaseline='alphabetic';
       c.font='700 210px PilotSerif';c.fillText('12',725,430);
       c.font='54px PilotSerif';c.fillText('сентября',725,500);
@@ -102,7 +102,7 @@
       c.save();c.globalCompositeOperation='multiply';c.globalAlpha=k;c.fillStyle='rgb(168,190,216)';c.fillRect(0,0,W,H);c.restore();
     },
     lights(c,t,s){
-      const at=wordAt('006','выключает')+.15,a=smooth((t-at)/.18);if(a<=0)return;
+      const at=wordAt('007','выключает')+.15,a=smooth((t-at)/.18);if(a<=0)return;
       c.save();c.fillStyle='rgba(10,8,16,'+(a*.82)+')';c.fillRect(0,0,W,H);c.restore();
     },
     dark(c,t,s){

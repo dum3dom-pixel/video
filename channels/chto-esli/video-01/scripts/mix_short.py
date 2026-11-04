@@ -39,16 +39,17 @@ def ev(t, slug, s0=0, s1=None, peak=-22, fi=.01, fo=.08, lead=True):
     if e > i: sfxbuf[i:e] += a[:e - i]
 
 
-ev(word('001', 'двенадцатое') - .05, 'page-turn-04', 0, .6, -27)  # calendar leaf
-ev(word('002', 'список'), 'pencil-writing-long', 5.4, 9.4, -28, .2, .6, lead=False)
-ev(word('003', 'первое'), 'coin-jar', 0, 1.2, -27)
+ev(0.0, 'door-open-close', 0, 3, -21, .01, .5)                    # the door opens on the very first frame
+ev(word('002', 'двенадцатое') - .05, 'page-turn-04', 0, .6, -27)  # calendar leaf
+ev(word('003', 'список'), 'pencil-writing-long', 5.4, 9.4, -28, .2, .6, lead=False)
+ev(word('004', 'первое'), 'coin-jar', 0, 1.2, -27)
 for stem in ('второе', 'третье', 'четвёртое'):
-    ev(word('003', stem) - .02, 'page-turn-1', 0, .35, -29)
-ev(word('003', 'четвёртое') + .5, 'marker-scribble', 0, .6, -22)
-ev(word('004', 'слова'), 'cup-stir', 0, 1.6, -31, .05, .4)
-ev(word('005', 'быстрее') - .1, 'pencil-writing-short', 0, 2.6, -28, .1, .5, lead=False)
-ev(word('006', 'выключает') + .1, 'light-switch', 0, 1.2, -19)
-ev(word('006', 'за') + .1, 'fridge-hum', 3, 3 + (tl['total'] - word('006', 'за')), -39, .8, .05, lead=False)
+    ev(word('004', stem) - .02, 'page-turn-1', 0, .35, -29)
+ev(word('004', 'четвёртое') + .5, 'marker-scribble', 0, .6, -22)
+ev(word('005', 'слова'), 'cup-stir', 0, 1.6, -31, .05, .4)
+ev(word('006', 'быстрее') - .1, 'pencil-writing-short', 0, 2.6, -28, .1, .5, lead=False)
+ev(word('007', 'выключает') + .1, 'light-switch', 0, 1.2, -19)
+ev(word('007', 'за') + .1, 'fridge-hum', 3, 3 + (tl['total'] - word('007', 'за')), -39, .8, .05, lead=False)
 
 mix = voice + sfxbuf
 tmp = 'renders/_mix-short.wav'

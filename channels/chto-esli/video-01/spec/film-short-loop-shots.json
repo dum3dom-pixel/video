@@ -1,12 +1,37 @@
 {
  "title": "Short: loop — money plan",
- "note": "cam = {z, x, y} as [from, to]; x/y are shares of the plate width/height at the centre of the 1080x1920 view. Last shot (dark door) flows into the first (eyes): 'Утром ты проснёшься и вспомнишь:' -> 'Вчера тебе было тридцать три.'",
+ "note": "cam = {z, x, y} as [from, to]; x/y are shares of the plate width/height at the centre of the 1080x1920 view. Last shot (dark door) flows into the first (door opens): 'Утром он зайдёт и скажет:' -> 'Мелкий, вставай.'",
  "shots": [
+  {
+   "id": "door_open",
+   "img": "shots/p2_kostya_hd.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     0.57,
+     0.58
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "tag:_ВЧЕРА ТЕБЕ|БЫЛО 33"
+   ]
+  },
   {
    "id": "eyes",
    "img": "shots/h_sasha_eyes_cu.png",
    "cue": [
-    "000"
+    "001"
    ],
    "cam": {
     "z": [
@@ -22,16 +47,13 @@
      0.5
     ]
    },
-   "in": "cut",
-   "over": [
-    "tag:ВЧЕРА ТЕБЕ|БЫЛО 33"
-   ]
+   "in": "cut"
   },
   {
    "id": "calendar",
    "img": "shots/p3_calendar_hd.png",
    "cue": [
-    "001"
+    "002"
    ],
    "cam": {
     "z": [
@@ -56,7 +78,7 @@
    "id": "bed",
    "img": "shots/p4_sasha_hd.png",
    "cue": [
-    "001",
+    "002",
     "знаешь"
    ],
    "cam": {
@@ -82,7 +104,7 @@
    "id": "write",
    "img": "shots/e1_plan_night.png",
    "cue": [
-    "002"
+    "003"
    ],
    "cam": {
     "z": [
@@ -104,7 +126,7 @@
    "id": "i1",
    "img": "shots/e3b_piggybank.png",
    "cue": [
-    "003",
+    "004",
     "первое"
    ],
    "cam": {
@@ -130,7 +152,7 @@
    "id": "i2",
    "img": "shots/e4_briefcase.png",
    "cue": [
-    "003",
+    "004",
     "второе"
    ],
    "cam": {
@@ -156,7 +178,7 @@
    "id": "i3",
    "img": "shots/e4b_pc_floor.png",
    "cue": [
-    "003",
+    "004",
     "третье"
    ],
    "cam": {
@@ -182,7 +204,7 @@
    "id": "i4",
    "img": "shots/e1_plan_sheet.png",
    "cue": [
-    "003",
+    "004",
     "четвёртое"
    ],
    "cam": {
@@ -208,7 +230,7 @@
    "id": "bun",
    "img": "shots/k_mama_bread.png",
    "cue": [
-    "004"
+    "005"
    ],
    "cam": {
     "z": [
@@ -230,7 +252,7 @@
    "id": "nobody",
    "img": "shots/r_adults_soup.png",
    "cue": [
-    "004",
+    "005",
     "слова"
    ],
    "cam": {
@@ -253,7 +275,7 @@
    "id": "faster",
    "img": "shots/e1_plan_sheet.png",
    "cue": [
-    "005"
+    "006"
    ],
    "cam": {
     "z": [
@@ -278,7 +300,7 @@
    "id": "lights",
    "img": "shots/e1_lights_out.png",
    "cue": [
-    "006"
+    "007"
    ],
    "cam": {
     "z": [
@@ -303,7 +325,7 @@
    "id": "dark_door",
    "img": "bg/bg_room_dark_hd.png",
    "cue": [
-    "006",
+    "007",
     "за"
    ],
    "cam": {
