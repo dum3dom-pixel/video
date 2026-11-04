@@ -7,22 +7,24 @@ import {fileURLToPath} from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const part = process.argv[2] || 'v5a';
 const engine = process.argv[3] || 'film';
+const vertical = process.argv[4] === 'vertical';  // 1080x1920 for Shorts
+const [VW, VH] = vertical ? [1080, 1920] : [1920, 1080];
 const timeline = JSON.parse(fs.readFileSync(path.join(root, `spec/timeline-${part}.json`), 'utf8'));
 const shotList = JSON.parse(fs.readFileSync(path.join(root, `spec/film-${part}-shots.json`), 'utf8'));
 const duration = Math.ceil(timeline.total * 24) / 24;
 fs.writeFileSync(path.join(root, `engine/data-film-${part}.js`), `window.FILM = ${JSON.stringify({...timeline, shots: shotList.shots, duration})};\n`);
 const html = `<!doctype html>
-<html lang="ru" data-resolution="landscape"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=1920, height=1080">
+<html lang="ru" data-resolution="${vertical ? 'portrait' : 'landscape'}"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=${VW}, height=${VH}">
 <style>
 @font-face{font-family:PilotSans;src:url('../assets/fonts/arial-bold.ttf');font-weight:700}
 @font-face{font-family:PilotSerif;src:url('../assets/fonts/georgia.ttf')}
 @font-face{font-family:PilotSerif;src:url('../assets/fonts/georgia-bold.ttf');font-weight:700}
-*{box-sizing:border-box;margin:0}html,body{width:1920px;height:1080px;overflow:hidden;background:#a59b8c}
-#stage{position:absolute;inset:0;width:1920px;height:1080px}
+*{box-sizing:border-box;margin:0}html,body{width:${VW}px;height:${VH}px;overflow:hidden;background:#a59b8c}
+#stage{position:absolute;inset:0;width:${VW}px;height:${VH}px}
 </style></head><body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="${duration}" data-width="1920" data-height="1080" data-fps="24" data-no-timeline>
-<canvas id="stage" width="1920" height="1080" data-layout-allow-overflow></canvas>
+<div id="root" data-composition-id="main" data-start="0" data-duration="${duration}" data-width="${VW}" data-height="${VH}" data-fps="24" data-no-timeline>
+<canvas id="stage" width="${VW}" height="${VH}" data-layout-allow-overflow></canvas>
 <audio id="master" class="clip" data-start="0" data-duration="${timeline.total}" data-track-index="2" data-volume="1" src="../assets/master-${part}.wav"></audio>
 </div>
 <script>window.PILOT_ASSET_BASE='../assets/';</script>
