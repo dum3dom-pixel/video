@@ -1,22 +1,326 @@
 {
-  "title": "Short: loop — «Мелкий, вставай»",
-  "note": "cam = {z, x, y} as [from, to]; x/y are shares of the plate width/height at the centre of the 1080x1920 view. Last shot (dark door) flows into the first (door opens).",
-  "shots": [
-    {"id": "door_open", "img": "shots/p2_kostya_hd.png", "cue": ["000"], "cam": {"z": [1.0, 1.08], "x": [0.57, 0.58], "y": [0.5, 0.5]}, "in": "cut", "over": ["tag:_ВЧЕРА ТЕБЕ|БЫЛО 33"]},
-    {"id": "eyes", "img": "shots/h_sasha_eyes_cu.png", "cue": ["001"], "cam": {"z": [0.7, 0.78], "x": [0.5, 0.5], "y": [0.5, 0.5]}, "in": "cut"},
-    {"id": "calendar", "img": "shots/p3_calendar_hd.png", "cue": ["002"], "cam": {"z": [1.0, 1.1], "x": [0.42, 0.41], "y": [0.57, 0.56]}, "in": "pop", "over": ["calendar_date"]},
-    {"id": "bed", "img": "shots/p4_sasha_hd.png", "cue": ["002", "голове"], "cam": {"z": [1.0, 1.4], "x": [0.5, 0.5], "y": [0.5, 0.47]}, "in": "cut", "over": ["tag:В ГОЛОВЕ 21 ГОД"]},
-    {"id": "clock", "img": "shots/e1_clock_ten.png", "cue": ["003"], "cam": {"z": [1.0, 1.12], "x": [0.45, 0.5], "y": [0.5, 0.5]}, "in": "cut"},
-    {"id": "write", "img": "shots/e1_plan_night.png", "cue": ["003", "пора"], "cam": {"z": [1.0, 1.25], "x": [0.78, 0.8], "y": [0.55, 0.55]}, "in": "cut"},
-    {"id": "i1", "img": "shots/e3b_piggybank.png", "cue": ["004", "доллар"], "cam": {"z": [1.0, 1.06], "x": [0.3, 0.34], "y": [0.5, 0.5]}, "in": "pop", "over": ["tag:1 · ДОЛЛАР"]},
-    {"id": "i2", "img": "shots/e3_bench.png", "cue": ["004", "тополь"], "cam": {"z": [1.0, 1.06], "x": [0.84, 0.82], "y": [0.5, 0.5]}, "in": "pop", "over": ["tag:2 · ТОПОЛЬ"]},
-    {"id": "i3", "img": "shots/e4_briefcase.png", "cue": ["004", "папин"], "cam": {"z": [1.0, 1.06], "x": [0.62, 0.62], "y": [0.5, 0.5]}, "in": "pop", "over": ["tag:3 · КРЕДИТ"]},
-    {"id": "i4", "img": "shots/e5_garage.png", "cue": ["004", "дед"], "cam": {"z": [1.0, 1.06], "x": [0.4, 0.42], "y": [0.5, 0.5]}, "in": "pop", "over": ["tag:4 · ДЕД"]},
-    {"id": "i5", "img": "shots/e4b_pc_floor.png", "cue": ["004", "костин"], "cam": {"z": [1.0, 1.06], "x": [0.5, 0.52], "y": [0.5, 0.5]}, "in": "pop", "over": ["tag:5 · КОМПЬЮТЕР"]},
-    {"id": "seven", "img": "shots/e1_plan_sheet.png", "cue": ["005"], "cam": {"z": [1.0, 1.08], "x": [0.4, 0.4], "y": [0.5, 0.5]}, "in": "pop", "over": ["seven"]},
-    {"id": "nobody", "img": "shots/r_adults_soup.png", "cue": ["006"], "cam": {"z": [1.0, 1.06], "x": [0.3, 0.7], "y": [0.5, 0.5]}, "in": "cut"},
-    {"id": "faster", "img": "shots/e1_plan_sheet.png", "cue": ["007"], "cam": {"z": [1.0, 1.4], "x": [0.8, 0.85], "y": [0.5, 0.5]}, "in": "cut", "over": ["cold"]},
-    {"id": "lights", "img": "shots/e1_lights_out.png", "cue": ["008"], "cam": {"z": [1.0, 1.06], "x": [0.62, 0.62], "y": [0.5, 0.5]}, "in": "cut", "over": ["lights"]},
-    {"id": "dark_door", "img": "bg/bg_room_dark_hd.png", "cue": ["008", "за"], "cam": {"z": [1.0, 1.25], "x": [0.55, 0.55], "y": [0.55, 0.55]}, "in": "cut"}
-  ]
+ "title": "Short: loop — money plan",
+ "note": "cam = {z, x, y} as [from, to]; x/y are shares of the plate width/height at the centre of the 1080x1920 view. Last shot (dark door) flows into the first (eyes): 'Утром ты проснёшься и вспомнишь:' -> 'Вчера тебе было тридцать три.'",
+ "shots": [
+  {
+   "id": "eyes",
+   "img": "shots/h_sasha_eyes_cu.png",
+   "cue": [
+    "000"
+   ],
+   "cam": {
+    "z": [
+     0.7,
+     0.78
+    ],
+    "x": [
+     0.5,
+     0.5
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "tag:ВЧЕРА ТЕБЕ|БЫЛО 33"
+   ]
+  },
+  {
+   "id": "calendar",
+   "img": "shots/p3_calendar_hd.png",
+   "cue": [
+    "001"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.1
+    ],
+    "x": [
+     0.42,
+     0.41
+    ],
+    "y": [
+     0.57,
+     0.56
+    ]
+   },
+   "in": "pop",
+   "over": [
+    "calendar_date"
+   ]
+  },
+  {
+   "id": "bed",
+   "img": "shots/p4_sasha_hd.png",
+   "cue": [
+    "001",
+    "знаешь"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.4
+    ],
+    "x": [
+     0.5,
+     0.5
+    ],
+    "y": [
+     0.5,
+     0.47
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "tag:ЗНАЕШЬ ПРО|ДОЛЛАР И БИТКОИН"
+   ]
+  },
+  {
+   "id": "write",
+   "img": "shots/e1_plan_night.png",
+   "cue": [
+    "002"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     0.78,
+     0.8
+    ],
+    "y": [
+     0.55,
+     0.55
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "i1",
+   "img": "shots/e3b_piggybank.png",
+   "cue": [
+    "003",
+    "первое"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     0.3,
+     0.34
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "pop",
+   "over": [
+    "tag:1 · ДОЛЛАР|ДО ОСЕНИ 2008"
+   ]
+  },
+  {
+   "id": "i2",
+   "img": "shots/e4_briefcase.png",
+   "cue": [
+    "003",
+    "второе"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     0.62,
+     0.62
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "pop",
+   "over": [
+    "tag:2 · ПАПЕ|БЕЗ КРЕДИТА В $"
+   ]
+  },
+  {
+   "id": "i3",
+   "img": "shots/e4b_pc_floor.png",
+   "cue": [
+    "003",
+    "третье"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     0.5,
+     0.52
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "pop",
+   "over": [
+    "tag:3 · КОМПЬЮТЕР|КОСТИ"
+   ]
+  },
+  {
+   "id": "i4",
+   "img": "shots/e1_plan_sheet.png",
+   "cue": [
+    "003",
+    "четвёртое"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     0.4,
+     0.4
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "pop",
+   "over": [
+    "bitcoin"
+   ]
+  },
+  {
+   "id": "bun",
+   "img": "shots/k_mama_bread.png",
+   "cue": [
+    "004"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.08
+    ],
+    "x": [
+     0.5,
+     0.5
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "nobody",
+   "img": "shots/r_adults_soup.png",
+   "cue": [
+    "004",
+    "слова"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     0.3,
+     0.7
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut"
+  },
+  {
+   "id": "faster",
+   "img": "shots/e1_plan_sheet.png",
+   "cue": [
+    "005"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.4
+    ],
+    "x": [
+     0.8,
+     0.85
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "cold"
+   ]
+  },
+  {
+   "id": "lights",
+   "img": "shots/e1_lights_out.png",
+   "cue": [
+    "006"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.06
+    ],
+    "x": [
+     0.62,
+     0.62
+    ],
+    "y": [
+     0.5,
+     0.5
+    ]
+   },
+   "in": "cut",
+   "over": [
+    "lights"
+   ]
+  },
+  {
+   "id": "dark_door",
+   "img": "bg/bg_room_dark_hd.png",
+   "cue": [
+    "006",
+    "за"
+   ],
+   "cam": {
+    "z": [
+     1.0,
+     1.25
+    ],
+    "x": [
+     0.55,
+     0.55
+    ],
+    "y": [
+     0.55,
+     0.55
+    ]
+   },
+   "in": "cut"
+  }
+ ]
 }

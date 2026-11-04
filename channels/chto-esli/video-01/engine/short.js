@@ -69,7 +69,7 @@
   // ---- overlays drawn in image space (move with the camera): units = 1/1000 of the plate height ----
   const PLATE={
     calendar_date(c,t,s){
-      const a=appear(t,wordAt('002','двенадцатое')-.05,.2);
+      const a=appear(t,wordAt('001','двенадцатое')-.05,.2);
       c.save();c.globalAlpha=a;c.fillStyle='#62513e';c.textAlign='center';c.textBaseline='alphabetic';
       c.font='700 210px PilotSerif';c.fillText('12',725,430);
       c.font='54px PilotSerif';c.fillText('сентября',725,500);
@@ -89,11 +89,11 @@
       lines.forEach((l,i)=>text(c,l,W/2,400+i*118+(h-lines.length*118)/2-6,{font:'700 92px PilotSans',alpha:u}));
       c.restore();
     },
-    seven(c,t,s){
+    bitcoin(c,t,s){
       const u=appear(t,s.start+.1,.25);if(u<=0)return;
       c.save();c.translate(W/2,520);const k=mix(1.1,1,u);c.scale(k,k);
       strip(c,0,0,900,190,{alpha:u,seed:31,fill:CREAM});
-      text(c,'7 · БИТКОИН',0,0,{font:'700 108px PilotSans',alpha:u});
+      text(c,'4 · БИТКОИН',0,0,{font:'700 108px PilotSans',alpha:u});
       ring(c,0,6,470,118,smooth((t-(s.start+.55))/.7));
       c.restore();
     },
@@ -102,7 +102,7 @@
       c.save();c.globalCompositeOperation='multiply';c.globalAlpha=k;c.fillStyle='rgb(168,190,216)';c.fillRect(0,0,W,H);c.restore();
     },
     lights(c,t,s){
-      const at=wordAt('008','выключает')+.15,a=smooth((t-at)/.18);if(a<=0)return;
+      const at=wordAt('006','выключает')+.15,a=smooth((t-at)/.18);if(a<=0)return;
       c.save();c.fillStyle='rgba(10,8,16,'+(a*.82)+')';c.fillRect(0,0,W,H);c.restore();
     },
     dark(c,t,s){
