@@ -118,11 +118,13 @@
     },
     tape2026(c,t,s){
       const u=appear(t,s.start+.6,.5);if(u<=0)return;
-      c.save();c.translate(660,315);c.rotate(-.2);text(c,'2026',0,0,{font:'italic 700 78px PilotSerif',fill:'#4c443b',alpha:u*.9});c.restore();
+      // Follow the label's clockwise slope; leave paper margins around all four digits.
+      c.save();c.translate(663,318);c.rotate(.12);text(c,'2026',0,0,{font:'italic 700 40px PilotSerif',fill:'#4c443b',alpha:u*.9});c.restore();
     },
     chalk(c,t){
       const u=appear(t,wordAt('053','сколько'),.4);
-      c.save();c.rotate(-.01);text(c,'3/5 + 2/7 = ?',520,215,{font:'700 54px PilotSerif',fill:'#EFE8D8',alpha:u*.92});c.restore();
+      // Above Sasha, wholly inside the board, in the same plate space as the camera.
+      c.save();c.translate(640,190);c.rotate(-.01);text(c,'3/5 + 2/7 = ?',0,0,{font:'700 42px PilotSerif',fill:'#EFE8D8',alpha:u*.92});c.restore();
     }
   };
 

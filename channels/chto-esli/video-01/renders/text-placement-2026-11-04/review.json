@@ -1,0 +1,40 @@
+[
+  {
+    "part": "v6b",
+    "id": "school_board",
+    "engine": "film6.js",
+    "frames": [
+      {
+        "file": "v6b-school_board-start.png",
+        "time": 61.230000000000004
+      },
+      {
+        "file": "v6b-school_board-middle.png",
+        "time": 67.17
+      },
+      {
+        "file": "v6b-school_board-end.png",
+        "time": 74.01
+      }
+    ]
+  },
+  {
+    "part": "v6e",
+    "id": "last_tape",
+    "engine": "film6.js",
+    "frames": [
+      {
+        "file": "v6e-last_tape-start.png",
+        "time": 73.096
+      },
+      {
+        "file": "v6e-last_tape-middle.png",
+        "time": 75.676
+      },
+      {
+        "file": "v6e-last_tape-end.png",
+        "time": 79.156
+      }
+    ]
+  }
+]

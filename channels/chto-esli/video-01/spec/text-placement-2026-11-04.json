@@ -1,0 +1,30 @@
+{
+  "request": "Исправить надписи и их размещение на доске и кассете; указать путь к превью.",
+  "date": "2026-11-04",
+  "engines": ["engine/film.js", "engine/film6.js"],
+  "changes": {
+    "chalk": {
+      "text": "3/5 + 2/7 = ?",
+      "center_plate": [640, 190],
+      "rotation_radians": -0.01,
+      "font": "700 42px PilotSerif",
+      "reason": "Keep the complete expression inside the board above Sasha; rotate around the text center."
+    },
+    "tape2026": {
+      "text": "2026",
+      "center_plate": [663, 318],
+      "rotation_radians": 0.12,
+      "font": "italic 700 40px PilotSerif",
+      "reason": "Follow the clockwise label slope and fit all digits within its paper margins."
+    }
+  },
+  "review": "renders/text-placement-2026-11-04/index.html",
+  "frame_metadata": "renders/text-placement-2026-11-04/review.json",
+  "thumbnail": "assets/thumbnails/2026-11-03/thumbnail_A_v3.png",
+  "validation": {
+    "javascript_syntax": "passed for both engines",
+    "method": "Actual film6.js and paper.js executed with native Canvas; inspected exported frames at start, middle and end of both shots.",
+    "mp4_rerendered": false,
+    "image_generation": false
+  }
+}
