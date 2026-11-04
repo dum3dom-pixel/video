@@ -1,6 +1,6 @@
 # Ролик 01: упаковка для публикации
 
-Готовое видео: `video-01/renders/film-v6-full-sound.mp4`, 14:11, звук −14,2 LUFS. Тайм-коды ниже взяты из таймлайнов сборки (начало речи в каждой главе).
+Готовое видео: `video-01/renders/film-v6-full-sound2.mp4` (музыка тише, новые эффекты; треки по умолчанию, пересвести: `scripts/mix_audio.py`, список музыки обновится в `assets/audio/credits.txt` и тут), 14:11, звук −14,2 LUFS. Тайм-коды ниже взяты из таймлайнов сборки (начало речи в каждой главе).
 
 ## Открытые решения (за автором)
 
@@ -48,10 +48,11 @@
 Как сделано: сюжет и текст написаны для канала. Озвучка синтезирована (ElevenLabs, голос Roger). Иллюстрации созданы с помощью ИИ в стиле бумажного коллажа, анимация, титры и сборка выполнены в HyperFrames. Музыка и звуки живые, не сгенерированные, по свободным лицензиям (ниже). Все персонажи и события вымышлены; цифры и даты про биткоин и курс доллара не являются инвестиционным советом.
 
 Музыка:
-«Twilight poem» — zero-project, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1776520
-«Leaf Fall» — Kristina Budzhiashvili, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1783613
-«Back Home» — e s c p, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1608774
-«Late Spring» — Serkor09 и «Piano improvisation 2» — unfa (Freesound, CC0).
+«Morning Octaves» — Jesse Keller, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1540840
+«Wingspan» — Blue Dot Sessions, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1365390
+«Denzel Sprak» — Blue Dot Sessions, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1366299
+«Footsteps» — Lena Selyanina, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/346757
+«Reflection» — Yakov Golman, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1559902
 Звуковые эффекты: Freesound.org, CC0.
 
 #история #ностальгия #чтоесли

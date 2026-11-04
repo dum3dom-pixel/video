@@ -6,3 +6,6 @@ assets/voice/_windows-request.json
 # Keep the two requested pilot deliverables in Git.
 !renders/pilot-01-calm.mp4
 !renders/pilot-01-dynamic.mp4
+assets/audio/candidates/*.mp3
+assets/audio/candidates/previews/
+assets/audio/candidates/music-variants.html

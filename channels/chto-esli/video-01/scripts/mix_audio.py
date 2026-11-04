@@ -1,6 +1,7 @@
 """Mixes narration + human-made music (assets/audio/music) + SFX (assets/audio/sfx) and muxes it into the film.
 Usage (from video-01): python -X utf8 scripts/mix_audio.py [film in] [film out]
-Part offsets come from the part renders in renders/; SFX times come from spec/timeline-v6*.json + spec/film-v6*-shots.json."""
+Part offsets come from the part renders in renders/; SFX times come from spec/timeline-v6*.json + spec/film-v6*-shots.json.
+Env: MUSIC_PICK="A1,B1,C1,D1,E1" selects a candidate per slot from assets/audio/candidates (see candidates.json); MUSIC_LUFS (default -31) is the bed level before ducking."""
 import json, os, re, subprocess, sys, wave
 import numpy as np
 
@@ -52,12 +53,24 @@ def fade(a, fi=.01, fo=.05):
     return a
 
 
-# ---- music: loudness-matched beds with equal-power crossfades (slug, start, end, fade in, fade out) ----
-MUSIC = [('twilight-poem', 0, 152, 4, 6), ('leaf-fall', 146, 394, 6, 6), ('back-home', 388, 621, 6, 6),
-         ('late-spring', 615, 779, 6, 6), ('piano-improvisation-2', 773, total, 6, 8)]
-for slug, t0, t1, fi, fo in MUSIC:
-    a = load(f'assets/audio/music/{slug}.mp3', af='loudnorm=I=-23:TP=-3:LRA=7')
-    a = a[:int((t1 - t0) * SR)]
+# ---- music: loudness-matched beds with equal-power crossfades (slot, start, end, fade in, fade out) ----
+PICK = dict((k[0], k) for k in os.environ.get('MUSIC_PICK', 'A1,B1,C1,D1,E1').split(','))
+MUSIC_LUFS = float(os.environ.get('MUSIC_LUFS', -31))
+MUSIC = [('A', 0, 152, 4, 6), ('B', 146, 394, 6, 6), ('C', 388, 621, 6, 6), ('D', 615, 779, 6, 6), ('E', 773, total, 6, 8)]
+
+
+def bed(path, n, loop_xf=6):
+    """Track as a bed of n samples; a track shorter than the slot is repeated with an equal-power crossfade."""
+    a = load(path, af=f'loudnorm=I={MUSIC_LUFS}:TP=-6:LRA=7')
+    x = int(loop_xf * SR)
+    ramp = np.linspace(0, 1, x)
+    while len(a) < n:
+        a = np.concatenate([a[:-x], a[-x:] * np.cos(ramp * np.pi / 2) + a[:x] * np.sin(ramp * np.pi / 2), a[x:]])
+    return a[:n]
+
+
+for slot, t0, t1, fi, fo in MUSIC:
+    a = bed(f'assets/audio/candidates/{PICK[slot]}.mp3', int((t1 - t0) * SR))
     x = np.linspace(0, 1, int(fi * SR))
     y = np.linspace(0, 1, int(fo * SR))
     a[:len(x)] *= np.sin(x * np.pi / 2)
@@ -85,10 +98,13 @@ music = buf_music * duck
 SFXF = {}
 
 
-def sfx(slug, s0=0, s1=None, peak=-20, fi=.01, fo=.06):
-    key = (slug, s0, s1, peak)
+def sfx(slug, s0=0, s1=None, peak=-20, fi=.01, fo=.06, lead=False):
+    key = (slug, s0, s1, peak, lead)
     if key not in SFXF:
         a = load(f'assets/audio/sfx/{slug}.mp3', ss=s0, t=None if s1 is None else s1 - s0)
+        if lead:  # cut leading silence so the first transient lands on the cue
+            i = np.argmax(np.abs(a) > .15 * np.max(np.abs(a)))
+            a = a[max(0, i - int(.03 * SR)):]
         SFXF[key] = fade(a / (np.max(np.abs(a)) + 1e-9) * db(peak), fi, fo)
     return SFXF[key]
 
@@ -114,6 +130,13 @@ for p, f in PARTS:
         return ws[c[1]]['t'] if c[1] < len(ws) else SC[c[0]]['start']
 
     st = {s['id']: cue(s['cue']) for s in shots}
+    plen = dur('renders/' + f)
+    en = {a['id']: (st[b['id']] if b['id'] in st else plen) for a, b in zip(shots, shots[1:] + [{'id': None}])}
+
+    def amb(slug, sid, s0=0, peak=-32, cap=25):
+        """Ambience bed under one shot: from s0 inside the file, as long as the shot (max cap s), soft fades."""
+        n = min(en[sid] - st[sid], cap, dur(f'assets/audio/sfx/{slug}.mp3') - s0)
+        add(buf_sfx, sfx(slug, s0, s0 + n, peak, 1.2, 1.8), off + st[sid])
     for s in shots:  # paper wipe sweep
         if s['in'] == 'wipe' and st[s['id']] > .3:
             nwipe += 1
@@ -123,23 +146,56 @@ for p, f in PARTS:
         add(buf_sfx, a, off + t)
 
     if p == 'a':
+        ev(st['carpet'], sfx('footsteps-socks-wood', 1, 4.5, -30, .1, .5))
+        ev(st['sasha_sit'], sfx('bed-creak', 0, 1.8, -24, .02, .3, lead=True))
+        ev(st['school_bag'], sfx('zipper-backpack', 0, .6, -22, lead=True))
+        ev(st['lights_out'], sfx('light-switch', 0, 1.2, -20, lead=True))
+        ev(st['cassette_box'], sfx('cassette-case', 0, 2.5, -25, lead=True))
         ev(SC['002']['start'] - 1.2, sfx('door-open-close', 0, 5, -21, .02, .4))
         ev(SC['030']['start'] + SC['030']['speechDur'] - .3, sfx('marker-scribble', 0, .55, -22))
         ev(SC['032']['start'], sfx('marker-scribble', 0, .55, -22))
         ev(SC['033']['start'] + SC['033']['speechDur'] - .2, sfx('marker-scribble', 0, .55, -22))
         ev(st['plan_sheet'], sfx('pencil-writing-long', 5.4, 27, -27, .3, 1.2))
     if p == 'b':
+        amb('kitchen-ambience', 'kitchen', 8, -33, 12)
+        ev(st['cocoa'], sfx('cup-stir', 0, 4, -29, .05, .5))
+        amb('pan-frying', 'papa_pan', 2, -34, 8)
+        ev(st['stairs'], sfx('stairs-steps', 0, 4, -27, .1, .5))
+        amb('market-crowd', 'market', 5, -33, 14)
+        ev(st['box'], sfx('cassette-case', 0, 2.5, -25, lead=True))
+        amb('leaves-rustle-wind', 'bench', 5, -33, 14)
+        ev(st['fallen'], sfx('footsteps-leaves', 0, 5, -29, .1, .6))
+        ev(st['bed_edge'], sfx('bed-frame-creak', 0, 2.9, -25, .02, .4, lead=True))
+        amb('hard-drive', 'computer', 10, -35, 10)
+        ev(st['computer'] + .8, sfx('mouse-click', 0, 1.2, -27, lead=True))
+        ev(st['piggybank'], sfx('coin-jar', 0, 2.5, -25, lead=True))
         ev(st['clock'], sfx('clock-ticking', 4, 8.1, -31, .2, .6))
         ev(word('049', 'сколько') - .1, sfx('chalk-write', 0, .5, -22))
         ev(st['rec_keys'], sfx('button-press', 0, .2, -17))
         ev(st['rec_keys'] + .45, sfx('cassette-play-button', 2.3, 3.3, -25))
         ev(word('068', 'звонок') - .2, sfx('phone-ring', 0, 2.2, -26, .01, .3))
     if p == 'c':
+        ev(st['car_taken'], sfx('car-door', 0, .4, -21))
+        ev(st['silent_dinner'], sfx('fork-plate', 0, 4, -32, .05, .5))
+        ev(st['winter_fork'], sfx('fork-plate', 0, 4, -32, .05, .5))
+        ev(st['suitcase'], sfx('zipper-bag', 0, 3, -27, lead=True))
+        amb('modem', 'pc_floor', 0, -34, 10)
+        amb('hard-drive', 'pc_cu', 40, -35, 10)
+        ev(st['garage'], sfx('hammer-wood', 0, 4, -28, .02, .4, lead=True))
+        amb('fire-crackle', 'burn', 5, -31, 14)
+        amb('birds-spring', 'spring_2011', 5, -34, 14)
         ev(st['flash_papers'], sfx('paper-rustle', peak=-22))
         ev(word('094', 'бумаги'), sfx('page-turn-1', peak=-21))
     if p == 'd':
+        amb('birds-spring', 'terrace', 10, -35, 14)
+        ev(st['lena_cup'], sfx('cup-saucer', 0, 1.1, -24, lead=True))
+        amb('dishes-washing', 'dishes', 10, -33, 14)
+        amb('train-station', 'station', 30, -37, 14)
+        amb('fridge-hum', 'night_kitchen', 3, -37, 14)
         ev(word('129', 'звонит') - .1, sfx('phone-ring', 0, 3.2, -26, .01, .4))
     if p == 'e':
+        amb('fridge-hum', 'old_night', 3, -37, 14)
+        ev(st['kostya_door'], sfx('door-knock', 0, 2, -22, lead=True))
         ev(st['player'] + .2, sfx('cassette-insert', 0, 2.4, -25, .02, .3))
         ev(word('147', 'шипение') - .1, sfx('tape-hiss', 5, 9.2, -33, .4, .6))
         ev(st['rec_keys'], sfx('button-press', 0, .2, -17))
@@ -147,6 +203,13 @@ for p, f in PARTS:
         ev(st['recording'], sfx('tape-hiss', 12, 34, -37, 1.5, 2.0))
     off += dur('renders/' + f)
 print('parts end at', round(off, 2), 'film', round(total, 2), 'wipes', nwipe)
+
+# ---- attribution for the picked tracks ----
+cands = {c['key']: c for c in json.load(open('assets/audio/candidates/candidates.json', encoding='utf-8'))}
+lines = [f"«{c['title']}» — {c['creator']}, {c['license'].upper()} {c['version']} ({c['license_url']}), {c['page']}"
+         for c in (cands[PICK[k]] for k in 'ABCDE') if c['license'] != 'cc0']
+open('assets/audio/credits.txt', 'w', encoding='utf-8').write(
+    'Музыка:\n' + '\n'.join(lines) + '\n\nЗвуковые эффекты: Freesound.org, лицензия CC0 (подпись не требуется).\n')
 
 mix = voice + music + buf_sfx
 
