@@ -1,7 +1,7 @@
 """Mixes narration + human-made music (assets/audio/music) + SFX (assets/audio/sfx) and muxes it into the film.
 Usage (from video-01): python -X utf8 scripts/mix_audio.py [film in] [film out]
 Part offsets come from the part renders in renders/; SFX times come from spec/timeline-v6*.json + spec/film-v6*-shots.json.
-Env: MUSIC_PICK="A1,B1,C1,D1,E1" selects a candidate per slot from assets/audio/candidates (see candidates.json); MUSIC_LUFS (default -31) is the bed level before ducking."""
+Env: MUSIC_PICK="none" mixes narration + SFX only (current choice); MUSIC_PICK="A1,B1,C1,D1,E1" selects a candidate per slot from assets/audio/candidates (see candidates.json); MUSIC_LUFS (default -31) is the bed level before ducking."""
 import json, os, re, subprocess, sys, wave
 import numpy as np
 
@@ -54,7 +54,8 @@ def fade(a, fi=.01, fo=.05):
 
 
 # ---- music: loudness-matched beds with equal-power crossfades (slot, start, end, fade in, fade out) ----
-PICK = dict((k[0], k) for k in os.environ.get('MUSIC_PICK', 'A1,B1,C1,D1,E1').split(','))
+NO_MUSIC = os.environ.get('MUSIC_PICK', 'none') == 'none'
+PICK = {} if NO_MUSIC else dict((k[0], k) for k in os.environ['MUSIC_PICK'].split(','))
 MUSIC_LUFS = float(os.environ.get('MUSIC_LUFS', -31))
 MUSIC = [('A', 0, 152, 4, 6), ('B', 146, 394, 6, 6), ('C', 388, 621, 6, 6), ('D', 615, 779, 6, 6), ('E', 773, total, 6, 8)]
 
@@ -69,7 +70,7 @@ def bed(path, n, loop_xf=6):
     return a[:n]
 
 
-for slot, t0, t1, fi, fo in MUSIC:
+for slot, t0, t1, fi, fo in ([] if NO_MUSIC else MUSIC):
     a = bed(f'assets/audio/candidates/{PICK[slot]}.mp3', int((t1 - t0) * SR))
     x = np.linspace(0, 1, int(fi * SR))
     y = np.linspace(0, 1, int(fo * SR))
@@ -207,9 +208,9 @@ print('parts end at', round(off, 2), 'film', round(total, 2), 'wipes', nwipe)
 # ---- attribution for the picked tracks ----
 cands = {c['key']: c for c in json.load(open('assets/audio/candidates/candidates.json', encoding='utf-8'))}
 lines = [f"«{c['title']}» — {c['creator']}, {c['license'].upper()} {c['version']} ({c['license_url']}), {c['page']}"
-         for c in (cands[PICK[k]] for k in 'ABCDE') if c['license'] != 'cc0']
+         for c in (cands[PICK[k]] for k in 'ABCDE' if k in PICK) if c['license'] != 'cc0']
 open('assets/audio/credits.txt', 'w', encoding='utf-8').write(
-    'Музыка:\n' + '\n'.join(lines) + '\n\nЗвуковые эффекты: Freesound.org, лицензия CC0 (подпись не требуется).\n')
+    ('Музыка:\n' + '\n'.join(lines) + '\n\n' if lines else '') + 'Звуковые эффекты: Freesound.org, лицензия CC0 (подпись не требуется).\n')
 
 mix = voice + music + buf_sfx
 

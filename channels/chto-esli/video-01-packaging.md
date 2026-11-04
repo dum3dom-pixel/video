@@ -1,6 +1,6 @@
 # Ролик 01: упаковка для публикации
 
-Готовое видео: `video-01/renders/film-v6-full-sound2.mp4` (музыка тише, новые эффекты; треки по умолчанию, пересвести: `scripts/mix_audio.py`, список музыки обновится в `assets/audio/credits.txt` и тут), 14:11, звук −14,2 LUFS. Тайм-коды ниже взяты из таймлайнов сборки (начало речи в каждой главе).
+Готовое видео: `video-01/renders/film-v6-full-sound2.mp4` (без музыки, только озвучка и звуковые эффекты; музыка возвращается через `MUSIC_PICK` в `scripts/mix_audio.py`), 14:11, звук −14,2 LUFS. Тайм-коды ниже взяты из таймлайнов сборки (начало речи в каждой главе).
 
 ## Открытые решения (за автором)
 
@@ -45,20 +45,14 @@
 
 Вопрос на сегодня: в какой год ты бы вернулся? Напиши в комментариях и расскажи, что сказал бы себе тогда.
 
-Как сделано: сюжет и текст написаны для канала. Озвучка синтезирована (ElevenLabs, голос Roger). Иллюстрации созданы с помощью ИИ в стиле бумажного коллажа, анимация, титры и сборка выполнены в HyperFrames. Музыка и звуки живые, не сгенерированные, по свободным лицензиям (ниже). Все персонажи и события вымышлены; цифры и даты про биткоин и курс доллара не являются инвестиционным советом.
+Как сделано: сюжет и текст написаны для канала. Озвучка синтезирована (ElevenLabs, голос Roger). Иллюстрации созданы с помощью ИИ в стиле бумажного коллажа, анимация, титры и сборка выполнены в HyperFrames. Звуковые эффекты настоящие, не сгенерированные, по свободной лицензии (ниже). Все персонажи и события вымышлены; цифры и даты про биткоин и курс доллара не являются инвестиционным советом.
 
-Музыка:
-«Morning Octaves» — Jesse Keller, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1540840
-«Wingspan» — Blue Dot Sessions, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1365390
-«Denzel Sprak» — Blue Dot Sessions, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1366299
-«Footsteps» — Lena Selyanina, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/346757
-«Reflection» — Yakov Golman, BY 3.0 (https://creativecommons.org/licenses/by/3.0/), https://www.jamendo.com/track/1559902
 Звуковые эффекты: Freesound.org, CC0.
 
 #история #ностальгия #чтоесли
 ```
 
-Подпись для трёх треков CC BY обязательна. Строки лежат также в `video-01/assets/audio/credits.txt`.
+Музыки в ролике нет, подписи CC BY не нужны. Если музыку вернёшь, строки соберёт `scripts/mix_audio.py` в `video-01/assets/audio/credits.txt`.
 
 ## Закреплённый комментарий
 
@@ -79,5 +73,5 @@
 ## Пометка об ИИ и правила YouTube
 
 - В Studio раздел «Изменённый или синтетический контент»: по данным справки (пересказ в [9to5google](https://9to5google.com/2024/03/18/youtube-altered-content-disclosure/) и [AIR Media-Tech](https://air.io/en/youtube-glossary/what-is-youtubes-ai-content-disclosure-policy)) обязательна пометка для реалистичных синтетических лиц и голосов, а анимация и явно нереалистичный контент пометки не требуют (только строка в описании). Голос Roger стоковый, не клон реального человека. Я рекомендую ответить «Да»: это бесплатно и честно, в описании строка уже есть. Решает автор. Точные формулировки проверь в Справке YouTube перед загрузкой.
-- **Монетизация:** с 15 июля 2025 YouTube усилил правило «неоригинальный, массовый контент» (в пересказе [The Week](https://www.theweek.in/news/sci-tech/2025/07/10/youtube-rolls-out-new-rules-to-curb-ai-content-who-is-affected-and-who-is-safe.html) и [TechCrunch](https://techcrunch.com/2025/07/09/youtube-prepares-crackdown-on-mass-produced-and-repetitive-videos-as-concern-over-ai-slop-grows)). Под риск попадают каналы, где нейросетевой голос читает шаблонные подборки. У нас оригинальный сюжет, авторская сборка и живая музыка, это в плюс, но гарантии нет: официальный текст политики я не читал, только пересказы.
+- **Монетизация:** с 15 июля 2025 YouTube усилил правило «неоригинальный, массовый контент» (в пересказе [The Week](https://www.theweek.in/news/sci-tech/2025/07/10/youtube-rolls-out-new-rules-to-curb-ai-content-who-is-affected-and-who-is-safe.html) и [TechCrunch](https://techcrunch.com/2025/07/09/youtube-prepares-crackdown-on-mass-produced-and-repetitive-videos-as-concern-over-ai-slop-grows)). Под риск попадают каналы, где нейросетевой голос читает шаблонные подборки. У нас оригинальный сюжет и авторская сборка, это в плюс, но гарантии нет: официальный текст политики я не читал, только пересказы.
 - **Голос ElevenLabs:** для публикации на монетизируемом канале нужен платный тариф ElevenLabs с коммерческой лицензией. Проверь свой тариф.
