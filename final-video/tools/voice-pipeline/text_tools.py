@@ -90,7 +90,7 @@ def letters(text):
 def check(out, wavs):
     from faster_whisper import WhisperModel
     want = letters(open(os.path.join(out, "plain.txt"), encoding="utf-8").read())
-    model = WhisperModel("medium", device="cpu", compute_type="int8")
+    model = WhisperModel("medium", device="cpu", compute_type="int8", cpu_threads=6)
     report = {"takes": []}
     for wav in wavs:
         segs, info = model.transcribe(wav, language="ru", word_timestamps=True)
