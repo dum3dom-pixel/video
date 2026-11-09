@@ -7,6 +7,7 @@ import { Explainer } from "./Explainer/Explainer";
 import { totalFrames } from "./Explainer/timing";
 import { videos } from "./Explainer/videos";
 import { HelloWorld } from "./HelloWorld";
+import { Test420, totalFrames as totalFrames420 } from "./Test420/Test420";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
 
@@ -88,6 +89,14 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1920}
+      />
+      <Composition
+        id="Test420"
+        component={Test420}
+        durationInFrames={totalFrames420}
+        fps={30}
+        width={1920}
+        height={804}
       />
       <Folder name="Explainer">
         {videos.map(({ spec, voiceDurations, voiceWords }) => (

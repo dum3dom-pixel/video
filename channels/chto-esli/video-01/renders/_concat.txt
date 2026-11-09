@@ -1,0 +1,5 @@
+file 'part-v6a-opening.mp4'
+file 'part-v6b-epochs1-3.mp4'
+file 'part-v6c-epochs4-5.mp4'
+file 'part-v6d-epoch6.mp4'
+file 'part-v6e-finale.mp4'

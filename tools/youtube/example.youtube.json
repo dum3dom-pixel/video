@@ -1,0 +1,12 @@
+{
+  "video": "short.mp4",
+  "thumbnail": "cover.png",
+  "title": "Заголовок нового ролика",
+  "description": "Описание нового ролика",
+  "tags": ["экономика простыми словами"],
+  "categoryId": "27",
+  "language": "ru",
+  "madeForKids": false,
+  "containsSyntheticMedia": false,
+  "playlist": "Студия ЧБ"
+}
