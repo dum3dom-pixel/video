@@ -28,5 +28,9 @@ import { golosovoeBw } from './golosovoe-bw';
 import { yaposhutilBw } from './yaposhutil-bw';
 import { envBw } from './env-bw';
 import { placesBw } from './places-bw';
+import { inflyaciya30Bw } from './inflyaciya30-bw';
+import { jetlag30Bw } from './jetlag30-bw';
+import { inflyaciya60Bw } from './inflyaciya60-bw';
+import { jetlag60Bw } from './jetlag60-bw';
 
-export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw];
+export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw, inflyaciya30Bw, jetlag30Bw, inflyaciya60Bw, jetlag60Bw];
