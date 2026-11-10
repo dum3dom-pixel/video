@@ -41,6 +41,10 @@ def cut(i):  # смена кадра внутри паузы: за lead секу
 t0 = [cut(i) for i in starts]; t0[0] = 0
 voice_end = fr(rec[-1][1]); TOTAL = voice_end + a.tail
 bounds = t0 + [TOTAL]
+guess = [PLANS[k][0] for k, i in enumerate(starts) if i not in m]  # первое слово не распознано: время взято по соседям (часто числа: «60-й»)
+if guess: print("ВНИМАНИЕ: начало плана угадано по соседним словам, проверьте на слух:", ", ".join(guess))
+bad = [PLANS[k][0] for k in range(len(PLANS)) if bounds[k + 1] <= bounds[k]]
+if bad: sys.exit(f"план нулевой или отрицательной длины: {', '.join(bad)} (два плана попали на одно распознанное слово, поправьте plans.json)")
 out = ["// Сгенерировано final-video/tools/gen_timing.py из best_words.json: кадры (30 fps), моменты внутри плана считаются от его начала.",
        f"export const TOTAL = {TOTAL};", f"export const VOICE_END = {voice_end + 2};", f"export const FADE = {a.fade};",
        "export const PLANS: [number, number][] = [" + ", ".join(f"[{bounds[i]}, {bounds[i + 1]}]" for i in range(len(PLANS))) + "];", "export const T = {"]
