@@ -26,5 +26,7 @@ import { naebali5FullBw } from './naebali5full-bw';
 import { ssoraBw } from './ssora-bw';
 import { golosovoeBw } from './golosovoe-bw';
 import { yaposhutilBw } from './yaposhutil-bw';
+import { envBw } from './env-bw';
+import { placesBw } from './places-bw';
 
-export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw];
+export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw];

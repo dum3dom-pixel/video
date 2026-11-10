@@ -3,6 +3,7 @@ import { useCurrentFrame } from 'remotion';
 import { clamp, easeOut, lerp } from '../../engine/anim';
 import { INK, PAPER } from '../../lines/kit';
 import { Check, Confetti, Draw, G, Ground, Head, Man, Pop, Sheet, Stamp, Tx } from '../piter-bw/shots';
+import { Backdrop } from '../../lines/env';
 import { T } from './timing';
 
 // «Я просто пошутил»: вертикальный ЧБ 1080×1920. Моменты внутри плана (кадры от начала плана) лежат в timing.ts
@@ -68,6 +69,7 @@ export const S1: React.FC = () => {
   return (
     <Sheet hit={T.p1.conv}>
       <Head lines={['САМАЯ УДОБНАЯ', 'ФРАЗА В МИРЕ']} t={t} />
+      <Backdrop kind="street" v={0} t={t} />
       <Ground />
       <Man x={330} y={G} s={1.75} mouth="grin" eyes="dots" hair="tuft" la={[-70, -50]} ra={[70, -50]} seed={7} bob />
       <Pop x={640} y={800} t={t} at={T.p1.quote} n={9}>
@@ -85,6 +87,7 @@ export const S2: React.FC = () => {
   return (
     <Sheet hit={T.p2.out}>
       <Head lines={['ДОБАВИЛ «ШУТКА»', 'И ТЫ НИ ПРИ ЧЁМ']} t={t} />
+      <Backdrop kind="street" v={1} t={t} />
       <Ground />
       <Man x={300} y={G} s={1.7} mouth={talk(t)} eyes="dots" hair="tuft" la={[-26, 70]} ra={[110, -40]} seed={7} bob />
       <Man x={800} y={G} s={1.5} mouth="flat" eyes="dots" brow="sad" seed={3} />
@@ -110,6 +113,7 @@ export const S3: React.FC = () => {
   return (
     <Sheet hit={T.p3.st}>
       <Head lines={['ВИНОВАТ ТОТ,', 'КТО ОБИДЕЛСЯ']} t={t} />
+      <Backdrop kind="yard" v={0} t={t} />
       <Ground />
       <Man x={290} y={G} s={1.7} mouth={talk(t)} eyes="dots" hair="tuft" brow="angry" la={[-26, 70]} ra={[130, -10]} seed={7} bob />
       <Man x={810} y={G} s={1.5} mouth="flat" eyes="dots" brow="sad" seed={3} />
@@ -128,6 +132,7 @@ export const S4: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ПОЧЕМУ', 'БЫВАЕТ СМЕШНО']} t={t} />
+      <Backdrop kind="street" v={2} t={t} />
       <g strokeWidth={7}>
         <rect x={110} y={450} width={860} height={540} fill={INK} />
         <path d="M200 990 L170 1130 M880 990 L910 1130" />
@@ -150,6 +155,7 @@ export const S5: React.FC = () => {
   return (
     <Sheet hit={T.p5.yr}>
       <Head lines={['МАКГРОУ И УОРРЕН']} t={t} />
+      <Backdrop kind="yard" v={1} t={t} />
       <Ground />
       <Man x={290} y={G} s={1.6} mouth="smile" eyes="dots" hair="tuft" seed={2} bob />
       <Man x={790} y={G} s={1.6} mouth="smile" eyes="dots" flip seed={9} bob />
@@ -170,6 +176,7 @@ export const S6: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['НАРУШЕНИЕ', '+ БЕЗОПАСНО']} t={t} />
+      <Backdrop kind="street" v={3} t={t} />
       <Pop x={540} y={600} t={t} at={T.p6.rules} n={9}>
         <g strokeWidth={6}>
           <rect x={300} y={470} width={480} height={190} fill={PAPER} />
@@ -196,6 +203,7 @@ export const S7: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ПЯТЬ', 'ЭКСПЕРИМЕНТОВ']} t={t} />
+      <Backdrop kind="yard" v={2} t={t} />
       {[0, 1, 2, 3, 4].map((i) => {
         const x = 121 + i * 172 + 75;
         return (
@@ -220,6 +228,7 @@ export const S8: React.FC = () => {
   return (
     <Sheet hit={T.p8.who}>
       <Head lines={['БЕЗОПАСНО', 'ДЛЯ КОГО?']} t={t} />
+      <Backdrop kind="yard" v={3} t={t} />
       <Pop x={640} y={800} t={t} at={T.p8.q} n={12}>
         <path d="M640 560 L840 630 V810 Q840 960 640 1040 Q440 960 440 810 V630 Z" fill={PAPER} strokeWidth={8} />
         <Tx x={640} y={880} size={300} bold={4}>?</Tx>
@@ -237,6 +246,7 @@ export const S9: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['СОВЕЩАНИЕ']} t={t} />
+      <Backdrop kind="street" v={0} t={t} />
       <Pop x={540} y={600} t={t} at={T.p9.mtg} n={9}>
         <rect x={250} y={440} width={580} height={330} fill={PAPER} strokeWidth={6} />
         <path d="M330 700 V600 M430 700 V540 M530 700 V630 M630 700 V500 M730 700 V580" strokeWidth={26} />
@@ -261,6 +271,7 @@ export const S10: React.FC = () => {
   return (
     <Sheet hit={T.p10.brake}>
       <Head lines={['ДИМА ШУТИТ']} t={t} />
+      <Backdrop kind="street" v={1} t={t} />
       <Ground />
       <Man x={290} y={G} s={1.7} mouth={talk(t)} eyes="dots" hair="tuft" la={[-26, 70]} ra={[120, -30]} seed={7} bob />
       <Man x={810} y={G} s={1.5} mouth="flat" eyes="dots" brow="sad" seed={3} />
@@ -278,6 +289,7 @@ export const S11: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['СМЕЁТСЯ', 'ТОЛЬКО ДИМА']} t={t} />
+      <Backdrop kind="yard" v={1} t={t} />
       <Man x={120} y={G} s={1.0} mouth="flat" eyes="dots" seed={1} />
       <Man x={960} y={G} s={1.0} mouth="flat" eyes="dots" flip seed={4} />
       <Man x={540} y={G - jump} s={1.9} mouth="grin" eyes="closed" hair="tuft" la={[-70, -70]} ra={[70, -70]} seed={7} />
@@ -295,6 +307,7 @@ export const S12: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['КОЛЛЕГА', 'СМОТРИТ В СТОЛ']} t={t} />
+      <Backdrop kind="office" v={0} t={t} />
       <Man x={540} y={1470} s={2.0} mouth="flat" eyes="dots" brow="sad" seed={3} />
       <Desk y={1290} />
       <Draw t={t} at={T.p12.look} n={14} strokeWidth={6} d="M540 1080 V1250 M505 1215 L540 1256 L575 1215" />
@@ -309,6 +322,7 @@ export const S13: React.FC = () => {
   return (
     <Sheet hit={T.p13.joke}>
       <Head lines={['«Я ЖЕ', 'ПОШУТИЛ»']} t={t} />
+      <Backdrop kind="street" v={2} t={t} />
       <Ground />
       <Man x={320} y={G} s={1.7} mouth={talk(t)} eyes="dots" hair="tuft" la={[-70, -50]} ra={[70, -50]} seed={7} bob />
       <Man x={850} y={G} s={1.3} mouth="flat" eyes="dots" brow="sad" seed={3} />
@@ -326,6 +340,7 @@ export const S14: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['КАК ЭТО', 'УСТРОЕНО']} t={t} />
+      <Backdrop kind="yard" v={2} t={t} />
       <Man x={540} y={800} s={0.85} mouth="grin" eyes="dots" hair="tuft" seed={7} bob />
       <Draw t={t} at={T.p14.look} n={14} strokeWidth={7} d="M470 840 L270 1020 M300 960 L266 1026 L336 1010" />
       <Draw t={t} at={T.p14.look + 6} n={14} strokeWidth={7} d="M610 840 L810 1020 M780 1010 L814 1026 L784 960" />
@@ -357,6 +372,7 @@ export const S15: React.FC = () => {
   return (
     <Sheet hit={T.p15.witty}>
       <Head lines={['ЗАСМЕЯЛИСЬ']} t={t} />
+      <Backdrop kind="yard" v={0} t={t} />
       <Ground />
       <Trio jump t={t} />
       <Man x={800} y={G} s={1.6} mouth="grin" eyes="dots" hair="tuft" la={[-26, 70]} ra={[100, -90]} seed={7} bob />
@@ -376,6 +392,7 @@ export const S16: React.FC = () => {
   return (
     <Sheet hit={T.p16.clean}>
       <Head lines={['ОБИДЕЛИСЬ']} t={t} />
+      <Backdrop kind="yard" v={1} t={t} />
       <Ground />
       <Trio sad t={t} />
       <Man x={800} y={G} s={1.6} mouth="smile" eyes="dots" hair="tuft" la={[-70, -40]} ra={[70, -40]} seed={7} bob />
@@ -393,6 +410,7 @@ export const S17: React.FC = () => {
   return (
     <Sheet hit={T.p17.st}>
       <Head lines={['ЕМУ НЕ', 'ПРИЛЕТИТ']} t={t} />
+      <Backdrop kind="street" v={0} t={t} />
       <Ground />
       <Man x={640} y={G} s={1.3} mouth="grin" eyes="dots" hair="tuft" seed={7} bob />
       <Dome x={640} r={410} t={t} at={4} />
@@ -415,6 +433,7 @@ export const S18: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ВОТ ЕЩЁ']} t={t} />
+      <Backdrop kind="street" v={1} t={t} />
       <Pop x={540} y={560} t={t} at={T.p18.a - 4} n={9}>
         <Bub x={540} y={560} w={820} text="Не будь занудой" size={70} />
       </Pop>
@@ -436,6 +455,7 @@ export const S19: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ВОТ ЛЕРА']} t={t} />
+      <Backdrop kind="yard" v={2} t={t} />
       <Ground />
       <Lera x={540} s={1.7} t={t} dress={t >= T.p19.dress} />
       <Pop x={540} y={760} t={t} at={T.p19.lera} n={9}>
@@ -443,6 +463,7 @@ export const S19: React.FC = () => {
         <path d="M540 750 V820" strokeWidth={7} />
       </Pop>
       <Pop x={820} y={1200} t={t} at={T.p19.dress} n={9}>
+        <rect x={630} y={1070} width={400} height={86} rx={20} fill={PAPER} stroke="none" />
         <Tx x={830} y={1130} size={64} bold={1.2}>новое платье</Tx>
         <path d="M770 1160 L690 1260" strokeWidth={6} />
       </Pop>
@@ -456,6 +477,7 @@ export const S20: React.FC = () => {
   return (
     <Sheet hit={T.p20.bold}>
       <Head lines={['КОМПЛИМЕНТ?']} t={t} />
+      <Backdrop kind="street" v={3} t={t} />
       <Ground />
       <Lera x={290} s={1.6} t={t} />
       <Man x={820} y={G} s={1.6} mouth={talk(t)} eyes="dots" flip la={[-26, 70]} ra={[-30, 70]} seed={3} bob />
@@ -474,6 +496,7 @@ export const S21: React.FC = () => {
   return (
     <Sheet hit={T.p21.no}>
       <Head lines={['ВНУТРИ', 'УЖЕ НЕТ']} t={t} />
+      <Backdrop kind="office" v={0} t={t} />
       <Ground />
       <Lera x={540} s={2.0} t={t} mouth={broken ? 'flat' : 'smile'} eyes={broken ? 'closed' : 'dots'} brow={broken ? 'sad' : 'none'} />
       <Pop x={540} y={1280} t={t} at={T.p21.smile + 10} n={9}>
@@ -490,6 +513,7 @@ export const S22: React.FC = () => {
   return (
     <Sheet hit={T.p22.joke}>
       <Head lines={['«ДА ШУЧУ»']} t={t} />
+      <Backdrop kind="yard" v={3} t={t} />
       <Ground />
       <Man x={330} y={G} s={1.8} mouth="grin" eyes="dots" la={[-70, -50]} ra={[70, -50]} seed={3} bob />
       <Lera x={880} s={1.2} t={t} mouth="flat" eyes="dots" brow="sad" />
@@ -506,6 +530,7 @@ export const S23: React.FC = () => {
   return (
     <Sheet hit={T.p23.only}>
       <Head lines={['БЕЗОПАСНО', 'ОДНОМУ']} t={t} />
+      <Backdrop kind="yard" v={0} t={t} />
       <Pop x={540} y={540} t={t} at={T.p23.same} n={9}>
         <Tx x={540} y={540} size={72} bold={1.4}>одно и то же</Tx>
       </Pop>
@@ -524,6 +549,7 @@ export const S24: React.FC = () => {
   return (
     <Sheet hit={T.p24.both}>
       <Head lines={['СМЕШНО ОБОИМ']} t={t} />
+      <Backdrop kind="street" v={0} t={t} />
       <Confetti t={t} at={T.p24.both} top={480} n={40} />
       <Man x={320} y={G - Math.abs(Math.sin(t / 4)) * 40} s={1.7} mouth="grin" eyes="closed" hair="tuft" la={[-60, -70]} ra={[60, -70]} seed={7} />
       <Man x={760} y={G - Math.abs(Math.sin(t / 4 + 1.5)) * 40} s={1.6} mouth="grin" eyes="closed" flip la={[-60, -70]} ra={[60, -70]} seed={3} />
@@ -543,6 +569,7 @@ export const S25: React.FC = () => {
   return (
     <Sheet hit={T.p25.flip}>
       <Head lines={['ТЕСТ:', 'РАЗВЕРНИ НА СЕБЯ']} t={t} />
+      <Backdrop kind="yard" v={1} t={t} />
       <Ground />
       <Man x={290} y={G} s={1.6} mouth={flipped ? 'o' : 'grin'} eyes={flipped ? 'wide' : 'dots'} hair="tuft" seed={7} bob />
       <Man x={830} y={G} s={1.4} mouth="flat" eyes="dots" brow="sad" seed={3} />
@@ -561,6 +588,7 @@ export const S26: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ПРО СЕБЯ.', 'ПРИ ВСЕХ']} t={t} />
+      <Backdrop kind="street" v={2} t={t} />
       <Ground />
       {t >= T.p26.all && [130, 300, 780, 950].map((x, i) => (
         <Pop key={x} x={x} y={G - 120} t={t} at={T.p26.all + i * 3} n={7}>
@@ -581,6 +609,7 @@ export const S27: React.FC = () => {
   return (
     <Sheet hit={T.p27.yes}>
       <Head lines={['СМЕШНО?', 'ЗНАЧИТ, ШУТКА']} t={t} />
+      <Backdrop kind="street" v={3} t={t} />
       <Confetti t={t} at={T.p27.yes} top={480} n={40} />
       <Man x={380} y={G - Math.abs(Math.sin(t / 4)) * 36} s={1.9} mouth="grin" eyes="closed" hair="tuft" la={[-60, -70]} ra={[60, -70]} seed={7} />
       <Ground />
@@ -596,6 +625,7 @@ export const S28: React.FC = () => {
   return (
     <Sheet hit={T.p28.st}>
       <Head lines={['НЕЛОВКО —', 'НЕ ЮМОР']} t={t} />
+      <Backdrop kind="yard" v={0} t={t} />
       <Ground />
       <Man x={540} y={G} s={1.9} mouth="o" eyes="wide" brow="sad" la={[-60, -30]} ra={[60, -30]} seed={3} />
       {t >= T.p28.awk && [0, 1, 2].map((i) => {
@@ -619,6 +649,7 @@ export const S29: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ПОШУТИ', 'НАД ДИМОЙ']} t={t} />
+      <Backdrop kind="street" v={1} t={t} />
       <Ground />
       <Man x={320} y={G} s={1.7} mouth={sr ? 'flat' : 'grin'} eyes={sr ? 'up' : 'dots'} brow={sr ? 'angry' : 'none'} hair="tuft" seed={7} bob />
       <Man x={830} y={G} s={1.5} mouth={talk(t)} eyes="dots" flip la={[-26, 70]} ra={[-30, 70]} seed={3} bob />
@@ -636,6 +667,7 @@ export const S30: React.FC = () => {
   return (
     <Sheet hit={T.p30.st}>
       <Head lines={['БАТАРЕЙКА', 'ЮМОРА']} t={t} />
+      <Backdrop kind="street" v={0} t={t} />
       <g strokeWidth={8}>
         <rect x={250} y={500} width={560} height={230} rx={28} fill={PAPER} />
         <rect x={810} y={575} width={40} height={80} rx={10} fill={INK} />
@@ -654,6 +686,7 @@ export const S31: React.FC = () => {
   return (
     <Sheet>
       <Head lines={['ЧТО ДЕЛАТЬ?']} t={t} />
+      <Backdrop kind="street" v={1} t={t} />
       <Ground />
       <Man x={540} y={G} s={1.9} mouth="o" eyes="up" brow="raised" la={[-26, 70]} ra={[20, -120]} seed={4} bob />
       <Pop x={540} y={800} t={t} at={T.p31.do} n={9}>
@@ -675,6 +708,7 @@ export const S32: React.FC = () => {
   return (
     <Sheet hit={T.p32.stop}>
       <Head lines={['ОСТАНОВИСЬ']} t={t} />
+      <Backdrop kind="yard" v={2} t={t} />
       <Ground />
       <Man x={320} y={G} s={1.8} mouth="open" eyes="dots" hair="tuft" la={[-26, 70]} ra={[50, -160]} seed={7} bob />
       <Pop x={400} y={820} t={t} at={T.p32.add - 10} n={9}>
@@ -695,6 +729,7 @@ export const S33: React.FC = () => {
   return (
     <Sheet hit={T.p33.exit}>
       <Head lines={['ПОДПИСЬ =', 'ЗАПАСНОЙ ВЫХОД']} t={t} />
+      <Backdrop kind="street" v={3} t={t} />
       <Pop x={300} y={600} t={t} at={T.p33.sign - 8} n={9}>
         <Bub x={300} y={600} w={440} text="Шутка" size={78} />
         <Tx x={300} y={770} size={52} bold={1}>(пошутил)</Tx>
@@ -721,6 +756,7 @@ export const S34: React.FC = () => {
   return (
     <Sheet hit={T.p34.no}>
       <Head lines={['ЭТО БЫЛА', 'НЕ ШУТКА']} t={t} />
+      <Backdrop kind="yard" v={1} t={t} />
       <Ground />
       <Man x={540} y={G} s={1.9} mouth="smile" eyes="dots" brow="sad" hair="tuft" la={[-70, -40]} ra={[70, -40]} seed={7} bob />
       <Pop x={540} y={700} t={t} at={T.p34.said - 6} n={9}>

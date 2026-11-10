@@ -7,6 +7,7 @@ import argparse, difflib, json, os, re, sys
 ap = argparse.ArgumentParser()
 ap.add_argument("--spec", required=True); ap.add_argument("--voice", required=True); ap.add_argument("--out", required=True)
 ap.add_argument("--tail", type=int, default=12); ap.add_argument("--fade", type=int, default=15)
+ap.add_argument("--lead", type=float, default=0.0, help="склейка раньше первого слова плана на N с (0 = точно на слове, как раньше)")
 a = ap.parse_args()
 FPS = 30
 norm = lambda w: re.sub(r"[^а-яё0-9a-z]", "", w.lower().replace("+", "").replace("ё", "е"))
@@ -33,7 +34,11 @@ for pid, first, ev in PLANS:
         if P[i:i + len(ws)] == ws: starts.append(i); cur = i + 1; break
     else: sys.exit(f"не найден план {pid}: {first}")
 fr = lambda s: round(s * FPS)
-t0 = [fr(rec[rec_idx(i)][0]) for i in starts]; t0[0] = 0
+def cut(i):  # смена кадра внутри паузы: за lead секунд до слова, но не раньше середины паузы (у референса склейка стоит в паузе, у начала следующей фразы)
+    j = rec_idx(i); s = rec[j][0]
+    if a.lead <= 0 or j == 0: return fr(s)
+    return fr(max(s - a.lead, (rec[j - 1][1] + s) / 2))
+t0 = [cut(i) for i in starts]; t0[0] = 0
 voice_end = fr(rec[-1][1]); TOTAL = voice_end + a.tail
 bounds = t0 + [TOTAL]
 out = ["// Сгенерировано final-video/tools/gen_timing.py из best_words.json: кадры (30 fps), моменты внутри плана считаются от его начала.",

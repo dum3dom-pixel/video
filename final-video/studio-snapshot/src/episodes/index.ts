@@ -1,0 +1,32 @@
+// The registry: add each new episode here (one import, one entry).
+import { rewind } from './rewind';
+import { copyPaste } from './copy-paste';
+import { slova } from './slova';
+import { slovaBw } from './slova-bw';
+import { slovaSlow } from './slova-slow';
+import { slovaStory } from './slova-story';
+import { sutki } from './sutki';
+import { sutkiBw } from './sutki-bw';
+import { sutkiPencil } from './sutki-pencil';
+import { piterBw } from './piter-bw';
+import { morganie } from './morganie';
+import { ringelmanBw } from './ringelman-bw';
+import { ringelman60Bw } from './ringelman60-bw';
+import { spotlightBw } from './spotlight-bw';
+import { diderotBw } from './diderot-bw';
+import { streisandBw } from './streisand-bw';
+import { pribavkaBw } from './pribavka-bw';
+import { pribavka80Bw } from './pribavka80-bw';
+import { pribavkaHook } from './pribavka-hook';
+import { abilinBw } from './abilin-bw';
+import { naebali4Bw } from './naebali4-bw';
+import { naebali5Bw } from './naebali5-bw';
+import { naebali4FullBw } from './naebali4full-bw';
+import { naebali5FullBw } from './naebali5full-bw';
+import { ssoraBw } from './ssora-bw';
+import { golosovoeBw } from './golosovoe-bw';
+import { yaposhutilBw } from './yaposhutil-bw';
+import { envBw } from './env-bw';
+import { placesBw } from './places-bw';
+
+export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw];
