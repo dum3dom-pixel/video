@@ -1,4 +1,5 @@
 // The registry: add each new episode here (one import, one entry).
+import type { Episode } from '../bw/episode';
 import { rewind } from './rewind';
 import { copyPaste } from './copy-paste';
 import { slova } from './slova';
@@ -33,4 +34,4 @@ import { jetlag30Bw } from './jetlag30-bw';
 import { inflyaciya60Bw } from './inflyaciya60-bw';
 import { jetlag60Bw } from './jetlag60-bw';
 
-export const EPISODES = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw, inflyaciya30Bw, jetlag30Bw, inflyaciya60Bw, jetlag60Bw];
+export const EPISODES: Episode[] = [rewind, copyPaste, slova, slovaBw, slovaSlow, slovaStory, sutki, sutkiBw, sutkiPencil, piterBw, morganie, ringelmanBw, ringelman60Bw, spotlightBw, diderotBw, streisandBw, pribavkaBw, pribavka80Bw, abilinBw, pribavkaHook, naebali4Bw, naebali5Bw, naebali4FullBw, naebali5FullBw, golosovoeBw, ssoraBw, yaposhutilBw, envBw, placesBw, inflyaciya30Bw, jetlag30Bw, inflyaciya60Bw, jetlag60Bw];
