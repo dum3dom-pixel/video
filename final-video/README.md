@@ -87,7 +87,15 @@
 
 `tools/gen_timing.py` считает `timing.ts` из голоса по файлу `plans.json` (первые слова каждого плана и слова-события внутри него), `tools/shared/` хранит копии общих деталей рисунка (`piter-bw`, `abilin-bw`, `kit`), `tools/voice-pipeline/` копии `voiceover.py`, `text_tools.py`, `stress_dict.txt`. Эпизоды `naebali4-bw` и `naebali5-bw` импортируют детали из `piter-bw/shots.tsx` и `abilin-bw/shots.tsx`, поэтому эти файлы из `what-if-studio` удалять нельзя.
 
-Шаблон тайминга одной командой (пути как в проекте):
+**Новый эпизод одной командой** (с 10.11.2026): папка `ТЕМА-bw` с `timing.ts`, `index.tsx` на общей сборке `src/bw/episode.tsx`, заготовки сцен S1…Sn с текстом плана в комментарии, `voice.wav` в `public\ТЕМА\`, запись в реестр. Готовый `shots.tsx` не перезаписывается, так что после переозвучки та же команда обновит только тайминги и голос.
+
+```
+python final-video\tools\new_episode.py --name ТЕМА --spec final-video\ПАПКА\plans.json
+```
+
+Общие детали рисунка теперь лежат в `what-if-studio/src/bw/core.tsx` (`piter-bw/shots.tsx` их реэкспортирует, старые импорты работают). Если число сцен не равно числу планов, эпизод падает при загрузке с понятной ошибкой. Перед рендером: `npm run typecheck` в `what-if-studio`.
+
+Только тайминги (пути как в проекте):
 
 ```
 python final-video\tools\gen_timing.py --spec final-video\ПАПКА\plans.json --voice C:\Users\daatva\voice-clone\out\ТЕМА --out what-if-studio\src\episodes\ТЕМА-bw\timing.ts --tail 54 --fade 10
